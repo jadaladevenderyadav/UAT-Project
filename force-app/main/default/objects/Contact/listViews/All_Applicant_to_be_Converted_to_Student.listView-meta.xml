@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Applicant_to_be_Converted_to_Student</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Date_of_Admission_in_Institute__c</columns>
+    <columns>Record_Type_Name__c</columns>
+    <columns>Select_Category__c</columns>
+    <columns>Program_Name__c</columns>
+    <columns>Program_Type__c</columns>
+    <columns>Ready_to_be_Transitioned__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Ready_to_be_Transitioned__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Student_Status__c</field>
+        <operation>equals</operation>
+        <value>Pursuing</value>
+    </filters>
+    <filters>
+        <field>Quota__c</field>
+        <operation>equals</operation>
+        <value>Management Quota</value>
+    </filters>
+    <filters>
+        <field>Record_Type_Name__c</field>
+        <operation>equals</operation>
+        <value>Student</value>
+    </filters>
+    <label>Applicants to be Converted to Student</label>
+    <sharedTo>
+        <role>Admission_Executive</role>
+        <role>Registrar_Office</role>
+    </sharedTo>
+</ListView>

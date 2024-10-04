@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exam_Dates__c</fullName>
+    <description>Specifies the Exam Dates for Applicant&apos;s REVA CET</description>
+    <inlineHelpText>REVA CET Date Selected by Applicant</inlineHelpText>
+    <label>Exam Dates</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

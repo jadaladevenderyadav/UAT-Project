@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coupon_Compact_Layout</fullName>
+    <fields>Coupon_Code__c</fields>
+    <fields>Discount_Percent__c</fields>
+    <fields>MultiUse__c</fields>
+    <fields>Usable__c</fields>
+    <fields>Effective_To__c</fields>
+    <label>Coupon Compact Layout</label>
+</CompactLayout>

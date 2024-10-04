@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Challan for PAF Offline payment</description>
+    <height>500</height>
+    <label>Generate PAF Challan</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <page>ProvisionalAdmissionFeeChallan</page>
+    <type>VisualforcePage</type>
+    <width>-100</width>
+</QuickAction>

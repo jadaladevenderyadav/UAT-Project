@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program__c</fullName>
+    <label>Program</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Diploma in HR Analytics</fullName>
+                <default>false</default>
+                <label>Diploma in HR Analytics</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Artificial Intelligence</fullName>
+                <default>false</default>
+                <label>Master of Science in Artificial Intelligence</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Business Analytics</fullName>
+                <default>false</default>
+                <label>Master of Science in Business Analytics</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Cloud Architecture and Security</fullName>
+                <default>false</default>
+                <label>Master of Science in Cloud Architecture and Security</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Cyber Security</fullName>
+                <default>false</default>
+                <label>Master of Science in Cyber Security</label>
+            </value>
+            <value>
+                <fullName>MBA in Business Analytics</fullName>
+                <default>false</default>
+                <label>MBA in Business Analytics</label>
+            </value>
+            <value>
+                <fullName>Post Graduate Diploma in Artificial Intelligence</fullName>
+                <default>false</default>
+                <label>Post Graduate Diploma in Artificial Intelligence</label>
+            </value>
+            <value>
+                <fullName>Post Graduate Diploma in Business Analytics</fullName>
+                <default>false</default>
+                <label>Post Graduate Diploma in Business Analytics</label>
+            </value>
+            <value>
+                <fullName>Post Graduate Diploma in Cloud Architecture and Security</fullName>
+                <default>false</default>
+                <label>Post Graduate Diploma in Cloud Architecture and Security</label>
+            </value>
+            <value>
+                <fullName>Post Graduate Diploma in Cybersecurity</fullName>
+                <default>false</default>
+                <label>Post Graduate Diploma in Cybersecurity</label>
+            </value>
+            <value>
+                <fullName>Master of Business Administration in Finance</fullName>
+                <default>false</default>
+                <label>Master of Business Administration in Finance</label>
+            </value>
+            <value>
+                <fullName>Master of Business Administration in Health care Management</fullName>
+                <default>false</default>
+                <label>Master of Business Administration in Health care Management</label>
+            </value>
+            <value>
+                <fullName>Master of Business Administration in Human Resource</fullName>
+                <default>false</default>
+                <label>Master of Business Administration in Human Resource</label>
+            </value>
+            <value>
+                <fullName>Master of Business Administration in Marketing</fullName>
+                <default>false</default>
+                <label>Master of Business Administration in Marketing</label>
+            </value>
+            <value>
+                <fullName>Master of Business Administration in Operations Management</fullName>
+                <default>false</default>
+                <label>Master of Business Administration in Operations Management</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Management Studies</fullName>
+                <default>false</default>
+                <label>Ph.D in Management Studies</label>
+            </value>
+            <value>
+                <fullName>Master of Business Administration</fullName>
+                <default>false</default>
+                <label>Master of Business Administration</label>
+            </value>
+            <value>
+                <fullName>Master of Business Administration in Banking and Insurance</fullName>
+                <default>false</default>
+                <label>Master of Business Administration in Banking and Insurance</label>
+            </value>
+            <value>
+                <fullName>Master of Business Administration in Entrepreneurship</fullName>
+                <default>false</default>
+                <label>Master of Business Administration in Entrepreneurship</label>
+            </value>
+            <value>
+                <fullName>Master of Business Administration in Strategic Leadership</fullName>
+                <default>false</default>
+                <label>Master of Business Administration in Strategic Leadership</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Biochemistry</fullName>
+                <default>false</default>
+                <label>Ph.D in Biochemistry</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Biochemistry and Microbiology</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Biochemistry and Microbiology</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Physiotherapy</fullName>
+                <default>false</default>
+                <label>Bachelor of Physiotherapy</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Biochemistry</fullName>
+                <default>false</default>
+                <label>Master of Science in Biochemistry</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Sports Science</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Sports Science</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Nutrition and Dietetics</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Nutrition and Dietetics</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Medical Laboratory Technology</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Medical Laboratory Technology</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Medical Radiology and Diagnostic Imaging</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Medical Radiology and Diagnostic Imaging</label>
+            </value>
+            <value>
+                <fullName>Intensive Certificate Course (ICC) in Laser Assisted Hatching and Embryo Biopsy</fullName>
+                <default>false</default>
+                <label>Intensive Certificate Course (ICC) in Laser Assisted Hatching and Embryo Biopsy</label>
+            </value>
+            <value>
+                <fullName>PGD in Clinical Embryology and Assisted Reproductive Technology</fullName>
+                <default>false</default>
+                <label>PGD in Clinical Embryology and Assisted Reproductive Technology</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Mathematics</fullName>
+                <default>false</default>
+                <label>Ph.D in Mathematics</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Microbiology</fullName>
+                <default>false</default>
+                <label>Ph.D in Microbiology</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Physics</fullName>
+                <default>false</default>
+                <label>Ph.D in Physics</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Statistics</fullName>
+                <default>false</default>
+                <label>Ph.D in Statistics</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Physics</fullName>
+                <default>false</default>
+                <label>Master of Science in Physics</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Bioinformatics, Statistics and Computer Science</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Bioinformatics, Statistics and Computer Science</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Biotechnology, Biochemistry, and Genetics</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Biotechnology, Biochemistry, and Genetics</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Mathematics, Statistics, and Computer Science</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Mathematics, Statistics, and Computer Science</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Microbiology, Chemistry, and Genetics</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Microbiology, Chemistry, and Genetics</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Physics, Chemistry, and Mathematics</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Physics, Chemistry, and Mathematics</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Physics, Mathematics, and Computer Science</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Physics, Mathematics, and Computer Science</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Biotechnology</fullName>
+                <default>false</default>
+                <label>Ph.D in Biotechnology</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Chemistry</fullName>
+                <default>false</default>
+                <label>Ph.D in Chemistry</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Library and Information Sciences</fullName>
+                <default>false</default>
+                <label>Ph.D in Library and Information Sciences</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Bioinformatics, Biology, Maths and Computer Science</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Bioinformatics, Biology, Maths and Computer Science</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Biology, Computer Science, and Mathematics</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Biology, Computer Science, and Mathematics</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Bioinformatics</fullName>
+                <default>false</default>
+                <label>Master of Science in Bioinformatics</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Biotechnology</fullName>
+                <default>false</default>
+                <label>Master of Science in Biotechnology</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Chemistry</fullName>
+                <default>false</default>
+                <label>Master of Science in Chemistry</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Mathematics</fullName>
+                <default>false</default>
+                <label>Master of Science in Mathematics</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Microbial Technology</fullName>
+                <default>false</default>
+                <label>Master of Science in Microbial Technology</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Bioinformatics and Statistics</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Bioinformatics and Statistics</label>
+            </value>
+            <value>
+                <fullName>Intensive Certificate Course (ICC) in Intra Cytoplasmic Sperm Injection (ICSI)</fullName>
+                <default>false</default>
+                <label>Intensive Certificate Course (ICC) in Intra Cytoplasmic Sperm Injection (ICSI)</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Architecture</fullName>
+                <default>false</default>
+                <label>Ph.D in Architecture</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Interior Design</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Interior Design</label>
+            </value>
+            <value>
+                <fullName>Master of Plan</fullName>
+                <default>false</default>
+                <label>Master of Plan</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Architecture</fullName>
+                <default>false</default>
+                <label>Bachelor of Architecture</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Design</fullName>
+                <default>false</default>
+                <label>Bachelor of Design</label>
+            </value>
+            <value>
+                <fullName>Master of Architecture</fullName>
+                <default>false</default>
+                <label>Master of Architecture</label>
+            </value>
+            <value>
+                <fullName>Ph.D in English</fullName>
+                <default>false</default>
+                <label>Ph.D in English</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Hindi</fullName>
+                <default>false</default>
+                <label>Ph.D in Hindi</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Kannada</fullName>
+                <default>false</default>
+                <label>Ph.D in Kannada</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Psychology</fullName>
+                <default>false</default>
+                <label>Ph.D in Psychology</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Journalism</fullName>
+                <default>false</default>
+                <label>Ph.D in Journalism</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Arts in English (Honors)</fullName>
+                <default>false</default>
+                <label>Bachelor of Arts in English (Honors)</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Arts in Journalism and Mass Communication</fullName>
+                <default>false</default>
+                <label>Bachelor of Arts in Journalism and Mass Communication</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Arts in Journalism, English and Psychology</fullName>
+                <default>false</default>
+                <label>Bachelor of Arts in Journalism, English and Psychology</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Arts in Political Science, Economics and Journalism</fullName>
+                <default>false</default>
+                <label>Bachelor of Arts in Political Science, Economics and Journalism</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Arts in Tourism, History and Journalism</fullName>
+                <default>false</default>
+                <label>Bachelor of Arts in Tourism, History and Journalism</label>
+            </value>
+            <value>
+                <fullName>Master of Arts in English</fullName>
+                <default>false</default>
+                <label>Master of Arts in English</label>
+            </value>
+            <value>
+                <fullName>Master of Arts in Journalism and Mass Communication</fullName>
+                <default>false</default>
+                <label>Master of Arts in Journalism and Mass Communication</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Psychology</fullName>
+                <default>false</default>
+                <label>Master of Science in Psychology</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Civil Engineering</fullName>
+                <default>false</default>
+                <label>Ph.D in Civil Engineering</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Civil Engineering</fullName>
+                <default>false</default>
+                <label>B. Tech in Civil Engineering</label>
+            </value>
+            <value>
+                <fullName>M. Tech in Computer Aided Structural Engineering</fullName>
+                <default>false</default>
+                <label>M. Tech in Computer Aided Structural Engineering</label>
+            </value>
+            <value>
+                <fullName>M. Tech in Construction Technology and Management</fullName>
+                <default>false</default>
+                <label>M. Tech in Construction Technology and Management</label>
+            </value>
+            <value>
+                <fullName>M. Tech in Transport Engineering and Management</fullName>
+                <default>false</default>
+                <label>M. Tech in Transport Engineering and Management</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Commerce</fullName>
+                <default>false</default>
+                <label>Bachelor of Commerce</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Commerce in Economics and Finance</fullName>
+                <default>false</default>
+                <label>Bachelor of Commerce in Economics and Finance</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Commerce in Innovation and Entrepreneurship</fullName>
+                <default>false</default>
+                <label>Bachelor of Commerce in Innovation and Entrepreneurship</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Commerce in Marketing and HR</fullName>
+                <default>false</default>
+                <label>Bachelor of Commerce in Marketing and HR</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Commerce Sanjaynagar</fullName>
+                <default>false</default>
+                <label>Bachelor of Commerce Sanjaynagar</label>
+            </value>
+            <value>
+                <fullName>Master of Commerce</fullName>
+                <default>false</default>
+                <label>Master of Commerce</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Commerce (Honors)</fullName>
+                <default>false</default>
+                <label>Bachelor of Commerce (Honors)</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Commerce in Accounting and Statistics</fullName>
+                <default>false</default>
+                <label>Bachelor of Commerce in Accounting and Statistics</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Commerce in Accounting and Taxation</fullName>
+                <default>false</default>
+                <label>Bachelor of Commerce in Accounting and Taxation</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Commerce in Banking and Insurance</fullName>
+                <default>false</default>
+                <label>Bachelor of Commerce in Banking and Insurance</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Commerce in Corporate Governance and Auditing</fullName>
+                <default>false</default>
+                <label>Bachelor of Commerce in Corporate Governance and Auditing</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Commerce</fullName>
+                <default>false</default>
+                <label>Ph.D in Commerce</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Economics</fullName>
+                <default>false</default>
+                <label>Ph.D in Economics</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Computer Applications</fullName>
+                <default>false</default>
+                <label>Bachelor of Computer Applications</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Cloud Computing and Big Data (Honors)</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Cloud Computing and Big Data (Honors)</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Cyber Security</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Cyber Security</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Multimedia and Animation</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Multimedia and Animation</label>
+            </value>
+            <value>
+                <fullName>Master of Computer Applications</fullName>
+                <default>false</default>
+                <label>Master of Computer Applications</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Computer Science</fullName>
+                <default>false</default>
+                <label>Master of Science in Computer Science</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Data Science</fullName>
+                <default>false</default>
+                <label>Master of Science in Data Science</label>
+            </value>
+            <value>
+                <fullName>Master of Science in Data Science and Artificial Intelligence</fullName>
+                <default>false</default>
+                <label>Master of Science in Data Science and Artificial Intelligence</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Science in Cloud Computing and Big Data</fullName>
+                <default>false</default>
+                <label>Bachelor of Science in Cloud Computing and Big Data</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Analytics</fullName>
+                <default>false</default>
+                <label>Ph.D in Analytics</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Computer Science and Applications</fullName>
+                <default>false</default>
+                <label>Ph.D in Computer Science and Applications</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Artificial Intelligence and Data Science</fullName>
+                <default>false</default>
+                <label>B. Tech in Artificial Intelligence and Data Science</label>
+            </value>
+            <value>
+                <fullName>M. Tech in Computer Science and Engineering (Part Time)</fullName>
+                <default>false</default>
+                <label>M. Tech in Computer Science and Engineering (Part Time)</label>
+            </value>
+            <value>
+                <fullName>B. Tech in CSE (IOT and Cybersecurity including Blockchain Technology)</fullName>
+                <default>false</default>
+                <label>B. Tech in CSE (IOT and Cybersecurity including Blockchain Technology)</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Computer Science and Engineering (Cybersecurity)</fullName>
+                <default>false</default>
+                <label>B. Tech in Computer Science and Engineering (Cybersecurity)</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Computer Science and Engineering (Data Science)</fullName>
+                <default>false</default>
+                <label>B. Tech in Computer Science and Engineering (Data Science)</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Computer Science and Engineering (IOT).</fullName>
+                <default>false</default>
+                <label>B. Tech in Computer Science and Engineering (IOT).</label>
+            </value>
+            <value>
+                <fullName>M. Tech in Computer Science and Engineering (Full Time)</fullName>
+                <default>false</default>
+                <label>M. Tech in Computer Science and Engineering (Full Time)</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Computer Science and Engineering</fullName>
+                <default>false</default>
+                <label>Ph.D in Computer Science and Engineering</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Computer Science and Engineering</fullName>
+                <default>false</default>
+                <label>B. Tech in Computer Science and Engineering</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Information Science and Engineering</fullName>
+                <default>false</default>
+                <label>B. Tech in Information Science and Engineering</label>
+            </value>
+            <value>
+                <fullName>M. Tech in Artificial Intelligence</fullName>
+                <default>false</default>
+                <label>M. Tech in Artificial Intelligence</label>
+            </value>
+            <value>
+                <fullName>M. Tech in Cyber Security</fullName>
+                <default>false</default>
+                <label>M. Tech in Cyber Security</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Computer Science and Engineering (Artificial Intelligence and Machine Learning)</fullName>
+                <default>false</default>
+                <label>B. Tech in Computer Science and Engineering (Artificial Intelligence and Machine Learning)</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Computer Science and Information Technology</fullName>
+                <default>false</default>
+                <label>B. Tech in Computer Science and Information Technology</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Computer Science and Systems Engineering</fullName>
+                <default>false</default>
+                <label>B. Tech in Computer Science and Systems Engineering</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Electrical and Electronics Engineering</fullName>
+                <default>false</default>
+                <label>Ph.D in Electrical and Electronics Engineering</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Electrical and Computer Engineering</fullName>
+                <default>false</default>
+                <label>B. Tech in Electrical and Computer Engineering</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Electrical and Electronics Engineering</fullName>
+                <default>false</default>
+                <label>B. Tech in Electrical and Electronics Engineering</label>
+            </value>
+            <value>
+                <fullName>M. Tech in Power and Energy Systems</fullName>
+                <default>false</default>
+                <label>M. Tech in Power and Energy Systems</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Electronics and Communication Engineering</fullName>
+                <default>false</default>
+                <label>Ph.D in Electronics and Communication Engineering</label>
+            </value>
+            <value>
+                <fullName>M. Tech in VLSI Design and Embedded Systems (Full Time)</fullName>
+                <default>false</default>
+                <label>M. Tech in VLSI Design and Embedded Systems (Full Time)</label>
+            </value>
+            <value>
+                <fullName>M. Tech in VLSI Design and Embedded Systems (Part Time)</fullName>
+                <default>false</default>
+                <label>M. Tech in VLSI Design and Embedded Systems (Part Time)</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Electronics and Communication Engineering</fullName>
+                <default>false</default>
+                <label>B. Tech in Electronics and Communication Engineering</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Electronics and Communication Engineering (Robotics and Automation)</fullName>
+                <default>false</default>
+                <label>B. Tech in Electronics and Communication Engineering (Robotics and Automation)</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Electronics and Computer Engineering</fullName>
+                <default>false</default>
+                <label>B. Tech in Electronics and Computer Engineering</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Robotics and Automation</fullName>
+                <default>false</default>
+                <label>B. Tech in Robotics and Automation</label>
+            </value>
+            <value>
+                <fullName>M. Tech in Digital Communication and Networking</fullName>
+                <default>false</default>
+                <label>M. Tech in Digital Communication and Networking</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Legal Studies</fullName>
+                <default>false</default>
+                <label>Ph.D in Legal Studies</label>
+            </value>
+            <value>
+                <fullName>Master of Law in Business and Corporate Law</fullName>
+                <default>false</default>
+                <label>Master of Law in Business and Corporate Law</label>
+            </value>
+            <value>
+                <fullName>Master of Law in Criminal Law</fullName>
+                <default>false</default>
+                <label>Master of Law in Criminal Law</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Arts, Bachelor of Legislative Law (Honors)</fullName>
+                <default>false</default>
+                <label>Bachelor of Arts, Bachelor of Legislative Law (Honors)</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Business Administration, Bachelor of Legislative Law (Honors)</fullName>
+                <default>false</default>
+                <label>Bachelor of Business Administration, Bachelor of Legislative Law (Honors)</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Business Administration in Branding and Advertisement</fullName>
+                <default>false</default>
+                <label>Bachelor of Business Administration in Branding and Advertisement</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Business Administration in New Venture Planning and Family Business Management</fullName>
+                <default>false</default>
+                <label>Bachelor of Business Administration in New Venture Planning and Family Business Management</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Business Administration (Entrepreneurship)</fullName>
+                <default>false</default>
+                <label>Bachelor of Business Administration (Entrepreneurship)</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Business Administration (Honors)</fullName>
+                <default>false</default>
+                <label>Bachelor of Business Administration (Honors)</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Business Administration in Business Analytics and Design Thinking</fullName>
+                <default>false</default>
+                <label>Bachelor of Business Administration in Business Analytics and Design Thinking</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Business Administration in Hospital and Health Care Management</fullName>
+                <default>false</default>
+                <label>Bachelor of Business Administration in Hospital and Health Care Management</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Business Administration in Talent Management and Marketing</fullName>
+                <default>false</default>
+                <label>Bachelor of Business Administration in Talent Management and Marketing</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Business Administrations in Banking and Finance</fullName>
+                <default>false</default>
+                <label>Bachelor of Business Administrations in Banking and Finance</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Business Administration</fullName>
+                <default>false</default>
+                <label>Bachelor of Business Administration</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Business Administration in Strategy and Leadership</fullName>
+                <default>false</default>
+                <label>Bachelor of Business Administration in Strategy and Leadership</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Mechanical Engineering</fullName>
+                <default>false</default>
+                <label>B. Tech in Mechanical Engineering</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Mechatronics Engineering</fullName>
+                <default>false</default>
+                <label>B. Tech in Mechatronics Engineering</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Mechanical Engineering</fullName>
+                <default>false</default>
+                <label>Ph.D in Mechanical Engineering</label>
+            </value>
+            <value>
+                <fullName>M. Tech in Machine Design</fullName>
+                <default>false</default>
+                <label>M. Tech in Machine Design</label>
+            </value>
+            <value>
+                <fullName>B. Tech in Bioelectronics Engineering</fullName>
+                <default>false</default>
+                <label>B. Tech in Bioelectronics Engineering</label>
+            </value>
+            <value>
+                <fullName>Master of Performing Arts in Carnatic Music</fullName>
+                <default>false</default>
+                <label>Master of Performing Arts in Carnatic Music</label>
+            </value>
+            <value>
+                <fullName>Master of Performing Arts</fullName>
+                <default>false</default>
+                <label>Master of Performing Arts</label>
+            </value>
+            <value>
+                <fullName>Diploma in Hindustani Vocals</fullName>
+                <default>false</default>
+                <label>Diploma in Hindustani Vocals</label>
+            </value>
+            <value>
+                <fullName>Diploma in Indology</fullName>
+                <default>false</default>
+                <label>Diploma in Indology</label>
+            </value>
+            <value>
+                <fullName>Diploma in Kathak</fullName>
+                <default>false</default>
+                <label>Diploma in Kathak</label>
+            </value>
+            <value>
+                <fullName>Diploma in Kuchipudi</fullName>
+                <default>false</default>
+                <label>Diploma in Kuchipudi</label>
+            </value>
+            <value>
+                <fullName>Diploma in Mohiniyattam</fullName>
+                <default>false</default>
+                <label>Diploma in Mohiniyattam</label>
+            </value>
+            <value>
+                <fullName>Diploma in Bharatanatyam</fullName>
+                <default>false</default>
+                <label>Diploma in Bharatanatyam</label>
+            </value>
+            <value>
+                <fullName>Diploma in Carnatic Vocals</fullName>
+                <default>false</default>
+                <label>Diploma in Carnatic Vocals</label>
+            </value>
+            <value>
+                <fullName>Master of Arts in Indology</fullName>
+                <default>false</default>
+                <label>Master of Arts in Indology</label>
+            </value>
+            <value>
+                <fullName>Certificate in Kuchipudi</fullName>
+                <default>false</default>
+                <label>Certificate in Kuchipudi</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Arts in Music, Dance and Theatre (Honors)</fullName>
+                <default>false</default>
+                <label>Bachelor of Arts in Music, Dance and Theatre (Honors)</label>
+            </value>
+            <value>
+                <fullName>Bachelor of Arts in Performing Arts, English and Psychology</fullName>
+                <default>false</default>
+                <label>Bachelor of Arts in Performing Arts, English and Psychology</label>
+            </value>
+            <value>
+                <fullName>Diploma in Natuvangam</fullName>
+                <default>false</default>
+                <label>Diploma in Natuvangam</label>
+            </value>
+            <value>
+                <fullName>Diploma in Odissi</fullName>
+                <default>false</default>
+                <label>Diploma in Odissi</label>
+            </value>
+            <value>
+                <fullName>Certificate in Bharatnatyam</fullName>
+                <default>false</default>
+                <label>Certificate in Bharatnatyam</label>
+            </value>
+            <value>
+                <fullName>Ph.D in Performing Arts</fullName>
+                <default>false</default>
+                <label>Ph.D in Performing Arts</label>
+            </value>
+            <value>
+                <fullName>Certificate in Mohiniyatam</fullName>
+                <default>false</default>
+                <label>Certificate in Mohiniyatam</label>
+            </value>
+            <value>
+                <fullName>Certificate in Odissi</fullName>
+                <default>false</default>
+                <label>Certificate in Odissi</label>
+            </value>
+            <value>
+                <fullName>Certificate in Kathak</fullName>
+                <default>false</default>
+                <label>Certificate in Kathak</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Electrical General Complaints</label>
+    <protected>false</protected>
+    <values>
+        <field>General_Complaints__c</field>
+        <value xsi:type="xsd:string">AC Not Working Properly,Bulb Is Not Working,Fan Not Working,Fan Regulator Broken,Plug Point Issue,Power Not Available In Plug Point,Switch Is Not Working</value>
+    </values>
+    <values>
+        <field>Hostel_Sub_Category__c</field>
+        <value xsi:type="xsd:string">Electrical</value>
+    </values>
+</CustomMetadata>

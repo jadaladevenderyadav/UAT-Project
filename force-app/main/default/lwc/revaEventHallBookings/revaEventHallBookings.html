@@ -1,0 +1,452 @@
+<template>
+  <lightning-card title="">
+     <!-- Spinner is shown when isLoading is true -->
+     <lightning-spinner if:true={isLoading} alternative-text="Loading..."></lightning-spinner>
+      <div class="slds-card__header-title slds-m-bottom_small slds-m-left_small slds-m-right_small slds-box slds-box_x-small backgroundCol">
+        Event Hall Booking form
+      </div>
+    <lightning-layout multiple-rows>
+      <!-- start date -->
+      <lightning-layout-item
+      size="12"
+      small-device-size="12"
+      medium-device-size="6"
+      large-device-size="6"
+      padding="horizontal-small"
+    >
+      <lightning-input
+        type="date"
+        name="startdate"
+        class="startdate"
+        label="Start Date"
+        value={selectedStartDate}
+        onchange={handleChange}
+        required
+      ></lightning-input>
+    </lightning-layout-item>
+
+      <!-- facility type -->
+
+     <lightning-layout-item
+        size="12"
+        small-device-size="12"
+        medium-device-size="6"
+        large-device-size="6"
+        padding="horizontal-small"
+      >
+        <lightning-combobox
+          type="picklist"
+          name="facilityType"
+          class="facilitytype"
+          label="Facility Type"
+          value={selectedFacilityType}
+          options={facilityLabTypeOptions}
+          onchange={handleChange}
+          disabled={isDisabled}
+          required
+        ></lightning-combobox>
+      </lightning-layout-item> 
+
+       <!-- start time -->
+       <lightning-layout-item
+       size="12"
+       small-device-size="12"
+       medium-device-size="6"
+       large-device-size="6"
+       padding="horizontal-small"
+     >
+       <lightning-combobox
+         type="picklist"
+         name="startTime"
+         class="startTime"
+         label="Start Time"
+         value={selectedStartTime}
+         options={filteredStartTimeSlots}
+         onchange={handleChange}
+         required
+       ></lightning-combobox>
+     </lightning-layout-item>
+
+      <!-- Building name -->
+      <lightning-layout-item
+        size="12"
+        small-device-size="12"
+        medium-device-size="6"
+        large-device-size="6"
+        padding="horizontal-small"
+      >
+        <lightning-combobox
+          type="picklist"
+          name="buildingNameName"
+          class="buildingNameName"
+          value={selectedBuildingName}
+          label="Building Name"
+          options={facilityBuildingNameOptions}
+          onchange={handleChange}
+          required
+          disabled={isDisabled}
+        ></lightning-combobox>
+      </lightning-layout-item>
+      
+      <!-- end date -->
+  
+       <lightning-layout-item
+       size="12"
+       small-device-size="12"
+       medium-device-size="6"
+       large-device-size="6"
+       padding="horizontal-small"
+     >
+       <lightning-input
+         type="date"
+         name="enddate"
+         class="enddate"
+         label="End Date"
+         value={selectedEndDate}
+         onchange={handleChange}
+         required
+       ></lightning-input>
+     </lightning-layout-item>
+
+      <!-- floor number -->
+      <lightning-layout-item
+        size="12"
+        small-device-size="12"
+        medium-device-size="6"
+        large-device-size="6"
+        padding="horizontal-small"
+      >
+        <lightning-combobox
+          type="picklist"
+          name="floorNumber"
+          class="floorNumber"
+          label="Floor Number"
+          value={selectedRoomName}
+          options={facilityFloorOptions}
+          onchange={handleChange}
+          required
+          disabled={isDisabled}
+        ></lightning-combobox>
+      </lightning-layout-item>
+
+       <!-- end time -->
+       <lightning-layout-item
+       size="12"
+       small-device-size="12"
+       medium-device-size="6"
+       large-device-size="6"
+       padding="horizontal-small"
+     >
+       <lightning-combobox
+         type="picklist"
+         name="endTime"
+         class="endTime"
+         label="End Time"
+         value={selectedEndTime}
+         options={filteredEndTimeSlots}
+         onchange={handleChange}
+         required
+       ></lightning-combobox>
+     </lightning-layout-item>
+
+      <!-- room number -->
+
+      <lightning-layout-item
+        size="12"
+        small-device-size="12"
+        medium-device-size="6"
+        large-device-size="6"
+        padding="horizontal-small"
+      >
+        <lightning-combobox
+          type="picklist"
+          name="roomNum"
+          class="RoomNum"
+          label="Room No"
+          value={selectedRoomNum}
+          options={facilityRoomNumOptions}
+          onchange={handleChange}
+          required
+          disabled={isDisabled}
+        ></lightning-combobox>
+      </lightning-layout-item>
+ 
+        <!-- room capacity -->
+        <lightning-layout-item
+        size="12"
+        small-device-size="12"
+        medium-device-size="6"
+        large-device-size="6"
+        padding="horizontal-small"
+      >
+        <template if:false={isCapacity}>
+          <lightning-input
+            type="text"
+            name="capacity"
+            class="capacity"
+            label="Capacity"
+            onchange={handleChange}
+            disabled
+            required
+          ></lightning-input>
+        </template>
+        <template if:true={isCapacity}>
+          <lightning-input
+            type="text"
+            name="capacity"
+            class="capacity"
+            label="Capacity"
+            value={capacity}
+            placeholder={computedPlaceholder}
+            onchange={handleChange}
+            disabled
+            required
+          ></lightning-input>
+        </template>
+      </lightning-layout-item>
+
+      <!-- facility name -->
+      <lightning-layout-item
+        size="12"
+        small-device-size="12"
+        medium-device-size="6"
+        large-device-size="6"
+        padding="horizontal-small"
+      >
+        <lightning-combobox
+          type="picklist"
+          name="facilityName"
+          class="facilityName"
+          label="Facility"
+          value={selectedFacilityName}
+          options={facilityNameOptions}
+          onchange={handleChange}
+          required
+          disabled={isDisabled}
+        ></lightning-combobox>
+      </lightning-layout-item>
+
+
+      <!-- room reason -->
+      <lightning-layout-item
+        size="12"
+        small-device-size="12"
+        medium-device-size="6"
+        large-device-size="6"
+        padding="horizontal-small"
+      >
+        <lightning-input
+          type="text"
+          name="Reason"
+          class="Reason"
+          label="Reason for booking"
+          value={bookingReason}
+          onchange={handleChange}
+          required
+        ></lightning-input>
+      </lightning-layout-item>
+
+
+      <!-- Available facility -->
+      <lightning-layout-item
+      size="12"
+      small-device-size="12"
+      medium-device-size="6"
+      large-device-size="6"
+      padding="horizontal-small"
+    >
+      <lightning-combobox
+        type="picklist"
+        name="additionalFacility"
+        class="additionalFacility"
+        label="Amenities available in the room required for the Event"
+        value={additionalFacility}
+        onchange={handleChange}
+        options={additionalAmenitiesOptions}
+        required
+        disabled={isDisabled}
+      ></lightning-combobox>
+      <template lwc:if={selectedValues}>
+        <div class="selected-item-container">
+          <template for:each={selectedValues} for:item="value">
+            <div key={value}>
+              <lightning-badge
+                label={value}
+                icon-name="utility:close"
+                onclick={handleRemove}
+                class="badge"
+                data-value={value}
+                icon-position="end"
+              >
+              </lightning-badge>
+            </div>
+          </template>
+        </div>
+      </template>
+    </lightning-layout-item>
+
+
+          <!-- Additional facility -->
+          <!--  <lightning-layout-item
+            size="12"
+            small-device-size="12"
+            medium-device-size="4"
+            large-device-size="4"
+            padding="horizontal-small"
+          >
+            <lightning-combobox
+              type="picklist"
+              name="additionalFacility2"
+              class="additionalFacility2"
+              label="Additional Amenities required for the Event "
+              value={additionalFacility2}
+              onchange={handleChange}
+              options={additionalAmenitiesOptions2}
+              required
+            ></lightning-combobox>
+            <template lwc:if={selectedValues2}>
+              <div class="selected-item-container">
+                <template for:each={selectedValues2} for:item="value">
+                  <div key={value}>
+                    <lightning-badge
+                      label={value}
+                      icon-name="utility:close"
+                      onclick={handleRemove2}
+                      class="badge"
+                      data-value={value}
+                      icon-position="end"
+                    >
+                    </lightning-badge>
+                  </div>
+                </template>
+              </div>
+            </template>
+          </lightning-layout-item>
+
+
+         Additional facility quantity desc
+        <lightning-layout-item
+          size="12"
+          small-device-size="12"
+          medium-device-size="4"
+          large-device-size="4"
+          padding="horizontal-small"
+        >
+          <lightning-input
+            type="text"
+            name="quantityOfAdditionalAmenities"
+            class="quantityOfAdditionalAmenities"
+            label="Quantity of additional amenities required"
+            placeholder="Please enter the quantity of additional amenities"
+            value={quantityOfAdditionalAmenities}
+            onchange={handleChange}
+            required
+          ></lightning-input>
+        </lightning-layout-item>  -->
+    
+
+      <!-- others -->
+      <!-- <template if:true={isAmenitiesRequired}> -->
+        <lightning-layout-item
+          size="12"
+          small-device-size="12"
+          medium-device-size="6"
+          large-device-size="6"
+          padding="horizontal-small"
+        >
+
+        <lightning-textarea
+            name="description"
+            class="description"
+            label="Description"
+            value={descriptions}
+            onchange={handleChange}>
+          </lightning-textarea>
+          <!-- <lightning-input
+            type="textarea"
+            name="description"
+            class="description"
+            label="Description"
+            value={descriptions}
+            onchange={handleChange}
+          ></lightning-input> -->
+        </lightning-layout-item>
+      <!-- </template> -->
+
+      
+
+
+      <!-- button blocks -->
+      
+    </lightning-layout>
+  </lightning-card>
+  <div class="slds-m-around_medium"></div>
+  <lightning-card  class="">
+    <div class="slds-card__header-title slds-m-bottom_small slds-m-left_small slds-m-right_small slds-box slds-box_x-small backgroundCol">
+      Additional Amenities
+    </div>
+        <div class="slds-p-around_x-small">
+            <lightning-layout>
+                
+                <lightning-layout-item size="6" small-device-size="3" medium-device-size="4" large-device-size="4" padding="horizontal-small">
+                    <div class="slds-text-title_bold">Additional Amenities</div>
+                </lightning-layout-item>
+                <lightning-layout-item size="3" small-device-size="1" medium-device-size="3" large-device-size="3" padding="horizontal-small">
+                    <div class="slds-text-title_bold">Quantity</div>
+                </lightning-layout-item>
+                <lightning-layout-item  size="1" small-device-size="1" medium-device-size="1" large-device-size="1" padding="horizontal-small">
+                    <div class="slds-text-title_bold">Action</div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <template for:each={rows} for:item="row" for:index="index">
+                <lightning-layout key={row.id} class="slds-m-top_small">
+                    
+                    <lightning-layout-item size="6" small-device-size="3" medium-device-size="4" large-device-size="4" padding="horizontal-small">
+                        <lightning-combobox
+                            type="picklist"
+                            name="additionalFacility2"
+                            class="additionalFacility2"
+                            placeholder="Additional Amenities"
+                            value={row.additionalFacility2}
+                            onchange={handleChange}
+                            options={additionalAmenitiesOptions2}
+                            data-id={row.id}
+                        ></lightning-combobox>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="3" small-device-size="1" medium-device-size="3" large-device-size="3" padding="horizontal-small">
+                        <lightning-input
+                            type="number"
+                            name="quantity"
+                            class="quantity"
+                            placeholder="Quantity"
+                            value={row.quantity}
+                            onchange={handleChange}
+                            data-id={row.id}
+                        ></lightning-input>
+                    </lightning-layout-item>
+                    <lightning-layout-item  size="1" small-device-size="1" medium-device-size="1" large-device-size="1" padding="horizontal-small" style="padding-top:19px">
+                        <lightning-button-icon icon-name="utility:delete" alternative-text="Delete" variant="destructive" data-index={index} onclick={deleteRow}></lightning-button-icon>
+                        <lightning-button-icon icon-name="utility:add" alternative-text="Add Row" variant="destructive" data-index={index} onclick={addRow}></lightning-button-icon>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </template>
+        </div>
+
+        <lightning-layout-item
+        style="
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 30px;
+          float: right;
+        "
+      >
+        <button class="cancelButton" onclick={handleCancelClick}>
+          Cancel
+        </button>
+        <button class="saveButton" onclick={handleSave} disabled={isLoading}>Save</button>
+      </lightning-layout-item>
+    </lightning-card>
+
+</template>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PGCET_FEE_Master</fullName>
+    <columns>NAME</columns>
+    <columns>Program_Batch__c</columns>
+    <columns>School_Name__c</columns>
+    <columns>Quota__c</columns>
+    <columns>Program_Type__c</columns>
+    <columns>IsActive__c</columns>
+    <columns>Enrolment_Year__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Quota__c</field>
+        <operation>equals</operation>
+        <value>PGCET</value>
+    </filters>
+    <label>PGCET FEE Master</label>
+</ListView>

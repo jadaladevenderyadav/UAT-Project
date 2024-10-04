@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>guest_house_room_cancellation_gh_manager</label>
+    <protected>false</protected>
+    <values>
+        <field>Template_Field__c</field>
+        <value xsi:type="xsd:string">guest_house_manager_name,name_of_the_guest,booking_id,Cancellation_Id</value>
+    </values>
+    <values>
+        <field>Template_ID__c</field>
+        <value xsi:type="xsd:string">guest_house_room_cancellation_gh_manager</value>
+    </values>
+    <values>
+        <field>WhatsApp_msg_count__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+</CustomMetadata>

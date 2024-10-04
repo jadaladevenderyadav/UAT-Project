@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Applicant_Document_Type__c</fullName>
+    <description>Various document types that can be uploaded by an applicant</description>
+    <inlineHelpText>Various document types that can be uploaded by an applicant</inlineHelpText>
+    <label>Applicant Document Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Passport Photo</fullName>
+                <default>false</default>
+                <label>Passport Photo</label>
+            </value>
+            <value>
+                <fullName>10th/SSLC Marks Card</fullName>
+                <default>false</default>
+                <label>10th/SSLC Marks Card</label>
+            </value>
+            <value>
+                <fullName>12th/PUC Marks Card</fullName>
+                <default>false</default>
+                <label>12th/PUC Marks Card</label>
+            </value>
+            <value>
+                <fullName>Degree Marks Card</fullName>
+                <default>false</default>
+                <label>Degree Marks Card</label>
+            </value>
+            <value>
+                <fullName>Degree Certificate</fullName>
+                <default>false</default>
+                <label>Degree Certificate</label>
+            </value>
+            <value>
+                <fullName>Transfer Certificate</fullName>
+                <default>false</default>
+                <label>Transfer Certificate</label>
+            </value>
+            <value>
+                <fullName>Migration Certificate</fullName>
+                <default>false</default>
+                <label>Migration Certificate</label>
+            </value>
+            <value>
+                <fullName>Study Certificate</fullName>
+                <default>false</default>
+                <label>Study Certificate</label>
+            </value>
+            <value>
+                <fullName>Caste Certificate</fullName>
+                <default>false</default>
+                <label>Caste Certificate</label>
+            </value>
+            <value>
+                <fullName>Income Certificate</fullName>
+                <default>false</default>
+                <label>Income Certificate</label>
+            </value>
+            <value>
+                <fullName>A Certificate</fullName>
+                <default>false</default>
+                <label>A Certificate</label>
+            </value>
+            <value>
+                <fullName>Award for Gallantry</fullName>
+                <default>false</default>
+                <label>Award for Gallantry</label>
+            </value>
+            <value>
+                <fullName>B Certificate</fullName>
+                <default>false</default>
+                <label>B Certificate</label>
+            </value>
+            <value>
+                <fullName>Bonafide letter</fullName>
+                <default>false</default>
+                <label>Bonafide letter</label>
+            </value>
+            <value>
+                <fullName>C Certificate</fullName>
+                <default>false</default>
+                <label>C Certificate</label>
+            </value>
+            <value>
+                <fullName>Degree Marks Card - Semesterwise</fullName>
+                <default>false</default>
+                <label>Degree Marks Card - Semesterwise</label>
+            </value>
+            <value>
+                <fullName>JEE Score Card</fullName>
+                <default>false</default>
+                <label>JEE Score Card</label>
+            </value>
+            <value>
+                <fullName>Killed/Disabled in action</fullName>
+                <default>false</default>
+                <label>Killed/Disabled in action</label>
+            </value>
+            <value>
+                <fullName>NATA Score Card</fullName>
+                <default>false</default>
+                <label>NATA Score Card</label>
+            </value>
+            <value>
+                <fullName>NEET Score Card</fullName>
+                <default>false</default>
+                <label>NEET Score Card</label>
+            </value>
+            <value>
+                <fullName>PUC ID card</fullName>
+                <default>false</default>
+                <label>PUC ID card</label>
+            </value>
+            <value>
+                <fullName>RDC Certificate</fullName>
+                <default>false</default>
+                <label>RDC Certificate</label>
+            </value>
+            <value>
+                <fullName>Retired</fullName>
+                <default>false</default>
+                <label>Retired</label>
+            </value>
+            <value>
+                <fullName>REVA ID Card</fullName>
+                <default>false</default>
+                <label>REVA ID Card</label>
+            </value>
+            <value>
+                <fullName>Sibling</fullName>
+                <default>false</default>
+                <label>Sibling</label>
+            </value>
+            <value>
+                <fullName>Single Girl Child</fullName>
+                <default>false</default>
+                <label>Single Girl Child</label>
+            </value>
+            <value>
+                <fullName>Specially Abled</fullName>
+                <default>false</default>
+                <label>Specially Abled</label>
+            </value>
+            <value>
+                <fullName>Sports Highest Level Certificate</fullName>
+                <default>false</default>
+                <label>Sports Highest Level Certificate</label>
+            </value>
+            <value>
+                <fullName>TSC Certificate</fullName>
+                <default>false</default>
+                <label>TSC Certificate</label>
+            </value>
+            <value>
+                <fullName>Twin</fullName>
+                <default>false</default>
+                <label>Twin</label>
+            </value>
+            <value>
+                <fullName>Widows</fullName>
+                <default>false</default>
+                <label>Widows</label>
+            </value>
+            <value>
+                <fullName>Working</fullName>
+                <default>false</default>
+                <label>Working</label>
+            </value>
+            <value>
+                <fullName>YEP Certificate</fullName>
+                <default>false</default>
+                <label>YEP Certificate</label>
+            </value>
+            <value>
+                <fullName>PO Signed by Applicant</fullName>
+                <default>false</default>
+                <label>PO Signed by Applicant</label>
+            </value>
+            <value>
+                <fullName>PO Fully Signed</fullName>
+                <default>false</default>
+                <label>PO Fully Signed</label>
+            </value>
+            <value>
+                <fullName>Provisional Offer Letter</fullName>
+                <default>false</default>
+                <label>Provisional Offer Letter</label>
+            </value>
+            <value>
+                <fullName>CET Allotment Letter</fullName>
+                <default>false</default>
+                <label>CET Allotment Letter</label>
+            </value>
+            <value>
+                <fullName>COMEDK Allotment Letter</fullName>
+                <default>false</default>
+                <label>COMEDK Allotment Letter</label>
+            </value>
+            <value>
+                <fullName>MPhil Certificate</fullName>
+                <default>false</default>
+                <label>MPhil Certificate</label>
+            </value>
+            <value>
+                <fullName>NET</fullName>
+                <default>false</default>
+                <label>NET</label>
+            </value>
+            <value>
+                <fullName>SET</fullName>
+                <default>false</default>
+                <label>SET</label>
+            </value>
+            <value>
+                <fullName>KSET</fullName>
+                <default>false</default>
+                <label>KSET</label>
+            </value>
+            <value>
+                <fullName>Applicant Photo</fullName>
+                <default>false</default>
+                <label>Applicant Photo</label>
+            </value>
+            <value>
+                <fullName>PG Degree MarksCard</fullName>
+                <default>false</default>
+                <label>PG Degree MarksCard</label>
+            </value>
+            <value>
+                <fullName>PD Degree Certificate</fullName>
+                <default>false</default>
+                <label>PD Degree Certificate</label>
+            </value>
+            <value>
+                <fullName>Degree Marks Card - Consolidated</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Degree Marks Card - Consolidated</label>
+            </value>
+            <value>
+                <fullName>PUC/Intermediate/12th Marks Card</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PUC/Intermediate/12th Marks Card</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

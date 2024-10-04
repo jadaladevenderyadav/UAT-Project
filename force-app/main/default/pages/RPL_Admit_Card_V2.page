@@ -1,0 +1,74 @@
+<apex:page standardController="Rpl_Student_Registration_Drive__c" renderAs="pdf" applyHtmlTag="false" showHeader="false" applyBodyTag="false">
+
+<html>
+<head>
+<style>
+table{
+    background:grey;
+}
+table.greyGridTable {
+  border: 2px solid #FFFFFF;
+  width: 75%;
+  height: 203px;
+  border-collapse: collapse;
+  font-weight:600;
+}
+table.greyGridTable td, table.greyGridTable th {
+  border: 0px solid #FFFFFF;
+  padding: 5px 9px;
+}
+table.greyGridTable tbody td {
+  font-size: 20px;
+}
+table.greyGridTable tfoot td {
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+ <table class="greyGridTable">
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>:  {!Rpl_Student_Registration_Drive__c.Rpl_Student_Registration__r.Name}</td>
+            </tr>
+            <tr>
+                <td>SRN</td>
+                <td>:   {!Rpl_Student_Registration_Drive__c.Rpl_Student_Registration__r.Rpl_SRN__c}</td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>:   {!Rpl_Student_Registration_Drive__c.Rpl_Student_Registration__r.Rpl_Gender__c}</td>
+            </tr>
+            <tr>
+                <td>Program</td>
+                <td>: {!Rpl_Student_Registration_Drive__c.Rpl_Student_Registration__r.Rpl_Branch_Name__c}</td>
+            </tr>
+            <tr>
+                <td>Semester</td>
+                <td>: {!Rpl_Student_Registration_Drive__c.Rpl_Student_Registration__r.Rpl_Acitve_Semester__c}</td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>: {!Rpl_Student_Registration_Drive__c.Rpl_Student_Registration__r.Rpl_Contact_No__c}</td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td>: {!Rpl_Student_Registration_Drive__c.Rpl_Student_Registration__r.Rpl_Personal_Mail_ID__c}</td>
+            </tr>
+            <tr>
+                <td>Non-Appeared</td>
+                <td>: {!ROUND(Rpl_Student_Registration_Drive__c.Rpl_Student_Registration__r.Rpl_Count_of_non_appeared_drives__c, 0)}</td>
+            </tr>
+            <tr>
+                <td>Offer Count</td>
+                <td>:  {!ROUND(Rpl_Student_Registration_Drive__c.Rpl_Student_Registration__r.Rpl_Offer_Count__c, 0)}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+
+</html>
+</apex:page>

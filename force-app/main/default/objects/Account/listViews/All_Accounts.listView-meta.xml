@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Program_Code__c</columns>
+    <columns>hed__School_Code__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>contains</operation>
+        <value>Compu</value>
+    </filters>
+    <label>All Accounts</label>
+    <sharedTo>
+        <group>Admission_Admin_Team</group>
+        <group>Exam_Admin_Team</group>
+        <group>Finance_Admin_Team</group>
+        <group>ICT_Admin_Team</group>
+        <group>IQAC_Admin_Team</group>
+        <group>RO_Admin_Team</group>
+    </sharedTo>
+</ListView>

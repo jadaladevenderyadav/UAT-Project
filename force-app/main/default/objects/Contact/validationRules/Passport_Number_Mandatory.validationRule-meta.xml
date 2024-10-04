@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Passport_Number_Mandatory</fullName>
+    <active>false</active>
+    <description>Passport Number mandatory when Nationality is other than Indian</description>
+    <errorConditionFormula>AND(
+Record_Type_Name__c = &quot;Student&quot;,
+NOT(ISPICKVAL( Nationality__c ,&apos;Indian&apos;)),
+NOT(ISBLANK(TEXT(Nationality__c))),			
+ISBLANK( Passport_Number__c))</errorConditionFormula>
+    <errorDisplayField>Passport_Number__c</errorDisplayField>
+    <errorMessage>Passport Number is mandatory if Nationality is other than Indian</errorMessage>
+</ValidationRule>

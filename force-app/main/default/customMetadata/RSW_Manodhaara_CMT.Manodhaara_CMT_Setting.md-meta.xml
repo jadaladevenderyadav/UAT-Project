@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Manodhaara CMT Setting</label>
+    <protected>false</protected>
+    <values>
+        <field>RSW_Day_End_Time__c</field>
+        <value xsi:type="xsd:string">4:30 PM</value>
+    </values>
+    <values>
+        <field>RSW_End_Time__c</field>
+        <value xsi:type="xsd:dateTime">2023-09-25T11:30:00.000Z</value>
+    </values>
+    <values>
+        <field>RSW_Manodhaara_App_Info__c</field>
+        <value xsi:type="xsd:string">REVA Centre for Well-being is a student support service offered by REVA University in Bengaluru. Our mission is to help students to transform themselves to achieve their best physical and
+mental health through various services that cater to their needs. At Manodhaara, we understand that students face a variety of challenges that can impact their overall health and well-being, not
+just their academic and social growth. That&apos;s why we take a holistic approach to wellness, focusing on the mind, body, and spirit. Our goal is to help students achieve balance and harmony in
+their lives so that they can thrive academically and personally.</value>
+    </values>
+    <values>
+        <field>RSW_Start_Day_Time__c</field>
+        <value xsi:type="xsd:string">9:00 AM</value>
+    </values>
+    <values>
+        <field>RSW_Start_Time__c</field>
+        <value xsi:type="xsd:dateTime">2023-09-25T04:30:00.000Z</value>
+    </values>
+    <values>
+        <field>RSW_Time_Slot__c</field>
+        <value xsi:type="xsd:string">10:00 AM-11:00 AM</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Applicant_do_not_allow_to_reassign</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(AND( ISCHANGED(Applicant__c), NOT(ISBLANK(PRIORVALUE(Applicant__c)))), TRUE, FALSE )</errorConditionFormula>
+    <errorDisplayField>Applicant__c</errorDisplayField>
+    <errorMessage>Applicant Should not be re-assign</errorMessage>
+</ValidationRule>

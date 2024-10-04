@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pardot_Tracking_Code__c</fullName>
+    <description>Paste the Pardot Tracking Code of this Campaign.</description>
+    <inlineHelpText>Capture the Pardot Tracking Code of this Campaign from Pardot level.</inlineHelpText>
+    <label>Pardot Tracking Code</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>5</visibleLines>
+</CustomField>

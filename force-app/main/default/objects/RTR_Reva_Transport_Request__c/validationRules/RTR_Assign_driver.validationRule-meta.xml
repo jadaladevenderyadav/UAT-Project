@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RTR_Assign_driver</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(RTR_Assign_driver__c)),
+  NOT(REGEX(RTR_Assign_driver__c, &quot;^[a-zA-Z .]+$&quot;))
+)</errorConditionFormula>
+    <errorMessage>Only alphabetic characters are allowed in this field.</errorMessage>
+</ValidationRule>

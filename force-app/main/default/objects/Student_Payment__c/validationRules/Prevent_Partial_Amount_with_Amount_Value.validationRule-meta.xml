@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Partial_Amount_with_Amount_Value</fullName>
+    <active>true</active>
+    <errorConditionFormula>Partial_Booking_Fee__c &gt; Amount__c</errorConditionFormula>
+    <errorDisplayField>Partial_Booking_Fee__c</errorDisplayField>
+    <errorMessage>Partial Amount should be less than the Actual Amount.</errorMessage>
+</ValidationRule>

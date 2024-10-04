@@ -1,0 +1,65 @@
+<template>
+    <template if:true={modifiedData}>
+        <lightning-card title="Document Upload Table">
+            <div class="slds-table_header-fixed_container">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-m-around_medium">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="text-align:center; font-weight:bold; font-size:larger;">S.No</th>
+                            <th scope="col" style="text-align:center; font-weight:bold; font-size:larger;">Document Name
+                            </th>
+                            <th scope="col" style="text-align:center; font-weight:bold; font-size:larger;">Upload /
+                                Preview
+                            </th>
+                            <th scope="col" style="text-align:center; font-weight:bold; font-size:larger;">Submit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={modifiedData} for:item="row">
+                            <tr key={row.id} class="slds-hint-parent">
+                                <td style="text-align:center; font-weight:bold; font-size:larger; padding: 0.5rem;">
+                                    {row.id}
+                                </td>
+                                <td style="text-align:center; font-weight:bold; font-size:larger; padding: 0.5rem;">
+                                    {row.documentName}</td>
+                                <td style="text-align:center; padding: 0.5rem;">
+                                    <lightning-button label="Upload" title="Upload Document" variant="brand"
+                                        onclick={handleUploadClick} data-row-id={row.id}
+                                        class="slds-m-horizontal_auto"></lightning-button>
+                                    <lightning-button if:true={row.fileData} label="Preview" title="View Document"
+                                        variant="brand" onclick={handlePreviewClick} data-row-id={row.id}
+                                        style="margin:4px"
+                                        class="slds-m-horizontal_auto slds-text-link"></lightning-button>
+                                    <!-- <div data-row-id={row.id}></div> -->
+                                </td>
+
+                                <td style="text-align:center; padding: 0.5rem;">
+                                    <lightning-button label="Submit" title="Submit Document" variant="brand"
+                                        onclick={handleSubmitClick} data-row-id={row.id} disabled={row.isButtonDisabled}
+                                        class="slds-m-horizontal_auto"></lightning-button>
+                                </td>
+                                <td class="slds-hide">
+                                    <input type="file" accept=".pdf" onchange={handleFileChange} data-row-id={row.id} />
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+                <div class="slds-text-align_center">
+                    <lightning-button variant="brand" label="NEXT" onclick={handleSaveButton}
+                        class="slds-m-left_x-small"></lightning-button>
+                </div>
+
+
+            </div>
+        </lightning-card>
+    </template>
+    <template if:true={isSpinner}>
+        <div class="slds-is-relative">
+            <section class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="loading..." variant="brand"></lightning-spinner>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" style="width: 60%; height:50%; margin:auto"></div>
+        </div>
+    </template>
+</template>

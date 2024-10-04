@@ -1,0 +1,23 @@
+<template>
+    <lightning-spinner lwc:if={boolSpinner} alternative-text="Loading" size="large"></lightning-spinner>
+    <template lwc:if={dataAvl}>
+        <template lwc:if={strMessage}>
+            <c-banner-messages if:true={showError} error={strMessage}></c-banner-messages>
+            <c-banner-messages if:true={showWarning} warning={strMessage}></c-banner-messages>
+        </template>
+          <div class="header">
+        <template lwc:if={showBooking}>
+            <template lwc:if={roomTypeValues}>
+                <lightning-combobox name="Quarters Type" label="Quarters Type" value={roomType} options={roomTypeValues}
+                    onchange={handleRoomType}></lightning-combobox>
+                    <lightning-input type="date" label="Joining Date" value={joiningDate} 
+                    onchange={handleJoiningDateChange}></lightning-input>
+                <lightning-button class="slds-m-top_small" variant="brand" label="Apply For Quarters"
+                    title="Apply For Quarters" onclick={handleQuarters} disabled={disableQuarters}>
+                </lightning-button>
+            </template>
+        </template>
+        </div>
+    </template>
+    
+</template>

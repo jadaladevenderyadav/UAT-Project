@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Board__c</fullName>
+    <label>Board</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AKTU UP</fullName>
+                <default>false</default>
+                <label>AKTU UP</label>
+            </value>
+            <value>
+                <fullName>Aligarh Muslim University</fullName>
+                <default>false</default>
+                <label>Aligarh Muslim University</label>
+            </value>
+            <value>
+                <fullName>Andhra Pradesh Board Of Intermediate Education</fullName>
+                <default>false</default>
+                <label>Andhra Pradesh Board Of Intermediate Education</label>
+            </value>
+            <value>
+                <fullName>Andhra Pradesh Board Of Secondary Education</fullName>
+                <default>false</default>
+                <label>Andhra Pradesh Board Of Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Assam Board Of Secondary Education</fullName>
+                <default>false</default>
+                <label>Assam Board Of Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Assam Higher Secondary Education Council</fullName>
+                <default>false</default>
+                <label>Assam Higher Secondary Education Council</label>
+            </value>
+            <value>
+                <fullName>Banasthali Vidyapith</fullName>
+                <default>false</default>
+                <label>Banasthali Vidyapith</label>
+            </value>
+            <value>
+                <fullName>Bihar Intermediate Education Council</fullName>
+                <default>false</default>
+                <label>Bihar Intermediate Education Council</label>
+            </value>
+            <value>
+                <fullName>Bihar School Examination Board</fullName>
+                <default>false</default>
+                <label>Bihar School Examination Board</label>
+            </value>
+            <value>
+                <fullName>Board of Technical Education</fullName>
+                <default>false</default>
+                <label>Board of Technical Education</label>
+            </value>
+            <value>
+                <fullName>Board of Vocational Higher Secondary Education</fullName>
+                <default>false</default>
+                <label>Board of Vocational Higher Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Cambridge University</fullName>
+                <default>false</default>
+                <label>Cambridge University</label>
+            </value>
+            <value>
+                <fullName>Central Board Of Secondary Education (CBSE)</fullName>
+                <default>false</default>
+                <label>Central Board Of Secondary Education (CBSE)</label>
+            </value>
+            <value>
+                <fullName>Chhatisgarh Board Of Secondary Education</fullName>
+                <default>false</default>
+                <label>Chhatisgarh Board Of Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Council Of Indian School Certificate Examination (CISCE/ICSE)</fullName>
+                <default>false</default>
+                <label>Council Of Indian School Certificate Examination (CISCE/ICSE)</label>
+            </value>
+            <value>
+                <fullName>Dayalbagh Educational Institute</fullName>
+                <default>false</default>
+                <label>Dayalbagh Educational Institute</label>
+            </value>
+            <value>
+                <fullName>Directorate Of Army Education</fullName>
+                <default>false</default>
+                <label>Directorate Of Army Education</label>
+            </value>
+            <value>
+                <fullName>Goa Board Of Secondary And Higher Secondary Education</fullName>
+                <default>false</default>
+                <label>Goa Board Of Secondary And Higher Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Gujarat Secondary And Higher Secondary Education Board</fullName>
+                <default>false</default>
+                <label>Gujarat Secondary And Higher Secondary Education Board</label>
+            </value>
+            <value>
+                <fullName>Haryana Board Of Education</fullName>
+                <default>false</default>
+                <label>Haryana Board Of Education</label>
+            </value>
+            <value>
+                <fullName>Himachal Pradesh Board Of School Education</fullName>
+                <default>false</default>
+                <label>Himachal Pradesh Board Of School Education</label>
+            </value>
+            <value>
+                <fullName>IGSE Board</fullName>
+                <default>false</default>
+                <label>IGSE Board</label>
+            </value>
+            <value>
+                <fullName>International Baccalaureate</fullName>
+                <default>false</default>
+                <label>International Baccalaureate</label>
+            </value>
+            <value>
+                <fullName>J And K State Board Of School Education</fullName>
+                <default>false</default>
+                <label>J And K State Board Of School Education</label>
+            </value>
+            <value>
+                <fullName>Jharkhand Academic Council</fullName>
+                <default>false</default>
+                <label>Jharkhand Academic Council</label>
+            </value>
+            <value>
+                <fullName>Karnataka Board Of The Pre-University Education</fullName>
+                <default>false</default>
+                <label>Karnataka Board Of The Pre-University Education</label>
+            </value>
+            <value>
+                <fullName>Karnataka Secondary Education Examination Board</fullName>
+                <default>false</default>
+                <label>Karnataka Secondary Education Examination Board</label>
+            </value>
+            <value>
+                <fullName>Kerala Board Of Higher Secondary Education</fullName>
+                <default>false</default>
+                <label>Kerala Board Of Higher Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Kerala Board of Public Examinations</fullName>
+                <default>false</default>
+                <label>Kerala Board of Public Examinations</label>
+            </value>
+            <value>
+                <fullName>Kerala Secondary Education Examination Board</fullName>
+                <default>false</default>
+                <label>Kerala Secondary Education Examination Board</label>
+            </value>
+            <value>
+                <fullName>Madhya Pradesh Board Of Secondary Education</fullName>
+                <default>false</default>
+                <label>Madhya Pradesh Board Of Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Maharastra State Board Of Secondary And Higher Secondary Education</fullName>
+                <default>false</default>
+                <label>Maharastra State Board Of Secondary And Higher Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Manipur Board Of Secondary Education</fullName>
+                <default>false</default>
+                <label>Manipur Board Of Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Manipur Council Of Higher Secondary Education</fullName>
+                <default>false</default>
+                <label>Manipur Council Of Higher Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Meghalaya Board Of School Education</fullName>
+                <default>false</default>
+                <label>Meghalaya Board Of School Education</label>
+            </value>
+            <value>
+                <fullName>Mizoram Board Of School Education</fullName>
+                <default>false</default>
+                <label>Mizoram Board Of School Education</label>
+            </value>
+            <value>
+                <fullName>Nagaland Board Of School Education</fullName>
+                <default>false</default>
+                <label>Nagaland Board Of School Education</label>
+            </value>
+            <value>
+                <fullName>National Institute Of Open Schooling</fullName>
+                <default>false</default>
+                <label>National Institute Of Open Schooling</label>
+            </value>
+            <value>
+                <fullName>Not specified/Any Other</fullName>
+                <default>false</default>
+                <label>Not specified/Any Other</label>
+            </value>
+            <value>
+                <fullName>Orissa Board Of Secondary Education</fullName>
+                <default>false</default>
+                <label>Orissa Board Of Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Orissa Council Of Higher Secondary Education Bhubaneswar</fullName>
+                <default>false</default>
+                <label>Orissa Council Of Higher Secondary Education Bhubaneswar</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Punjab School Education Board</fullName>
+                <default>false</default>
+                <label>Punjab School Education Board</label>
+            </value>
+            <value>
+                <fullName>Rajasthan Board Of Secondary Education</fullName>
+                <default>false</default>
+                <label>Rajasthan Board Of Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Rashtriya Sanskrit Sansthan</fullName>
+                <default>false</default>
+                <label>Rashtriya Sanskrit Sansthan</label>
+            </value>
+            <value>
+                <fullName>Tamil Nadu Board Of Higher Secondary Education</fullName>
+                <default>false</default>
+                <label>Tamil Nadu Board Of Higher Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Tamil Nadu Board Of Secondary Education</fullName>
+                <default>false</default>
+                <label>Tamil Nadu Board Of Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Telangana Board Of Intermediate Education</fullName>
+                <default>false</default>
+                <label>Telangana Board Of Intermediate Education</label>
+            </value>
+            <value>
+                <fullName>Telangana Board of Secondary Education</fullName>
+                <default>false</default>
+                <label>Telangana Board of Secondary Education</label>
+            </value>
+            <value>
+                <fullName>Tripura Board Of Secondary Education</fullName>
+                <default>false</default>
+                <label>Tripura Board Of Secondary Education</label>
+            </value>
+            <value>
+                <fullName>U.P. Board Of High School And Intermediate Education</fullName>
+                <default>false</default>
+                <label>U.P. Board Of High School And Intermediate Education</label>
+            </value>
+            <value>
+                <fullName>Uttarakhand Board of School Education</fullName>
+                <default>false</default>
+                <label>Uttarakhand Board of School Education</label>
+            </value>
+            <value>
+                <fullName>Uttaranchal Shiksha Evam Pariksha Parishad</fullName>
+                <default>false</default>
+                <label>Uttaranchal Shiksha Evam Pariksha Parishad</label>
+            </value>
+            <value>
+                <fullName>West Bengal Board Of Madarsa Education</fullName>
+                <default>false</default>
+                <label>West Bengal Board Of Madarsa Education</label>
+            </value>
+            <value>
+                <fullName>West Bengal Board Of Secondary Education</fullName>
+                <default>false</default>
+                <label>West Bengal Board Of Secondary Education</label>
+            </value>
+            <value>
+                <fullName>West Bengal Council Of Higher Secondary Education</fullName>
+                <default>false</default>
+                <label>West Bengal Council Of Higher Secondary Education</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

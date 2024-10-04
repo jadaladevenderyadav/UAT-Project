@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smt_Progress_Made_Summit_Particulars__c</fullName>
+    <inlineHelpText>Indicate the count of particulars where progress has been made.</inlineHelpText>
+    <label>Progress Made Summit Particulars</label>
+    <summaryFilterItems>
+        <field>smt_Summit_Particular__c.smt_Actual_Percentage_Achieved__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </summaryFilterItems>
+    <summaryForeignKey>smt_Summit_Particular__c.smt_Summit_Section__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

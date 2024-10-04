@@ -1,0 +1,234 @@
+<aura:component controller="ATT_StudentAttendance_Ctrl"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global">
+    <aura:attribute type="string" name="ProgName" />
+    <aura:attribute type="string" name="BatchRecType" />
+    <aura:attribute type="string" name="GroupRecType" />
+    <aura:attribute type="string" name="SemNo" />
+    <aura:attribute type="integer" name="TCompleted" />
+    <aura:attribute type="integer" name="TAttended" />
+    <aura:attribute type="integer" name="TPercentage" />
+    <aura:attribute type="string" name="SecName" />
+    <aura:attribute type="Map" name="MapFaculty" />
+    <aura:attribute name="Spinner" type="boolean" default="false" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:if isTrue="{!v.Spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>
+
+    <div class="attendance-wrapper">
+
+        <div class="attendance-heading">
+            <b>ATTENDANCE</b>
+        </div>
+        <div class="title">
+
+            <div class="title-info">Course Details: &nbsp;&nbsp;{!v.ProgName}</div>
+            <div class="title-info"><b>Section:&nbsp;&nbsp;{!v.SecName}</b>&nbsp;&nbsp; <b>Semester :
+                    &nbsp;&nbsp;{!v.SemNo}</b></div>
+        </div>
+        <!-- <div style="font-size:large"><b>{!v.ProgName}</b></div>
+           
+                <aura:if isTrue="{!not(empty(v.SemNo))}">
+                    <b>Semester : {!v.SemNo}</b>
+                </aura:if>                
+            <div class="slds-size_1-of-6">
+                
+            </div>
+            <div class="slds-size_1-of-6">
+            </div>
+            <div class="slds-size_1-of-6">
+            </div>
+            <div class="slds-size_1-of-6">
+            </div>
+            <div class="slds-size_1-of-6" style="text-align:right;">
+                <aura:if isTrue="{!not(empty(v.SecName))}">
+                    <b>Section: {!v.SecName}</b>
+                </aura:if>
+            </div>            
+        </div>        
+        <br/> -->
+        <aura:if isTrue="{!v.MapFaculty.length == 0}">
+            <div style="text-align:center;color:red; font-size:13px;font-weight:700">
+                No data to show
+            </div>
+
+        </aura:if>
+        <div class="desktop-view">
+            <aura:if isTrue="{!v.MapFaculty.length > 0}">
+                <table class="slds-table slds-table--bordered table-attendance">
+                    <thead>
+                        <tr class="slds-text-heading--label">
+                            <th class="slds-is-resizable" scope="col">
+                                COURSE CODE</th>
+                            <th class="slds-is-resizable category-table" scope="col">
+                                CATEGORY</th>
+                            <th class="slds-is-resizable" scope="col">
+                                SUBJECT</th>
+                            <th class="slds-is-resizable batch-table" scope="col">
+                                BATCH/GROUP</th>
+                            <th class="slds-is-resizable" scope="col">
+                                PROFESSOR</th>
+                            <th class="slds-is-resizable attendance-table-class-completed" scope="col">
+                                TOTAL CLASSES COMPLETED</th>
+                            <th class="slds-is-resizable attendance-table-class-attended" scope="col">
+                                TOTAL CLASSES ATTENDED</th>
+                            <th class="slds-is-resizable" scope="col">
+                                ATTENDENCE PERCENTAGE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <aura:iteration items="{!v.MapFaculty}" var="Cour" indexVar="key">
+                            <tr>
+                                <td data-label="Course Code" class="slds-is-resizable">
+                                    {!Cour.value.courseCode}
+                                </td>
+                                <td data-label="Category" class="slds-is-resizable category-table">
+                                    {!Cour.value.Category}
+                                </td>
+                                <td data-label="Subject" class="slds-is-resizable">
+                                    {!Cour.value.CourseOfferingName}
+                                </td>
+                                <td data-label="Batch/Group" class="slds-is-resizable batch-table">
+                                    <aura:if isTrue="{!Cour.value.RecType == v.BatchRecType}">
+                                        Batch {!Cour.value.BatchNumber}
+                                    </aura:if>
+                                    <aura:if isTrue="{!Cour.value.RecType == v.GroupRecType}">
+                                        Group {!Cour.value.GroupNume}
+                                    </aura:if>
+                                </td>
+                                <td data-label="Professor" class="slds-is-resizable">
+                                    {!Cour.value.facultyName}</td>
+                                <td data-label="Total Classes Completed" class="slds-is-resizable attendance-table-class-completed">
+                                    {!Cour.value.TotalClassCom}</td>
+                                <td data-label="Total Classes Attended" class="slds-is-resizable attendance-table-class-attended">
+                                    {!Cour.value.TotalClassAtt}</td>
+                                <td data-label="Attendance Percentage" class="slds-is-resizable">
+                                    <aura:if isTrue="{!not(empty(Cour.value.TotalPercentage))}">
+                                        {!Cour.value.TotalPercentage}%
+                                    </aura:if>
+                                </td>
+                            </tr>
+
+                        
+                        </aura:iteration>
+                        <tr class="slds-is-resizable">
+                            <td>
+                                Total</td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                {!v.TCompleted}</td>
+                            <td>
+                                {!v.TAttended}</td>
+                            <td>
+                                <aura:if isTrue="{!not(empty(v.TPercentage))}">
+                                    <lightning:formattedNumber value="{!v.TPercentage}" maximumFractionDigits="2" />%
+                                </aura:if>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aura:if>
+        </div>
+        <div class="mobile-view">
+            <aura:iteration items="{!v.MapFaculty}" var="Cour">
+                <div indexVar="key" class="tile-css">
+            <div class="slds-grid slds-wrap pad-around">
+                <div class="slds-col slds-size_5-of-12">
+                    <div class="font-size"><strong>COURSE CODE</strong></div>
+                </div>
+                <div class="slds-col slds-size_7-of-12 text-align-right">
+                    <p>{!Cour.value.courseCode}</p>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-wrap pad-around">
+                <div class="slds-col slds-size_5-of-12">
+                    <div class="font-size"><strong>CATEGORY</strong></div>
+                </div>
+                <div class="slds-col slds-size_7-of-12 text-align-right">
+                    <p>{!Cour.value.Category}</p>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-wrap pad-around">
+                <div class="slds-col slds-size_5-of-12">
+                    <div class="font-size"><strong>SUBJECT</strong></div>
+                </div>
+                <div class="slds-col slds-size_7-of-12 text-align-right">
+                    <p>{!Cour.value.CourseOfferingName}</p>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-wrap pad-around">
+                <div class="slds-col slds-size_5-of-12">
+                    <div class="font-size"><strong>BATCH/GROUP</strong></div>
+                </div>
+                <div class="slds-col slds-size_7-of-12 text-align-right">
+                    <p> <aura:if isTrue="{!Cour.value.RecType == v.BatchRecType}">
+                        Batch {!Cour.value.BatchNumber}
+                    </aura:if>
+                    <aura:if isTrue="{!Cour.value.RecType == v.GroupRecType}">
+                        Group {!Cour.value.GroupNume}
+                    </aura:if></p>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-wrap pad-around">
+                <div class="slds-col slds-size_5-of-12">
+                    <div class="font-size"><strong>PROFESSOR</strong></div>
+                </div>
+                <div class="slds-col slds-size_7-of-12 text-align-right">
+                    <p>{!Cour.value.facultyName}</p>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-wrap pad-around">
+                <div class="slds-col slds-size_5-of-12">
+                    <div class="font-size"><strong>CLASSES COMPLETED</strong></div>
+                </div>
+                <div class="slds-col slds-size_7-of-12 text-align-right">
+                    <p>{!Cour.value.TotalClassCom}</p>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-wrap pad-around">
+                <div class="slds-col slds-size_5-of-12">
+                    <div class="font-size"><strong>CLASSES ATTENDED</strong></div>
+                </div>
+                <div class="slds-col slds-size_7-of-12 text-align-right">
+                    <p>{!Cour.value.TotalClassAtt}</p>
+                </div>
+            </div>
+
+            <div class="slds-grid slds-wrap pad-around">
+                <div class="slds-col slds-size_5-of-12">
+                    <div class="font-size"><strong>ATTENDENCE PERCENTAGE</strong></div>
+                </div>
+                <div class="slds-col slds-size_7-of-12 text-align-right">
+                    <p><aura:if isTrue="{!not(empty(Cour.value.TotalPercentage))}">
+                        {!Cour.value.TotalPercentage}%
+                    </aura:if>
+                    </p>
+                </div>
+            </div>
+            </div>
+        </aura:iteration>
+
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,353 @@
+<template>
+
+    <template if:true={isLab} >
+    <!-- <template if:false={isfacilityTpe}> -->
+    <lightning-card title="Classroom/Laboratory booking form" >
+    
+    <lightning-layout multiple-rows calss="landingForm" >
+    <!-- facility type -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    <lightning-combobox
+    type="picklist"
+    name="facilityType"
+    class="facilitytype"
+    label="Facility Type"
+    value={selectedFacilityType}
+    options={facilityLabTypeOptions}
+    onchange={handleChange}
+    required
+    ></lightning-combobox>
+    </lightning-layout-item>
+    
+    <!-- IA Exam hall -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    
+    <lightning-input
+    type="Checkbox"
+    name="iaExamHall"
+    class="iaExamHall"
+    label="IA Exam hall"
+    onchange={handleChange}
+ 
+    ></lightning-input>
+    
+    </lightning-layout-item>
+    
+    <!-- Building name -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    <lightning-combobox
+    type="picklist"
+    name="buildingNameName"
+    class="buildingNameName"
+    value={selectedBuildingName}
+    label="Building Name"
+    options={facilityBuildingNameOptions}
+    onchange={handleChange}
+    required
+    ></lightning-combobox>
+    
+    </lightning-layout-item>  
+    
+    <!-- floor number -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    
+    <lightning-combobox
+    type="picklist"
+    name="floorNumber"
+    class="floorNumber"
+    label="Floor Number"
+    value={selectedRoomName}
+    options={facilityFloorOptions}
+    onchange={handleChange}
+    required
+    ></lightning-combobox>
+    
+    </lightning-layout-item>
+    
+    
+    <!-- room number -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    <lightning-combobox
+    type="picklist"
+    name="roomNum"
+    class="RoomNum"
+    label="Room No"
+    value={selectedRoomNum}
+    options={facilityRoomNumOptions}
+    onchange={handleChange}
+    required
+    ></lightning-combobox>
+    </lightning-layout-item>
+    
+    
+    <!-- facility name -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    <lightning-combobox
+    type="picklist"
+    name="facilityName"
+    class="facilityName"
+    label="Facility"
+    value={selectedFacilityName}
+    options={facilityNameOptions}
+    onchange={handleChange}
+    required
+    ></lightning-combobox>
+    </lightning-layout-item>
+    
+    <!-- button blocks -->
+    <lightning-layout-item style="width:100%;display:flex;justify-content: center;align-items: center; margin:30px;float:right">
+    <button class="cancelButton" onclick={handleCancelClick}>Cancel</button>
+    <button class="saveButton" onclick={handleSave}>Allocate</button>
+    </lightning-layout-item>
+    </lightning-layout>
+    
+    </lightning-card>
+    <!-- </template> -->   
+    </template>
+    
+    
+    <template if:false={isLab}>
+    <!-- <template if:true={isfacilityTpe}> -->
+    <lightning-card title="Event Hall Booking form">
+    
+    <lightning-layout multiple-rows>
+    <!-- facility type -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    <lightning-combobox
+    type="picklist"
+    name="facilityType"
+    class="facilitytype"
+    label="Facility Type"
+    value={selectedFacilityType}
+    options={facilityLabTypeOptions}
+    onchange={handleChange}
+    required
+    
+    ></lightning-combobox>
+    </lightning-layout-item> 
+    
+    <!-- IA Exam hall -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    
+    <lightning-input
+    type="Checkbox"
+    name="iaExamHall"
+    class="iaExamHall"
+    label="IA Exam hall"
+    onchange={handleChange}
+   
+    ></lightning-input>
+    
+    </lightning-layout-item>
+    
+    <!-- Building name -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    <lightning-combobox
+    type="picklist"
+    name="buildingNameName"
+    class="buildingNameName"
+    value={selectedBuildingName}
+    label="Building Name"
+    options={facilityBuildingNameOptions}
+    onchange={handleChange}
+    required
+    ></lightning-combobox>
+    
+    </lightning-layout-item>  
+    
+    <!-- start date -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    
+    <lightning-input
+    type="date"
+    name="startdate"
+    class="startdate"
+    label="Start Date"
+    value={selectedStartDate}
+    onchange={handleChange}
+    required
+    ></lightning-input>
+    </lightning-layout-item>
+    
+    <!-- floor number -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    
+    <lightning-combobox
+    type="picklist"
+    name="floorNumber"
+    class="floorNumber"
+    label="Floor Number"
+    value={selectedRoomName}
+    options={facilityFloorOptions}
+    onchange={handleChange}
+    required
+    ></lightning-combobox>
+    
+    </lightning-layout-item>
+    
+    <!-- end date -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    <lightning-combobox
+    type="picklist"
+    name="startTime"
+    class="startTime"
+    label="Start Time"
+    value={selectedStartTime}
+    options={filteredStartTimeSlots}
+    onchange={handleChange}
+    required
+    ></lightning-combobox>
+    
+    </lightning-layout-item>
+    
+    <!-- room number -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    <lightning-combobox
+    type="picklist"
+    name="roomNum"
+    class="RoomNum"
+    label="Room No"
+    value={selectedRoomNum}
+    options={facilityRoomNumOptions}
+    onchange={handleChange}
+    required
+    ></lightning-combobox>
+    </lightning-layout-item>
+    
+    <!-- strat time -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    
+    <lightning-input
+    type="date"
+    name="enddate"
+    class="enddate"
+    label="End Date"
+    value={selectedEndDate}
+    onchange={handleChange}
+    required
+    ></lightning-input>
+    </lightning-layout-item>
+    
+    <!-- facility name -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    <lightning-combobox
+    type="picklist"
+    name="facilityName"
+    class="facilityName"
+    label="Facility"
+    value={selectedFacilityName}
+    options={facilityNameOptions}
+    onchange={handleChange}
+    required
+    ></lightning-combobox>
+    </lightning-layout-item>
+    
+    <!-- end time -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    
+    <lightning-combobox
+    type="picklist"
+    name="endTime"
+    class="endTime"
+    label="End Time"
+    value={selectedEndTime}
+    options={filteredEndTimeSlots}
+    onchange={handleChange}
+    required
+    ></lightning-combobox>
+    </lightning-layout-item>
+    
+    <!-- room reason -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    
+    <lightning-input
+    type="text"
+    name="Reason"
+    class="Reason"
+    label="Reason for booking"
+    value={bookingReason}
+    onchange={handleChange}
+    required
+    ></lightning-input>
+    
+    </lightning-layout-item>
+    
+    
+    <!-- additional facility -->
+    <!-- additional facility -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    <template if:false={isCapacity}>
+    <lightning-input
+    type="text"
+    name="capacity"
+    class="capacity"
+    label="Capacity"
+    onchange={handleChange}
+    disabled
+    required
+    ></lightning-input>
+    
+    </template>
+    <template if:true={isCapacity}>
+    <lightning-input
+    type="text"
+    name="capacity"
+    class="capacity"
+    label="Capacity"
+    value={capacity}
+    placeholder={computedPlaceholder}
+    onchange={handleChange}
+    disabled
+    required
+    ></lightning-input>
+    </template>
+    </lightning-layout-item>
+    
+    
+    <!-- capacity -->
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    <lightning-combobox
+    type="picklist"
+    name="additionalFacility"
+    class="additionalFacility"
+    label="Additional Ammenities Required"
+    value={additionalFacility}
+    onchange={handleChange}
+    options={additionalAmenitiesOptions}
+    required
+    ></lightning-combobox>
+    
+    </lightning-layout-item>
+    
+    
+    <!-- others -->
+    <template if:true={isAmenitiesRequired}>
+    <lightning-layout-item size="12" small-device-size="12" medium-device-size="6" large-device-size="6" padding="horizontal-small">
+    <lightning-input
+    type="text"
+    name="description"
+    class="description"
+    label="Description"
+    value={descriptions}
+    onchange={handleChange}
+    required
+    ></lightning-input>
+    </lightning-layout-item>
+    
+    </template>
+    
+    <!-- button blocks -->
+    <lightning-layout-item style="width:100%;display:flex;justify-content: center;align-items: center; margin:30px;float:right">
+    <button class="cancelButton" onclick={handleCancelClick}>Cancel</button>
+    <button class="saveButton" onclick={handleSave}>Allocate</button>
+    </lightning-layout-item>
+    </lightning-layout>
+    
+    </lightning-card>
+    <!-- </template> -->
+    </template>
+  
+  
+  
+  
+    </template>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manual_Entry_Student_Requisition_Modify</fullName>
+    <active>true</active>
+    <errorConditionFormula>!Student_Requisition_Master__r.Manual_Entry__c &amp;&amp; ISCHANGED( Amount__c )</errorConditionFormula>
+    <errorMessage>You are not authorized to change the Amount..!!</errorMessage>
+</ValidationRule>

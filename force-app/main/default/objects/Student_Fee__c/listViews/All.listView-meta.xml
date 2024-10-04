@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Contact__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Program_Batch__c</columns>
+    <columns>Application_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>Actual_Program_Fee__c</columns>
+    <columns>Scholarship__c</columns>
+    <columns>Concession__c</columns>
+    <columns>Premium__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Calculated_Total_Amount__c</columns>
+    <columns>Amount_Paid__c</columns>
+    <columns>Amount_Pending__c</columns>
+    <columns>Calculated_Amount_Pending__c</columns>
+    <columns>Due_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Fee_Type__c</field>
+        <operation>equals</operation>
+        <value>Hostel Fee</value>
+    </filters>
+    <label>All</label>
+</ListView>

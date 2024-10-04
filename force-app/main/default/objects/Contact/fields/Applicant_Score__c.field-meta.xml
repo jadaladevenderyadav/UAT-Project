@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Applicant_Score__c</fullName>
+    <description>Calculates the Applicant&apos;s Score based on various Parameters</description>
+    <externalId>false</externalId>
+    <formula>Lead_Score_on_Contact__c   +  IF( Application_Fee_Paid__c , 10, 5)+  IF(  HasOptedOutOfEmail , -1, 0)
++  IF(   DoNotCall , -1, 0)+  IF(    hed__SMS_Opt_Out__c , -1, 0)+  Follow_Up_Task_Score_on_Contact__c + 
+IF(  ISPICKVAL( Disposition__c , &apos;No Response&apos;) , -1, 0)+ pi__score__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Specifies the Applicant&apos;s Score</inlineHelpText>
+    <label>Applicant Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

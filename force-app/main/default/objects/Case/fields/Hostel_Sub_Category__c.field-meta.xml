@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hostel_Sub_Category__c</fullName>
+    <label>Hostel Sub Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Hostel_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Application Issue</fullName>
+                <default>false</default>
+                <label>Application Issue</label>
+            </value>
+            <value>
+                <fullName>Carpentry</fullName>
+                <default>false</default>
+                <label>Carpentry</label>
+            </value>
+            <value>
+                <fullName>Civil</fullName>
+                <default>false</default>
+                <label>Civil</label>
+            </value>
+            <value>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+                <label>Electrical</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>Laundry</fullName>
+                <default>false</default>
+                <label>Laundry</label>
+            </value>
+            <value>
+                <fullName>Medical Centre</fullName>
+                <default>false</default>
+                <label>Medical Centre</label>
+            </value>
+            <value>
+                <fullName>Mess</fullName>
+                <default>false</default>
+                <label>Mess</label>
+            </value>
+            <value>
+                <fullName>Network Speed</fullName>
+                <default>false</default>
+                <label>Network Speed</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Password Issue</fullName>
+                <default>false</default>
+                <label>Password Issue</label>
+            </value>
+            <value>
+                <fullName>Pest Control</fullName>
+                <default>false</default>
+                <label>Pest Control</label>
+            </value>
+            <value>
+                <fullName>Plumbing</fullName>
+                <default>false</default>
+                <label>Plumbing</label>
+            </value>
+            <value>
+                <fullName>Room Cleaning</fullName>
+                <default>false</default>
+                <label>Room Cleaning</label>
+            </value>
+            <value>
+                <fullName>QR Code Issue</fullName>
+                <default>false</default>
+                <label>QR Code Issue</label>
+            </value>
+            <value>
+                <fullName>Vending Machine</fullName>
+                <default>false</default>
+                <label>Vending Machine</label>
+            </value>
+            <value>
+                <fullName>Washing Machine</fullName>
+                <default>false</default>
+                <label>Washing Machine</label>
+            </value>
+            <value>
+                <fullName>Wifi</fullName>
+                <default>false</default>
+                <label>Wifi</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <valueName>Carpentry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <valueName>Civil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <valueName>Electrical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <valueName>Plumbing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <valueName>Application Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <valueName>IT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <valueName>Network Speed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <valueName>Password Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <valueName>Wifi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housekeeping</controllingFieldValue>
+            <valueName>Laundry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housekeeping</controllingFieldValue>
+            <valueName>Pest Control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housekeeping</controllingFieldValue>
+            <valueName>Room Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food</controllingFieldValue>
+            <valueName>Mess</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vending Machine</controllingFieldValue>
+            <valueName>Vending Machine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washing Machine</controllingFieldValue>
+            <valueName>Washing Machine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Centre</controllingFieldValue>
+            <valueName>Medical Centre</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food Booking</controllingFieldValue>
+            <valueName>QR Code Issue</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

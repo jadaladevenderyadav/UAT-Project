@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Achievements</fullName>
+    <columns>NAME</columns>
+    <columns>Achiever__c</columns>
+    <columns>Achievement__c</columns>
+    <columns>Details__c</columns>
+    <columns>Approved_by_Admin__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Alumni_Activities__c.Achievements</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Achievements</label>
+</ListView>

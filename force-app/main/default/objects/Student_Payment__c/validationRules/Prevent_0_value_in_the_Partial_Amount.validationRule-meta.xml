@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_0_value_in_the_Partial_Amount</fullName>
+    <active>false</active>
+    <description>This rule will prevent user to enter Partial Amount as 0</description>
+    <errorConditionFormula>Partial_Booking_Fee__c = 0</errorConditionFormula>
+    <errorDisplayField>Partial_Booking_Fee__c</errorDisplayField>
+    <errorMessage>Please enter amount greater than 0</errorMessage>
+</ValidationRule>

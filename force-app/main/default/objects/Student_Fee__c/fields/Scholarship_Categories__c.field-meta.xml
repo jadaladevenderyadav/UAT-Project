@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scholarship_Categories__c</fullName>
+    <label>Scholarship Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>REVA CET Scholarship</fullName>
+                <default>false</default>
+                <label>REVA CET Scholarship</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>ICSE/CBSE Merit</fullName>
+                <default>false</default>
+                <label>ICSE/CBSE Merit</label>
+            </value>
+            <value>
+                <fullName>REVA to REVA</fullName>
+                <default>false</default>
+                <label>REVA to REVA</label>
+            </value>
+            <value>
+                <fullName>State Board Merit</fullName>
+                <default>false</default>
+                <label>State Board Merit</label>
+            </value>
+            <value>
+                <fullName>REVA Merit</fullName>
+                <default>false</default>
+                <label>REVA Merit</label>
+            </value>
+            <value>
+                <fullName>Sports</fullName>
+                <default>false</default>
+                <label>Sports</label>
+            </value>
+            <value>
+                <fullName>NCC</fullName>
+                <default>false</default>
+                <label>NCC</label>
+            </value>
+            <value>
+                <fullName>Defence/Paramilitary</fullName>
+                <default>false</default>
+                <label>Defence/Paramilitary</label>
+            </value>
+            <value>
+                <fullName>Police Service</fullName>
+                <default>false</default>
+                <label>Police Service</label>
+            </value>
+            <value>
+                <fullName>Special Scholarship</fullName>
+                <default>false</default>
+                <label>Special Scholarship</label>
+            </value>
+            <value>
+                <fullName>Early Decision Benefit</fullName>
+                <default>false</default>
+                <label>Early Decision Benefit</label>
+            </value>
+            <value>
+                <fullName>Entrance Exam Based Scholarship</fullName>
+                <default>false</default>
+                <label>Entrance Exam Based Scholarship</label>
+            </value>
+            <value>
+                <fullName>Referral</fullName>
+                <default>false</default>
+                <label>Referral</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

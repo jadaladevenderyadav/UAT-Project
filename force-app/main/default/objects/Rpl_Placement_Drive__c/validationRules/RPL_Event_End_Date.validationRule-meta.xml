@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RPL_Event_End_Date</fullName>
+    <active>false</active>
+    <description>Event end date should not be in past</description>
+    <errorConditionFormula>IF( Rpl_Event_End_Date__c &lt;  Rpl_Event_Date__c || Rpl_Event_End_Date__c &lt; TODAY(), TRUE, FALSE )</errorConditionFormula>
+    <errorDisplayField>Rpl_Event_End_Date__c</errorDisplayField>
+    <errorMessage>The event end date cannot be less than event start date or in past</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disable_Joining_Date</fullName>
+    <active>false</active>
+    <description>Joining Date can be entered once status is booked only</description>
+    <errorConditionFormula>OR(
+    AND(
+        ISPICKVAL(Status__c, &quot;Booked&quot;),
+        ISBLANK(Reva_Hostel_JoiningDate__c)
+    ),
+    AND(
+        NOT(ISPICKVAL(Status__c, &quot;Booked&quot;)),
+        NOT(ISBLANK(Reva_Hostel_JoiningDate__c))
+    )
+)</errorConditionFormula>
+    <errorMessage>Joining Date must be filled when the amount is paid</errorMessage>
+</ValidationRule>

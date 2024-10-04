@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Birthday_Is_Today__c</fullName>
+    <description>checking that birthdate is equals to today or not</description>
+    <formula>IF(AND(MONTH(Birthdate) = MONTH(TODAY()), DAY(Birthdate) = DAY(TODAY())), TRUE, FALSE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Birthday Is Today</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

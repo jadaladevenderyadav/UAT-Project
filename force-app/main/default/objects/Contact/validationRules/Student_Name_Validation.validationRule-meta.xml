@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student_Name_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				  ($Profile.Name&lt;&gt;&apos;RO Profile&apos; &amp;&amp;  $Profile.Name&lt;&gt;&apos;System Administrator&apos;  &amp;&amp;  $Profile.Name &lt;&gt; &apos;Additional Registrar&apos;),
+						OR(
+									ISCHANGED(Salutation),
+							  ISCHANGED(FirstName),
+							  ISCHANGED(MiddleName),
+							  ISCHANGED(LastName)
+								 ))</errorConditionFormula>
+    <errorMessage>You don&apos;t have access to change the Name. Please Contact RO Office.</errorMessage>
+</ValidationRule>

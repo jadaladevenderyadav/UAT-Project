@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Home_Work_picklist__c</fullName>
+    <label>Home Work</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Physical activity</fullName>
+                <default>false</default>
+                <label>Physical activity</label>
+            </value>
+            <value>
+                <fullName>Food tracking</fullName>
+                <default>false</default>
+                <label>Food tracking</label>
+            </value>
+            <value>
+                <fullName>Sleep tracking</fullName>
+                <default>false</default>
+                <label>Sleep tracking</label>
+            </value>
+            <value>
+                <fullName>Journalling</fullName>
+                <default>false</default>
+                <label>Journalling</label>
+            </value>
+            <value>
+                <fullName>Zen Art</fullName>
+                <default>false</default>
+                <label>Zen Art</label>
+            </value>
+            <value>
+                <fullName>Colour exercises</fullName>
+                <default>false</default>
+                <label>Colour exercises</label>
+            </value>
+            <value>
+                <fullName>Breathing exercise</fullName>
+                <default>false</default>
+                <label>Breathing exercise</label>
+            </value>
+            <value>
+                <fullName>Exercise</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Exercise</label>
+            </value>
+            <value>
+                <fullName>Therapy</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Therapy</label>
+            </value>
+            <value>
+                <fullName>Yoga</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Yoga</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Counselors_cant_edit_few_Lead_fields</fullName>
+    <active>true</active>
+    <description>Fields: Lead Status, Email and Mobile should not be editable by the Counselors</description>
+    <errorConditionFormula>(ISCHANGED(Status)
+|| ISCHANGED(Email)
+|| ISCHANGED(MobilePhone)
+|| ISCHANGED(Country_Code__c)
+)&amp;&amp;
+($Profile.Name = &apos;Counselor&apos;)</errorConditionFormula>
+    <errorMessage>You don&apos;t have access to edit the Lead Status, Email and Mobile fields. Please contact Admissions Team.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Used_on_Application__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field will be set when an Applicant does the payment against that application using this coupon code.</description>
+    <label>Used on Application</label>
+    <referenceTo>hed__Application__c</referenceTo>
+    <relationshipLabel>Coupons</relationshipLabel>
+    <relationshipName>Coupons</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Block notification to student</label>
+    <protected>false</protected>
+    <values>
+        <field>Dlt_Content_Id__c</field>
+        <value xsi:type="xsd:string">1007317568118180554</value>
+    </values>
+    <values>
+        <field>SMS_Name__c</field>
+        <value xsi:type="xsd:string">Block notification to student</value>
+    </values>
+    <values>
+        <field>SMS_Template_Long__c</field>
+        <value xsi:type="xsd:string">Dear {#var#}, Please be informed that we have not received confirmation of your attendance for {#var#} placement drive. As a result your registration is currently Blocked. Contact CDC to get the status changed. REVA University</value>
+    </values>
+    <values>
+        <field>SMS_Template__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Sender__c</field>
+        <value xsi:type="xsd:string">REVAUN</value>
+    </values>
+    <values>
+        <field>Templated_Id__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Unicode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

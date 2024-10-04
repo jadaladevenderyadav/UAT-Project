@@ -1,0 +1,35 @@
+.image-container {
+    text-align: center;
+}
+
+.thumbnail {
+    cursor: pointer;
+    max-width: 100px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.thumbnail:hover {
+    border-color: #666;
+}
+
+.image-preview-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 80vh; /* Limits the height of the image preview to 80% of the viewport height */
+    overflow: auto; /* Adds scrollbars if the image is too large */
+}
+
+.full-image {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.slds-modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

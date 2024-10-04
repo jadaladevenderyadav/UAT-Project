@@ -1,0 +1,127 @@
+<template>
+                <div class="slds-col slds-large-size_12-of-12">
+                    <div class="slds-grid slds-wrap bigBox">
+                        <div
+                            class="slds-col slds-small-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12 smallBox">
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-col slds-large-size_6-of-12">
+                                    <div class="heading">Notice Board</div>
+                                </div>
+                                <div class="slds-col slds-large-size_6-of-12">
+                                    <div class="button-container">
+                                        <div class="preNext" onclick={previousPage}>Prev</div>
+                                        <div class="menu-btn" onclick={previousPage}><img src={previousButtonIconUrl} alt="Show Button Icon" /> </div>
+                                        <div class="menu-btn" onclick={nextPage}><img src={nextButtonIconUrl} alt="Show Button Icon" /> </div>
+                                        <div class="preNext" onclick={nextPage}>Next</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-col slds-large-size_12-of-12 noticeBox">
+                                    <template for:each={displayedContacts} for:item="contact" for:index="index">           
+                                        <div key={contact.Id}>
+                                            <div class="main-menu-container">
+                                                <div class="main-menu">
+                                                    <img src={userIconUrl} alt="User Icon" />
+                                                </div>
+                                                <div class="main-menu-info">
+                                                            <span>{contact.Name} - {contact.Academic_Program__c} {contact.MobilePhone}</span>
+                                                </div>
+                                                
+                                                <div class="menu-btn" onclick={whowFullInfo}>
+                                                    <img src={showButtonIconUrl} alt="Show Button Icon" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                </template>
+                               
+                            </div>
+                        </div>
+                    </div>
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_3-of-12 slds-large-size_3-of-12 smallBox dottedBorder">
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-col slds-large-size_6-of-12">
+                                    <div class="heading">Events</div>
+                                </div>
+                                <div class="slds-col slds-large-size_6-of-12">
+                                    <div class="button-container">
+                                        <div class="preNext" onclick={previousPage}>Prev</div>
+                                        <div class="menu-btn" onclick={previousPage}><img src={previousButtonIconUrl} alt="Show Button Icon" /> </div>
+                                        <div class="menu-btn" onclick={nextPage}><img src={nextButtonIconUrl} alt="Show Button Icon" /> </div>
+                                        <div class="preNext" onclick={nextPage}>Next</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <template for:each={displayedContacts} for:item="contact" for:index="index">
+                                                           
+                                <div key={contact.Id}>
+                                    <div class="slds-col slds-large-size_12-of-12 eventbox">
+                                        <div class="EventVenue">{contact.Name}</div>
+                                        <div class="EventVenue">{contact.MobilePhone}</div>
+                                        <div class="description">{contact.Name} -{contact.Academic_Program__c} {contact.MobilePhone}</div>
+                                    </div>
+
+                                </div>
+                            </template> -->
+
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-col slds-large-size_12-of-12 eventbox">
+                                    <div class="EventVenue">Fresher's Event 2023</div>
+                                    <div class="EventVenue">26th Aug, Sat</div>
+                                    <div class="description">Regular exercise promotes better physical health, including improved cardiovascular fitness and muscle strength</div>
+                                </div>
+                                <div class="slds-col slds-large-size_12-of-12 eventbox">
+                                    <div class="EventVenue">Ganapati Agaman</div>
+                                    <div class="EventVenue">28th sept, Sat</div>
+                                    <div class="description">11 to 12 pooja and then DJ night</div>
+                                </div>
+                                <div class="slds-col slds-large-size_12-of-12 eventbox">
+                                    <div class="EventVenue">Ganapati Visarjan</div>
+                                    <div class="EventVenue">18th sept, Sat</div>
+                                    <div class="description">Pooja for 12 to 3, Be availabe</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12 smallBox">
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-col slds-medium-size_4-of-12 slds-large-size_6-of-12">
+                                    <div class="heading">Campus Recruitment</div>
+                                </div>
+                                <div class="slds-col slds-medium-size_4-of-12 slds-large-size_6-of-12">
+                                    <div class="button-container">
+                                        <div class="preNext" onclick={previousPage}>Prev</div>
+                                        <div class="menu-btn" onclick={previousPage}><img src={previousButtonIconUrl} alt="Show Button Icon" /> </div>
+                                        <div class="menu-btn" onclick={nextPage}><img src={nextButtonIconUrl} alt="Show Button Icon" /> </div>
+                                        <div class="preNext" onclick={nextPage}>Next</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <template for:each={displayedContacts} for:item="contact" for:index="index">
+                                                           
+                                <div key={contact.Id}>
+                                    <div class="slds-col slds-large-size_12-of-12 smallBox">
+                                        <div class="slds-grid slds-wrap">
+                                            <div class="slds-col slds-large-size_1-of-12" style="font-size: 15px;">
+                                                <strong>&#x2022;</strong>
+                                            </div>
+                                            <div class="slds-col slds-large-size_11-of-12">
+                                                {contact.Name} -{contact.Academic_Program__c} {contact.MobilePhone}
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                   
+                                    <!-- <template if:true={index !== displayedContacts.length - 1}>
+                                        <hr>
+                                    </template> -->
+                                </div>
+                            </template>
+                            
+                        </div>
+                    </div>
+                </div>
+        
+</template>

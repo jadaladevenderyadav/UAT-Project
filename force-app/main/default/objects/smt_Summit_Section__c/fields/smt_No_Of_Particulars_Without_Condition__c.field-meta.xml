@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>smt_No_Of_Particulars_Without_Condition__c</fullName>
+    <label>No Of Particulars Without Condition</label>
+    <summaryForeignKey>smt_Summit_Particular__c.smt_Summit_Section__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

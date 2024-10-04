@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Staff_Quarter_Vacat</fullName>
+    <active>true</active>
+    <label>Staff Quarter Vacat</label>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request to Admin Director</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request to HR Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request to Report Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacating Initiated</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

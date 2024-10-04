@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Usable__c</fullName>
+    <description>Determines whether the Coupon code is usable anymore or not.</description>
+    <formula>IF(AND(TODAY() &gt;=  Effective_From__c , TODAY() &lt;=  Effective_To__c ), true, false) &amp;&amp; ((( Campaign__c !=null  ||  Program__c !=null)  &amp;&amp;  Current_Use_Count__c  &lt;  Max_Use_Count__c  )  || ( Applicant__c !=null  &amp;&amp; Used_on_Application__c  == null))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Usable</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

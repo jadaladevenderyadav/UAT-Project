@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Documents_Required__c</fullName>
+    <label>Documents Required</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>12th/PUC Marks Card</fullName>
+                <default>false</default>
+                <label>12th/PUC Marks Card</label>
+            </value>
+            <value>
+                <fullName>A Certificate</fullName>
+                <default>false</default>
+                <label>A Certificate</label>
+            </value>
+            <value>
+                <fullName>Award for Gallantry</fullName>
+                <default>false</default>
+                <label>Award for Gallantry</label>
+            </value>
+            <value>
+                <fullName>B Certificate</fullName>
+                <default>false</default>
+                <label>B Certificate</label>
+            </value>
+            <value>
+                <fullName>Bonafide letter</fullName>
+                <default>false</default>
+                <label>Bonafide letter</label>
+            </value>
+            <value>
+                <fullName>C Certificate</fullName>
+                <default>false</default>
+                <label>C Certificate</label>
+            </value>
+            <value>
+                <fullName>Degree Marks Card</fullName>
+                <default>false</default>
+                <label>Degree Marks Card</label>
+            </value>
+            <value>
+                <fullName>Degree Marks Card - Consolidated</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Degree Marks Card - Consolidated</label>
+            </value>
+            <value>
+                <fullName>Degree Marks Card - Semesterwise</fullName>
+                <default>false</default>
+                <label>Degree Marks Card - Semesterwise</label>
+            </value>
+            <value>
+                <fullName>JEE Score Card</fullName>
+                <default>false</default>
+                <label>JEE Score Card</label>
+            </value>
+            <value>
+                <fullName>Killed/Disabled in action</fullName>
+                <default>false</default>
+                <label>Killed/Disabled in action</label>
+            </value>
+            <value>
+                <fullName>NATA Score Card</fullName>
+                <default>false</default>
+                <label>NATA Score Card</label>
+            </value>
+            <value>
+                <fullName>NEET Score Card</fullName>
+                <default>false</default>
+                <label>NEET Score Card</label>
+            </value>
+            <value>
+                <fullName>PUC/Intermediate/12th Marks Card</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PUC/Intermediate/12th Marks Card</label>
+            </value>
+            <value>
+                <fullName>PUC ID card</fullName>
+                <default>false</default>
+                <label>PUC ID card</label>
+            </value>
+            <value>
+                <fullName>RDC Certificate</fullName>
+                <default>false</default>
+                <label>RDC Certificate</label>
+            </value>
+            <value>
+                <fullName>Retired</fullName>
+                <default>false</default>
+                <label>Retired</label>
+            </value>
+            <value>
+                <fullName>REVA ID Card</fullName>
+                <default>false</default>
+                <label>REVA ID Card</label>
+            </value>
+            <value>
+                <fullName>Sibling</fullName>
+                <default>false</default>
+                <label>Sibling</label>
+            </value>
+            <value>
+                <fullName>Single Girl Child</fullName>
+                <default>false</default>
+                <label>Single Girl Child</label>
+            </value>
+            <value>
+                <fullName>Specially Abled</fullName>
+                <default>false</default>
+                <label>Specially Abled</label>
+            </value>
+            <value>
+                <fullName>Sports Highest Level Certificate</fullName>
+                <default>false</default>
+                <label>Sports Highest Level Certificate</label>
+            </value>
+            <value>
+                <fullName>TSC Certificate</fullName>
+                <default>false</default>
+                <label>TSC Certificate</label>
+            </value>
+            <value>
+                <fullName>Twin</fullName>
+                <default>false</default>
+                <label>Twin</label>
+            </value>
+            <value>
+                <fullName>Widows</fullName>
+                <default>false</default>
+                <label>Widows</label>
+            </value>
+            <value>
+                <fullName>Working</fullName>
+                <default>false</default>
+                <label>Working</label>
+            </value>
+            <value>
+                <fullName>YEP Certificate</fullName>
+                <default>false</default>
+                <label>YEP Certificate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

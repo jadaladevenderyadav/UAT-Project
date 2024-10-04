@@ -1,0 +1,22 @@
+<template>
+    <div class="maincontainer" >
+      <div>
+        <h2 class="h2headerclass">Placement Registration 2023</h2>
+      </div>
+      <p>
+        Dear Nagesh,<br>
+        An OTP has been sent to your Gmail Id potnurunagesh@gmail and is valid till 29/12/2023, 13:30.
+      </p>
+      <hr style="margin-top: 10px; border-color: #FF8C00; border-width: 1px;">
+      <div class="otp-verify-container slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+        <div class="otp-container">
+          <label for="otp">Enter OTP : </label>
+          <lightning-input class="slds-p-bottom_x-small" type="text" id="otp" name="otp" ></lightning-input>
+          
+          <lightning-button class="slds-p-left_x-large" variant="brand" label="Verify" onclick={verifyOtp}></lightning-button>
+           <!-- Green checkmark (✅) will be displayed here after successful verification -->
+        <span id="verification-success" style="color: green; display: none;">✅</span>
+        </div>
+      </div>
+    </div>
+  </template>

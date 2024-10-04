@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Facility_Request__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Facility Request</label>
+    <referenceTo>Facility_Request__c</referenceTo>
+    <relationshipLabel>Facility Request Allocations</relationshipLabel>
+    <relationshipName>Facility_Request_Allocations</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

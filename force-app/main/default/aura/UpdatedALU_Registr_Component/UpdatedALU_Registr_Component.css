@@ -1,0 +1,28 @@
+.THIS.my-brand {
+        --sds-c-button-brand-color-background: #ec846c;
+        width: 120%;
+    }
+    .THIS .file-upload {
+        background-color: black;
+        width: 120%;
+        color: white;
+    }
+
+    .THIS .table {
+        background-color: #fcd4b4;
+        
+    }
+    
+    .THIS .slds-icon {
+        width: 120px; /* Adjust the width as needed */
+        height: 110px; /* Adjust the height as needed */
+    }
+    
+    .THIS .large-font {
+        font-size: 20px; /* Adjust the font size as needed */
+    }
+    
+    .THIS.removeDropZone {
+        color: #ffffff;
+        --lwc-borderWidthThin: 0px;
+    }

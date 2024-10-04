@@ -1,0 +1,43 @@
+.modal-container {
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+    max-width: 696px;
+}
+.field-value label {
+    color: var(--reva-brand-color) !important;
+    font-weight: 600 !important;
+}
+.btn-container {
+    text-align: right;
+}
+lightning-layout-item {
+    margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+    .modal-container {
+        padding: 0.5rem;
+        background-color: #f7f7f7;
+    }
+}
+
+
+.field-label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--reva-brand-color) !important;
+    font-weight: 600 !important;
+}
+
+.field-value {
+    color: #0c0c0c; /* Adjust the color as needed */
+    padding-left: 10px;
+}
+.slds-input{
+    padding-left: 10px;
+}
+.register-button {
+    padding-right: 900px;
+    display: flex;
+    justify-content: flex-end;
+    position: 550px;
+}

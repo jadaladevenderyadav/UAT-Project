@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Performing_Arts_All_Leads</fullName>
+    <columns>Visual_Status__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>Primary_Source__c</columns>
+    <columns>utm_source__c</columns>
+    <columns>LEAD.MOBILE_PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>Disposition__c</columns>
+    <columns>hed__Gender__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.STATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>School__c</field>
+        <operation>contains</operation>
+        <value>Performing Arts</value>
+    </filters>
+    <label>Performing Arts All Leads</label>
+    <sharedTo>
+        <role>Professors_PA_IS</role>
+    </sharedTo>
+</ListView>

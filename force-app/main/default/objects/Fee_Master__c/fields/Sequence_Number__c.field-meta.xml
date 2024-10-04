@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sequence_Number__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Required for Application Fee type fee master records</description>
+    <inlineHelpText>Required for Application Fee type fee master records</inlineHelpText>
+    <label>Sequence Number</label>
+    <referenceTo>Sequence_Number__c</referenceTo>
+    <relationshipLabel>Fee Masters</relationshipLabel>
+    <relationshipName>Fee_Masters</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AC Not Working Properly</fullName>
+        <default>false</default>
+        <label>AC Not Working Properly</label>
+    </customValue>
+    <customValue>
+        <fullName>App Is Not Working For Payment</fullName>
+        <default>false</default>
+        <label>App Is Not Working For Payment</label>
+    </customValue>
+    <customValue>
+        <fullName>Bathroom Cloth Hanger Damaged</fullName>
+        <default>false</default>
+        <label>Bathroom Cloth Hanger Damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Bathroom Lock Not Working</fullName>
+        <default>false</default>
+        <label>Bathroom Lock Not Working</label>
+    </customValue>
+    <customValue>
+        <fullName>Blockage</fullName>
+        <default>false</default>
+        <label>Blockage</label>
+    </customValue>
+    <customValue>
+        <fullName>Bulb Is Not Working</fullName>
+        <default>false</default>
+        <label>Bulb Is Not Working</label>
+    </customValue>
+    <customValue>
+        <fullName>Chair Damaged</fullName>
+        <default>false</default>
+        <label>Chair Damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Colour Fade</fullName>
+        <default>false</default>
+        <label>Colour Fade</label>
+    </customValue>
+    <customValue>
+        <fullName>Cot Damaged</fullName>
+        <default>false</default>
+        <label>Cot Damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Cupboard Handle Is Damaged</fullName>
+        <default>false</default>
+        <label>Cupboard Handle Is Damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Cup Board Hinges Damaged</fullName>
+        <default>false</default>
+        <label>Cup Board Hinges Damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Damage</fullName>
+        <default>false</default>
+        <label>Damage</label>
+    </customValue>
+    <customValue>
+        <fullName>Door Stopper Is Not Working</fullName>
+        <default>false</default>
+        <label>Door Stopper Is Not Working</label>
+    </customValue>
+    <customValue>
+        <fullName>Drinking Water</fullName>
+        <default>false</default>
+        <label>Drinking Water</label>
+    </customValue>
+    <customValue>
+        <fullName>Electrical</fullName>
+        <default>false</default>
+        <label>Electrical</label>
+    </customValue>
+    <customValue>
+        <fullName>EWC Leakage</fullName>
+        <default>false</default>
+        <label>EWC Leakage</label>
+    </customValue>
+    <customValue>
+        <fullName>Fan Not Working</fullName>
+        <default>false</default>
+        <label>Fan Not Working</label>
+    </customValue>
+    <customValue>
+        <fullName>Fan Regulator Broken</fullName>
+        <default>false</default>
+        <label>Fan Regulator Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>Flush Not Working</fullName>
+        <default>false</default>
+        <label>Flush Not Working</label>
+    </customValue>
+    <customValue>
+        <fullName>Getting Stuck</fullName>
+        <default>false</default>
+        <label>Getting Stuck</label>
+    </customValue>
+    <customValue>
+        <fullName>Hot Water</fullName>
+        <default>false</default>
+        <label>Hot Water</label>
+    </customValue>
+    <customValue>
+        <fullName>Items Not Available</fullName>
+        <default>false</default>
+        <label>Items Not Available</label>
+    </customValue>
+    <customValue>
+        <fullName>Item Stuck</fullName>
+        <default>false</default>
+        <label>Item Stuck</label>
+    </customValue>
+    <customValue>
+        <fullName>Main Door Frame Damaged</fullName>
+        <default>false</default>
+        <label>Main Door Frame Damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Main Door Handle Damaged</fullName>
+        <default>false</default>
+        <label>Main Door Handle Damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Main Door Hinges Damaged</fullName>
+        <default>false</default>
+        <label>Main Door Hinges Damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Main Door Lock Damaged</fullName>
+        <default>false</default>
+        <label>Main Door Lock Damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Mirror Broken</fullName>
+        <default>false</default>
+        <label>Mirror Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>Missing</fullName>
+        <default>false</default>
+        <label>Missing</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Get Washed In Time</fullName>
+        <default>false</default>
+        <label>Not Get Washed In Time</label>
+    </customValue>
+    <customValue>
+        <fullName>No water</fullName>
+        <default>false</default>
+        <label>No water</label>
+    </customValue>
+    <customValue>
+        <fullName>Others</fullName>
+        <default>false</default>
+        <label>Others</label>
+    </customValue>
+    <customValue>
+        <fullName>Pipe Broken</fullName>
+        <default>false</default>
+        <label>Pipe Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>Plug Point Issue</fullName>
+        <default>false</default>
+        <label>Plug Point Issue</label>
+    </customValue>
+    <customValue>
+        <fullName>Plumbing</fullName>
+        <default>false</default>
+        <label>Plumbing</label>
+    </customValue>
+    <customValue>
+        <fullName>Power Issue While Paying</fullName>
+        <default>false</default>
+        <label>Power Issue While Paying</label>
+    </customValue>
+    <customValue>
+        <fullName>Power Not Available In Plug Point</fullName>
+        <default>false</default>
+        <label>Power Not Available In Plug Point</label>
+    </customValue>
+    <customValue>
+        <fullName>Study Table Damaged</fullName>
+        <default>false</default>
+        <label>Study Table Damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Switch Is Not Working</fullName>
+        <default>false</default>
+        <label>Switch Is Not Working</label>
+    </customValue>
+    <customValue>
+        <fullName>Tap Not Working</fullName>
+        <default>false</default>
+        <label>Tap Not Working</label>
+    </customValue>
+    <customValue>
+        <fullName>Washing Machine Not Working</fullName>
+        <default>false</default>
+        <label>Washing Machine Not Working</label>
+    </customValue>
+    <customValue>
+        <fullName>Window Curtain Damaged</fullName>
+        <default>false</default>
+        <label>Window Curtain Damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Window Glass Broken</fullName>
+        <default>false</default>
+        <label>Window Glass Broken</label>
+    </customValue>
+    <customValue>
+        <fullName>Window Handle Damaged</fullName>
+        <default>false</default>
+        <label>Window Handle Damaged</label>
+    </customValue>
+    <customValue>
+        <fullName>Window Hinges Damaged</fullName>
+        <default>false</default>
+        <label>Window Hinges Damaged</label>
+    </customValue>
+    <masterLabel>Hostel General Complaints</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Application_Submitted__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Marked as true when Primary Application moves from Incomplete to Submitted status. Used for controlling the Component visibility on Applicant Portal.</description>
+    <inlineHelpText>Marked as true when Primary Application moves from Incomplete to Submitted status.</inlineHelpText>
+    <label>Primary Application Submitted</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

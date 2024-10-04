@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>rve_Active__c</fullName>
+    <formula>IF(
+    AND(
+        rve_Exam_Start_Date__c &gt;= TODAY(),
+        rve_Exam_Start_Date__c &lt;= (TODAY() + 4)
+    ),
+    true,
+    IF(
+        TODAY() &lt;= Rve_End_Date__c,
+        true,
+        false
+    )
+)</formula>
+    <label>Active</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

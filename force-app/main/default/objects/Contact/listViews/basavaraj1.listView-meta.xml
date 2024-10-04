@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>basavaraj1</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>SRN_Number__c</columns>
+    <columns>Application_Number__c</columns>
+    <columns>Mentor__c</columns>
+    <columns>Program_Batch__c</columns>
+    <columns>Active_Semester__c</columns>
+    <columns>Admission_Mode__c</columns>
+    <columns>Active_Batch__c</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <columns>Student_Status__c</columns>
+    <columns>School_Portal__c</columns>
+    <columns>Faculty__c</columns>
+    <columns>Father_Mobile_Number__c</columns>
+    <columns>Mother_Mobile_Number__c</columns>
+    <columns>Program_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.Student</value>
+    </filters>
+    <filters>
+        <field>Student_Status__c</field>
+        <operation>equals</operation>
+        <value>Pursuing</value>
+    </filters>
+    <filters>
+        <field>School__c</field>
+        <operation>notContain</operation>
+        <value>School of Performing Arts and Indic Studies,School of Allied Health Sciences,REVA Business School,School of Legal Studies</value>
+    </filters>
+    <filters>
+        <field>Program_Type__c</field>
+        <operation>equals</operation>
+        <value>UG</value>
+    </filters>
+    <filters>
+        <field>School__c</field>
+        <operation>contains</operation>
+        <value>School of Management Studies,School of Commerce</value>
+    </filters>
+    <label>basavaraj1</label>
+    <sharedTo>
+        <role>Vertical_Head_CE</role>
+    </sharedTo>
+</ListView>

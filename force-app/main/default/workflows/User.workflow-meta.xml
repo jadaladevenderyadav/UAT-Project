@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alumni_User_is_Created</fullName>
+        <description>Alumni User is Created</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>alerts@reva.edu.in</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>All/Alumni_User_Creation</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_HR_Manager_when_Voucher_approval_is_still_pending</fullName>
+        <description>Email to HR Manager when Voucher approval is still pending</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>harshitha.bg@reva.edu.in</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jyotiranjan.panda@reva.edu.in</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rashmi.n@reva.edu.in</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All/Test_Email_Template</template>
+    </alerts>
+</Workflow>

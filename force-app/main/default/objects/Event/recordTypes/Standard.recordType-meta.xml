@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard</fullName>
+    <active>true</active>
+    <label>Standard</label>
+    <picklistValues>
+        <picklist>Accept_Reject__c</picklist>
+        <values>
+            <fullName>Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Confidential Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Psychological</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Meeting_Status__c</picklist>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Remarks__c</picklist>
+        <values>
+            <fullName>A little more hard work needed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Academic Performance is very Encouraging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attendance is a concern and student needs to attend classes regularly%28for border cases%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attendance is a concern and student needs to improve attendance%28for border cases%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attendance is a serious concern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attendance is a serious concern and student has been cautioned%28for chronic cases%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Can do much better</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capable of higher academic achievements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Company of friends needs to be taken care of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Considerable improvement in attendance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Improvement in attendance very encouraging</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Is a committed student</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Is hardworking and actively participates in all activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Is very distracted in class and needs to stay focused</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lacks attention in class - must be work on study skills</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Late coming to class is a concern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Must attend all Internal Assessments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Must attend all placement drives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Must attend remedial classes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Must complete and submit projects in time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Must submit assignments in time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs to concentrate in class</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs to follow required dress code</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs to participate in Clubs %2F Forums %2F Sports activities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs to put in extra work</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overall academic performance in all subjects is a concern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overall improvement is seen in performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parents need to attend PTM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parents need to be involved and follow up with student</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Performance in subjects discussed is a concern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seems to have behavioral issues - a concern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shows potential to take up higher academic challenges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>should balance academics and co-curricular activities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Category__c</picklist>
+        <values>
+            <fullName>Academic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counseling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Health issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hostel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Placement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skill Development</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>knowlarity_cti__Second_Agent_Disposition__c</picklist>
+        <values>
+            <fullName>Follow-up Requested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Junk Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RNR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Setup Appointments</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>knowlarity_cti__Transfer_Conference__c</picklist>
+        <values>
+            <fullName>Conference</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

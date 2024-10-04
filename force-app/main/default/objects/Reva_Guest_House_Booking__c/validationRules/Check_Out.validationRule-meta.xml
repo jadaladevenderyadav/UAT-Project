@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Out</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    Check_Out__c = TRUE,
+    Check_In__c = FALSE
+)</errorConditionFormula>
+    <errorDisplayField>Check_Out__c</errorDisplayField>
+    <errorMessage>You have not Check In</errorMessage>
+</ValidationRule>

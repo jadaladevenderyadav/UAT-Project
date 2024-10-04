@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rpl_Pull_Prev_Round_Shortlisted_Students__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>By checking this checkbox, previous round shortlisted students will receive notifications about their shortlist, and they will be automatically moved to this round.</inlineHelpText>
+    <label>Pull Prev Round Shortlisted Students</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

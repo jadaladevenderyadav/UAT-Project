@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Copy_of_All</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Contact__c</columns>
+    <columns>Registration_Type__c</columns>
+    <columns>Route_Master__c</columns>
+    <columns>rtr_Status__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Registration_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>Today Registration</label>
+</ListView>

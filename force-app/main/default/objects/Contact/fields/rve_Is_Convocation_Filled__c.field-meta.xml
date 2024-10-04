@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>rve_Is_Convocation_Filled__c</fullName>
+    <formula>NOT(ISNULL(Program_Batch__r.rve_Convocation_Date_Time__c ))</formula>
+    <label>Is Convocation Filled</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

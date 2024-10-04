@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cheque_Bank_Name__c</fullName>
+    <label>Cheque Bank Name</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AU Bank</fullName>
+                <default>false</default>
+                <label>AU Bank</label>
+            </value>
+            <value>
+                <fullName>Axis Bank</fullName>
+                <default>false</default>
+                <label>Axis Bank</label>
+            </value>
+            <value>
+                <fullName>Bank of Baroda</fullName>
+                <default>false</default>
+                <label>Bank of Baroda</label>
+            </value>
+            <value>
+                <fullName>Bank of India</fullName>
+                <default>false</default>
+                <label>Bank of India</label>
+            </value>
+            <value>
+                <fullName>Canara Bank</fullName>
+                <default>false</default>
+                <label>Canara Bank</label>
+            </value>
+            <value>
+                <fullName>Central Bank of India</fullName>
+                <default>false</default>
+                <label>Central Bank of India</label>
+            </value>
+            <value>
+                <fullName>City Bank</fullName>
+                <default>false</default>
+                <label>City Bank</label>
+            </value>
+            <value>
+                <fullName>Corporation Bank</fullName>
+                <default>false</default>
+                <label>Corporation Bank</label>
+            </value>
+            <value>
+                <fullName>DCB Bank</fullName>
+                <default>false</default>
+                <label>DCB Bank</label>
+            </value>
+            <value>
+                <fullName>Federal Bank</fullName>
+                <default>false</default>
+                <label>Federal Bank</label>
+            </value>
+            <value>
+                <fullName>HDFC Bank</fullName>
+                <default>false</default>
+                <label>HDFC Bank</label>
+            </value>
+            <value>
+                <fullName>ICICI Bank</fullName>
+                <default>false</default>
+                <label>ICICI Bank</label>
+            </value>
+            <value>
+                <fullName>IDBI Bank</fullName>
+                <default>false</default>
+                <label>IDBI Bank</label>
+            </value>
+            <value>
+                <fullName>IDFC FIRST Bank</fullName>
+                <default>false</default>
+                <label>IDFC FIRST Bank</label>
+            </value>
+            <value>
+                <fullName>Indian Bank</fullName>
+                <default>false</default>
+                <label>Indian Bank</label>
+            </value>
+            <value>
+                <fullName>Indian Overseas Bank</fullName>
+                <default>false</default>
+                <label>Indian Overseas Bank</label>
+            </value>
+            <value>
+                <fullName>IndusInd Bank</fullName>
+                <default>false</default>
+                <label>IndusInd Bank</label>
+            </value>
+            <value>
+                <fullName>Jammu and Kashmir Bank</fullName>
+                <default>false</default>
+                <label>Jammu and Kashmir Bank</label>
+            </value>
+            <value>
+                <fullName>JANA SMALL FINANCE BANK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>JANA SMALL FINANCE BANK</label>
+            </value>
+            <value>
+                <fullName>Janatha sahakari Bank</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Janatha sahakari Bank</label>
+            </value>
+            <value>
+                <fullName>Karnataka Bank</fullName>
+                <default>false</default>
+                <label>Karnataka Bank</label>
+            </value>
+            <value>
+                <fullName>Karur Vysya Bank</fullName>
+                <default>false</default>
+                <label>Karur Vysya Bank</label>
+            </value>
+            <value>
+                <fullName>Kotak Mahindra Bank</fullName>
+                <default>false</default>
+                <label>Kotak Mahindra Bank</label>
+            </value>
+            <value>
+                <fullName>Punjab and Sind Bank</fullName>
+                <default>false</default>
+                <label>Punjab and Sind Bank</label>
+            </value>
+            <value>
+                <fullName>Punjab National Bank</fullName>
+                <default>false</default>
+                <label>Punjab National Bank</label>
+            </value>
+            <value>
+                <fullName>RBL Bank</fullName>
+                <default>false</default>
+                <label>RBL Bank</label>
+            </value>
+            <value>
+                <fullName>South Indian Bank</fullName>
+                <default>false</default>
+                <label>South Indian Bank</label>
+            </value>
+            <value>
+                <fullName>SRI SUDHA CO-OPERATIVE BANK</fullName>
+                <default>false</default>
+                <label>SRI SUDHA CO-OPERATIVE BANK</label>
+            </value>
+            <value>
+                <fullName>State Bank of India</fullName>
+                <default>false</default>
+                <label>State Bank of India</label>
+            </value>
+            <value>
+                <fullName>UCO BANK</fullName>
+                <default>false</default>
+                <label>UCO BANK</label>
+            </value>
+            <value>
+                <fullName>Union Bank of India</fullName>
+                <default>false</default>
+                <label>Union Bank of India</label>
+            </value>
+            <value>
+                <fullName>Yes Bank</fullName>
+                <default>false</default>
+                <label>Yes Bank</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

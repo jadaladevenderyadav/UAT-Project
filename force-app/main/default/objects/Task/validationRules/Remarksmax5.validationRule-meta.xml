@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remarksmax5</fullName>
+    <active>true</active>
+    <errorConditionFormula>PICKLISTCOUNT( Remarks__c)&gt;5</errorConditionFormula>
+    <errorDisplayField>Remarks__c</errorDisplayField>
+    <errorMessage>Only 5 values can be selected at a time</errorMessage>
+</ValidationRule>

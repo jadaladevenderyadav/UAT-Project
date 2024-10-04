@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>today_or_any_future_date</fullName>
+    <active>false</active>
+    <description>The start date field in the new hostel leave request page should only accept today&apos;s date or any future date.</description>
+    <errorConditionFormula>Start_Date_and_Time__c &lt; DATETIMEVALUE(TODAY() + 1)</errorConditionFormula>
+    <errorMessage>Start Date must be tomorrow or later.</errorMessage>
+</ValidationRule>

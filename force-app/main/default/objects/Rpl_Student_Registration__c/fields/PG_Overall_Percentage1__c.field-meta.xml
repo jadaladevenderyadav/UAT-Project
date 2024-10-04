@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PG_Overall_Percentage1__c</fullName>
+    <formula>IF(
+    OR(TEXT(Course_Name__c) == &apos;MBA&apos;, TEXT(Course_Name__c) ==  &apos;MTech/MSC/MCA&apos;),
+    (
+        (
+            Rpl_PG1_Sem_CGPA__c + Rpl_PG2_Sem_CGPA__c + Rpl_PG3_Sem_CGPA__c + Rpl_PG4_Sem_CGPA__c            
+        ) / 4
+    ) / 10, 
+
+   0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>PG Overall Percentage1</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

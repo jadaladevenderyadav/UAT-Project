@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fee_Type__c</fullName>
+    <label>Fee Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Academic Fee</fullName>
+                <default>false</default>
+                <label>Academic Fee</label>
+            </value>
+            <value>
+                <fullName>Application Fee</fullName>
+                <default>false</default>
+                <label>Application Fee</label>
+            </value>
+            <value>
+                <fullName>Examination &amp; Valuation Fee</fullName>
+                <default>false</default>
+                <label>Examination &amp; Valuation Fee</label>
+            </value>
+            <value>
+                <fullName>Guest House Fee</fullName>
+                <default>false</default>
+                <label>Guest House Fee</label>
+            </value>
+            <value>
+                <fullName>Hostel Fee</fullName>
+                <default>false</default>
+                <label>Hostel Fee</label>
+            </value>
+            <value>
+                <fullName>Mess Penalty Fees</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mess Penalty Fees</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Fee</fullName>
+                <default>false</default>
+                <label>Miscellaneous Fee</label>
+            </value>
+            <value>
+                <fullName>Missed Meal Fee</fullName>
+                <default>false</default>
+                <label>Missed Meal Fee</label>
+            </value>
+            <value>
+                <fullName>Penalty Fee</fullName>
+                <default>false</default>
+                <label>Penalty Fee</label>
+            </value>
+            <value>
+                <fullName>Transportation Fee</fullName>
+                <default>false</default>
+                <label>Transportation Fee</label>
+            </value>
+            <value>
+                <fullName>Tuition Fee</fullName>
+                <default>false</default>
+                <label>Tuition Fee</label>
+            </value>
+            <value>
+                <fullName>University Fee</fullName>
+                <default>false</default>
+                <label>University Fee</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

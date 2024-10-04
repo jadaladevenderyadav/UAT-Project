@@ -1,0 +1,3 @@
+<aura:component Implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes,lightning:actionOverride" access="global" > >
+	<c:revaGuestHouseBooking aura:id="guestHouse"></c:revaGuestHouseBooking>
+</aura:component>

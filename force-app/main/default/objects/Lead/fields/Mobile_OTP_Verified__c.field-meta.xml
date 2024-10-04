@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile_OTP_Verified__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Specifies if Mobile Number is verified</description>
+    <inlineHelpText>True, if Applicant&apos;s Mobile is Verified</inlineHelpText>
+    <label>Mobile OTP Verified</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

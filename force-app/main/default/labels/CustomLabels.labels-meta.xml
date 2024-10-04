@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ASM_AttendancePercentage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ASM_AttendancePercentage</shortDescription>
+        <value>75</value>
+    </labels>
+    <labels>
+        <fullName>ASM_IAMarksAPIDays</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ASM_IAMarksAPIDays</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>ASM_StdSubAPIDay</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ASM_StdSubAPIDay</shortDescription>
+        <value>20</value>
+    </labels>
+    <labels>
+        <fullName>Active_Semester_First_Year</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Active Semester First Year</shortDescription>
+        <value>1</value>
+    </labels>
+    <labels>
+        <fullName>Active_Semester_Fourth_Year</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Active Semester Fourth Year</shortDescription>
+        <value>7</value>
+    </labels>
+    <labels>
+        <fullName>Active_Semester_Second_Year</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Active Semester Second Year</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>Active_Semester_Third_Year</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Active Semester Third Year</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>Alumni_Portal_Profile_Value</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Alumni Portal Profile Value</shortDescription>
+        <value>Alumni Portal</value>
+    </labels>
+    <labels>
+        <fullName>Assign_Lead_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Assign Lead Owner</shortDescription>
+        <value>kirankumar.jena@reva.edu.in.couat1908</value>
+    </labels>
+    <labels>
+        <fullName>BillDesk_Key</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BillDesk Key</shortDescription>
+        <value>uatY7vF4Cx3L</value>
+    </labels>
+    <labels>
+        <fullName>BillDesk_PAF_Merchant_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BillDesk PAF Merchant ID</shortDescription>
+        <value>BDUATV2KTK</value>
+    </labels>
+    <labels>
+        <fullName>BranchTransferDays</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BranchTransferDays</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>CRON</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRON</shortDescription>
+        <value>0 18 14</value>
+    </labels>
+    <labels>
+        <fullName>Case_Detail_View</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case Detail View</shortDescription>
+        <value>https://reva-university--couat1908.sandbox.my.site.com/NonTeachingStaff/s/hostel-support-request</value>
+    </labels>
+    <labels>
+        <fullName>Category_Names_Elective</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Category Names Elective</shortDescription>
+        <value>Open Elective,Professional Elective</value>
+    </labels>
+    <labels>
+        <fullName>Category_Names_Mandatory</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Category Names Mandatory</shortDescription>
+        <value>Hardcore Course,Hardcore Integrated Course,Mandatory Course</value>
+    </labels>
+    <labels>
+        <fullName>CourseConnectionScheduleTime</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CourseConnectionScheduleTime</shortDescription>
+        <value>-5</value>
+    </labels>
+    <labels>
+        <fullName>CourseMasterScheduleTime</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CourseMasterScheduleTime</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>Current_Semester_First_Year</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Current Semester First Year</shortDescription>
+        <value>1</value>
+    </labels>
+    <labels>
+        <fullName>Current_Semester_Second_Year</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Current Semester Second Year</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>DeactivateStudentPaymentTrigger_c</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DeactivateStudentPaymentTrigger__c</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
+        <fullName>Domain_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Guest House  URL</shortDescription>
+        <value>https://reva-university--couat1908.sandbox.lightning.force.com/</value>
+    </labels>
+    <labels>
+        <fullName>Due_Date_Email_Alert_Year_Filter</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Due Date Email Alert Year Filter</shortDescription>
+        <value>0</value>
+    </labels>
+    <labels>
+        <fullName>Education_Documents</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Education Documents</shortDescription>
+        <value>0125j000000RLBmAAO</value>
+    </labels>
+    <labels>
+        <fullName>Exclude_Late_Fee_Charges_Fee_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exclude Late Fee Charges - Fee Type</shortDescription>
+        <value>0</value>
+    </labels>
+    <labels>
+        <fullName>FEE_Easypay_Function_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FEE_Easypay Function Name</shortDescription>
+        <value>EasypayProd.checksumgenrate</value>
+    </labels>
+    <labels>
+        <fullName>FEE_Late_Fee_Maximum_Days</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FEE Late Fee Maximum Days</shortDescription>
+        <value>30</value>
+    </labels>
+    <labels>
+        <fullName>FEE_Receipt_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FEE_Receipt_Link</shortDescription>
+        <value>https://reva-university--couat1908.sandbox.my.site.com/StudentPortal/apex/FEE_FeeReceipt?id=</value>
+    </labels>
+    <labels>
+        <fullName>FacilityRequestApprovalURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacilityRequestApprovalURL</shortDescription>
+        <value>https://reva-university.lightning.force.com/lightning/r/Facility_Request__c/</value>
+    </labels>
+    <labels>
+        <fullName>FacultyMasterScheduleTime</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FacultyMasterScheduleTime</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>Fail_Email_Teamplate_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL Fail Email Template ID</shortDescription>
+        <value>00X1e000000ScGXEA0</value>
+    </labels>
+    <labels>
+        <fullName>HallTicketScheduleTime</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HallTicketScheduleTime</shortDescription>
+        <value>3</value>
+    </labels>
+    <labels>
+        <fullName>Hall_tickets_IAScheduleTime</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Hall tickets - IAScheduleTime</shortDescription>
+        <value>2</value>
+    </labels>
+    <labels>
+        <fullName>IATimeTableScheduleTime</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IATimeTableScheduleTime</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead Status</shortDescription>
+        <value>Unverified</value>
+    </labels>
+    <labels>
+        <fullName>MSTR_Open_Elective_Course_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSTR_Open_Elective_Course_Id</shortDescription>
+        <value>a0C5j000003t8SiEAI</value>
+    </labels>
+    <labels>
+        <fullName>MSTR_Professional_Elective_Course_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MSTR_Professional_Elective_Course_Id</shortDescription>
+        <value>a0C5j000003t8SjEAI</value>
+    </labels>
+    <labels>
+        <fullName>Mode_of_Payment</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mode of Payment</shortDescription>
+        <value>Razorpay,
+Paytm,
+Eazypay,
+Billdesk</value>
+    </labels>
+    <labels>
+        <fullName>NonTeachingFacultyURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NonTeachingFacultyURL</shortDescription>
+        <value>https://reva-university.my.site.com/NonTeachingStaffInfra/s/infra-support-request</value>
+    </labels>
+    <labels>
+        <fullName>Pass_Email_Template_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL Pass Email Template ID</shortDescription>
+        <value>00X1e000000ScGIEA0</value>
+    </labels>
+    <labels>
+        <fullName>Pro_Chancellor_UserName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pro Chancellor UserName</shortDescription>
+        <value>surindersingh@cloudodyssey.couat
+lalkumar.baburao@cloudodyssey.reva.couat1908</value>
+    </labels>
+    <labels>
+        <fullName>ProgramMasterScheduleTime</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ProgramMasterScheduleTime</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Block_Notification_To_Parent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL_Block_Notification_To_Parent</shortDescription>
+        <value>00X0T000000IpCFUA0</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Block_Notification_To_Student</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL_Block_Notification_To_Student</shortDescription>
+        <value>00X0T000000IpCAUA0</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Drive_Confirmation_Message_Email_Template_To_Father</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL_Drive_Confirmation_Message_Email_Template_To_Father</shortDescription>
+        <value>00X0T000000Io8gUAC</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Drive_Confirmation_Message_Email_Template_To_Mother</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL_Drive_Confirmation_Message_Email_Template_To_Mother</shortDescription>
+        <value>00X0T000000Io8lUAC</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Drive_Registration_Message_Email_Template_To_Father</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL_Drive_Registration_Message_Email_Template_To_Father</shortDescription>
+        <value>00X0T000000Io8gUAC</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Drive_Registration_Message_Email_Template_To_Mother</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL_Drive_Registration_Message_Email_Template_To_Mother</shortDescription>
+        <value>00X0T000000Io7sUAC</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Eligible_Drive_Confirmation_Template</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL Eligible Drive Confirmation Template</shortDescription>
+        <value>00X0T000000Ih4EUAS</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Eligible_Drive_Notifcation_Template</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL Eligible Drive Notifcation Template</shortDescription>
+        <value>00X0T000000Ih4DUAS</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Fill_Basic_Detail_Right_Column_Text_For_Student_Portal</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL Fill Basic Detail Right Column Text For Student Portal</shortDescription>
+        <value>REVA Placement programme for under graduate and post graduate students for the academic year 2023 - 24</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Final_Round_Offered_Email_Template_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL Final Round Offered Email Template ID</shortDescription>
+        <value>00X0T000000Ih4FUAS</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Final_Selection_Message_Email_Template_To_Father</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL_Final_Selection_Message_Email_Template_To_Father</shortDescription>
+        <value>00X0T000000IoCOUA0</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Final_Selection_Message_Email_Template_To_Mother</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL_Final_Selection_Message_Email_Template_To_Mother</shortDescription>
+        <value>00X0T000000IoCTUA0</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Not_Shortlisted_Students_Template</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL_Not_Shortlisted_Students_Template</shortDescription>
+        <value>00X0T000000IoBfUAK</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Placement_Portal_Header_Paragraph</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL Placement Portal Header Paragraph</shortDescription>
+        <value>We are a vibrant, inclusive, and academically-driven community of over 15,000 students that thrives on building the best for our students. The campus life is vibrant, inclusive, and academically-driven.</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Placement_Registration_Email_Template_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL Placement Registration Email Template ID</shortDescription>
+        <value>00X0T000000Ih4GUAS</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Placement_Registration_Notification_To_Father</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL_Placement_Registration_Notification_To_Father</shortDescription>
+        <value>00X0T000000Io61UAC</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Placement_Registration_Notification_To_Mother</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL_Placement_Registration_Notification_To_Mother</shortDescription>
+        <value>00X0T000000Io7JUAS</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Placement_Registration_Text_For_Student_Portal</fullName>
+        <categories>Reva placement, placement, placement registration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL Placement Registration Text For Student Portal</shortDescription>
+        <value>Placement Registration</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Round_Wise_Shortlisted_Email_Template_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL Round Wise Shortlisted Email Template ID</shortDescription>
+        <value>00X0T000000Ih4HUAS</value>
+    </labels>
+    <labels>
+        <fullName>RPL_Student_Portal_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPL Student Portal Link</shortDescription>
+        <value>https://reva-university--codev1.sandbox.my.site.com/StudentPortal</value>
+    </labels>
+    <labels>
+        <fullName>RPl_Interview_Round_Wise_Shortlist_Email_Template_To_Father</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPl_Interview_Round_Wise_Shortlist_Email_Template_To_Father</shortDescription>
+        <value>00X0T000000IoCEUA0</value>
+    </labels>
+    <labels>
+        <fullName>RPl_Interview_Round_Wise_Shortlist_Email_Template_To_Mother</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RPl_Interview_Round_Wise_Shortlist_Email_Template_To_Mother</shortDescription>
+        <value>00X0T000000IoCJUA0</value>
+    </labels>
+    <labels>
+        <fullName>RTR_BusImageData</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RTR_BusImageData</shortDescription>
+        <value>REVA provides fleet of 25 buses across the city. REVA operates fleet of buses to and from all parts of Bengaluru city for the benefits of students,faculty and staff members.</value>
+    </labels>
+    <labels>
+        <fullName>RTR_BusImageData_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RTR_BusImageData_1</shortDescription>
+        <value>REVA operates fleet of buses to and from all parts of Bengaluru city for the benefits of students, faculty  and staff members.</value>
+    </labels>
+    <labels>
+        <fullName>RTR_BusImageData_2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RTR_BusImageData_2</shortDescription>
+        <value>REVA provides fleet of 25 buses across the city.</value>
+    </labels>
+    <labels>
+        <fullName>RTR_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RTR_Info</shortDescription>
+        <value>OUR SERVICES</value>
+    </labels>
+    <labels>
+        <fullName>Remining_Fee_Notification_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Remining Fee Notification ID</shortDescription>
+        <value>003Il000001XWvqIAG</value>
+    </labels>
+    <labels>
+        <fullName>RevaSW_Domain</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RevaSW Domain</shortDescription>
+        <value>https://reva-university--codev1.sandbox.lightning.force.com</value>
+    </labels>
+    <labels>
+        <fullName>Reva_Hostel_Caution_Fee_Amount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reva Hostel Caution Fee Amount</shortDescription>
+        <value>5000</value>
+    </labels>
+    <labels>
+        <fullName>SAP_SACCode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SAP_SACCode</shortDescription>
+        <value>11111</value>
+    </labels>
+    <labels>
+        <fullName>SEE_Results_schedule_time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SEE Results schedule time</shortDescription>
+        <value>1</value>
+    </labels>
+    <labels>
+        <fullName>STOB_Lateral_Entry_SRN_Starting_No</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>STOB Lateral Entry SRN Starting No</shortDescription>
+        <value>800</value>
+    </labels>
+    <labels>
+        <fullName>STOB_University_Transfer_3_digits_SRN_No</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>STOB University Transfer 3 digits SRN No</shortDescription>
+        <value>70</value>
+    </labels>
+    <labels>
+        <fullName>STOB_University_Transfer_SRN_No</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>STOB University Transfer SRN No</shortDescription>
+        <value>700</value>
+    </labels>
+    <labels>
+        <fullName>StudentMasterScheduleTime</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StudentMasterScheduleTime</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>Student_Portal_Link</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Student Portal Link</shortDescription>
+        <value>https://reva-university.my.site.com/StudentPortal/s/login/</value>
+    </labels>
+    <labels>
+        <fullName>Student_Portal_Profile_Value</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Student Portal Profile Value</shortDescription>
+        <value>Student Profile</value>
+    </labels>
+    <labels>
+        <fullName>Transportation_Fee</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Transportation Fee</shortDescription>
+        <value>45000</value>
+    </labels>
+    <labels>
+        <fullName>UTM_Medium</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UTM Medium</shortDescription>
+        <value>Consultancy_2024</value>
+    </labels>
+    <labels>
+        <fullName>WithPremium</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WithPremium</shortDescription>
+        <value>100000</value>
+    </labels>
+    <labels>
+        <fullName>WithoutPremium</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WithoutPremium</shortDescription>
+        <value>75000</value>
+    </labels>
+    <labels>
+        <fullName>defaultAccountId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>defaultAccountId</shortDescription>
+        <value>001Il000002OvnrIAC</value>
+    </labels>
+</CustomLabels>

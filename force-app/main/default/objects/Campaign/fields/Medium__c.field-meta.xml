@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Medium__c</fullName>
+    <label>Medium</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sub_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Newspaper - National</fullName>
+                <default>false</default>
+                <label>Newspaper - National</label>
+            </value>
+            <value>
+                <fullName>Newspaper - Regional</fullName>
+                <default>false</default>
+                <label>Newspaper - Regional</label>
+            </value>
+            <value>
+                <fullName>Magazines</fullName>
+                <default>false</default>
+                <label>Magazines</label>
+            </value>
+            <value>
+                <fullName>Brochure</fullName>
+                <default>false</default>
+                <label>Brochure</label>
+            </value>
+            <value>
+                <fullName>Flyers</fullName>
+                <default>false</default>
+                <label>Flyers</label>
+            </value>
+            <value>
+                <fullName>Expo Specific Material</fullName>
+                <default>false</default>
+                <label>Expo Specific Material</label>
+            </value>
+            <value>
+                <fullName>SM Post</fullName>
+                <default>false</default>
+                <label>SM Post</label>
+            </value>
+            <value>
+                <fullName>Publishers</fullName>
+                <default>false</default>
+                <label>Publishers</label>
+            </value>
+            <value>
+                <fullName>Website</fullName>
+                <default>false</default>
+                <label>Website</label>
+            </value>
+            <value>
+                <fullName>OTT</fullName>
+                <default>false</default>
+                <label>OTT</label>
+            </value>
+            <value>
+                <fullName>SMS</fullName>
+                <default>false</default>
+                <label>SMS</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Whatsapp</fullName>
+                <default>false</default>
+                <label>Whatsapp</label>
+            </value>
+            <value>
+                <fullName>Walk-in</fullName>
+                <default>false</default>
+                <label>Walk-in</label>
+            </value>
+            <value>
+                <fullName>Calling</fullName>
+                <default>false</default>
+                <label>Calling</label>
+            </value>
+            <value>
+                <fullName>EDU EXPO</fullName>
+                <default>false</default>
+                <label>EDU EXPO</label>
+            </value>
+            <value>
+                <fullName>Articles Blogs</fullName>
+                <default>false</default>
+                <label>Articles Blogs</label>
+            </value>
+            <value>
+                <fullName>Digital</fullName>
+                <default>false</default>
+                <label>Digital</label>
+            </value>
+            <value>
+                <fullName>TV</fullName>
+                <default>false</default>
+                <label>TV</label>
+            </value>
+            <value>
+                <fullName>Convocations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Convocations</label>
+            </value>
+            <value>
+                <fullName>Fascism</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fascism</label>
+            </value>
+            <value>
+                <fullName>Founder&apos;s Day</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Founder&apos;s Day</label>
+            </value>
+            <value>
+                <fullName>Web Banner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Web Banner</label>
+            </value>
+            <value>
+                <fullName>Web Intro</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Web Intro</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Print</controllingFieldValue>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <controllingFieldValue>Apply Now</controllingFieldValue>
+            <controllingFieldValue>Print Ads</controllingFieldValue>
+            <controllingFieldValue>Announcements</controllingFieldValue>
+            <controllingFieldValue>Govt Mandatory</controllingFieldValue>
+            <valueName>Newspaper - National</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Print</controllingFieldValue>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <controllingFieldValue>Apply Now</controllingFieldValue>
+            <controllingFieldValue>Print Ads</controllingFieldValue>
+            <controllingFieldValue>Announcements</controllingFieldValue>
+            <controllingFieldValue>Govt Mandatory</controllingFieldValue>
+            <valueName>Newspaper - Regional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Print</controllingFieldValue>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <controllingFieldValue>Apply Now</controllingFieldValue>
+            <controllingFieldValue>Print Ads</controllingFieldValue>
+            <controllingFieldValue>Announcements</controllingFieldValue>
+            <valueName>Magazines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collaterals</controllingFieldValue>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <controllingFieldValue>Apply Now</controllingFieldValue>
+            <valueName>Brochure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collaterals</controllingFieldValue>
+            <controllingFieldValue>Mailers</controllingFieldValue>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <controllingFieldValue>Apply Now</controllingFieldValue>
+            <controllingFieldValue>Print Ads</controllingFieldValue>
+            <valueName>Flyers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Collaterals</controllingFieldValue>
+            <valueName>Expo Specific Material</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Content Marketing</controllingFieldValue>
+            <valueName>Articles Blogs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ad Campaigns</controllingFieldValue>
+            <valueName>Digital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Events</controllingFieldValue>
+            <controllingFieldValue>Announcements</controllingFieldValue>
+            <valueName>SM Post</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <controllingFieldValue>Apply Now</controllingFieldValue>
+            <valueName>OTT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <controllingFieldValue>Apply Now</controllingFieldValue>
+            <valueName>SMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <controllingFieldValue>Apply Now</controllingFieldValue>
+            <valueName>Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <controllingFieldValue>Apply Now</controllingFieldValue>
+            <valueName>Whatsapp</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <controllingFieldValue>Apply Now</controllingFieldValue>
+            <valueName>Walk-in</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <controllingFieldValue>Apply Now</controllingFieldValue>
+            <valueName>Calling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <controllingFieldValue>Apply Now</controllingFieldValue>
+            <valueName>EDU EXPO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA CET 2023</controllingFieldValue>
+            <valueName>TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education Portals</controllingFieldValue>
+            <valueName>Publishers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Announcements</controllingFieldValue>
+            <valueName>Website</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

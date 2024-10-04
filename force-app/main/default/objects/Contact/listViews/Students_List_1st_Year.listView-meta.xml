@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Students_List_1st_Year</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>Application_Number__c</columns>
+    <columns>Program_Batch__c</columns>
+    <columns>Active_Semester__c</columns>
+    <columns>Admission_Mode__c</columns>
+    <columns>Active_Batch__c</columns>
+    <columns>Student_Status__c</columns>
+    <columns>Caste_Category__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.Student</value>
+    </filters>
+    <filters>
+        <field>Program_Batch_Name__c</field>
+        <operation>contains</operation>
+        <value>(2022-</value>
+    </filters>
+    <filters>
+        <field>Admission_Mode__c</field>
+        <operation>equals</operation>
+        <value>CET</value>
+    </filters>
+    <label>Students List - 1st Year</label>
+    <sharedTo>
+        <role>Admission_Executive</role>
+        <role>Admissions</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Edit_Non_User</fullName>
+    <active>true</active>
+    <description>Can&apos;t edit record if Current user and applicant contact owner is not same</description>
+    <errorConditionFormula>AND(
+OR(
+ ISCHANGED( FirstName  ),
+ ISCHANGED( LastName ),
+ ISCHANGED( MiddleName ),
+ ISCHANGED( Salutation ),  
+ ISCHANGED( Country_Code__c ),
+ ISCHANGED( MobilePhone ),
+ ISCHANGED( Email ),
+ ISCHANGED( Application_Number__c ),
+ ISCHANGED( Disposition__c ),
+ ISCHANGED(  Fax  ),
+ ISCHANGED( Chat_Transcript_URL__c ) ,
+ ISCHANGED( Status ),
+ ISCHANGED( Company ),
+ ISCHANGED(  Description),
+ ISCHANGED( Mobile_OTP_Code__c )  ,
+ ISCHANGED( Mobile_OTP_Expiration__c ),
+ ISCHANGED( Mobile_OTP_Verified__c ),
+ ISCHANGED( Revisit_OTP_Code__c ),
+ ISCHANGED( Email_OTP_Code__c ) ,
+ ISCHANGED(Email_OTP_Expiration__c ) ,
+ ISCHANGED( Email_OTP_Verified__c ),
+ ISCHANGED( Revisit_OTP_Expiration__c ),
+ ISCHANGED( School__c ),
+ ISCHANGED( Program_Name_Display__c ),
+ ISCHANGED( Program_Batch__c ) ,
+ ISCHANGED( Category__c ),
+ ISCHANGED( Apply_for_REVA_CET__c ),
+ ISCHANGED( Exam_Type__c ) ,
+ ISCHANGED( Exam_Dates__c ),
+ ISCHANGED( LeadSource ),
+ ISCHANGED( Primary_Source__c ),
+ ISCHANGED( Secondary_Source__c ),
+ ISCHANGED( Tertiary_Source__c ),
+ ISCHANGED( utm_source__c ),
+ ISCHANGED( utm_campaign__c ) ,
+ ISCHANGED( utm_content__c ) ,
+ ISCHANGED( utm_medium__c ) ,
+ ISCHANGED( utm_term__c ),
+ ISCHANGED( DoNotCall ),
+ ISCHANGED( hed__SMS_Opt_Out__c ),
+ ISCHANGED( HasOptedOutOfEmail ),
+ ISCHANGED(  Country__c  ),
+ ISCHANGED( Address ),
+ ISCHANGED( State__c ),
+ ISCHANGED( pi__score__c ),
+ ISCHANGED( pi__campaign__c ) ,
+ ISCHANGED( pi__pardot_hard_bounced__c ) ,
+ ISCHANGED( pi__first_touch_url__c )           
+), Owner:User.Username &lt;&gt; $User.Username , $Profile.Name  = &apos;Counselor&apos;
+)</errorConditionFormula>
+    <errorMessage>You don&apos;t have access to edit this record. Please contact Admissions Team.</errorMessage>
+</ValidationRule>

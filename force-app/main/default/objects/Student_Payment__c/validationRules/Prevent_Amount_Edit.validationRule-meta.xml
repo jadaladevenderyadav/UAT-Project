@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Amount_Edit</fullName>
+    <active>true</active>
+    <description>Prevents editing of Amount if Split Booking Fee is not checked.</description>
+    <errorConditionFormula>AND(
+NOT(Split_Booking_Fee__c),
+ISCHANGED( Amount__c )
+)</errorConditionFormula>
+    <errorDisplayField>Amount__c</errorDisplayField>
+    <errorMessage>You cannot edit Minimum Amount, Please Select Split Booking Fee to Edit.</errorMessage>
+</ValidationRule>

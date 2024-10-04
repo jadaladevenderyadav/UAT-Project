@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Migrated from the: Fee Remainder to the Student workflow rule
+Workflow rule description: &quot;</description>
+    <masterLabel>Fee Remainder to the Student T-30</masterLabel>
+</FlowDefinition>

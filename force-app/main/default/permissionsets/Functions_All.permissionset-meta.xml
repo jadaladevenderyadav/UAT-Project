@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>All permissions required to work on Salesforce Functions</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Functions All</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ComputeAccess</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ComputeProductionAccess</name>
+    </userPermissions>
+</PermissionSet>

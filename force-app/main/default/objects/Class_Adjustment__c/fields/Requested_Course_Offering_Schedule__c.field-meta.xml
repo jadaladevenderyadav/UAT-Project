@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_Course_Offering_Schedule__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Requested Course Offering Schedule</label>
+    <referenceTo>hed__Course_Offering_Schedule__c</referenceTo>
+    <relationshipLabel>Class Adjustments (Requested Course Offering Schedule)</relationshipLabel>
+    <relationshipName>Class_Adjustments1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

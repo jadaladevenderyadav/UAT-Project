@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rpl_Total_Training_Classes_Attended__c</fullName>
+    <label>Total Training Classes Attended</label>
+    <summaryFilterItems>
+        <field>Rpl_Training_Attendances__c.Rpl_Attendance__c</field>
+        <operation>equals</operation>
+        <value>Present</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Rpl_Training_Attendances__c.Rpl_Student__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country_Code__c</fullName>
+    <label>Country Code</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>India (+91)</fullName>
+                <default>false</default>
+                <label>India (+91)</label>
+            </value>
+            <value>
+                <fullName>Australia (+61)</fullName>
+                <default>false</default>
+                <label>Australia (+61)</label>
+            </value>
+            <value>
+                <fullName>Canada (+1)</fullName>
+                <default>false</default>
+                <label>Canada (+1)</label>
+            </value>
+            <value>
+                <fullName>France (+33)</fullName>
+                <default>false</default>
+                <label>France (+33)</label>
+            </value>
+            <value>
+                <fullName>Germany (+49)</fullName>
+                <default>false</default>
+                <label>Germany (+49)</label>
+            </value>
+            <value>
+                <fullName>Japan (+81)</fullName>
+                <default>false</default>
+                <label>Japan (+81)</label>
+            </value>
+            <value>
+                <fullName>New Zealand (+64)</fullName>
+                <default>false</default>
+                <label>New Zealand (+64)</label>
+            </value>
+            <value>
+                <fullName>Russia (+7)</fullName>
+                <default>false</default>
+                <label>Russia (+7)</label>
+            </value>
+            <value>
+                <fullName>Singapore (+65)</fullName>
+                <default>false</default>
+                <label>Singapore (+65)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

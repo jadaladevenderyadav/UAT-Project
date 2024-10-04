@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Admission Connect permissions to be given to Counselor</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Admissions Connect - Counselor PSG</label>
+    <permissionSets>Admissions_Connect_Recruit_Applicants</permissionSets>
+    <permissionSets>Admissions_Connect_Review_Applications_for_External_Users</permissionSets>
+    <permissionSets>Admissions_Connect_Review_Applications_for_Internal_Users</permissionSets>
+    <permissionSets>Admissions_Connect_Verify_Applications</permissionSets>
+    <permissionSets>force__ActionPlans</permissionSets>
+    <permissionSets>force__DocumentChecklist</permissionSets>
+    <permissionSets>randa__Admissions_Connect_Access</permissionSets>
+    <permissionSets>randa__Admissions_Connect_Access_Apex_Classes_for_Applications</permissionSets>
+    <permissionSets>randa__Admissions_Connect_Access_Apex_Classes_for_Document_Verification</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

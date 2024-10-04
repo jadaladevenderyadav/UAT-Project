@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Household_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.HH_Account</value>
+    </filters>
+    <label>Household Accounts</label>
+    <sharedTo>
+        <group>Admission_Admin_Team</group>
+        <group>Exam_Admin_Team</group>
+        <group>Finance_Admin_Team</group>
+        <group>ICT_Admin_Team</group>
+        <group>IQAC_Admin_Team</group>
+        <group>RO_Admin_Team</group>
+    </sharedTo>
+</ListView>

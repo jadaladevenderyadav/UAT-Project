@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RTR_Ristrict_start_end_of_the_trip_user</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  
+ISCHANGED(RTR_Start_reading__c) ||
+ISCHANGED(RTR_Type_of_the_Trip__c) ||
+ISCHANGED( RTR_Description_1__c ) ||
+ISCHANGED(RTR_Assign_vehicle__c) ||
+ISCHANGED(RTR_Assign_Drivers__c) ||
+ISCHANGED(RTR_End_reading__c) ||
+ISCHANGED( RTR_Rate_per_km1__c ) ||
+ISCHANGED( RTR_End_Kms__c ) ||
+ISCHANGED( RTR_Start_Kms__c ) ||
+ISCHANGED(RTR_Total_Amount_Spent__c),
+
+
+OR(
+   $Profile.Name !=&apos;Transport Admin&apos;,$Profile.Name !=&apos;System Administrator&apos;),
+NOT(ISPICKVAL(RTR_Approval_Status__c, &apos;Approved by Transport Admin&apos;))
+
+)</errorConditionFormula>
+    <errorMessage>You do not have enough access to edit this fields.</errorMessage>
+</ValidationRule>

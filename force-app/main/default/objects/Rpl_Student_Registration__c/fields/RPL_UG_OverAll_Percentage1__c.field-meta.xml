@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RPL_UG_OverAll_Percentage1__c</fullName>
+    <formula>IF(
+    TEXT(Course_Name__c) == &apos;BTech&apos;,
+    (Rpl_Sem_1_CGPA__c + Rpl_Sem_2_CGPA__c + Rpl_Sem_3_CGPA__c + Rpl_Sem_4_CGPA__c + Rpl_Sem_5_CGPA__c + Rpl_Sem_6_CGPA__c + Rpl_Sem_7_CGPA__c + Rpl_Sem_8_CGPA__c) / 8 / 10,
+    IF(
+        TEXT(Course_Name__c) == &apos;UG&apos;,
+        (Rpl_Sem_1_CGPA__c + Rpl_Sem_2_CGPA__c + Rpl_Sem_3_CGPA__c + Rpl_Sem_4_CGPA__c + Rpl_Sem_5_CGPA__c + Rpl_Sem_6_CGPA__c) / 6 / 10,
+        IF(
+            OR(TEXT(Course_Name__c) == &apos;MBA&apos;, TEXT(Course_Name__c) == &apos;MTech/MSC/MCA&apos;),
+            Rpl_UG_CGPA__c /10,
+            0
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>UG OverAll Percentage1</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

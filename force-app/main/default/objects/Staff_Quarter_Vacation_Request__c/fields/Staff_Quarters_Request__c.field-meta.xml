@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Staff_Quarters_Request__c</fullName>
+    <label>Staff Quarters Request</label>
+    <referenceTo>Staff_Quarters_Request__c</referenceTo>
+    <relationshipLabel>Staff Quarter Vacation Requests</relationshipLabel>
+    <relationshipName>Staff_Quarter_Vacation_Requests</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

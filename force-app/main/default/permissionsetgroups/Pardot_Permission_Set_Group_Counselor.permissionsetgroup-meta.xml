@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used for assigning Pardot-related permissions for Counselor.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Pardot Permission Set Group - Counselor</label>
+    <permissionSets>Pardot_Counselor_Permission_Set</permissionSets>
+    <permissionSets>force__CRMUserPsl</permissionSets>
+    <permissionSets>pi__Pardot</permissionSets>
+    <permissionSets>pi__Pardot_Connector_User</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

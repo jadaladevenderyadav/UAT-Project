@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country__c</fullName>
+    <label>Country</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Select_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>India</fullName>
+                <default>false</default>
+                <label>India</label>
+            </value>
+            <value>
+                <fullName>Afghanistan</fullName>
+                <default>false</default>
+                <label>Afghanistan</label>
+            </value>
+            <value>
+                <fullName>Albania</fullName>
+                <default>false</default>
+                <label>Albania</label>
+            </value>
+            <value>
+                <fullName>Algeria</fullName>
+                <default>false</default>
+                <label>Algeria</label>
+            </value>
+            <value>
+                <fullName>American Samoa</fullName>
+                <default>false</default>
+                <label>American Samoa</label>
+            </value>
+            <value>
+                <fullName>Andorra</fullName>
+                <default>false</default>
+                <label>Andorra</label>
+            </value>
+            <value>
+                <fullName>Angola</fullName>
+                <default>false</default>
+                <label>Angola</label>
+            </value>
+            <value>
+                <fullName>Anguilla</fullName>
+                <default>false</default>
+                <label>Anguilla</label>
+            </value>
+            <value>
+                <fullName>Australia</fullName>
+                <default>false</default>
+                <label>Australia</label>
+            </value>
+            <value>
+                <fullName>Bahrain</fullName>
+                <default>false</default>
+                <label>Bahrain</label>
+            </value>
+            <value>
+                <fullName>Bangladesh</fullName>
+                <default>false</default>
+                <label>Bangladesh</label>
+            </value>
+            <value>
+                <fullName>Benin</fullName>
+                <default>false</default>
+                <label>Benin</label>
+            </value>
+            <value>
+                <fullName>Bhutan</fullName>
+                <default>false</default>
+                <label>Bhutan</label>
+            </value>
+            <value>
+                <fullName>Brazil</fullName>
+                <default>false</default>
+                <label>Brazil</label>
+            </value>
+            <value>
+                <fullName>Bulgaria</fullName>
+                <default>false</default>
+                <label>Bulgaria</label>
+            </value>
+            <value>
+                <fullName>Burma</fullName>
+                <default>false</default>
+                <label>Burma</label>
+            </value>
+            <value>
+                <fullName>Cameroon</fullName>
+                <default>false</default>
+                <label>Cameroon</label>
+            </value>
+            <value>
+                <fullName>Canada</fullName>
+                <default>false</default>
+                <label>Canada</label>
+            </value>
+            <value>
+                <fullName>Chad</fullName>
+                <default>false</default>
+                <label>Chad</label>
+            </value>
+            <value>
+                <fullName>China</fullName>
+                <default>false</default>
+                <label>China</label>
+            </value>
+            <value>
+                <fullName>Côte d&apos;Ivoire</fullName>
+                <default>false</default>
+                <label>Côte d&apos;Ivoire</label>
+            </value>
+            <value>
+                <fullName>Dahomey</fullName>
+                <default>false</default>
+                <label>Dahomey</label>
+            </value>
+            <value>
+                <fullName>Democratic Republic of the Congo</fullName>
+                <default>false</default>
+                <label>Democratic Republic of the Congo</label>
+            </value>
+            <value>
+                <fullName>Ethiopia</fullName>
+                <default>false</default>
+                <label>Ethiopia</label>
+            </value>
+            <value>
+                <fullName>France</fullName>
+                <default>false</default>
+                <label>France</label>
+            </value>
+            <value>
+                <fullName>Ghana</fullName>
+                <default>false</default>
+                <label>Ghana</label>
+            </value>
+            <value>
+                <fullName>Guyana</fullName>
+                <default>false</default>
+                <label>Guyana</label>
+            </value>
+            <value>
+                <fullName>Ireland</fullName>
+                <default>false</default>
+                <label>Ireland</label>
+            </value>
+            <value>
+                <fullName>Italy</fullName>
+                <default>false</default>
+                <label>Italy</label>
+            </value>
+            <value>
+                <fullName>Japan</fullName>
+                <default>false</default>
+                <label>Japan</label>
+            </value>
+            <value>
+                <fullName>Kenya</fullName>
+                <default>false</default>
+                <label>Kenya</label>
+            </value>
+            <value>
+                <fullName>Kuwait</fullName>
+                <default>false</default>
+                <label>Kuwait</label>
+            </value>
+            <value>
+                <fullName>Liberia</fullName>
+                <default>false</default>
+                <label>Liberia</label>
+            </value>
+            <value>
+                <fullName>Luxembourg</fullName>
+                <default>false</default>
+                <label>Luxembourg</label>
+            </value>
+            <value>
+                <fullName>Malawi</fullName>
+                <default>false</default>
+                <label>Malawi</label>
+            </value>
+            <value>
+                <fullName>Malaysia</fullName>
+                <default>false</default>
+                <label>Malaysia</label>
+            </value>
+            <value>
+                <fullName>Mauritius</fullName>
+                <default>false</default>
+                <label>Mauritius</label>
+            </value>
+            <value>
+                <fullName>Monaco</fullName>
+                <default>false</default>
+                <label>Monaco</label>
+            </value>
+            <value>
+                <fullName>Mongolia</fullName>
+                <default>false</default>
+                <label>Mongolia</label>
+            </value>
+            <value>
+                <fullName>Mozambique</fullName>
+                <default>false</default>
+                <label>Mozambique</label>
+            </value>
+            <value>
+                <fullName>Namibia</fullName>
+                <default>false</default>
+                <label>Namibia</label>
+            </value>
+            <value>
+                <fullName>Nepal</fullName>
+                <default>false</default>
+                <label>Nepal</label>
+            </value>
+            <value>
+                <fullName>New Zealand</fullName>
+                <default>false</default>
+                <label>New Zealand</label>
+            </value>
+            <value>
+                <fullName>Nigeria</fullName>
+                <default>false</default>
+                <label>Nigeria</label>
+            </value>
+            <value>
+                <fullName>Oman</fullName>
+                <default>false</default>
+                <label>Oman</label>
+            </value>
+            <value>
+                <fullName>Pakistan</fullName>
+                <default>false</default>
+                <label>Pakistan</label>
+            </value>
+            <value>
+                <fullName>Panama</fullName>
+                <default>false</default>
+                <label>Panama</label>
+            </value>
+            <value>
+                <fullName>Poland</fullName>
+                <default>false</default>
+                <label>Poland</label>
+            </value>
+            <value>
+                <fullName>Qatar</fullName>
+                <default>false</default>
+                <label>Qatar</label>
+            </value>
+            <value>
+                <fullName>Romania</fullName>
+                <default>false</default>
+                <label>Romania</label>
+            </value>
+            <value>
+                <fullName>Russian Federation (the)</fullName>
+                <default>false</default>
+                <label>Russian Federation (the)</label>
+            </value>
+            <value>
+                <fullName>Rwanda</fullName>
+                <default>false</default>
+                <label>Rwanda</label>
+            </value>
+            <value>
+                <fullName>Saudi Arabia</fullName>
+                <default>false</default>
+                <label>Saudi Arabia</label>
+            </value>
+            <value>
+                <fullName>Senegal</fullName>
+                <default>false</default>
+                <label>Senegal</label>
+            </value>
+            <value>
+                <fullName>Spain</fullName>
+                <default>false</default>
+                <label>Spain</label>
+            </value>
+            <value>
+                <fullName>Singapore</fullName>
+                <default>false</default>
+                <label>Singapore</label>
+            </value>
+            <value>
+                <fullName>Somalia</fullName>
+                <default>false</default>
+                <label>Somalia</label>
+            </value>
+            <value>
+                <fullName>South Africa</fullName>
+                <default>false</default>
+                <label>South Africa</label>
+            </value>
+            <value>
+                <fullName>South Korea</fullName>
+                <default>false</default>
+                <label>South Korea</label>
+            </value>
+            <value>
+                <fullName>South Sudan</fullName>
+                <default>false</default>
+                <label>South Sudan</label>
+            </value>
+            <value>
+                <fullName>Seychelles</fullName>
+                <default>false</default>
+                <label>Seychelles</label>
+            </value>
+            <value>
+                <fullName>Sri Lanka</fullName>
+                <default>false</default>
+                <label>Sri Lanka</label>
+            </value>
+            <value>
+                <fullName>Sudan</fullName>
+                <default>false</default>
+                <label>Sudan</label>
+            </value>
+            <value>
+                <fullName>Tanzania, United Republic of</fullName>
+                <default>false</default>
+                <label>Tanzania, United Republic of</label>
+            </value>
+            <value>
+                <fullName>Thailand</fullName>
+                <default>false</default>
+                <label>Thailand</label>
+            </value>
+            <value>
+                <fullName>Tunisia</fullName>
+                <default>false</default>
+                <label>Tunisia</label>
+            </value>
+            <value>
+                <fullName>Uganda</fullName>
+                <default>false</default>
+                <label>Uganda</label>
+            </value>
+            <value>
+                <fullName>United Arab Emirates</fullName>
+                <default>false</default>
+                <label>United Arab Emirates</label>
+            </value>
+            <value>
+                <fullName>United Kingdom</fullName>
+                <default>false</default>
+                <label>United Kingdom</label>
+            </value>
+            <value>
+                <fullName>United States of America</fullName>
+                <default>false</default>
+                <label>United States of America</label>
+            </value>
+            <value>
+                <fullName>Yemen</fullName>
+                <default>false</default>
+                <label>Yemen</label>
+            </value>
+            <value>
+                <fullName>Zambia</fullName>
+                <default>false</default>
+                <label>Zambia</label>
+            </value>
+            <value>
+                <fullName>Åland Islands</fullName>
+                <default>false</default>
+                <label>Åland Islands</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Karnataka</controllingFieldValue>
+            <controllingFieldValue>Non-Karnataka</controllingFieldValue>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>India</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Afghanistan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Albania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Algeria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>American Samoa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Andorra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Angola</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Anguilla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Australia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Bahrain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Bangladesh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Benin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Bhutan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Brazil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Bulgaria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Burma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Cameroon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Canada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Chad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>China</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Côte d&apos;Ivoire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Dahomey</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Democratic Republic of the Congo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Ethiopia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>France</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Ghana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Guyana</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Ireland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Italy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Japan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Kenya</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Kuwait</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Liberia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Luxembourg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Malawi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Malaysia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Mauritius</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Monaco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Mongolia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Mozambique</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Namibia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Nepal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>New Zealand</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Nigeria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Oman</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Pakistan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Panama</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Poland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Qatar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Romania</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Russian Federation (the)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Rwanda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Saudi Arabia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Senegal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Spain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Singapore</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Somalia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>South Africa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>South Korea</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>South Sudan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Seychelles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Sri Lanka</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Sudan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Tanzania, United Republic of</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Thailand</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Tunisia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Uganda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>United Arab Emirates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>United Kingdom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>United States of America</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Yemen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Zambia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indian (SAARC)</controllingFieldValue>
+            <controllingFieldValue>Non-Resident Indian(NRI)</controllingFieldValue>
+            <controllingFieldValue>Foreign Nationals</controllingFieldValue>
+            <valueName>Åland Islands</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

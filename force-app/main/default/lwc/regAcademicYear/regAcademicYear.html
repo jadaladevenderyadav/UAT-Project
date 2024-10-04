@@ -1,0 +1,88 @@
+<!-- <template>
+    <lightning-button label="Generate PDF" onclick={generatePDF}></lightning-button>
+</template> -->
+<!-- <template>
+    <lightning-button label="Generate PDF" onclick={generatePDF}></lightning-button>
+    <iframe if:true={showPDF} src={pdfUrl} style="width:100%; height:600px;"></iframe>
+</template>
+-->
+<template>
+    <lightning-card title="Registration For Academic Year" icon-name="custom:custom63">
+
+        <!-- <div>Download Registration Form</div> -->        
+            <template if:true={regFormImage}>
+                <lightning-layout multiple-columns>
+                    <template for:each={regFormImage} for:item="file">
+                        <lightning-layout-item key={file.Id} class="slds-p-around_small">
+                            <!-- <lightning-card title={file.Title}> -->
+                                <!-- <img src={file.previewUrl} alt={file.Title} class="slds-m-bottom_small" style="max-width: 100px; max-height: 100px;"></br> -->
+                                <lightning-button variant="neutral" label="Download Registration Form" onclick={downloadFile1} data-id={file.LatestPublishedVersionId}></lightning-button>
+                            <!-- </lightning-card> -->
+                        </lightning-layout-item>
+                    </template>
+                </lightning-layout>
+            </template>
+       <!-- UPLOAD BUTTON -->
+        <div class="slds-m-around_medium">
+            <lightning-input type="file" label="Upload Image" onchange={handleFileChange}></lightning-input>
+            <lightning-button variant="brand" label="Upload" onclick={uploadFile} class="slds-m-top_small"></lightning-button>
+        </div>
+        <!-- SHOW SPINNER  -->
+        <template if:true={uploading}>
+            <div class="slds-m-top_medium">
+                <lightning-spinner alternative-text="Uploading..." size="small"></lightning-spinner>
+            </div>
+        </template>
+
+        <div class="slds-m-around_medium">
+            <template if:true={files}>
+                <!-- <lightning-layout multiple-columns>
+                    <template for:each={files} for:item="file">
+                        <lightning-layout-item key={file.Id} class="slds-p-around_small">
+                            <lightning-card title={file.Title}>
+                                <div class="image-container"> -->
+                                    <!-- <img src={file.previewUrl} alt={file.Title} class="thumbnail" onclick={handleImageClick} style="width: 200px; height: 200px;"> -->
+                                    <iframe src={filePreview} width="100%" height="600px"></iframe>
+                                <!-- </div>                                 -->
+                                <!-- <lightning-button variant="neutral" label="Download" onclick={downloadFile1} data-id={file.LatestPublishedVersionId}></lightning-button> -->                                                   
+                            <!-- </lightning-card>
+                        </lightning-layout-item>
+                    </template>
+                </lightning-layout> -->
+            </template>
+        </div>
+    </lightning-card>
+
+     <!-- Modal implementation -->
+     <!--
+     <template if:true={isModalOpen}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={handleClose}>
+                        <lightning-icon icon-name="utility:close" alternative-text="close" size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <h2 class="slds-text-heading_medium">Image Preview</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <div class="image-preview-container">
+                        <img src={filePreview} alt="Image Preview" class="full-image"/>
+                    </div>
+                </div>               
+                <footer class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" onclick={handleClose}>Close</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+    --> 
+<!-- end  -->  
+    
+    
+<!-- 
+    <div>Download Registration Form</div>
+    <lightning-button label="Download Image" onclick={downloadImage}></lightning-button>
+    <a href="https://reva-university--couat1908.sandbox.my.salesforce.com/sfc/p/0T0000000qZR/a/Il000000PBNB/VT5AG2xx1gbc1EYUpFxZ3E17DNKS0GxmdavgnY7mIzs">Download RegFormat</a> -->
+</template>

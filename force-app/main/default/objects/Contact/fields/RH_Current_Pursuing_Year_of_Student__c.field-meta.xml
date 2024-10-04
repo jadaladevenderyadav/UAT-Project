@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RH_Current_Pursuing_Year_of_Student__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+    MOD(VALUE(RIGHT(Active_Semester__r.Name, 1)), 10),
+    1, &apos;1st Year&apos;,
+    2, &apos;1st Year&apos;,
+    3, &apos;2nd Year&apos;,
+    4, &apos;2nd Year&apos;,
+    5, &apos;3rd Year&apos;,
+    6, &apos;3rd Year&apos;,
+    7, &apos;4th Year&apos;,
+    8, &apos;4th Year&apos;,
+    9, &apos;5th Year&apos;,
+    0, &apos;5th Year&apos;,
+    &apos;Unknown&apos;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Current Pursuing Year of Student</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Applicants_Application_Fee_Unpaid</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>Application_Number__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.PHONE3</columns>
+    <columns>Primary_Academic_Program__c</columns>
+    <columns>Visual_Status__c</columns>
+    <columns>School__c</columns>
+    <columns>Applying_For_REVA_CET__c</columns>
+    <columns>Applicant_Score__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Application_Fee_Paid__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Record_Type_Name__c</field>
+        <operation>equals</operation>
+        <value>Applicant</value>
+    </filters>
+    <label>My Applicants - Application Fee Unpaid</label>
+    <sharedTo>
+        <role>Counselor</role>
+    </sharedTo>
+</ListView>

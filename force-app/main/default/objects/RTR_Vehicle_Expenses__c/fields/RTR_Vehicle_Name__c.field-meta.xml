@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RTR_Vehicle_Name__c</fullName>
+    <label>Vehicle Name</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>RTR_Vehicle_Master__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>REVA Owned</value>
+        </filterItems>
+        <filterItems>
+            <field>RTR_Vehicle_Master__c.Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>RTR_Vehicle_Master__c</referenceTo>
+    <relationshipLabel>Vehicle Expenses</relationshipLabel>
+    <relationshipName>Vehicle_Expenses</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,84 @@
+.c-container {
+    border: 1px solid #FFAE42;
+    margin: 10px 0 20px;
+}
+.welcome-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 20px;
+}
+.welcome-message h1{
+    font-size: larger;
+    font-weight: bold;
+    color: grey;
+}
+.image-container{
+    width: 50%;
+    height: 250px;
+
+}
+.register-button{
+    border-color: #f785646b;
+    border-width: medium;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+.page-header{
+    height: 50px;
+    text-align: center;
+    border: solid 1px #FFAE42;
+    background:#f9f5f0;
+    
+}
+.page-section {
+    border: solid 1px #FFAE42;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.page-section2{
+    border: solid 1px #FFAE42;
+}
+.page-footer {
+    text-align: center;
+    border: solid 1px #FFAE42;
+    background:#f9f5f0;
+}
+.formColor{
+    color:black;
+    font-weight: 600;
+    font-size: medium;
+}
+.required-star{
+    color:red;
+}
+.page-main {
+    background: #f9f5f0;
+}
+.slds-form-element__label{
+     font-weight:900;
+     color:#f96d00
+}
+.slds-section__content{
+    border: solid 1px #FFAE42;
+    color: #f96d00;
+}
+.childHeight{
+    height:100px;
+}
+.page-section1{
+    border: solid 1px #FFAE42;
+    padding: 1rem;
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+@media only screen and (max-width: 767px) {
+   .Size{
+       width: 321px;
+       margin-left: 202px;
+       height: 458px;
+       border-radius: 20%;
+    }
+}

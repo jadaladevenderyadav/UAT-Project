@@ -1,0 +1,18 @@
+.timer {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 20px !important;
+}
+
+.timer {
+    margin-top: 5px;
+}
+.timer-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.timer-1{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}

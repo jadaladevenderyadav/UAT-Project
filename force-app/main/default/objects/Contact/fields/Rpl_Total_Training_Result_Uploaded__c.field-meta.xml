@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rpl_Total_Training_Result_Uploaded__c</fullName>
+    <inlineHelpText>Total number of training assessment results uploaded</inlineHelpText>
+    <label>Total Training Result Uploaded</label>
+    <summaryForeignKey>Rpl_Training_Assement_Result__c.Rpl_Student__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

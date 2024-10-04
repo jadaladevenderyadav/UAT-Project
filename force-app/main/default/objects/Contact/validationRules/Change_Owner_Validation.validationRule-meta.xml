@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Owner_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+($Profile.Name = &apos;Counselor&apos;) &amp;&amp;  ($User.Username &lt;&gt; &apos;anjana.vasu@reva.edu.in.stratosuat&apos;),
+OR(
+ISCHANGED( OwnerId )
+))</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>You don&apos;t have access to change the owner. Please contact Admission Head.</errorMessage>
+</ValidationRule>

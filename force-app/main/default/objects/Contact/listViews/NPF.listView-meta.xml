@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NPF</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>hed__WorkEmail__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>User_Creation_in_AD__c</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.CREATED_DATE</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.Student</value>
+    </filters>
+    <filters>
+        <field>NPF__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Quota__c</field>
+        <operation>equals</operation>
+        <value>Government Quota</value>
+    </filters>
+    <label>NPF Students Data</label>
+    <sharedTo>
+        <group>Admission_Admin_Team</group>
+    </sharedTo>
+</ListView>

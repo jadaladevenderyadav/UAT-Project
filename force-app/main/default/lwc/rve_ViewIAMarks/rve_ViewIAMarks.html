@@ -1,0 +1,562 @@
+<template>
+    <template if:true={boolShowSpinner}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </template>
+    <div>
+        <div class="row">
+            <div class="slds-p-around_x-small">
+                <lightning-input type="text" label="Semester" value={activeSem} disabled></lightning-input>
+            </div>
+            <div class="slds-p-around_x-small">
+                <lightning-combobox name="IAType" label="IA Type" value={IATypesOptionSelected} placeholder="Select IA"
+                    options={IATypesOptions} onchange={handleChangeIATypes} required></lightning-combobox>
+            </div>
+        </div><br>
+        <div class="row  slds-scrollable">
+            <template if:true={showIAMarks}>
+                <template if:true={iaMarksRecords}>
+                    <template for:each={iaMarksRecords} for:item="item">
+                        <!-- Table will show only if Data is availabe for headers -->
+                        <template if:true={item.showTable}>
+                            <!-- For Theory Records -->
+                            <template if:true={item.isTheoryCRSType}>
+                                <section key={item.Id}>
+                                    <table class="slds-text-heading_small">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="100%">
+                                                    {item.crsType}
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th >Course Name</th>
+                                                <th >Theory Max {item.hedCourse.Theory_Maximum_Marks__c}</th>
+                                                <th >Seminar Max {item.hedCourse.Seminar_Maximum_Marks__c}</th>
+                                                <th >Quiz Max {item.hedCourse.Quiz_Maximum_Marks__c}</th>
+                                                <th >Total Max {item.hedCourse.Maximum_Internal_Marks__c}</th>
+                                            </tr>
+
+                                        </thead>
+                                        <tbody>
+                                            <template for:each={item.list_IAMarks} for:item="course">
+                                                <tr key={course.Id}>
+                                                    <td class="small-ch" data-cell="Course">
+                                                        <div class="text-right" title={course.Course_Offering__r.hed__Course__r.Name}>
+                                                            {course.Course_Offering__r.hed__Course__r.Name}
+                                                        </div>
+                                                    </td>
+                                                    <td class="small-ch" data-cell="Theory">
+                                                        <div class="text-right" title={course.Theory_Secured_Marks__c}>
+                                                            {course.Theory_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="small-ch" data-cell="Seminar">
+                                                        <div class="text-right" title={course.Seminar_Secured_Marks__c}>
+                                                            {course.Seminar_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="small-ch" data-cell="Quiz">
+                                                        <div class="text-right" title={course.Quiz_Secured_marks__c}>
+                                                            {course.Quiz_Secured_marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="small-ch" data-cell="Total">
+                                                        <div class="text-right" title={course.Total_Secured_Marks__c}>
+                                                            {course.Total_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </template>
+                                        </tbody>
+                                    </table>
+                                    </br></br>
+                                </section>
+                            </template>
+
+                            <!-- <template if:true={item.isTheoryCRSType}>
+                                <template if:true={smallscreen}>
+                                    <b key={item.crsType}> {item.crsType}</b>
+                                </template>
+
+                                <table key={item.crsType}
+                                    class="slds-table  slds-scrollable_x slds-max-medium-table_stacked-horizontal"
+                                    style="width:100%; border-color:#F07F07">
+                                    <thead>
+
+                                        <tr class="slds-line-height_reset">
+                                            <td class="row-heading" scope="col" >
+                                                {item.crsType}
+                                            </td>
+                                        </tr>
+                                        <tr class="slds-line-height_reset">
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Course Name">Course Name</div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Theory">Theory Max:
+                                                    {item.hedCourse.Theory_Maximum_Marks__c}</div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Seminar">Seminar Max:
+                                                    {item.hedCourse.Seminar_Maximum_Marks__c}</div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Quiz">Quiz Max:
+                                                    {item.hedCourse.Quiz_Maximum_Marks__c}</div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Total">Total Max:
+                                                    {item.hedCourse.Maximum_Internal_Marks__c}</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template for:each={item.list_IAMarks} for:item="course">
+                                            <tr key={course.Id} class="slds-hint-parent">
+                                                <td data-label="Course">
+                                                    <div class="slds-truncate"
+                                                        title={course.Course_Offering__r.hed__Course__r.Name}>
+                                                        {course.Course_Offering__r.hed__Course__r.Name}</div>
+                                                </td>
+                                                <td data-label="Theory">
+                                                    <div class="slds-truncate" title={course.Theory_Secured_Marks__c}>
+                                                        {course.Theory_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Seminar">
+                                                    <div class="slds-truncate" title={course.Seminar_Secured_Marks__c}>
+                                                        {course.Seminar_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Quiz">
+                                                    <div class="slds-truncate" title={course.Quiz_Secured_marks__c}>
+                                                        {course.Quiz_Secured_marks__c}</div>
+                                                </td>
+                                                <td data-label="Total">
+                                                    <div class="slds-truncate" title={course.Total_Secured_Marks__c}>
+                                                        {course.Total_Secured_Marks__c}</div>
+                                                </td>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </template> -->
+
+                            <!-- For Project Records -->
+                            <template if:true={item.isProjectCRSType}>
+                                <section key={item.crsType}>
+                                    <template if:true={smallscreen}>
+                                        <b>{item.crsType}</b>
+                                    </template>
+
+                                    <table class="slds-text-heading_small">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="100%">
+                                                    {item.crsType}
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Course Name</th>
+                                                <th>Selection of Topic <br /> Max:
+                                                    {item.hedCourse.Selection_of_Topic_Max_marks__c}</th>
+                                                <th>Analysis &amp; Synthesis <br /> Max:
+                                                    {item.hedCourse.Analysis_and_Synthesis_Max_Marks__c}</th>
+                                                <th>Literature Survey <br /> Max:
+                                                    {item.hedCourse.Literature_Survey_Max_Marks__c}</th>
+                                                <th>Ethical Attitude <br /> Max:
+                                                    {item.hedCourse.Ethical_Attitude_Max_Marks__c}</th>
+                                                <th>Independent Learning <br /> Max:
+                                                    {item.hedCourse.Independent_Learning_Max_Marks__c}</th>
+                                                <th>Oral Presentation <br /> Max:
+                                                    {item.hedCourse.Oral_Presentation_Max_Marks__c}</th>
+                                                <th>Report Writing <br /> Max:
+                                                    {item.hedCourse.Report_Writing_Max_Marks__c}</th>
+                                                <th>Continuous Learning <br /> Max:
+                                                    {item.hedCourse.Continuous_Learning_Max_Marks__c}</th>
+                                                <th>Total <br /> Max: {item.hedCourse.Maximum_Internal_Marks__c}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <template for:each={item.list_IAMarks} for:item="course">
+                                                <tr key={course.Id}>
+                                                    <td class="medium-ch" data-cell="Course">
+                                                        <div class="text-right" title={course.Course_Offering__r.hed__Course__r.Name}>
+                                                            {course.Course_Offering__r.hed__Course__r.Name}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Selection of Topics">
+                                                        <div class="text-right" title={course.Selection_of_Topic_Secured_Marks__c}>
+                                                            {course.Selection_of_Topic_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Analysis &amp; Synthesis">
+                                                        <div class="text-right" title={course.Analysis_and_Synthesis_Secured_Marks__c}>
+                                                            {course.Analysis_and_Synthesis_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Literature Survey">
+                                                        <div class="text-right" title={course.Literature_Survey_Secured_Marks__c}>
+                                                            {course.Literature_Survey_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Ethical Attitude">
+                                                        <div class="text-right" title={course.Ethical_Attitude_Secured_Marks__c}>
+                                                            {course.Ethical_Attitude_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Independent Learning">
+                                                        <div class="text-right" title={course.Independent_Learning_Secured_Marks__c}>
+                                                            {course.Independent_Learning_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Oral Presentation">
+                                                        <div class="text-right"  title={course.Oral_Presentation_Secured_Marks__c}>
+                                                            {course.Oral_Presentation_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Report Writing">
+                                                        <div class="text-right" title={course.Report_Writing_Secured_Marks__c}>
+                                                            {course.Report_Writing_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Continuous Learning">
+                                                        <div class="text-right" title={course.Continuous_Learning_Secured_Marks__c}>
+                                                            {course.Continuous_Learning_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Total">
+                                                        <div class="text-right" title={course.Total_Secured_Marks__c}>
+                                                            {course.Total_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </template>
+                                        </tbody>
+                                    </table>
+                                </section>
+                            </template>
+                            <!-- <template if:true={item.isProjectCRSType}>
+                                <template key={item.crsType} if:true={smallscreen}>
+                                    <b key={item.crsType}>{item.crsType}</b>
+                                </template>
+
+                                <table key={item.crsType}
+                                    class="slds-table  slds-scrollable_x slds-max-medium-table_stacked-horizontal"
+                                    style="width:100%; border-color:#F07F07">
+                                    <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <td class="row-heading" scope="col" colspan="100%">
+                                                {item.crsType}
+                                            </td>
+                                        </tr>
+                                        <tr class="slds-line-height_reset">
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Course Name">Course Name</div>
+                                            </th>
+                                            <th class="" scope="col" style="size:5px;">
+                                                <div class="slds-truncate" title="Selection of Topic">
+                                                    Selection of Topic <br /> Max:
+                                                    {item.hedCourse.Selection_of_Topic_Max_marks__c}
+                                                </div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Analysis &amp; Synthesis"
+                                                    style="word-wrap:break-word;">
+                                                    Analysis &amp; Synthesis <br /> Max:
+                                                    {item.hedCourse.Analysis_and_Synthesis_Max_Marks__c}
+                                                </div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Literature Survey"
+                                                    style="word-wrap:break-word;">
+                                                    Literature Survey <br /> Max:
+                                                    {item.hedCourse.Literature_Survey_Max_Marks__c}
+                                                </div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Ethical Attitude"
+                                                    style="word-wrap:break-word;">
+                                                    Ethical Attitude <br /> Max:
+                                                    {item.hedCourse.Ethical_Attitude_Max_Marks__c}
+                                                </div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Independent Learning"
+                                                    style="word-wrap:break-word;">
+                                                    Independent Learning <br /> Max:
+                                                    {item.hedCourse.Independent_Learning_Max_Marks__c}
+                                                </div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Oral Presentation"
+                                                    style="word-wrap:break-word;">
+                                                    Oral Presentation <br /> Max:
+                                                    {item.hedCourse.Oral_Presentation_Max_Marks__c}
+                                                </div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Report Writing"
+                                                    style="word-wrap:break-word;">
+                                                    Report Writing <br /> Max:
+                                                    {item.hedCourse.Report_Writing_Max_Marks__c}
+                                                </div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Continuous Learning"
+                                                    style="word-wrap:break-word;">
+                                                    Continuous Learning <br /> Max:
+                                                    {item.hedCourse.Continuous_Learning_Max_Marks__c}
+                                                </div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Total">Total <br /> Max:
+                                                    {item.hedCourse.Maximum_Internal_Marks__c}</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template for:each={item.list_IAMarks} for:item="course">
+                                            <tr key={course.Id} class="slds-hint-parent">
+                                                <td data-label="Course">
+                                                    <div class="slds-truncate"
+                                                        title={course.Course_Offering__r.hed__Course__r.Name}>
+                                                        {course.Course_Offering__r.hed__Course__r.Name}</div>
+                                                </td>
+                                                <td data-label="Selection of Topic">
+                                                    <div class="slds-truncate"
+                                                        title={course.Selection_of_Topic_Secured_Marks__c}>
+                                                        {course.Selection_of_Topic_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Analysis &amp; Synthesis">
+                                                    <div class="slds-truncate"
+                                                        title={course.Analysis_and_Synthesis_Secured_Marks__c}>
+                                                        {course.Analysis_and_Synthesis_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Literature Survey">
+                                                    <div class="slds-truncate"
+                                                        title={course.Literature_Survey_Secured_Marks__c}>
+                                                        {course.Literature_Survey_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Ethical Attitude">
+                                                    <div class="slds-truncate"
+                                                        title={course.Ethical_Attitude_Secured_Marks__c}>
+                                                        {course.Ethical_Attitude_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Independent Learning">
+                                                    <div class="slds-truncate"
+                                                        title={course.Independent_Learning_Secured_Marks__c}>
+                                                        {course.Independent_Learning_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Oral Presentation">
+                                                    <div class="slds-truncate"
+                                                        title={course.Oral_Presentation_Secured_Marks__c}>
+                                                        {course.Oral_Presentation_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Report Writing">
+                                                    <div class="slds-truncate"
+                                                        title={course.Report_Writing_Secured_Marks__c}>
+                                                        {course.Report_Writing_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Continuous Learning">
+                                                    <div class="slds-truncate"
+                                                        title={course.Continuous_Learning_Secured_Marks__c}>
+                                                        {course.Continuous_Learning_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Total">
+                                                    <div class="slds-truncate" title={course.Total_Secured_Marks__c}>
+                                                        {course.Total_Secured_Marks__c}</div>
+                                                </td>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </template> -->
+
+                            <!-- For Practical Records -->
+                            <template if:true={item.isPracticalCRSType}>
+                                <section key={item.crsType}>
+                                    <template if:true={smallscreen}>
+                                        <b>{item.crsType}</b>
+                                    </template>
+
+                                    <table class="slds-text-heading_small" style="width: 100%; border-color: #F07F07;">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="100%">
+                                                    {item.crsType}
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>Course Name</th>
+                                                <th>Knowledge of Exercise <br /> Max:
+                                                    {item.hedCourse.Knowledge_of_Exercise_Max_Marks__c}</th>
+                                                <th>Execution of Exercise <br /> Max:
+                                                    {item.hedCourse.Execution_of_Exercise_Max_Marks__c}</th>
+                                                <th>Description of Experiment <br /> Max:
+                                                    {item.hedCourse.Description_of_Experiment_Max_Marks__c}
+                                                </th>
+                                                <th>Viva Voce <br /> Max:
+                                                    {item.hedCourse.Viva_Voce_Practical_Max_Marks__c}</th>
+                                                <th>Punctuality <br /> Max: {item.hedCourse.Punctuality_Max_Marks__c}
+                                                </th>
+                                                <th>Results <br /> Max: {item.hedCourse.Results_Max_Marks__c}</th>
+                                                <th>Total <br /> Max: {item.hedCourse.Maximum_Internal_Marks__c}</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <template for:each={item.list_IAMarks} for:item="course">
+                                                <tr key={course.Id}>
+                                                    <td class="medium-ch" data-cell="Course">
+                                                        <div class="text-right" title={course.Course_Offering__r.hed__Course__r.Name}>
+                                                            {course.Course_Offering__r.hed__Course__r.Name}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Knowledge">
+                                                        <div class="text-right" title={course.Knowledge_of_Exercise_Secured_Marks__c}>
+                                                            {course.Knowledge_of_Exercise_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Execution">
+                                                        <div class="text-right" title={course.Execution_of_Exercise_Secured_Marks__c}>
+                                                            {course.Execution_of_Exercise_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Description">
+                                                        <div class="text-right" title={course.Description_of_Experiment_Secured_Mark__c}>
+                                                            {course.Description_of_Experiment_Secured_Mark__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Viva voce">
+                                                        <div class="text-right" title={course.Viva_Voce_Practical_Secured_Marks__c}>
+                                                            {course.Viva_Voce_Practical_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Punctuality">
+                                                        <div class="text-right" title={course.Punctuality_Secured_Marks__c}>
+                                                            {course.Punctuality_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Results">
+                                                        <div class="text-right" title={course.Results_Secured_Marks__c}>
+                                                            {course.Results_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                    <td class="medium-ch" data-cell="Total">
+                                                        <div class="text-right" title={course.Total_Secured_Marks__c}>
+                                                            {course.Total_Secured_Marks__c}
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </template>
+                                        </tbody>
+                                    </table>
+                                </section>
+                            </template>
+
+                            <!-- <template if:true={item.isPracticalCRSType}>
+                                <templae key={item.crsType} if:true={smallscreen}>
+                                    <b>{item.crsType}</b>
+                                </templae>
+                                <table key={item.crsType} class="slds-table  slds-scrollable_x" style="width:100%">
+                                    <thead>
+                                        <tr class="slds-line-height_reset">
+                                            <td class="row-heading" scope="col" colspan="100%">
+                                                {item.crsType}
+                                            </td>
+                                        </tr>
+                                        <tr class="slds-line-height_reset">
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Course Name">Course Name</div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Knowledge of Exercise">Knowledge of
+                                                    Exercise <br /> Max:
+                                                    {item.hedCourse.Knowledge_of_Exercise_Max_Marks__c}</div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Execution of Exercise">Execution of
+                                                    Exercise <br /> Max:
+                                                    {item.hedCourse.Execution_of_Exercise_Max_Marks__c}</div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Description of Experiment">Description
+                                                    of Experiment <br /> Max:
+                                                    {item.hedCourse.Description_of_Experiment_Max_Marks__c}</div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Viva voce">Viva Voce <br /> Max:
+                                                    {item.hedCourse.Viva_Voce_Practical_Max_Marks__c}</div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Punctuality">Punctuality <br /> Max:
+                                                    {item.hedCourse.Punctuality_Max_Marks__c}</div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Results">Results <br /> Max:
+                                                    {item.hedCourse.Results_Max_Marks__c}</div>
+                                            </th>
+                                            <th class="" scope="col">
+                                                <div class="slds-truncate" title="Total">Total <br /> Max:
+                                                    {item.hedCourse.Maximum_Internal_Marks__c}</div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template for:each={item.list_IAMarks} for:item="course">
+                                            <tr key={course.Id} class="slds-hint-parent">
+                                                <td data-label="Course">
+                                                    <div class="slds-truncate"
+                                                        title={course.Course_Offering__r.hed__Course__r.Name}>
+                                                        {course.Course_Offering__r.hed__Course__r.Name}</div>
+                                                </td>
+                                                <td data-label="Knowledge">
+                                                    <div class="slds-truncate"
+                                                        title={course.Knowledge_of_Exercise_Secured_Marks__c}>
+                                                        {course.Knowledge_of_Exercise_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Execution">
+                                                    <div class="slds-truncate"
+                                                        title={course.Execution_of_Exercise_Secured_Marks__c}>
+                                                        {course.Execution_of_Exercise_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Description">
+                                                    <div class="slds-truncate"
+                                                        title={course.Description_of_Experiment_Secured_Mark__c}>
+                                                        {course.Description_of_Experiment_Secured_Mark__c}</div>
+                                                </td>
+                                                <td data-label="Viva voce">
+                                                    <div class="slds-truncate"
+                                                        title={course.Viva_Voce_Practical_Secured_Marks__c}>
+                                                        {course.Viva_Voce_Practical_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Punctuality">
+                                                    <div class="slds-truncate"
+                                                        title={course.Punctuality_Secured_Marks__c}>
+                                                        {course.Punctuality_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Results">
+                                                    <div class="slds-truncate" title={course.Results_Secured_Marks__c}>
+                                                        {course.Results_Secured_Marks__c}</div>
+                                                </td>
+                                                <td data-label="Total">
+                                                    <div class="slds-truncate" title={course.Total_Secured_Marks__c}>
+                                                        {course.Total_Secured_Marks__c}</div>
+                                                </td>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </template> -->
+                        </template>
+                    </template>
+                </template>
+            </template>
+            <template if:false={showIAMarks}>
+                <center>
+                    <div class="slds-align_absolute-center">
+                        <h1>No IA Found.</h1>
+                    </div>
+                </center>
+            </template>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rpl_Year_Of_Study__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+VALUE(RIGHT(Contact__r.Active_Semester__r.Name, 1)) = 1,
+VALUE(RIGHT(Contact__r.Active_Semester__r.Name, 1)) = 2
+),
+1,
+IF(
+OR(
+VALUE(RIGHT(Contact__r.Active_Semester__r.Name, 1)) = 3,
+VALUE(RIGHT(Contact__r.Active_Semester__r.Name, 1)) = 4
+),
+2,
+IF(
+OR(
+VALUE(RIGHT(Contact__r.Active_Semester__r.Name, 1)) = 5,
+VALUE(RIGHT(Contact__r.Active_Semester__r.Name, 1)) = 6
+),
+3,
+IF(
+OR(
+VALUE(RIGHT(Contact__r.Active_Semester__r.Name, 1)) = 7,
+VALUE(RIGHT(Contact__r.Active_Semester__r.Name, 1)) = 8
+),
+4,
+IF(
+OR(
+VALUE(RIGHT(Contact__r.Active_Semester__r.Name, 1)) = 9,
+VALUE(RIGHT(Contact__r.Active_Semester__r.Name, 1)) = 10
+),
+5,
+0
+)
+)
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Year Of Study</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

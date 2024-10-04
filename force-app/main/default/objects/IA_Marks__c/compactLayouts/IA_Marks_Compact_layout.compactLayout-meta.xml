@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IA_Marks_Compact_layout</fullName>
+    <fields>Course_Name__c</fields>
+    <fields>Course_Type__c</fields>
+    <fields>IA_Type__c</fields>
+    <label>IA Marks Compact layout</label>
+</CompactLayout>

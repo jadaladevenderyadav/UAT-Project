@@ -1,0 +1,52 @@
+<!--
+  @description       : 
+  @author            : Kiruba Sankar M
+  @group             : 
+  @last modified on  : 11-21-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+<template>
+    <template if:true={isEligibleDrives}>
+        <div style="width: 100%; display:flex; justify-content:center;  align-items:center;">
+            <div style="width: 100%;">
+                <lightning-layout class="slds-size_full ">
+                    <lightning-layout-item padding="around-small" size="12">
+                        <div class="header-column">
+                            <template if:false={isDriveAvailable}>
+                                <div
+                                    class="slds-text-align_center slds-p-around_medium slds-border slds-border_top slds-border_bottom">
+                                    <p class="slds-text-heading_large slds-text-color_error">No Eligible Drives
+                                        Available</p>
+                                    <p class="slds-text-body_regular">There are currently no eligible drives available
+                                        for you.</p>
+                                </div>
+                            </template>
+                            <template if:true={isDriveAvailable}>
+                                <template if:true={data}>
+                                    <lightning-card title="Eligible Drives">
+                                        <lightning-datatable data={data} columns={columns} key-field="id"
+                                            onrowaction={handleRowAction} hide-checkbox-column="true"
+                                            onmouseover={handleMouseOver}
+                                            onmouseout={handleMouseOut}></lightning-datatable>
+                                    </lightning-card>
+                                </template>
+                            </template>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+        </div>
+    </template>
+    <template if:true={isSpinner}>
+        <div class="slds-is-relative">
+            <section class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="loading..." variant="brand"></lightning-spinner>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" style="width: 60%; height:50%; margin:auto"></div>
+        </div>
+    </template>
+    <c-rpl_-interview-results student-reg-drive-id={studentRegDriveId} is-result={isResult}
+        onclickback={handleOnClickBack}></c-rpl_-interview-results>
+
+</template>

@@ -1,0 +1,47 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="FetchCampusRecData">
+
+    <aura:attribute name="cases" type="Case[]" />
+    <aura:attribute name="userId" type="String" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <div style="box-shadow: 2px 4px 9px -4px #6e6e6e; border: 1px solid #f57f26;padding: 5px;border-radius: 10px;">
+
+        <div class="slds-box" style="background-color:#c7c7c7; color:black; border:0px;">
+            <div style="font-size:large"><b>Feedback for Curriculam</b></div>
+        </div>
+        <div class="title">
+            <div class="title-year">Academic Year 2023-24</div>
+            <!-- <div class="title-name">Time Table for Harish Shivaraman</div> -->
+            <div class="title-info">Course Details: 3rd year B.tech</div>
+        </div>
+        <table class="slds-table slds-table--bordered slds-table--cell-buffer slds-table--striped">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th scope="col" style="background-color:grey; color:white;">Case Number</th>
+                    <th scope="col" style="background-color:grey; color:white;">Subject</th>
+                    <th scope="col" style="background-color:grey; color:white;">Contact Name</th>
+                    <th scope="col" style="background-color:grey; color:white;">Your Mentor</th>
+                    <th scope="col" style="background-color:grey; color:white;">Programme Batch</th>
+                </tr>
+            </thead>
+            <tbody>
+                <aura:iteration items="{!v.cases}" var="caseItem">
+                    <tr>
+                        <td>
+                            <a onclick="{!c.navigateToCase}" data-value="{!caseItem.Id}">
+                                {!caseItem.CaseNumber}
+                            </a>
+                        </td>
+                        <td>{!caseItem.Subject}</td>
+                        <td>{!caseItem.Contact.Name}</td>
+                        <td>{!caseItem.Mentor_Name__c}</td>
+                        <td>{!caseItem.Program_Batch__c}</td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+    </div>
+
+    <lightning:navigation aura:id="navigationService" />
+</aura:component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Fee_Paid__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Specifies if an Applicant has paid for the Applicant</description>
+    <inlineHelpText>True, if Applicant has successfully paid for the application</inlineHelpText>
+    <label>Application Fee Paid</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

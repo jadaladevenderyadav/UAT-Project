@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Field__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>The external id key field - named generically as the object can be used to generate various numbers</description>
+    <externalId>true</externalId>
+    <inlineHelpText>The external id key field</inlineHelpText>
+    <label>Key Field</label>
+    <length>20</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

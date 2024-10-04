@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sharing_Type__c</fullName>
+    <label>Sharing Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Room_Type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Two Sharing</fullName>
+                <default>false</default>
+                <label>Two Sharing</label>
+            </value>
+            <value>
+                <fullName>Three Sharing</fullName>
+                <default>false</default>
+                <label>Three Sharing</label>
+            </value>
+            <value>
+                <fullName>Four Sharing</fullName>
+                <default>false</default>
+                <label>Four Sharing</label>
+            </value>
+            <value>
+                <fullName>King Bed</fullName>
+                <default>false</default>
+                <label>King Bed</label>
+            </value>
+            <value>
+                <fullName>Queen Bed</fullName>
+                <default>false</default>
+                <label>Queen Bed</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>A/C</controllingFieldValue>
+            <controllingFieldValue>Non A/C</controllingFieldValue>
+            <valueName>Two Sharing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A/C</controllingFieldValue>
+            <controllingFieldValue>Non A/C</controllingFieldValue>
+            <valueName>Three Sharing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non A/C</controllingFieldValue>
+            <valueName>Four Sharing</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

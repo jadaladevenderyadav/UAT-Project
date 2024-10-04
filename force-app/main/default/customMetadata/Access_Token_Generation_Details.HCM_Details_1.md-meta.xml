@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>HCM Details 1</label>
+    <protected>false</protected>
+    <values>
+        <field>Client_Id__c</field>
+        <value xsi:type="xsd:string">3MVG9pRzvMkjMb6ldHOc4pwazcOWSFVMfm_qAti7sEcCtOhBWujG0bFkRqNA308P0izL9SsnbR6JtOdGqyYVJ</value>
+    </values>
+    <values>
+        <field>Client_Secret__c</field>
+        <value xsi:type="xsd:string">5BDC36B2B433B4B3DD5BD127AF83763F490CD3F5C0F978996A6F298A3655D7BE</value>
+    </values>
+    <values>
+        <field>Password__c</field>
+        <value xsi:type="xsd:string">REVA@2022</value>
+    </values>
+    <values>
+        <field>URL__c</field>
+        <value xsi:type="xsd:string">https://login.salesforce.com</value>
+    </values>
+    <values>
+        <field>Username__c</field>
+        <value xsi:type="xsd:string">integrationuserhcm@reva.edu.in</value>
+    </values>
+    <values>
+        <field>grant_type__c</field>
+        <value xsi:type="xsd:string">password</value>
+    </values>
+</CustomMetadata>

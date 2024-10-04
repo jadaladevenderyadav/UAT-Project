@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Section__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Active Section</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>hed__Term__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Sections</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>hed__Term__c</referenceTo>
+    <relationshipLabel>Contacts (Section)</relationshipLabel>
+    <relationshipName>Contacts1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

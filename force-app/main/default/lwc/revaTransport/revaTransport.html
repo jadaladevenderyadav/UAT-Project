@@ -1,0 +1,114 @@
+<template>
+    <template if:true={showParentComponent}>
+        <div class="transport-container">
+            <div class="heading">
+                <strong>TRANSPORT</strong>
+            </div>
+
+            <div class="details slds-var-p-around_medium">
+                <div class="slds-text-heading_small"> <strong>Transport for {loginUserName} </strong></div>
+                <template if:true={showCourseData}>
+                    <div class="course-data">Course Details : {loginDetails.Program_Batch__r.Name} </div>
+                </template>
+            </div>
+
+            <div>
+                <div class=" marginAround">
+                    <strong class="underline-text">{LABELS}</strong>
+                </div>
+                <div>
+                    <div>
+                        <div class="desktop-image">
+                            <div class="custom-column custom-column-1">
+                                <span class="mainDiv">
+                                    <img src={IMAGES.rtrImage1} alt="user Image" height="450px" width="2000px" />
+                                    <!-- <p class='para-box'>{staticBusData.rtrBusImageData}</p> -->
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mobile-image">
+                                    <img src={IMAGESTR.rtrImage4} alt="user Image" width="100%;" />
+                        </div>
+                    </div>
+                    <!-- <div
+                        class="slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12 padAroundMin spacedDiv">
+                        <div class="custom-column custom-column-2">
+                            <span class="mainDiv">
+                                <img src={IMAGES.rtrImage2} alt="user Image" height="450px" width="400px" />
+                                <p class="para-box-1"> {staticBusData.rtrBusImageData1} </p>
+
+                            </span>
+                        </div>
+                    </div> -->
+                    <!-- <div
+                        class="slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12 padAroundMin spacedDiv">
+                        <div class="custom-column custom-column-3">
+                            <span class="mainDiv"> <img src={IMAGES.rtrImage3} alt="user Image" height="450px"
+                                    width="400px" />
+                                <p class="para-box-2">
+                                    {staticBusData.rtrBusImageData2}
+                                </p>
+                            </span>
+                        </div>
+                    </div> -->
+                </div>
+                <div>
+                    <template if:true={revaRegistrationPage}>
+                        <div class="slds-var-p-around_medium">
+                            <!-- <div class="slds-scrollable_x"> -->
+                            <table
+                                class="slds-table slds-table_cell-buffer slds-table_bordered slds-no-row-hover slds-table-subject">
+                                <tbody>
+                                    <tr>
+                                        <th><strong>Registration Name</strong></th>
+                                        <td>{revaRegistrationPage.Reva_Transport__r.Name}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><strong>Route Number</strong></th>
+                                        <td>{revaRegistrationPage.Route_Master__r.Name}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><strong>Route Path</strong></th>
+                                        <td>{revaRegistrationPage.Route_Master__r.RTR_Route_Path__c}</td>
+                                    </tr>
+                                    <tr>
+                                        <th><strong>Pick-up Point</strong></th>
+                                        <td>{revaRegistrationPage.Route_Pick_Up_Point__r.Name}</td>
+                                    </tr>
+                                    <tr class={regStatus}>
+                                        <th><strong>Registration Status</strong></th>
+                                        <td>{revaRegistrationPage.Registration_Status__c}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- </div> -->
+                    </template>
+                </div>
+
+                <template if:false={revaRegistrationPage}>
+                    <div class="slds-var-p-around_medium">
+                        <div class="slds-clearfix">
+                            <div class="slds-float_right">
+                                <template for:each={revaReg} for:item="record">
+                                    <div key={record.Id} class="slds-p-around_medium">
+                                        <div>{record.Name}</div>
+                                        <lightning-button label="Click Here To Apply" variant="brand"
+                                            class="button slds-var-m-top_small" onclick={handleNavigation}
+                                            data-key={record.Id} data-name={record.Name}></lightning-button>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </template>
+    <div class="slds-var-m-top_small">
+        <template if:true={showStudentTransportForm}>
+            <c-student-transport-form reva-transport-id={revaTransportRecordId}
+                reva-transport-name={revaTransportRecordName}></c-student-transport-form>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Secured_Marks__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Course_Type__c = &quot;Theory&quot;, 
+ Theory_Secured_Marks__c+  Seminar_Secured_Marks__c+ Quiz_Secured_marks__c, 
+	IF(Course_Type__c = &quot;Practical&quot;,
+	Knowledge_of_Exercise_Secured_Marks__c+ Execution_of_Exercise_Secured_Marks__c+ Description_of_Experiment_Secured_Mark__c+Viva_Voce_Practical_Secured_Marks__c+Punctuality_Secured_Marks__c+ Results_Secured_Marks__c,
+ Selection_of_Topic_Secured_Marks__c+ Analysis_and_Synthesis_Secured_Marks__c+ Literature_Survey_Secured_Marks__c+ Ethical_Attitude_Secured_Marks__c+  Independent_Learning_Secured_Marks__c+ Oral_Presentation_Secured_Marks__c+ Report_Writing_Secured_Marks__c+ Continuous_Learning_Secured_Marks__c
+	)
+	)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Secured Marks</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_Am_I_Feeling_Today__c</fullName>
+    <description>This field tracks the mood of the counselee and is filled by counsellor</description>
+    <label>How Am I Feeling Today?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Angry</fullName>
+                <default>false</default>
+                <label>Angry</label>
+            </value>
+            <value>
+                <fullName>Stressed</fullName>
+                <default>false</default>
+                <label>Stressed</label>
+            </value>
+            <value>
+                <fullName>Sad</fullName>
+                <default>false</default>
+                <label>Sad</label>
+            </value>
+            <value>
+                <fullName>Lonely</fullName>
+                <default>false</default>
+                <label>Lonely</label>
+            </value>
+            <value>
+                <fullName>Hurt</fullName>
+                <default>false</default>
+                <label>Hurt</label>
+            </value>
+            <value>
+                <fullName>Confused</fullName>
+                <default>false</default>
+                <label>Confused</label>
+            </value>
+            <value>
+                <fullName>Frightened</fullName>
+                <default>false</default>
+                <label>Frightened</label>
+            </value>
+            <value>
+                <fullName>Anxiety</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Anxiety</label>
+            </value>
+            <value>
+                <fullName>Feeling Good</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Feeling Good</label>
+            </value>
+            <value>
+                <fullName>Feeling Low</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Feeling Low</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

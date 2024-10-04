@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RSW_Manodhaara_App_Info__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Manodhaara App Info</label>
+    <length>130768</length>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>

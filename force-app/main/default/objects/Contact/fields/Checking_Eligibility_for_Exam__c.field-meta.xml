@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Checking_Eligibility_for_Exam__c</fullName>
+    <description>using for Semester and IA exam eligibility, it will run 2 days before the exam date and modify picklist value as per their fee dues and attendance percentage</description>
+    <label>Checking Eligibility for Exam</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Eligible</fullName>
+                <default>false</default>
+                <label>Eligible</label>
+            </value>
+            <value>
+                <fullName>InEligible</fullName>
+                <default>false</default>
+                <label>InEligible</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

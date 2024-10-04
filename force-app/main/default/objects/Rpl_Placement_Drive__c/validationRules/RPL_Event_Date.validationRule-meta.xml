@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RPL_Event_Date</fullName>
+    <active>false</active>
+    <errorConditionFormula>Rpl_Event_Date_Time__c &lt;= DATETIMEVALUE(TEXT(Rpl_Event_End_Date__c) + &apos; 23:59:59&apos;)</errorConditionFormula>
+    <errorMessage>Event date and time must be greater than the Application end date</errorMessage>
+</ValidationRule>

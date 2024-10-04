@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INFRA_Case_Owner</fullName>
+    <active>true</active>
+    <label>INFRA Case Owner</label>
+    <picklistValues>
+        <picklist>Hostel_Block__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hostel_Category__c</picklist>
+        <values>
+            <fullName>Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housekeeping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hostel_Sub_Category__c</picklist>
+        <values>
+            <fullName>Carpentry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laundry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mess</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plumbing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Room Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wifi</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>INFRA_Category__c</picklist>
+        <values>
+            <fullName>Carpentry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guest House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housekeeping and Shifting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mess and Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plumbing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printing%2C Boards and Stationary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Address Equipments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security%2C faculty and Student ID card%2C Lanyard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student and Staff Dicipline maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>INFRA_Sub_Category__c</picklist>
+        <values>
+            <fullName>AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken tiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commode Urinals%2C washbasin problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electricity Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geyser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot water problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mike%2C Speaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Electricity facility requirement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New construction facility related works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No water %26 low water pressure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other washroom %26 rest room related works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Painting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Socket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wall Cracks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wall Seepage problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leakage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window%2C Door%2C Storage Cupboard%2C Desk%2C Stool%2C Chair%2C false ceiling%2C locks%2C Mirror %26 Staff %26 student workstation %26 other furniture repair</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L2_Escalation_Duration__c</picklist>
+        <values>
+            <fullName>12 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>144 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>96 Hours</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L3_Escalation_Duration__c</picklist>
+        <values>
+            <fullName>12 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>144 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>96 Hours</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L4_Escalation_Duration__c</picklist>
+        <values>
+            <fullName>12 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>144 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>48 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72 Hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>96 Hours</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

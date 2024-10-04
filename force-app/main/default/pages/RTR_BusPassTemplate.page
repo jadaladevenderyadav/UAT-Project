@@ -1,0 +1,114 @@
+<!--apex:page standardController="Transport_Registeration__c" extensions="RTR_TransportRegInfo" renderAs="pdf"-->
+<apex:page standardController="Transport_Registeration__c" extensions="RTR_TransportRegInfo" renderAs="pdf">
+    <apex:stylesheet value="{!$Resource.BusPass}"/>
+    <html>
+        <head>
+        </head>
+        <apex:outputPanel rendered="{!NOT((transRegList.Registration_Status__c == 'Payment Pending')|| transRegList.Registration_Status__c == 'Cancelled')}">
+            <body>
+                        
+                <table style="width:100%; border:10px solid blue;">
+                    <!-- Horizontal Blocks Container -->
+                    <!--- <div class="horizontal-block-container"> -->
+                    
+                    <!-- First Horizontal Block -->
+                    <td style="width: 50%;border: 10px solid blue;">
+                        <!-- <div class="horizontal-block"> -->
+                        <p style="text-align: left; margin-left:5px"><b>Rules</b></p>
+                        <ul style="text-align: left;">
+                            <li style="text-align: left; margin-bottom: 5px;">This Bus Pass is not transferrable</li>
+                            <li style="text-align: left; margin-bottom: 5px;">If this bus pass is lost or damaged,a new card 
+                                will be issued against a payment of Rs 500/-
+                            </li >
+                            <li style="text-align: left;">If anyone uses a bus pass beyond the valid date 
+                                he/she has to pay a fine of Rs 1000/-</li>
+                        </ul>
+                        
+                        <table style="margin-left:5px; margin-bottom:5px; width:96%">
+                            <tr>
+                                <th> Date </th>
+                                <th>Amount</th>
+                              
+                            </tr>
+                            <apex:repeat value="{!paymentDetails}" var="paymentDetail">
+       									 <tr>
+           									 <td>{!paymentDetail.paymentDate}</td>
+            								 <td>{!paymentDetail.amountPaid}</td>            								 
+        								</tr>
+    						</apex:repeat>
+                            <tr><td></td><td></td></tr>
+                            <tr><td></td><td></td></tr>
+                            
+                        </table><br/><br/>
+                        <p style="text-align: left; margin-left:5px">
+                            If Found Please Return To
+                        </p>
+                        <p style="text-align: left; margin-left:5px">
+                            <b>REVA University</b>
+                        </p>
+                        <p style="text-align: left; margin-left:5px">Rukmini Knowledge Park, Kattigenahalli</p>
+                        <p style="text-align: left; margin-left:5px">Yelahanka,Bengaluru- 560064,India</p>
+                        <p style="text-align: left; margin-left:5px">PH:+918046966966  Ext.222</p>
+                        <!--</div>-->  
+                    </td>
+                    <td style="width: 50%;">
+                        <!-- Second Horizontal Block -->
+                        <!--<div class="horizontal-block"> 
+						<div class="inline-route">-->
+                        
+                        <apex:image url="{!$Resource.RTR_Logo}" width="120" height="40" style="float: left; margin-right: 5px; margin-left:5px;margin-top:10px"/>
+                            <apex:outputPanel rendered="{!transRegList.Bus_Pass_No__c== null}">
+                        <p style="display: inline-block; vertical-align: top; margin-bottom: 80px; margin-left: 10px;">Bus Pass No. {!transRegList.Name}</p>
+                          </apex:outputPanel>      
+                        <apex:outputPanel rendered="{!transRegList.Bus_Pass_No__c!=null}">
+                            <p style="display: inline-block; vertical-align: top; margin-bottom: 70px; margin-left: 10px;">Bus Pass No. {!transRegList.Bus_Pass_No__c}</p>   
+                        </apex:outputPanel>
+                        
+                        <!-- </div> --> 
+                        <apex:image url="{!passportPhotoURL}" width="90" height="90" style="float: right; margin-right: 10px; margin-left:5px;"/>
+                        <p style="text-align: left; margin-bottom: 4px; margin-left:5px; "><b>Name: </b>{!transRegList.Contact__r.FirstName} {!transRegList.Contact__r.LastName}</p>
+                        
+                        
+                        <!-- <p style="text-align: right; margin-left:5px"><b> Affix <br/>Stamp Size <br/> Photograph</b></p> -->             
+                        <!-- <div class="inline-route"> -->
+                        <apex:outputPanel rendered="{!transRegList.Registration_Type__c=='Student' || transRegList.Registration_Type__c=='Applicant'}">
+                            <p style="text-align: left; margin-left:5px"><b>SRN/AppNo.: </b>{!StuSRNNumber}</p>
+                            <p style="text-align: left; margin-bottom: 5px; margin-left:5px"><b>Program Batch: </b>{!transRegList.Contact__r.Program_Batch__r.Name}</p>
+                        </apex:outputPanel>
+                        
+                        <!-- </div>-->
+                        <p style="text-align: left; margin-left:5px; margin-bottom:5px;"><b>Pickup Point: </b>{!transRegList.Route_Pick_Up_Point__r.Name}</p>
+                        <!--<div class="inline-route">-->
+                        <p style="text-align: left; margin-left:5px"><b>Route: </b>{!transRegList.Route_Master__r.Name}</p>
+                        <apex:outputPanel rendered="{!transRegList.Registration_Type__c=='Student' || transRegList.Registration_Type__c=='Applicant' }">
+                        <div style="text-align: left; margin-left:5px;margin-bottom:5px;"><b>Valid Upto: </b><apex:outputText value="{!formattedStartDate}"/></div>                      
+                        <!-- </div>-->
+                        </apex:outputPanel>
+                        <br/>
+                        <!--<div class="inline-route">-->
+                        
+                        <!--</div>-->
+                        <!-- </div>-->
+                         <div >
+                             <p style="float: left;"><b>Signature <br/> Of Student</b></p>
+                <p style="float: right; clear: both;"><b>Signature Of <br/>Issuing Authority</b></p>
+            </div>
+                    </td>
+                    <!--</div>-->
+                </table>
+               <br/>               
+            </body><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+           
+        </apex:outputPanel>
+        <!--show error message if payment is pending -->
+       <apex:outputPanel rendered="{!OR(transRegList.Registration_Status__c == 'Payment Pending', transRegList.Registration_Status__c =='Cancelled' )}">
+            <p style="text-align: center; font-size:large; color: red;"> Cannot generate the bus pass 
+        <apex:outputText rendered="{!transRegList.Registration_Status__c == 'Payment Pending'}">
+            as payment is pending.
+        </apex:outputText>
+        <apex:outputText rendered="{!transRegList.Registration_Status__c == 'Cancelled'}">
+            as transportation is cancelled.
+        </apex:outputText> </p>
+        </apex:outputPanel>  
+    </html>
+</apex:page>

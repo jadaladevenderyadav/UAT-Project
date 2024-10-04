@@ -1,0 +1,67 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 12-05-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <template lwc:if={checkForPathComplete}>
+        <c-rpl_student-registrationpathflow></c-rpl_student-registrationpathflow>
+    </template>
+    <template lwc:elseif={isButtonTrue}>
+        <div class="welcome-message">
+            <lightning-card title="Welcome to the Student Portal">
+                <img class="image-container" src={logo} alt="Reva logo">
+                <div class="slds-p-around_x-small">
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                        <thead>
+                            <tr class="">
+                                <th class="slds-size_4-of-12" scope="col">
+                                    <div class="slds-truncate" title="Placement Name">Placement Name</div>
+                                </th>
+                                <th class="slds-size_4-of-12" scope="col">
+                                    <div class="slds-truncate" title="Placement Year">Placement Year</div>
+                                </th>
+                                <th class="slds-size_4-of-12" scope="col">
+                                    <div class="slds-truncate" title="Register Here">Register Here</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="slds-hint-parent">
+                                <td class="slds-size_3-of-10" data-label="Prospecting">
+                                    {revaPlacementObj.Name}
+                                </td>
+                                <td class="slds-size_1-of-10" data-label="Prospecting">
+                                    {revaPlacementObj.contPreFinal}
+                                </td>
+                                <td class="slds-size_4-of-10" data-label="Prospecting">
+                                    <lightning-button variant="Neutral" label="Click To Register" title="Primary action"
+                                        onclick={handleStudentButton} class="register-button"></lightning-button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </lightning-card>
+
+
+            <!-- <button onclick={handleStudentButton} class="register-button">Click To Register</button> -->
+        </div>
+    </template>
+    <template lwc:elseif={isOtpGenerator}>
+        <c-rpl_otpgenerator show-modal={showOtpPage} onchangeisbutton={openButtonchild}></c-rpl_otpgenerator>
+    </template>
+    <template lwc:elseif={checkForNoPlacement}>
+        <div class="slds-text-align_center slds-p-around_medium slds-border slds-border_top slds-border_bottom">
+            <p class="slds-text-heading_large slds-text-color_error">No Active Placement Drive Assigned</p>
+            <p class="slds-text-body_regular">We appreciate your interest, but currently, there are no new placement
+                drives assigned to you. Please stay tuned for
+                future opportunities. Thank you for your understanding.</p>
+        </div>
+    </template>
+    <!-- <template lwc:elseif={checkisDataTable}>
+        <c-rpl_-student-registration-datatable contactid={contactId}></c-rpl_-student-registration-datatable>
+    </template> -->
+</template>

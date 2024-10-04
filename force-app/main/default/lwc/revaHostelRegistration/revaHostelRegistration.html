@@ -1,0 +1,237 @@
+<template>
+   <div class="container">
+      <div class="first-page">
+         <h5>HOSTEL</h5>
+         <div class="hostel-information">
+            <h1>Hostel For {currentUserContact.FirstName} {currentUserContact.LastName}</h1>
+            <h4>Course Details : {currentUserContact.CurrentPusuingYear}, {currentUserContact.Semester}</h4>
+         </div>
+
+
+      </div>
+      <template lwc:if={showAcknowledgeAndRegister}>
+         <div class="general-information">
+            <p>The lush green campus of REVA Independent PU College offers amenities like no other. With
+               comfortable,
+               home like halls
+               of residence/ student housing for both girls & boys and sumptuous eateries and mess to sports arenas
+               and
+               gyms, RIPU
+               welcomes you in with both arms into its abundant world. Hostel regulatory committee comprising our
+               own
+               team of faculties
+               monitors students round the clock and Special study hours are conducted every day after college
+               hours
+               especially for
+               hostel students.
+            </p>
+            <p>
+               REVA Student Housing is a home away from home. REVA has housing for boys and girls on the campus
+               providing accommodation
+               facilities. The housing blocks are aesthetically built and are situated amidst lush greenery. The
+               University also has a
+               guest house to facilitate parents and guests to stay when they come to visit their wards.
+            </p>
+         </div>
+         <div class="acknowledgement-container">
+            <input type="checkbox" checked={termsAccepted} onchange={handleCheckboxChange} />
+            <p>I Agree To The Terms & Conditions</p>
+         </div>
+         <div class="register-button">
+            <lightning-button label="Register For Hostel" variant="brand" title="Register for Hostel"
+               onclick={handleRegisterClick} disabled={isRegisterButtonDisabled}></lightning-button>
+         </div>
+      </template>
+
+
+      <template lwc:if={showHostelRegistrationPage}>
+         <div class="second-page">
+            <div class="tabs">
+               <div class="tab" tabindex="0" data-step="1" onclick={handleStepClick}>FEES DETAILS</div>
+               <div class="tab" tabindex="0" data-step="2" onclick={handleStepClick}>HOSTEL SELECTION</div>
+            </div>
+            <template lwc:if={showFeeDetails}>
+               <div class="fee-details-container">
+
+                  <section>
+                     <!-- <table class="slds-table slds-table_bordered slds-table_cell-buffer"> -->
+                     <table class="slds-text-heading_small">
+                        <thead>
+                           <tr>
+                              <th scope="col">Room Type</th>
+                              <th scope="col">Price(In Rupees)</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <!-- Loop through the data to create rows -->
+                           <template for:each={customSettingsData} for:item="item">
+                              <tr key={item.roomType}>
+                                 <td>{item.roomType}</td>
+                                 <td>{item.price}</td>
+                              </tr>
+                           </template>
+                        </tbody>
+                     </table>
+                  </section>
+               </div>
+            </template>
+            <template lwc:if={showHostelSelection}>
+               <div class="hostel-selection-container">
+                  <div class="header">
+                     <input type="checkbox">
+                     <p>Premium Room</p>
+                  </div>
+                  <lightning-layout multiple-rows>
+                     <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                        large-device-size="6" padding="horizontal-small">
+                        <div class="custom-box">
+                           <label>
+                              <abbr class="slds-required" title="required">*</abbr>Preferred room sharing</label>
+                           <div class="input-container">
+                              <!-- <lightning-combobox class="picklist" label-hidden value="" options={tenthPickList}>
+                           </lightning-combobox> -->
+                              <lightning-combobox name="PreferredRoomSharing" value={selectedRoomSharing}
+                                 options={roomSharingOptions} onchange={handlePreferredRoomSharingChange}
+                                 disabled={isPreferredRoomSharingDisabled}>
+                              </lightning-combobox>
+                              <br>
+                           </div>
+                        </div>
+                     </lightning-layout-item>
+                     <lightning-layout-item size="12" small-device-size="12" medium-device-size="6"
+                        large-device-size="6" padding="horizontal-small">
+                        <div class="custom-box">
+                           <label>
+                              <abbr class="slds-required" title="required">*</abbr>Select paymnent type</label>
+                           <div class="input-container">
+                              <!-- <lightning-combobox class="picklist" label-hidden value="" options={tenthPickList}>
+                           </lightning-combobox> -->
+                              <lightning-combobox name="PaymentType" value={selectPaymentType}
+                                 options={paymentTypeOptions} onchange={handlePaymentTypeChange}>
+                              </lightning-combobox>
+                              <br>
+                           </div>
+                        </div>
+                     </lightning-layout-item>
+                  </lightning-layout>
+                  <div class="register-button">
+                     <lightning-button label="Register" variant="brand" onclick={handleSubmitEvent}
+                        disabled={isNextButtonDisabled}></lightning-button>
+                  </div>
+               </div>
+            </template>
+         </div>
+      </template>
+      <template lwc:if={showExistingHostelRequest}> <!-- isHostelRequest-->
+         <div class="sixth-page">
+            <h4>DETAILS</h4>
+            <p>You already have an existing hostel request. Below are the details</p>
+            <div class="details-table">
+               <lightning-layout multiple-rows>
+                  <lightning-layout-item size="6" small-device-size="6" medium-device-size="6" large-device-size="6"
+                     padding="horizontal-small">
+                     <div class="custom-box">
+                        <strong>NAME</strong>
+                     </div>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6" small-device-size="6" medium-device-size="6" large-device-size="6"
+                     padding="horizontal-small">
+                     <div class="custom-box">
+                        <strong>{existingHostelRequest.Name}</strong>
+                     </div>
+                  </lightning-layout-item>
+               </lightning-layout>
+               <!-- Row 2 -->
+               <lightning-layout multiple-rows>
+                  <lightning-layout-item size="6" small-device-size="6" medium-device-size="6" large-device-size="6"
+                     padding="horizontal-small">
+                     <div class="custom-box">
+                        <strong>ROOM NUMBER</strong>
+                     </div>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6" small-device-size="6" medium-device-size="6" large-device-size="6"
+                     padding="horizontal-small">
+                     <div class="custom-box">
+                        <strong>{existingHostelRequest.Room_Number__c}</strong>
+                     </div>
+                  </lightning-layout-item>
+               </lightning-layout>
+               <!-- Row 3 -->
+               <lightning-layout multiple-rows>
+                  <lightning-layout-item size="6" small-device-size="6" medium-device-size="6" large-device-size="6"
+                     padding="horizontal-small">
+                     <div class="custom-box">
+                        <strong>BLOCK</strong>
+                     </div>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6" small-device-size="6" medium-device-size="6" large-device-size="6"
+                     padding="horizontal-small">
+                     <div class="custom-box">
+                        <strong>{existingHostelRequest.Block__c}</strong>
+                     </div>
+                  </lightning-layout-item>
+               </lightning-layout>
+               <!-- Row 4 -->
+               <lightning-layout multiple-rows>
+                  <lightning-layout-item size="6" small-device-size="6" medium-device-size="6" large-device-size="6"
+                     padding="horizontal-small">
+                     <div class="custom-box">
+                        <strong>TYPE</strong>
+                     </div>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6" small-device-size="6" medium-device-size="6" large-device-size="6"
+                     padding="horizontal-small">
+                     <div class="custom-box">
+                        <strong>{existingHostelRequest.Type__c} Sharing </strong>
+                     </div>
+                  </lightning-layout-item>
+               </lightning-layout>
+               <!-- Row 5 -->
+               <lightning-layout multiple-rows>
+                  <lightning-layout-item size="6" small-device-size="6" medium-device-size="6" large-device-size="6"
+                     padding="horizontal-small">
+                     <div class="custom-box">
+                        <strong>STATUS</strong>
+                     </div>
+                  </lightning-layout-item>
+                  <lightning-layout-item size="6" small-device-size="6" medium-device-size="6" large-device-size="6"
+                     padding="horizontal-small">
+                     <div class="custom-box">
+                        <strong>{existingHostelRequest.Status__c} </strong>
+                     </div>
+                  </lightning-layout-item>
+               </lightning-layout>
+            </div>
+            <template if:true={roomAlloted}>
+               <div class="buttons-container">
+                  <lightning-button label="Book Meal" variant="brand"
+                     onclick={redirectToRevaMealBooking}></lightning-button>
+                  <lightning-button label="Student Support" variant="brand"
+                     onclick={redirectToRevaHostelCasePage}></lightning-button>
+                  <lightning-button label="Apply For Leave" variant="brand"
+                     onclick={redirectToRevaHostelLeavesPage}></lightning-button>
+               </div>
+            </template>
+
+         </div>
+      </template>
+      <template lwc:if={showRevaMealBooking}>
+         <!--commented for deployment-->
+         <!-- <c-reva-hostel-meal-booking></c-reva-hostel-meal-booking> -->
+      </template>
+      <template if:true={showToasts}>
+         <div class="slds-box slds-theme_default slds-p-around--medium">
+            <h3 class="slds-text-heading_medium" style="text-align: center; margin-bottom: 20px;">
+               <strong style="color:#da3218; font-size:28px;"> Payment Page </strong>
+            </h3>
+            <div class="slds-box slds-theme_default slds-p-around--medium"
+               style="margin-top: 20px; margin-bottom: 20px;">
+               <p>Total Amount: {totalHostelFee}</p>
+               <br>
+               <button class="slds-button slds-button_brand"
+                  onclick={redirectToStudentFeePaymentComponent}>Next</button>
+            </div>
+         </div>
+      </template>
+   </div>
+</template>

@@ -1,0 +1,180 @@
+<aura:component controller="ALU_Registr_Component_CMP_Ctrlr" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+ <lightning:notificationsLibrary aura:id="notifLib"/>
+    <aura:attribute name="errorMessages" type="List" />
+    <aura:attribute name="showError" type="Boolean" default="false" />
+    <aura:attribute name="genderOptions" type="List" default="[]" />
+    <aura:attribute name="bloodGroupOptions" type="List" default="[]" />
+    <aura:attribute name="coursePursuedOptions" type="List" default="[]" />
+    <aura:attribute name="maritalStatusOptions" type="List" default="[]" />
+    <aura:attribute name="Name" type="string"  />
+    <aura:attribute name="Email" type="string"  />
+    <aura:attribute name="Mobile" type="string"  />
+    <aura:attribute name="phoneNumber" type="string"  />
+    <aura:attribute name="Dob" type="Date"  />
+    <aura:attribute name="genderVal" type="string"  />
+    <aura:attribute name="bgVal" type="string"  />
+    <aura:attribute name="ProgramVal" type="string"  />
+    <aura:attribute name="yrofGrad" type="Decimal"  />
+    <aura:attribute name="marStatus" type="string"  />
+    <aura:attribute name="SRNNumber" type="string"  />
+    <aura:attribute name="selectedCountryCode" type="string"  />
+    <aura:attribute name="selectedGraduationYear" type="string"  />
+    
+    <aura:attribute name="countryCodes" type="List" />
+    <aura:attribute name="programs" type="List" />
+    <aura:attribute name="courseOptions" type="List" />
+    <aura:attribute name="graduationYears" type="String[]" /> 
+       <aura:attribute name="maxAllowedDate" type="Date" /> 
+    
+    <aura:attribute name="message" type="String"/>
+    <aura:attribute name="isError" type="Boolean" default="false"/>
+      <aura:attribute name="formsubimitted" type="Boolean" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />    
+    
+    
+    
+    
+    <aura:if isTrue="{!v.formsubimitted == true}">
+                    <br/><br/><br/><br/>
+                    <center><span style="color:green;font-size:20px;"><b>Thank you for Registering, the confirmation will be sent to you shortly!</b></span></center>
+                </aura:if>
+    <aura:if isTrue="{!v.formsubimitted == false}">
+        
+    <div class="slds-box" style="background-color: #fcd4b4;width:70%;margin-left:15%">
+              
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col">
+                    <span class="large-font">Alumni Registration Form</span>
+                </div>
+                <div class="slds-col">
+                    <img src="{!$Resource.PersonIconAlumniRegistration}" class="slds-icon slds-float_right"></img>
+                </div>
+            </div>
+
+            <div class="slds-form-element">
+                <span class="slds-form-element__label" id="file-selector-primary-label-101"><b>Choose Profile Image</b></span>
+                <div class="slds-form-element__control">
+                <div class="slds-file-selector slds-file-selector_files">
+                <div class="slds-file-selector__dropzone">
+                <input type="file" class="slds-file-selector__input slds-assistive-text" accept="image/png" id="file-upload-input-103" aria-labelledby="file-selector-primary-label-101 file-selector-secondary-label102" />
+                <label class="slds-file-selector__body" for="file-upload-input-103" id="file-selector-secondary-label102">
+                <span class="slds-file-selector__button slds-button slds-button_neutral file-upload">
+                Choose File</span>
+                
+                </label>
+                </div>
+                </div>
+                </div>
+                </div>
+                <!-- Display error message if there is one -->
+                  
+                 <aura:if isTrue="{!v.isError}">
+                        <div class="slds-notify slds-notify_alert slds-theme_error" role="alert">
+                            <h2 class="slds-text-heading_small">{!v.message}</h2>
+                        </div>
+                    </aura:if>
+                <!-- Display success message if there is one -->
+                  <aura:if isTrue="{!not(v.isError)  &amp;&amp;  v.message.length > 0}">
+                        <div class="slds-notify slds-notify_alert slds-theme_success" role="alert">
+                             <h2 class="slds-text-heading_small">{!v.message}</h2>
+                          
+                        </div>
+                    </aura:if>
+                
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                                            
+                        <lightning:input aura:id="field" label="Name" name="name" value="{!v.Name}" required="true" />
+                            </div>
+                            <div class="slds-col">
+                                <lightning:input aura:id="field" label="Email" name="email" value="{!v.Email}" required="true" type="email" />
+                            </div>
+                    </div>
+                    
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+
+                        <lightning:select aura:id="field"  label="Country Code" value="{!v.selectedCountryCode}" required="true"  onchange="{!c.handleCountryCodeChange}">
+                                        
+                                        <aura:iteration items="{!v.countryCodes}" var="option">
+                                            <option value="{!option}">{!option}</option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                        </div>
+                            
+                            <div>            
+                                 <lightning:input aura:id="field" class="slds-input_mobile-number" type="tel" label="Mobile Number" required="true" value="{!v.Mobile}" placeholder="Enter Mobile number"/>
+                            </div>
+                        </div>
+    <table class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal table">
+                      
+                        <tr>
+                            <td>
+                                <lightning:select  aura:id="field" label="Gender" name="gender" value="{!v.genderVal}" required="true" onchange="{!c.handleGenderChange}">
+                                    <option value="">--None--</option>
+                                    <aura:iteration items="{!v.genderOptions}" var="option">
+                                        <option value="{!option}">{!option}</option>
+                                    </aura:iteration>
+                                    </lightning:select>
+                                    </td>
+                            <td>        
+                                <lightning:input aura:id="field" label="Date of Birth" name="dob" value="{!v.Dob}" max="{!v.maxAllowedDate}" required="true" type="date" />
+                            
+                            </td>
+                        </tr>
+                            <tr>
+                                <td>
+                                <!--class="select-auto-width"-->
+                                <lightning:select   aura:id="field"  label="Blood Group" name="bloodGroup" value="{!v.bgVal}" required="true" onchange="{!c.handleBloodGroupChange}">
+                                    <option value="">--None--</option>
+                                    <aura:iteration items="{!v.bloodGroupOptions}" var="option">
+                                        <option value="{!option}">{!option}</option>
+                                    </aura:iteration>
+                                    </lightning:select>
+                                </td>
+                                <td>        
+                                <lightning:select   aura:id="field"  required="true" label="Marital Status" name="maritalStatus" value="{!v.marStatus}"  onchange="{!c.handleMaritalStatusChange}">
+                                    <option value="">--None--</option>
+                                    <aura:iteration items="{!v.maritalStatusOptions}" var="option">
+                                        <option value="{!option}">{!option}</option>
+                                    </aura:iteration>
+                                    </lightning:select>
+                            
+                            </td>
+                        </tr>
+                            <tr>
+                                <td>                            
+                                <lightning:input aura:id="field" label="SRN Number" type="text" name="name" value="{!v.SRNNumber}" required="true" />
+                                </td>
+                                <td>        
+                                <lightning:select   aura:id="field"  label="Program" name="Program" value="{!v.ProgramVal}" required="true" onchange="{!c.handlePpgramChange}">
+                                    <option value="">--None--</option>
+                                    <aura:iteration items="{!v.programs}" var="option">
+                                        <option value="{!option}">{!option}</option>
+                                    </aura:iteration>
+                                    </lightning:select>
+                                </td>
+                            
+                            </tr>
+                            <tr>
+                                <!--<lightning:input  label="Year of Graduation" name="yearOfGraduation" value="{!v.yrofGrad}" required="true" type="number" min="1900" />-->
+                                <td> 
+                                <lightning:select aura:id="field"  required="true"  label="Year of Graduation" value="{!v.selectedGraduationYear}">
+                                        <option value="">--None--</option>
+                                        <aura:iteration items="{!v.graduationYears}" var="year">
+                                            <option value="{!year}">{!year}</option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </td>
+                                </tr>
+                     
+                
+                <div class="slds-clearfix">
+                    <div class="slds-float_right">
+                    <lightning:button label="Submit"  onclick="{!c.submitAlumniRegistration}" variant="brand" class="slds-m-top_medium slds-button slds-button_brand custom-button"/>
+                </div>
+                </div>
+            </table>
+            </div>
+        </aura:if>
+</aura:component>

@@ -1,0 +1,35 @@
+<aura:component implements="forceCommunity:themeLayout">
+    <aura:attribute name="header" type="Aura.Component[]"/>
+    <aura:attribute name="footer" type="Aura.Component[]"/>
+
+    <!-- <ltng:require
+    styles="{!$Resource.CommunityResourceStyles + '/global.css'}"/> -->
+
+    <div class="custom-wrapper" >
+        <div class="slds-grid slds-grid_vertical-align-center bg-header-color">
+            <div class="slds-col">
+                {!v.header}
+            </div>
+            <div class="slds-col">
+              <!-- <span>Header right content</span> -->
+              <c:revStdHeader></c:revStdHeader>
+            </div>
+        </div>
+        <div class="content bg-content-color">
+            {!v.body}
+        </div>
+        <div class="slds-grid slds-grid_vertical-align-end bg-footer-color slds-p-vertical_small" style="text-align: -webkit-center;">
+            <div class="slds-col">
+              <!-- <c:footerThemeAlu></c:footerThemeAlu> -->
+              <!-- <span><h3 class="span-text_color" style="text-align: center;">Footer left</h3></span> -->
+            </div>
+            <div class="slds-col">
+                {!v.footer}
+            </div>
+            <div class="slds-col">
+              <!-- <c:footerThemeAlu></c:footerThemeAlu> -->
+              <!-- <span><h2 class="span-text_color">Footer right</h2> </span> -->
+            </div>
+          </div>
+    </div>
+</aura:component>

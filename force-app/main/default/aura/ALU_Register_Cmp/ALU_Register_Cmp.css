@@ -1,0 +1,7 @@
+/* input boxes css  */
+
+
+  .THIS.lightning:input{
+    --slds-c-input-radius-border : 0 rem;
+     --slds-c-input-color-background : #316d8e;
+}

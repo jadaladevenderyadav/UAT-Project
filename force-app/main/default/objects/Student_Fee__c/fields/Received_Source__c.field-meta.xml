@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Received_Source__c</fullName>
+    <label>Received Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Manual / Upload</fullName>
+                <default>true</default>
+                <label>Manual / Upload</label>
+            </value>
+            <value>
+                <fullName>NPF</fullName>
+                <default>false</default>
+                <label>NPF</label>
+            </value>
+            <value>
+                <fullName>Tally</fullName>
+                <default>false</default>
+                <label>Tally</label>
+            </value>
+            <value>
+                <fullName>Logisys</fullName>
+                <default>false</default>
+                <label>Logisys</label>
+            </value>
+            <value>
+                <fullName>Student Requisition</fullName>
+                <default>false</default>
+                <label>Student Requisition</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

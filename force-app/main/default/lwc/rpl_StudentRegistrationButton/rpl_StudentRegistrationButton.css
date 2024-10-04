@@ -1,0 +1,33 @@
+.image-container {
+    display: block; 
+}
+
+
+.register-button{
+   border-radius: 8px;
+   background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    /* padding: 5px; */
+    margin-top: 11px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.header{
+    margin-left: 11%;
+}
+
+.welcome-message{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: chocolate;
+}
+.text
+{
+    text-align: center;
+    color: mediumblue;
+    font-weight: 600;
+
+}

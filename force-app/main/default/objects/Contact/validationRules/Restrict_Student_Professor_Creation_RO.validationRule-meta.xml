@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Student_Professor_Creation_RO</fullName>
+    <active>false</active>
+    <errorConditionFormula>$Profile.Id = &apos;00e5j000000i3Q8&apos; &amp;&amp;  (Record_Type_Name__c = &apos;Student&apos; || Record_Type_Name__c = &apos;Professor&apos;)</errorConditionFormula>
+    <errorMessage>You can create only Parent Record Type</errorMessage>
+</ValidationRule>

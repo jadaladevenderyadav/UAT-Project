@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Employee_Salary__c</fullName>
+    <description>This salary Populated based on HCM salary Range</description>
+    <inlineHelpText>HCM employee Salary</inlineHelpText>
+    <label>Employee_Salary</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

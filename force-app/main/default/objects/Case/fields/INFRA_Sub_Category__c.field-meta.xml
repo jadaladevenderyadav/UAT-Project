@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>INFRA_Sub_Category__c</fullName>
+    <label>INFRA Sub Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>INFRA_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Water Leakage</fullName>
+                <default>false</default>
+                <label>Water Leakage</label>
+            </value>
+            <value>
+                <fullName>No water &amp; low water pressure</fullName>
+                <default>false</default>
+                <label>No water &amp; low water pressure</label>
+            </value>
+            <value>
+                <fullName>Hot water problem</fullName>
+                <default>false</default>
+                <label>Hot water problem</label>
+            </value>
+            <value>
+                <fullName>Commode Urinals, washbasin problem</fullName>
+                <default>false</default>
+                <label>Commode Urinals, washbasin problem</label>
+            </value>
+            <value>
+                <fullName>Other washroom &amp; rest room related works</fullName>
+                <default>false</default>
+                <label>Other washroom &amp; rest room related works</label>
+            </value>
+            <value>
+                <fullName>AC</fullName>
+                <default>false</default>
+                <label>AC</label>
+            </value>
+            <value>
+                <fullName>Window, Door, Storage Cupboard, Desk, Stool, Chair, false ceiling, locks, Mirror &amp; Staff &amp; student workstation &amp; other furniture repair</fullName>
+                <default>false</default>
+                <label>Window, Door, Storage Cupboard, Desk, Stool, Chair, false ceiling, locks, Mirror &amp; Staff &amp; student workstation &amp; other furniture repair</label>
+            </value>
+            <value>
+                <fullName>Wall Cracks</fullName>
+                <default>false</default>
+                <label>Wall Cracks</label>
+            </value>
+            <value>
+                <fullName>Broken tiles</fullName>
+                <default>false</default>
+                <label>Broken tiles</label>
+            </value>
+            <value>
+                <fullName>Wall Seepage problem</fullName>
+                <default>false</default>
+                <label>Wall Seepage problem</label>
+            </value>
+            <value>
+                <fullName>Painting</fullName>
+                <default>false</default>
+                <label>Painting</label>
+            </value>
+            <value>
+                <fullName>New construction facility related works</fullName>
+                <default>false</default>
+                <label>New construction facility related works</label>
+            </value>
+            <value>
+                <fullName>Mike, Speaker</fullName>
+                <default>false</default>
+                <label>Mike, Speaker</label>
+            </value>
+            <value>
+                <fullName>Housekeeping</fullName>
+                <default>false</default>
+                <label>Housekeeping</label>
+            </value>
+            <value>
+                <fullName>Printing</fullName>
+                <default>false</default>
+                <label>Printing</label>
+            </value>
+            <value>
+                <fullName>Garden</fullName>
+                <default>false</default>
+                <label>Garden</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Guest</fullName>
+                <default>false</default>
+                <label>Guest</label>
+            </value>
+            <value>
+                <fullName>Mess</fullName>
+                <default>false</default>
+                <label>Mess</label>
+            </value>
+            <value>
+                <fullName>Student Staff</fullName>
+                <default>false</default>
+                <label>Student Staff</label>
+            </value>
+            <value>
+                <fullName>Transport</fullName>
+                <default>false</default>
+                <label>Transport</label>
+            </value>
+            <value>
+                <fullName>Stores</fullName>
+                <default>false</default>
+                <label>Stores</label>
+            </value>
+            <value>
+                <fullName>Switch</fullName>
+                <default>false</default>
+                <label>Switch</label>
+            </value>
+            <value>
+                <fullName>Socket</fullName>
+                <default>false</default>
+                <label>Socket</label>
+            </value>
+            <value>
+                <fullName>Fan</fullName>
+                <default>false</default>
+                <label>Fan</label>
+            </value>
+            <value>
+                <fullName>Lights</fullName>
+                <default>false</default>
+                <label>Lights</label>
+            </value>
+            <value>
+                <fullName>Geyser</fullName>
+                <default>false</default>
+                <label>Geyser</label>
+            </value>
+            <value>
+                <fullName>UPS problem</fullName>
+                <default>false</default>
+                <label>UPS problem</label>
+            </value>
+            <value>
+                <fullName>Electricity Problem</fullName>
+                <default>false</default>
+                <label>Electricity Problem</label>
+            </value>
+            <value>
+                <fullName>New Electricity facility requirement</fullName>
+                <default>false</default>
+                <label>New Electricity facility requirement</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Guest House</controllingFieldValue>
+            <valueName>Guest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mess and Food</controllingFieldValue>
+            <valueName>Mess</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Student and Staff Dicipline maintenance</controllingFieldValue>
+            <valueName>Student Staff</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Stores</controllingFieldValue>
+            <valueName>Stores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>AC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Switch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Socket</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Fan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Lights</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Geyser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>UPS problem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>Electricity Problem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Electrical</controllingFieldValue>
+            <valueName>New Electricity facility requirement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>Water Leakage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>No water &amp; low water pressure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>Hot water problem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>Commode Urinals, washbasin problem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Plumbing</controllingFieldValue>
+            <valueName>Other washroom &amp; rest room related works</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carpentry</controllingFieldValue>
+            <valueName>Window, Door, Storage Cupboard, Desk, Stool, Chair, false ceiling, locks, Mirror &amp; Staff &amp; student workstation &amp; other furniture repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Wall Cracks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Broken tiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Wall Seepage problem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>Painting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Civil</controllingFieldValue>
+            <valueName>New construction facility related works</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Housekeeping and Shifting</controllingFieldValue>
+            <valueName>Housekeeping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Printing, Boards and Stationary</controllingFieldValue>
+            <valueName>Printing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Public Address Equipments</controllingFieldValue>
+            <valueName>Mike, Speaker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Garden</controllingFieldValue>
+            <valueName>Garden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security, faculty and Student ID card, Lanyard</controllingFieldValue>
+            <valueName>Security</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

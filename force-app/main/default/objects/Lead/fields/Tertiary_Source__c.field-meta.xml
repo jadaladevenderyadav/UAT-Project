@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tertiary_Source__c</fullName>
+    <description>Specifies the source through which the Applicant landed for the third time</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Third-time Source of the Applicant</inlineHelpText>
+    <label>Tertiary Source</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

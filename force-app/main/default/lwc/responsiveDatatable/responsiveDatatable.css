@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+	.hiddenOnMobile {
+		display: none !important;
+    }
+	.slds-table_bordered{
+		background-color: #F6F6F6 !important;
+	}
+}

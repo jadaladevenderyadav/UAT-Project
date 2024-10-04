@@ -1,0 +1,1521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Rice Idly</fullName>
+        <default>false</default>
+        <label>Rice Idly</label>
+    </customValue>
+    <customValue>
+        <fullName>Medu Vada</fullName>
+        <default>false</default>
+        <label>Medu Vada</label>
+    </customValue>
+    <customValue>
+        <fullName>Coconut Chutney</fullName>
+        <default>false</default>
+        <label>Coconut Chutney</label>
+    </customValue>
+    <customValue>
+        <fullName>Breakfast Sambar</fullName>
+        <default>false</default>
+        <label>Breakfast Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>People&apos;s Tea</fullName>
+        <default>false</default>
+        <label>People&apos;s Tea</label>
+    </customValue>
+    <customValue>
+        <fullName>Instant Coffee</fullName>
+        <default>false</default>
+        <label>Instant Coffee</label>
+    </customValue>
+    <customValue>
+        <fullName>Milk</fullName>
+        <default>false</default>
+        <label>Milk</label>
+    </customValue>
+    <customValue>
+        <fullName>Masala Dosa</fullName>
+        <default>false</default>
+        <label>Masala Dosa</label>
+    </customValue>
+    <customValue>
+        <fullName>Bread</fullName>
+        <default>false</default>
+        <label>Bread</label>
+    </customValue>
+    <customValue>
+        <fullName>Jam</fullName>
+        <default>false</default>
+        <label>Jam</label>
+    </customValue>
+    <customValue>
+        <fullName>Poori</fullName>
+        <default>false</default>
+        <label>Poori</label>
+    </customValue>
+    <customValue>
+        <fullName>Potato Sago</fullName>
+        <default>false</default>
+        <label>Potato Sago</label>
+    </customValue>
+    <customValue>
+        <fullName>Bisi Bele Bath</fullName>
+        <default>false</default>
+        <label>Bisi Bele Bath</label>
+    </customValue>
+    <customValue>
+        <fullName>Kara Boondi</fullName>
+        <default>false</default>
+        <label>Kara Boondi</label>
+    </customValue>
+    <customValue>
+        <fullName>Kanda Batato Poha</fullName>
+        <default>false</default>
+        <label>Kanda Batato Poha</label>
+    </customValue>
+    <customValue>
+        <fullName>Coriander Mint Chutney</fullName>
+        <default>false</default>
+        <label>Coriander Mint Chutney</label>
+    </customValue>
+    <customValue>
+        <fullName>Omlette for Non Veg</fullName>
+        <default>false</default>
+        <label>Omlette for Non Veg</label>
+    </customValue>
+    <customValue>
+        <fullName>Masala Vada for Veg</fullName>
+        <default>false</default>
+        <label>Masala Vada for Veg</label>
+    </customValue>
+    <customValue>
+        <fullName>Minapa Dosa</fullName>
+        <default>false</default>
+        <label>Minapa Dosa</label>
+    </customValue>
+    <customValue>
+        <fullName>Tomato Garlic Green Chilli Chutney</fullName>
+        <default>false</default>
+        <label>Tomato Garlic Green Chilli Chutney</label>
+    </customValue>
+    <customValue>
+        <fullName>Pongal</fullName>
+        <default>false</default>
+        <label>Pongal</label>
+    </customValue>
+    <customValue>
+        <fullName>Vada</fullName>
+        <default>false</default>
+        <label>Vada</label>
+    </customValue>
+    <customValue>
+        <fullName>Rava Idly</fullName>
+        <default>false</default>
+        <label>Rava Idly</label>
+    </customValue>
+    <customValue>
+        <fullName>Peanut Garlic Chutney</fullName>
+        <default>false</default>
+        <label>Peanut Garlic Chutney</label>
+    </customValue>
+    <customValue>
+        <fullName>Chow Chow Bath</fullName>
+        <default>false</default>
+        <label>Chow Chow Bath</label>
+    </customValue>
+    <customValue>
+        <fullName>Chitrna</fullName>
+        <default>false</default>
+        <label>Chitrna</label>
+    </customValue>
+    <customValue>
+        <fullName>Coconut Green Chutney</fullName>
+        <default>false</default>
+        <label>Coconut Green Chutney</label>
+    </customValue>
+    <customValue>
+        <fullName>Vegetable Sago</fullName>
+        <default>false</default>
+        <label>Vegetable Sago</label>
+    </customValue>
+    <customValue>
+        <fullName>Set Dosa</fullName>
+        <default>false</default>
+        <label>Set Dosa</label>
+    </customValue>
+    <customValue>
+        <fullName>Beerekaya Sambar</fullName>
+        <default>false</default>
+        <label>Beerekaya Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Thottakora Pappu</fullName>
+        <default>false</default>
+        <label>Thottakora Pappu</label>
+    </customValue>
+    <customValue>
+        <fullName>Vegetable Makhani</fullName>
+        <default>false</default>
+        <label>Vegetable Makhani</label>
+    </customValue>
+    <customValue>
+        <fullName>Puli Rasam</fullName>
+        <default>false</default>
+        <label>Puli Rasam</label>
+    </customValue>
+    <customValue>
+        <fullName>Cooked Rice</fullName>
+        <default>false</default>
+        <label>Cooked Rice</label>
+    </customValue>
+    <customValue>
+        <fullName>Chappathi</fullName>
+        <default>false</default>
+        <label>Chappathi</label>
+    </customValue>
+    <customValue>
+        <fullName>Vegetable Birinji Rice</fullName>
+        <default>false</default>
+        <label>Vegetable Birinji Rice</label>
+    </customValue>
+    <customValue>
+        <fullName>Curd</fullName>
+        <default>false</default>
+        <label>Curd</label>
+    </customValue>
+    <customValue>
+        <fullName>Appalam</fullName>
+        <default>false</default>
+        <label>Appalam</label>
+    </customValue>
+    <customValue>
+        <fullName>Tomato Pickle</fullName>
+        <default>false</default>
+        <label>Tomato Pickle</label>
+    </customValue>
+    <customValue>
+        <fullName>Butter Milk</fullName>
+        <default>false</default>
+        <label>Butter Milk</label>
+    </customValue>
+    <customValue>
+        <fullName>Bottle Gourd Sambar</fullName>
+        <default>false</default>
+        <label>Bottle Gourd Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Bhindi Masala</fullName>
+        <default>false</default>
+        <label>Bhindi Masala</label>
+    </customValue>
+    <customValue>
+        <fullName>Methi Dal</fullName>
+        <default>false</default>
+        <label>Methi Dal</label>
+    </customValue>
+    <customValue>
+        <fullName>Veg Pulao</fullName>
+        <default>false</default>
+        <label>Veg Pulao</label>
+    </customValue>
+    <customValue>
+        <fullName>Moong Dal Rasam</fullName>
+        <default>false</default>
+        <label>Moong Dal Rasam</label>
+    </customValue>
+    <customValue>
+        <fullName>Pipe Fryums</fullName>
+        <default>false</default>
+        <label>Pipe Fryums</label>
+    </customValue>
+    <customValue>
+        <fullName>Dosakaya Pachadi</fullName>
+        <default>false</default>
+        <label>Dosakaya Pachadi</label>
+    </customValue>
+    <customValue>
+        <fullName>Kori Gassi</fullName>
+        <default>false</default>
+        <label>Kori Gassi</label>
+    </customValue>
+    <customValue>
+        <fullName>Kadai Paneer</fullName>
+        <default>false</default>
+        <label>Kadai Paneer</label>
+    </customValue>
+    <customValue>
+        <fullName>Dal Fry</fullName>
+        <default>false</default>
+        <label>Dal Fry</label>
+    </customValue>
+    <customValue>
+        <fullName>Ginger Rasam</fullName>
+        <default>false</default>
+        <label>Ginger Rasam</label>
+    </customValue>
+    <customValue>
+        <fullName>Avakaya Pickle</fullName>
+        <default>false</default>
+        <label>Avakaya Pickle</label>
+    </customValue>
+    <customValue>
+        <fullName>Green Salad</fullName>
+        <default>false</default>
+        <label>Green Salad</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanilla Ice Cream</fullName>
+        <default>false</default>
+        <label>Vanilla Ice Cream</label>
+    </customValue>
+    <customValue>
+        <fullName>Ridge Gourd Sambar</fullName>
+        <default>false</default>
+        <label>Ridge Gourd Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrot Beans Poriyal</fullName>
+        <default>false</default>
+        <label>Carrot Beans Poriyal</label>
+    </customValue>
+    <customValue>
+        <fullName>Dal Palak</fullName>
+        <default>false</default>
+        <label>Dal Palak</label>
+    </customValue>
+    <customValue>
+        <fullName>Moong Dal Kitchadi</fullName>
+        <default>false</default>
+        <label>Moong Dal Kitchadi</label>
+    </customValue>
+    <customValue>
+        <fullName>Garlic Rasam</fullName>
+        <default>false</default>
+        <label>Garlic Rasam</label>
+    </customValue>
+    <customValue>
+        <fullName>Semiya Payasam</fullName>
+        <default>false</default>
+        <label>Semiya Payasam</label>
+    </customValue>
+    <customValue>
+        <fullName>Sambar Amaranthus</fullName>
+        <default>false</default>
+        <label>Sambar Amaranthus</label>
+    </customValue>
+    <customValue>
+        <fullName>Lobia Masala</fullName>
+        <default>false</default>
+        <label>Lobia Masala</label>
+    </customValue>
+    <customValue>
+        <fullName>Bhindi Kurkure</fullName>
+        <default>false</default>
+        <label>Bhindi Kurkure</label>
+    </customValue>
+    <customValue>
+        <fullName>Ghee Rice</fullName>
+        <default>false</default>
+        <label>Ghee Rice</label>
+    </customValue>
+    <customValue>
+        <fullName>Jerra Fryums</fullName>
+        <default>false</default>
+        <label>Jerra Fryums</label>
+    </customValue>
+    <customValue>
+        <fullName>Moong Dal Payasam</fullName>
+        <default>false</default>
+        <label>Moong Dal Payasam</label>
+    </customValue>
+    <customValue>
+        <fullName>Arachuvitta Sambar</fullName>
+        <default>false</default>
+        <label>Arachuvitta Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Bagara Baigan</fullName>
+        <default>false</default>
+        <label>Bagara Baigan</label>
+    </customValue>
+    <customValue>
+        <fullName>Dal Makhani</fullName>
+        <default>false</default>
+        <label>Dal Makhani</label>
+    </customValue>
+    <customValue>
+        <fullName>Curd Rice</fullName>
+        <default>false</default>
+        <label>Curd Rice</label>
+    </customValue>
+    <customValue>
+        <fullName>Mixe Veg Pickle</fullName>
+        <default>false</default>
+        <label>Mixe Veg Pickle</label>
+    </customValue>
+    <customValue>
+        <fullName>Mangalore Cucumber Sambar</fullName>
+        <default>false</default>
+        <label>Mangalore Cucumber Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Rajma Masala</fullName>
+        <default>false</default>
+        <label>Rajma Masala</label>
+    </customValue>
+    <customValue>
+        <fullName>Mint Corn Pulao</fullName>
+        <default>false</default>
+        <label>Mint Corn Pulao</label>
+    </customValue>
+    <customValue>
+        <fullName>Wheel Fryums</fullName>
+        <default>false</default>
+        <label>Wheel Fryums</label>
+    </customValue>
+    <customValue>
+        <fullName>Amla Pickle</fullName>
+        <default>false</default>
+        <label>Amla Pickle</label>
+    </customValue>
+    <customValue>
+        <fullName>Small Onion Sambar</fullName>
+        <default>false</default>
+        <label>Small Onion Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Tomato Drumstick Curry</fullName>
+        <default>false</default>
+        <label>Tomato Drumstick Curry</label>
+    </customValue>
+    <customValue>
+        <fullName>Kushka</fullName>
+        <default>false</default>
+        <label>Kushka</label>
+    </customValue>
+    <customValue>
+        <fullName>Lemon Rasam</fullName>
+        <default>false</default>
+        <label>Lemon Rasam</label>
+    </customValue>
+    <customValue>
+        <fullName>Kerala Sambar</fullName>
+        <default>false</default>
+        <label>Kerala Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Mix Veg Poriyal</fullName>
+        <default>false</default>
+        <label>Mix Veg Poriyal</label>
+    </customValue>
+    <customValue>
+        <fullName>Lasooni Dal</fullName>
+        <default>false</default>
+        <label>Lasooni Dal</label>
+    </customValue>
+    <customValue>
+        <fullName>Bat Fryums</fullName>
+        <default>false</default>
+        <label>Bat Fryums</label>
+    </customValue>
+    <customValue>
+        <fullName>Mango Pickle</fullName>
+        <default>false</default>
+        <label>Mango Pickle</label>
+    </customValue>
+    <customValue>
+        <fullName>Chicken Curry</fullName>
+        <default>false</default>
+        <label>Chicken Curry</label>
+    </customValue>
+    <customValue>
+        <fullName>Paneer Makhani</fullName>
+        <default>false</default>
+        <label>Paneer Makhani</label>
+    </customValue>
+    <customValue>
+        <fullName>Butterscotch Ice Cream</fullName>
+        <default>false</default>
+        <label>Butterscotch Ice Cream</label>
+    </customValue>
+    <customValue>
+        <fullName>Soya Capsicum Masala</fullName>
+        <default>false</default>
+        <label>Soya Capsicum Masala</label>
+    </customValue>
+    <customValue>
+        <fullName>Tomato Dal</fullName>
+        <default>false</default>
+        <label>Tomato Dal</label>
+    </customValue>
+    <customValue>
+        <fullName>Puliyogrea</fullName>
+        <default>false</default>
+        <label>Puliyogrea</label>
+    </customValue>
+    <customValue>
+        <fullName>Sabudhan Payasam</fullName>
+        <default>false</default>
+        <label>Sabudhan Payasam</label>
+    </customValue>
+    <customValue>
+        <fullName>North Indian Dal</fullName>
+        <default>false</default>
+        <label>North Indian Dal</label>
+    </customValue>
+    <customValue>
+        <fullName>Bitter Gourd Aloo Dry</fullName>
+        <default>false</default>
+        <label>Bitter Gourd Aloo Dry</label>
+    </customValue>
+    <customValue>
+        <fullName>Baigan Bhartha</fullName>
+        <default>false</default>
+        <label>Baigan Bhartha</label>
+    </customValue>
+    <customValue>
+        <fullName>Dal Lasooni</fullName>
+        <default>false</default>
+        <label>Dal Lasooni</label>
+    </customValue>
+    <customValue>
+        <fullName>Curry Leaves Rice</fullName>
+        <default>false</default>
+        <label>Curry Leaves Rice</label>
+    </customValue>
+    <customValue>
+        <fullName>Horse Gram Rasam</fullName>
+        <default>false</default>
+        <label>Horse Gram Rasam</label>
+    </customValue>
+    <customValue>
+        <fullName>Yam Lobia Dry</fullName>
+        <default>false</default>
+        <label>Yam Lobia Dry</label>
+    </customValue>
+    <customValue>
+        <fullName>Masoor Dal Tadka</fullName>
+        <default>false</default>
+        <label>Masoor Dal Tadka</label>
+    </customValue>
+    <customValue>
+        <fullName>Vegetable Rice Bath</fullName>
+        <default>false</default>
+        <label>Vegetable Rice Bath</label>
+    </customValue>
+    <customValue>
+        <fullName>Green Chilli Pickle</fullName>
+        <default>false</default>
+        <label>Green Chilli Pickle</label>
+    </customValue>
+    <customValue>
+        <fullName>Beerakaya Pachadi</fullName>
+        <default>false</default>
+        <label>Beerakaya Pachadi</label>
+    </customValue>
+    <customValue>
+        <fullName>Knol Khol Sambar</fullName>
+        <default>false</default>
+        <label>Knol Khol Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Aloo Baigan Dry</fullName>
+        <default>false</default>
+        <label>Aloo Baigan Dry</label>
+    </customValue>
+    <customValue>
+        <fullName>Mint Pulao</fullName>
+        <default>false</default>
+        <label>Mint Pulao</label>
+    </customValue>
+    <customValue>
+        <fullName>Jal Muri</fullName>
+        <default>false</default>
+        <label>Jal Muri</label>
+    </customValue>
+    <customValue>
+        <fullName>Nachos With Tomato Salsa</fullName>
+        <default>false</default>
+        <label>Nachos With Tomato Salsa</label>
+    </customValue>
+    <customValue>
+        <fullName>Masala Puri</fullName>
+        <default>false</default>
+        <label>Masala Puri</label>
+    </customValue>
+    <customValue>
+        <fullName>Chilli Bajji</fullName>
+        <default>false</default>
+        <label>Chilli Bajji</label>
+    </customValue>
+    <customValue>
+        <fullName>Green Chutney</fullName>
+        <default>false</default>
+        <label>Green Chutney</label>
+    </customValue>
+    <customValue>
+        <fullName>Aloo Samosa</fullName>
+        <default>false</default>
+        <label>Aloo Samosa</label>
+    </customValue>
+    <customValue>
+        <fullName>Sweet Chutney</fullName>
+        <default>false</default>
+        <label>Sweet Chutney</label>
+    </customValue>
+    <customValue>
+        <fullName>Good Day</fullName>
+        <default>false</default>
+        <label>Good Day</label>
+    </customValue>
+    <customValue>
+        <fullName>Badam Milk</fullName>
+        <default>false</default>
+        <label>Badam Milk</label>
+    </customValue>
+    <customValue>
+        <fullName>Momos</fullName>
+        <default>false</default>
+        <label>Momos</label>
+    </customValue>
+    <customValue>
+        <fullName>Red Spicy Chutney</fullName>
+        <default>false</default>
+        <label>Red Spicy Chutney</label>
+    </customValue>
+    <customValue>
+        <fullName>Papadi Chat</fullName>
+        <default>false</default>
+        <label>Papadi Chat</label>
+    </customValue>
+    <customValue>
+        <fullName>Stufed Bread Pakoda</fullName>
+        <default>false</default>
+        <label>Stufed Bread Pakoda</label>
+    </customValue>
+    <customValue>
+        <fullName>Tomato Sauce</fullName>
+        <default>false</default>
+        <label>Tomato Sauce</label>
+    </customValue>
+    <customValue>
+        <fullName>Pav Bhajji</fullName>
+        <default>false</default>
+        <label>Pav Bhajji</label>
+    </customValue>
+    <customValue>
+        <fullName>Pasta With Cream Sauce</fullName>
+        <default>false</default>
+        <label>Pasta With Cream Sauce</label>
+    </customValue>
+    <customValue>
+        <fullName>Vegetable Sandwich</fullName>
+        <default>false</default>
+        <label>Vegetable Sandwich</label>
+    </customValue>
+    <customValue>
+        <fullName>Moong Dal Kachori</fullName>
+        <default>false</default>
+        <label>Moong Dal Kachori</label>
+    </customValue>
+    <customValue>
+        <fullName>Punugu</fullName>
+        <default>false</default>
+        <label>Punugu</label>
+    </customValue>
+    <customValue>
+        <fullName>Banana Bajji</fullName>
+        <default>false</default>
+        <label>Banana Bajji</label>
+    </customValue>
+    <customValue>
+        <fullName>Chicken Kabab</fullName>
+        <default>false</default>
+        <label>Chicken Kabab</label>
+    </customValue>
+    <customValue>
+        <fullName>Baby Corn Kabab</fullName>
+        <default>false</default>
+        <label>Baby Corn Kabab</label>
+    </customValue>
+    <customValue>
+        <fullName>Raitha</fullName>
+        <default>false</default>
+        <label>Raitha</label>
+    </customValue>
+    <customValue>
+        <fullName>Mirchi Ka Salan</fullName>
+        <default>false</default>
+        <label>Mirchi Ka Salan</label>
+    </customValue>
+    <customValue>
+        <fullName>Banana Clusted</fullName>
+        <default>false</default>
+        <label>Banana Clusted</label>
+    </customValue>
+    <customValue>
+        <fullName>Radish Sambar</fullName>
+        <default>false</default>
+        <label>Radish Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Veg aloo Baigan</fullName>
+        <default>false</default>
+        <label>Veg aloo Baigan</label>
+    </customValue>
+    <customValue>
+        <fullName>Jeera Rice</fullName>
+        <default>false</default>
+        <label>Jeera Rice</label>
+    </customValue>
+    <customValue>
+        <fullName>Banana</fullName>
+        <default>false</default>
+        <label>Banana</label>
+    </customValue>
+    <customValue>
+        <fullName>Brinjal Sambar</fullName>
+        <default>false</default>
+        <label>Brinjal Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Aloo Jeera</fullName>
+        <default>false</default>
+        <label>Aloo Jeera</label>
+    </customValue>
+    <customValue>
+        <fullName>Bhuna Moong Dal</fullName>
+        <default>false</default>
+        <label>Bhuna Moong Dal</label>
+    </customValue>
+    <customValue>
+        <fullName>Masala Rice</fullName>
+        <default>false</default>
+        <label>Masala Rice</label>
+    </customValue>
+    <customValue>
+        <fullName>Chilli Pickle</fullName>
+        <default>false</default>
+        <label>Chilli Pickle</label>
+    </customValue>
+    <customValue>
+        <fullName>Bottle Sambar</fullName>
+        <default>false</default>
+        <label>Bottle Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Vegetable Fried Rice</fullName>
+        <default>false</default>
+        <label>Vegetable Fried Rice</label>
+    </customValue>
+    <customValue>
+        <fullName>Chilli Gobi</fullName>
+        <default>false</default>
+        <label>Chilli Gobi</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrot Halwa</fullName>
+        <default>false</default>
+        <label>Carrot Halwa</label>
+    </customValue>
+    <customValue>
+        <fullName>Kadai Subzi</fullName>
+        <default>false</default>
+        <label>Kadai Subzi</label>
+    </customValue>
+    <customValue>
+        <fullName>Lauki Dal</fullName>
+        <default>false</default>
+        <label>Lauki Dal</label>
+    </customValue>
+    <customValue>
+        <fullName>Matar Pulao</fullName>
+        <default>false</default>
+        <label>Matar Pulao</label>
+    </customValue>
+    <customValue>
+        <fullName>Donne Chicken Biriyani</fullName>
+        <default>false</default>
+        <label>Donne Chicken Biriyani</label>
+    </customValue>
+    <customValue>
+        <fullName>Donne Biriyani</fullName>
+        <default>false</default>
+        <label>Donne Biriyani</label>
+    </customValue>
+    <customValue>
+        <fullName>Shorva</fullName>
+        <default>false</default>
+        <label>Shorva</label>
+    </customValue>
+    <customValue>
+        <fullName>Mix veg Pickle</fullName>
+        <default>false</default>
+        <label>Mix veg Pickle</label>
+    </customValue>
+    <customValue>
+        <fullName>Dry Jamun</fullName>
+        <default>false</default>
+        <label>Dry Jamun</label>
+    </customValue>
+    <customValue>
+        <fullName>Bhindi Do Pyaza</fullName>
+        <default>false</default>
+        <label>Bhindi Do Pyaza</label>
+    </customValue>
+    <customValue>
+        <fullName>Panch Phoran Dal</fullName>
+        <default>false</default>
+        <label>Panch Phoran Dal</label>
+    </customValue>
+    <customValue>
+        <fullName>Water Melon</fullName>
+        <default>false</default>
+        <label>Water Melon</label>
+    </customValue>
+    <customValue>
+        <fullName>Egg Curry Yellow Gravy</fullName>
+        <default>false</default>
+        <label>Egg Curry Yellow Gravy</label>
+    </customValue>
+    <customValue>
+        <fullName>Shahi Paneer</fullName>
+        <default>false</default>
+        <label>Shahi Paneer</label>
+    </customValue>
+    <customValue>
+        <fullName>Yellow Dal Tadka</fullName>
+        <default>false</default>
+        <label>Yellow Dal Tadka</label>
+    </customValue>
+    <customValue>
+        <fullName>Boondi Ladoo</fullName>
+        <default>false</default>
+        <label>Boondi Ladoo</label>
+    </customValue>
+    <customValue>
+        <fullName>Sambar Ladies Finger</fullName>
+        <default>false</default>
+        <label>Sambar Ladies Finger</label>
+    </customValue>
+    <customValue>
+        <fullName>Pumpkin Channa Curry</fullName>
+        <default>false</default>
+        <label>Pumpkin Channa Curry</label>
+    </customValue>
+    <customValue>
+        <fullName>Jeera Pulao</fullName>
+        <default>false</default>
+        <label>Jeera Pulao</label>
+    </customValue>
+    <customValue>
+        <fullName>Mushroom Do Pyaza</fullName>
+        <default>false</default>
+        <label>Mushroom Do Pyaza</label>
+    </customValue>
+    <customValue>
+        <fullName>Brinji Pulao</fullName>
+        <default>false</default>
+        <label>Brinji Pulao</label>
+    </customValue>
+    <customValue>
+        <fullName>Jeera Rasam</fullName>
+        <default>false</default>
+        <label>Jeera Rasam</label>
+    </customValue>
+    <customValue>
+        <fullName>Watermelon</fullName>
+        <default>false</default>
+        <label>Watermelon</label>
+    </customValue>
+    <customValue>
+        <fullName>Mutton Biriyani</fullName>
+        <default>false</default>
+        <label>Mutton Biriyani</label>
+    </customValue>
+    <customValue>
+        <fullName>Mushroom &amp; Paneer Biriyani</fullName>
+        <default>false</default>
+        <label>Mushroom &amp; Paneer Biriyani</label>
+    </customValue>
+    <customValue>
+        <fullName>Ice Cream</fullName>
+        <default>false</default>
+        <label>Ice Cream</label>
+    </customValue>
+    <customValue>
+        <fullName>Malpua With rabadi</fullName>
+        <default>false</default>
+        <label>Malpua With rabadi</label>
+    </customValue>
+    <customValue>
+        <fullName>Mushroom Masala</fullName>
+        <default>false</default>
+        <label>Mushroom Masala</label>
+    </customValue>
+    <customValue>
+        <fullName>Vangi Bath</fullName>
+        <default>false</default>
+        <label>Vangi Bath</label>
+    </customValue>
+    <customValue>
+        <fullName>Coconut Burfi</fullName>
+        <default>false</default>
+        <label>Coconut Burfi</label>
+    </customValue>
+    <customValue>
+        <fullName>Drumstick Mango Sambar</fullName>
+        <default>false</default>
+        <label>Drumstick Mango Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Mattar Pulao</fullName>
+        <default>false</default>
+        <label>Mattar Pulao</label>
+    </customValue>
+    <customValue>
+        <fullName>Cabbage</fullName>
+        <default>false</default>
+        <label>Cabbage</label>
+    </customValue>
+    <customValue>
+        <fullName>Paprika</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Paprika</label>
+    </customValue>
+    <customValue>
+        <fullName>Parsley</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Parsley</label>
+    </customValue>
+    <customValue>
+        <fullName>Parsnips</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Parsnips</label>
+    </customValue>
+    <customValue>
+        <fullName>Peaches</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Peaches</label>
+    </customValue>
+    <customValue>
+        <fullName>Peas</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Peas</label>
+    </customValue>
+    <customValue>
+        <fullName>Peppers (Bell Peppers)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Peppers (Bell Peppers)</label>
+    </customValue>
+    <customValue>
+        <fullName>Pineapples</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Pineapples</label>
+    </customValue>
+    <customValue>
+        <fullName>Plums</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Plums</label>
+    </customValue>
+    <customValue>
+        <fullName>Potatoes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Potatoes</label>
+    </customValue>
+    <customValue>
+        <fullName>Pumpkins</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Pumpkins</label>
+    </customValue>
+    <customValue>
+        <fullName>Quinoa</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Quinoa</label>
+    </customValue>
+    <customValue>
+        <fullName>Radishes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Radishes</label>
+    </customValue>
+    <customValue>
+        <fullName>Zucchini</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Zucchini</label>
+    </customValue>
+    <customValue>
+        <fullName>Aloo Paratha</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Aloo Paratha</label>
+    </customValue>
+    <customValue>
+        <fullName>Bread Jam</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bread Jam</label>
+    </customValue>
+    <customValue>
+        <fullName>Idly</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Idly</label>
+    </customValue>
+    <customValue>
+        <fullName>Artichokes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Artichokes</label>
+    </customValue>
+    <customValue>
+        <fullName>Arugula</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Arugula</label>
+    </customValue>
+    <customValue>
+        <fullName>Asparagus</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Asparagus</label>
+    </customValue>
+    <customValue>
+        <fullName>Avocados</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Avocados</label>
+    </customValue>
+    <customValue>
+        <fullName>Bananas</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bananas</label>
+    </customValue>
+    <customValue>
+        <fullName>Raspberries</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Raspberries</label>
+    </customValue>
+    <customValue>
+        <fullName>Rosemary</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Rosemary</label>
+    </customValue>
+    <customValue>
+        <fullName>Rutabagas</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Rutabagas</label>
+    </customValue>
+    <customValue>
+        <fullName>Saffron</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Saffron</label>
+    </customValue>
+    <customValue>
+        <fullName>Sage</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sage</label>
+    </customValue>
+    <customValue>
+        <fullName>Salt</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Salt</label>
+    </customValue>
+    <customValue>
+        <fullName>Scallions (Green Onions)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Scallions (Green Onions)</label>
+    </customValue>
+    <customValue>
+        <fullName>Seitan</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Seitan</label>
+    </customValue>
+    <customValue>
+        <fullName>Spinach</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Spinach</label>
+    </customValue>
+    <customValue>
+        <fullName>Strawberries</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Strawberries</label>
+    </customValue>
+    <customValue>
+        <fullName>Sweet Potatoes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Sweet Potatoes</label>
+    </customValue>
+    <customValue>
+        <fullName>Swiss Chard</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Swiss Chard</label>
+    </customValue>
+    <customValue>
+        <fullName>Tarragon</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tarragon</label>
+    </customValue>
+    <customValue>
+        <fullName>Tempeh</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tempeh</label>
+    </customValue>
+    <customValue>
+        <fullName>Thyme</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Thyme</label>
+    </customValue>
+    <customValue>
+        <fullName>Tofu</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tofu</label>
+    </customValue>
+    <customValue>
+        <fullName>Tomatoes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Tomatoes</label>
+    </customValue>
+    <customValue>
+        <fullName>Turmeric</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Turmeric</label>
+    </customValue>
+    <customValue>
+        <fullName>Turnips</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Turnips</label>
+    </customValue>
+    <customValue>
+        <fullName>Vanilla</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Vanilla</label>
+    </customValue>
+    <customValue>
+        <fullName>Watermelons</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Watermelons</label>
+    </customValue>
+    <customValue>
+        <fullName>Fruit salad</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fruit salad</label>
+    </customValue>
+    <customValue>
+        <fullName>Dosa</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Dosa</label>
+    </customValue>
+    <customValue>
+        <fullName>Rice and Sambar</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Rice and Sambar</label>
+    </customValue>
+    <customValue>
+        <fullName>Chapathi</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chapathi</label>
+    </customValue>
+    <customValue>
+        <fullName>Bhindi Fry</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bhindi Fry</label>
+    </customValue>
+    <customValue>
+        <fullName>Papad</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Papad</label>
+    </customValue>
+    <customValue>
+        <fullName>Buttermilk</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Buttermilk</label>
+    </customValue>
+    <customValue>
+        <fullName>Poha</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Poha</label>
+    </customValue>
+    <customValue>
+        <fullName>Upma</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Upma</label>
+    </customValue>
+    <customValue>
+        <fullName>Barley</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Barley</label>
+    </customValue>
+    <customValue>
+        <fullName>Basil</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Basil</label>
+    </customValue>
+    <customValue>
+        <fullName>Bay Leaves</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bay Leaves</label>
+    </customValue>
+    <customValue>
+        <fullName>Beets</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Beets</label>
+    </customValue>
+    <customValue>
+        <fullName>Black Bean</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Black Bean</label>
+    </customValue>
+    <customValue>
+        <fullName>Black Pepper</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Black Pepper</label>
+    </customValue>
+    <customValue>
+        <fullName>Blueberries</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Blueberries</label>
+    </customValue>
+    <customValue>
+        <fullName>Bok Choy</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bok Choy</label>
+    </customValue>
+    <customValue>
+        <fullName>Broccoli</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Broccoli</label>
+    </customValue>
+    <customValue>
+        <fullName>Brown Rice</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Brown Rice</label>
+    </customValue>
+    <customValue>
+        <fullName>Brussels Sprouts</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Brussels Sprouts</label>
+    </customValue>
+    <customValue>
+        <fullName>Bulgur</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Bulgur</label>
+    </customValue>
+    <customValue>
+        <fullName>Cardamom</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cardamom</label>
+    </customValue>
+    <customValue>
+        <fullName>Carrots</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Carrots</label>
+    </customValue>
+    <customValue>
+        <fullName>Cauliflower</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cauliflower</label>
+    </customValue>
+    <customValue>
+        <fullName>Celery</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Celery</label>
+    </customValue>
+    <customValue>
+        <fullName>Cherries</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cherries</label>
+    </customValue>
+    <customValue>
+        <fullName>Chickpeas</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chickpeas</label>
+    </customValue>
+    <customValue>
+        <fullName>Chili Powder</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chili Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Chives</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Chives</label>
+    </customValue>
+    <customValue>
+        <fullName>Cilantro</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cilantro</label>
+    </customValue>
+    <customValue>
+        <fullName>Cinnamon</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cinnamon</label>
+    </customValue>
+    <customValue>
+        <fullName>Cloves</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cloves</label>
+    </customValue>
+    <customValue>
+        <fullName>Collard Greens</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Collard Greens</label>
+    </customValue>
+    <customValue>
+        <fullName>Coriander</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Coriander</label>
+    </customValue>
+    <customValue>
+        <fullName>Corn</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Corn</label>
+    </customValue>
+    <customValue>
+        <fullName>Cucumbers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cucumbers</label>
+    </customValue>
+    <customValue>
+        <fullName>Cumin</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Cumin</label>
+    </customValue>
+    <customValue>
+        <fullName>Curry Powder</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Curry Powder</label>
+    </customValue>
+    <customValue>
+        <fullName>Dill</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Dill</label>
+    </customValue>
+    <customValue>
+        <fullName>Eggplants</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Eggplants</label>
+    </customValue>
+    <customValue>
+        <fullName>Farro</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Farro</label>
+    </customValue>
+    <customValue>
+        <fullName>Fennel</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Fennel</label>
+    </customValue>
+    <customValue>
+        <fullName>Garlic</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Garlic</label>
+    </customValue>
+    <customValue>
+        <fullName>Ginger</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Ginger</label>
+    </customValue>
+    <customValue>
+        <fullName>Grapes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Grapes</label>
+    </customValue>
+    <customValue>
+        <fullName>Green Beans</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Green Beans</label>
+    </customValue>
+    <customValue>
+        <fullName>Jalapeños</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Jalapeños</label>
+    </customValue>
+    <customValue>
+        <fullName>Kale</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Kale</label>
+    </customValue>
+    <customValue>
+        <fullName>Kiwis</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Kiwis</label>
+    </customValue>
+    <customValue>
+        <fullName>Leeks</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Leeks</label>
+    </customValue>
+    <customValue>
+        <fullName>Lemons</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lemons</label>
+    </customValue>
+    <customValue>
+        <fullName>Lentils</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lentils</label>
+    </customValue>
+    <customValue>
+        <fullName>Lettuce</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Lettuce</label>
+    </customValue>
+    <customValue>
+        <fullName>Limes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Limes</label>
+    </customValue>
+    <customValue>
+        <fullName>Mangoes</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mangoes</label>
+    </customValue>
+    <customValue>
+        <fullName>Millet</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Millet</label>
+    </customValue>
+    <customValue>
+        <fullName>Mint</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mint</label>
+    </customValue>
+    <customValue>
+        <fullName>Mushrooms</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mushrooms</label>
+    </customValue>
+    <customValue>
+        <fullName>Mustard Seeds</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mustard Seeds</label>
+    </customValue>
+    <customValue>
+        <fullName>Nutmeg</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Nutmeg</label>
+    </customValue>
+    <customValue>
+        <fullName>Oats</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Oats</label>
+    </customValue>
+    <customValue>
+        <fullName>Onions</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Onions</label>
+    </customValue>
+    <customValue>
+        <fullName>Oranges</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Oranges</label>
+    </customValue>
+    <customValue>
+        <fullName>Oregano</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Oregano</label>
+    </customValue>
+    <masterLabel>Mess Menu Items</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,19 @@
+<!--
+  @description       : 
+  @author            : owais.ahanger@cloudodyssey.co
+  @group             : 
+  @last modified on  : 05-30-2024
+  @last modified by  : owais.ahanger@cloudodyssey.co
+-->
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    <div>
+        <div>
+            <c:revStdHomeStudentSubHeader />
+        </div>
+        <div>
+            <forceCommunity:notifications />
+        </div>
+    </div>
+
+
+</aura:component>

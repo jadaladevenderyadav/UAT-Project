@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integration_Remarks__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+Integration_Remarks_Image__c, 
+
+&apos;Red&apos;,IMAGE(&apos;https://chart.googleapis.com/chart?chst=d_text_outline&amp;chld=F96315|15|l|ffffff|_|To be Pushed&apos;,&apos;HOT&apos;),
+&apos;Green&apos;,IMAGE(&apos;https://chart.googleapis.com/chart?chst=d_text_outline&amp;chld=006666|15|l|ffffff|_|Pushed Successfully&apos;,&apos;GREEN&apos;),
+				NULL)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Integration Remarks</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Display_Detained_Fields__c</fullName>
+    <formula>OR(
+    ISPICKVAL(Student_Status__c, &quot;Detained&quot;),
+    ISPICKVAL(Student_Status__c, &quot;Not Reported&quot;)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Display Detained Fields</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

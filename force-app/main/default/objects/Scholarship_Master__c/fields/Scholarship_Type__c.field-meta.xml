@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scholarship_Type__c</fullName>
+    <label>Scholarship Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sub_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>75.01 - 85.00</fullName>
+                <default>false</default>
+                <label>75.01 - 85.00</label>
+            </value>
+            <value>
+                <fullName>85.00 to 90.00</fullName>
+                <default>false</default>
+                <label>85.00 to 90.00</label>
+            </value>
+            <value>
+                <fullName>90.01 &amp; Above</fullName>
+                <default>false</default>
+                <label>90.01 &amp; Above</label>
+            </value>
+            <value>
+                <fullName>80.00 - 85.00</fullName>
+                <default>false</default>
+                <label>80.00 - 85.00</label>
+            </value>
+            <value>
+                <fullName>85.01 &amp; Above</fullName>
+                <default>false</default>
+                <label>85.01 &amp; Above</label>
+            </value>
+            <value>
+                <fullName>B.Tech/B.Arch/MBA</fullName>
+                <default>false</default>
+                <label>B.Tech/B.Arch/MBA</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>60.00 - 69.99</fullName>
+                <default>false</default>
+                <label>60.00 - 69.99</label>
+            </value>
+            <value>
+                <fullName>70.00 - 84.99</fullName>
+                <default>false</default>
+                <label>70.00 - 84.99</label>
+            </value>
+            <value>
+                <fullName>85.00 &amp; Above</fullName>
+                <default>false</default>
+                <label>85.00 &amp; Above</label>
+            </value>
+            <value>
+                <fullName>100 - 109</fullName>
+                <default>false</default>
+                <label>100 - 109</label>
+            </value>
+            <value>
+                <fullName>110 - 124</fullName>
+                <default>false</default>
+                <label>110 - 124</label>
+            </value>
+            <value>
+                <fullName>125 &amp; Above</fullName>
+                <default>false</default>
+                <label>125 &amp; Above</label>
+            </value>
+            <value>
+                <fullName>400 - 499</fullName>
+                <default>false</default>
+                <label>400 - 499</label>
+            </value>
+            <value>
+                <fullName>500 - 599</fullName>
+                <default>false</default>
+                <label>500 - 599</label>
+            </value>
+            <value>
+                <fullName>600 &amp; Above</fullName>
+                <default>false</default>
+                <label>600 &amp; Above</label>
+            </value>
+            <value>
+                <fullName>B.Tech. in School of EEE</fullName>
+                <default>false</default>
+                <label>B.Tech. in School of EEE</label>
+            </value>
+            <value>
+                <fullName>B.Tech. in School of Mechanical Engineering</fullName>
+                <default>false</default>
+                <label>B.Tech. in School of Mechanical Engineering</label>
+            </value>
+            <value>
+                <fullName>B.Tech. in School of Civil Engineering</fullName>
+                <default>false</default>
+                <label>B.Tech. in School of Civil Engineering</label>
+            </value>
+            <value>
+                <fullName>M.Tech. All Schools</fullName>
+                <default>false</default>
+                <label>M.Tech. All Schools</label>
+            </value>
+            <value>
+                <fullName>UG Non-Tech (Except BBA/BCA/B.Com)</fullName>
+                <default>false</default>
+                <label>UG Non-Tech (Except BBA/BCA/B.Com)</label>
+            </value>
+            <value>
+                <fullName>PG Programs</fullName>
+                <default>false</default>
+                <label>PG Programs</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>NEET - Score - B.Sc</controllingFieldValue>
+            <valueName>400 - 499</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEET - Score - B.Sc</controllingFieldValue>
+            <valueName>500 - 599</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NEET - Score - B.Sc</controllingFieldValue>
+            <valueName>600 &amp; Above</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA Alumni Referral</controllingFieldValue>
+            <controllingFieldValue>REVA Staff Referral</controllingFieldValue>
+            <controllingFieldValue>REVA Vendor/ Supplier/Contractor/ Other Referrals</controllingFieldValue>
+            <valueName>B.Tech. in School of EEE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA Alumni Referral</controllingFieldValue>
+            <controllingFieldValue>REVA Staff Referral</controllingFieldValue>
+            <controllingFieldValue>REVA Vendor/ Supplier/Contractor/ Other Referrals</controllingFieldValue>
+            <valueName>B.Tech. in School of Mechanical Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA Alumni Referral</controllingFieldValue>
+            <controllingFieldValue>REVA Staff Referral</controllingFieldValue>
+            <controllingFieldValue>REVA Vendor/ Supplier/Contractor/ Other Referrals</controllingFieldValue>
+            <valueName>B.Tech. in School of Civil Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA Alumni Referral</controllingFieldValue>
+            <controllingFieldValue>REVA Staff Referral</controllingFieldValue>
+            <controllingFieldValue>REVA Vendor/ Supplier/Contractor/ Other Referrals</controllingFieldValue>
+            <valueName>M.Tech. All Schools</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA Alumni Referral</controllingFieldValue>
+            <controllingFieldValue>REVA Staff Referral</controllingFieldValue>
+            <controllingFieldValue>REVA Vendor/ Supplier/Contractor/ Other Referrals</controllingFieldValue>
+            <valueName>UG Non-Tech (Except BBA/BCA/B.Com)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA Alumni Referral</controllingFieldValue>
+            <controllingFieldValue>REVA Staff Referral</controllingFieldValue>
+            <controllingFieldValue>REVA Vendor/ Supplier/Contractor/ Other Referrals</controllingFieldValue>
+            <valueName>PG Programs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specially Abled</controllingFieldValue>
+            <controllingFieldValue>Siblings</controllingFieldValue>
+            <controllingFieldValue>Twin</controllingFieldValue>
+            <controllingFieldValue>Single Girl Child</controllingFieldValue>
+            <valueName>B.Tech/B.Arch/MBA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specially Abled</controllingFieldValue>
+            <controllingFieldValue>Siblings</controllingFieldValue>
+            <controllingFieldValue>Twin</controllingFieldValue>
+            <controllingFieldValue>Single Girl Child</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UG - Technical</controllingFieldValue>
+            <valueName>85.00 to 90.00</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UG - Technical</controllingFieldValue>
+            <valueName>90.01 &amp; Above</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UG - Non Technical</controllingFieldValue>
+            <valueName>80.00 - 85.00</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>UG - Non Technical</controllingFieldValue>
+            <controllingFieldValue>PG - Technical</controllingFieldValue>
+            <controllingFieldValue>PG - Others</controllingFieldValue>
+            <valueName>85.01 &amp; Above</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PG - Technical</controllingFieldValue>
+            <controllingFieldValue>PG - Others</controllingFieldValue>
+            <valueName>75.01 - 85.00</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JEE - Percentile - B.Tech</controllingFieldValue>
+            <valueName>60.00 - 69.99</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JEE - Percentile - B.Tech</controllingFieldValue>
+            <valueName>70.00 - 84.99</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JEE - Percentile - B.Tech</controllingFieldValue>
+            <valueName>85.00 &amp; Above</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NATA - Score - B.Arch</controllingFieldValue>
+            <valueName>100 - 109</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NATA - Score - B.Arch</controllingFieldValue>
+            <valueName>110 - 124</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NATA - Score - B.Arch</controllingFieldValue>
+            <valueName>125 &amp; Above</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

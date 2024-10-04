@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hed_Semester_Notification</fullName>
+    <active>true</active>
+    <label>Semester Notification</label>
+    <picklistValues>
+        <picklist>hed_IA_Type__c</picklist>
+        <values>
+            <fullName>IA 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA 2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

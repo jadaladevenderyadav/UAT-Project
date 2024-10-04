@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Drive confirmation to parent</label>
+    <protected>false</protected>
+    <values>
+        <field>Dlt_Content_Id__c</field>
+        <value xsi:type="xsd:string">1007899578139954968</value>
+    </values>
+    <values>
+        <field>SMS_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SMS_Template_Long__c</field>
+        <value xsi:type="xsd:string">&quot;Dear {#var#}
+
+Your ward has been shortlisted for {#var#} further rounds of interview, which is scheduled on {#var#} @REVA Campus.
+
+Check email.
+
+REVA University&quot;</value>
+    </values>
+    <values>
+        <field>SMS_Template__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Sender__c</field>
+        <value xsi:type="xsd:string">REVAUn</value>
+    </values>
+    <values>
+        <field>Templated_Id__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Unicode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

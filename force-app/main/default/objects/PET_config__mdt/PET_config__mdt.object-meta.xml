@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>PhD entrance exam date&apos;s</description>
+    <label>PET config</label>
+    <pluralLabel>PET configs</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

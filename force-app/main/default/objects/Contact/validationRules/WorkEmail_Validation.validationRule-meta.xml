@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WorkEmail_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>(Record_Type_Name__c = &quot;Student&quot;) &amp;&amp;
+(hed__WorkEmail__c  &lt;&gt;  Application_Number__c+&apos;@reva.edu.in&apos;)</errorConditionFormula>
+    <errorDisplayField>hed__WorkEmail__c</errorDisplayField>
+    <errorMessage>Work email format should be like Applicationnumber@reva.edu.in</errorMessage>
+</ValidationRule>

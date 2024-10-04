@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fastag</fullName>
+    <columns>NAME</columns>
+    <columns>RTR_Vehicle_Name__c</columns>
+    <columns>RTR_FASTag_Id__c</columns>
+    <columns>RTR_Transaction_Id__c</columns>
+    <columns>RTR_Payment_Date__c</columns>
+    <columns>RTR_Amount__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>RTR_Vehicle_Expenses__c.RTR_FASTag</value>
+    </filters>
+    <label>Fastag</label>
+</ListView>

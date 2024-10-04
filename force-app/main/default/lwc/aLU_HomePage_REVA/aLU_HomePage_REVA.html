@@ -1,0 +1,350 @@
+<template>
+
+    <!-- Row 1 -->
+<div class="slds-grid slds-wrap">
+    <!-- top banner -->
+    <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+        <div class="topBannerBg topBannerBgMob" style={getTopBannerBg}>
+            <!-- <img src={topBanner}> -->
+            <div class="textoverlay textoverlayMob">
+                WELCOME TO <br/>
+                REVA ALUMNI <br/>
+                PORTAL
+            </div>
+        </div>
+    </div>
+    <!-- middle banner -->
+    <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+        <div class="middleBannerBg middleBannerBgMob" style={getMiddleBannerBg}>
+           <div class="tilesContainer slds-grid slds-wrap" style="">
+
+            <!-- <div class="slds-grid slds-wrap"> --> 
+                <!-- tile 1 -->
+                <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_4-of-12">
+                   <div class="firstRowTiles" style="background-color: #0097a2">
+
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                            <div class="revaEngageTileIcon" >
+                                <img src={handSakeIcon}>
+                            </div>
+                            
+                        </div>
+                        <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                            <div class=""><h1 class="tileHeadings">REVA<br/>ENGAGE</h1></div>
+                        </div>
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                            <div>
+                                <p class="tileTextContent">
+                                    Learn about the many ways to stay<br/>
+                                    engaged with REVA.The power of the<br/>
+                                    network in REVA
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <div class="slds-col slds-small-size_5-of-12 slds-medium-size_5-of-12 slds-large-size_5-of-12">
+                            <div>
+                                <button class="tileButton slds-button slds-button_inverse">Join</button>
+                                <!-- <button class="tileButton slds-button slds-button_neutral">Join</button>  -->
+                            </div>
+                        </div>
+                        <div class="slds-col slds-small-size_7-of-12 slds-medium-size_7-of-12 slds-large-size_7-of-12">
+                            
+                        </div>
+                    </div>
+
+                   </div>
+                </div>
+                <!-- tile 2 -->
+                <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_4-of-12">
+                    <div class="firstRowTiles" style="background-color: #049ad7">
+
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                <div class="revaVolunteerTileIcon" >
+                                    <img src={allHandsJoinIcon}>
+                                </div>
+                                
+                            </div>
+                            <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                <div class=""><h1 class="tileHeadings">REVA<br/>VOLUNTEER</h1></div>
+                            </div>
+                            <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                                <div>
+                                    <p class="tileTextContent">
+                                        Many alumni give generously of their <br/>
+                                        time to support REVA and current <br/>
+                                        students with their knowledge and <br/>
+                                        experience.
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-small-size_5-of-12 slds-medium-size_5-of-12 slds-large-size_5-of-12">
+                                <div>
+                                    <button class="tileButton_2 slds-button slds-button_inverse">Join</button>
+                                    <!-- <button class="tileButton slds-button slds-button_neutral">Join</button>  -->
+                                </div>
+                            </div>
+                            <div class="slds-col slds-small-size_7-of-12 slds-medium-size_7-of-12 slds-large-size_7-of-12">
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- tile 3 -->
+                <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_4-of-12">
+                    <div class="firstRowTiles" style="background-color: #27a844">
+
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                <div class="revaGivingTileIcon" >
+                                    <img src={givingHandsIcon}>
+                                </div>
+                                
+                            </div>
+                            <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                <div class=""><h1 class="tileHeadings">REVA<br/>GIVING</h1></div>
+                            </div>
+                            <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                                <div>
+                                    <p class="tileTextContent">
+                                        This is our chance to fulfill the promise<br/>
+                                        of this treasured place, and to renew our <br/>
+                                        promise to those who need us.
+                                        
+                                       
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-small-size_5-of-12 slds-medium-size_5-of-12 slds-large-size_5-of-12">
+                                <div>
+                                    <button class="tileButton_2 slds-button slds-button_inverse">Join</button>
+                                    
+                                </div>
+                            </div>
+                            <div class="slds-col slds-small-size_7-of-12 slds-medium-size_7-of-12 slds-large-size_7-of-12">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- tile 4 -->
+                <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_4-of-12">
+                    <div class="secondRowTiles" style={getConnectWithAlumniTileBg}>
+                         
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                <div class="">
+                                    <h1 class="secondRowTileHeadings">CONNECT<br/>WITH YOUR<br/>ALUMNI</h1>
+                                </div>
+                                
+                            </div>
+                            <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                
+                            </div>
+                            <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                                <div>
+                                    <p class="secondRowTileTextContent">
+                                        There are so many ways to stay in <br/>
+                                        touch with your friends and <br/>
+                                        classmates, network with other <br/>
+                                        alumni, and maintain your connection <br/>
+                                        to the University and its students. Here <br/>
+                                        are just a few.
+                                           
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-small-size_5-of-12 slds-medium-size_5-of-12 slds-large-size_5-of-12">
+                                <div>
+                                    <button class="secondRowTileButton slds-button slds-button_inverse">Connect</button>
+                                    
+                                </div>
+                            </div>
+                            <div class="slds-col slds-small-size_7-of-12 slds-medium-size_7-of-12 slds-large-size_7-of-12">
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- tile 5 -->
+                <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_4-of-12">
+                    <div class="secondRowTiles" style={getJoinRevaEventsTileBg}>
+
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                <div class="">
+                                    <h1 class="secondRowTileHeadings">JOIN REVA'S<br/>PROFESSIONAL<br/>AND SOCIAL<br/>EVENTS</h1>
+                                </div>
+                                
+                            </div>
+                            <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                
+                            </div>
+                            <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                                <div>
+                                    <p class="secondRowSecondTileTextContent">
+                                        Join our events that connect members <br/>
+                                        of the REVA community by areas of <br/>
+                                        industry, helping both alumni and <br/>
+                                        current undergraduates to leverage <br/>
+                                        the exceptional alumni network. 
+                                           
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-small-size_5-of-12 slds-medium-size_5-of-12 slds-large-size_5-of-12">
+                                <div>
+                                    <button class="secondRowSecondTileButton slds-button slds-button_inverse">Join</button>
+                                    
+                                </div>
+                            </div>
+                            <div class="slds-col slds-small-size_7-of-12 slds-medium-size_7-of-12 slds-large-size_7-of-12">
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- tile 6 and 7 -->
+                <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_4-of-12">
+                    <!-- <div class="secondRowTiles splittedTile" style="background-color: #0097a2"></div> -->
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                            <div class="splittedTile" style="background-color: #be365a">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                                        <div>
+                                            <h1 class="splitTileTextContent">
+                                                MY<br/>
+                                                Directory
+                                               
+                                            </h1>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                        <div>
+                                            <button class="knowMoreButton slds-button slds-button_inverse">KNOW MORE</button>
+                                            <!-- <button class="tileButton slds-button slds-button_neutral">Join</button>  -->
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                        <div class="contactBookIcon" >
+                                            <img src={contactBookIcon}>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                            <div class="splittedTile" style="background-color: #f49423">
+
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+                                        <div>
+                                            <h1 class="splitTileTextContent">
+                                                MY<br/>
+                                                Resources
+                                               
+                                            </h1>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                        <div>
+                                            <button class="knowMoreButton slds-button slds-button_inverse">KNOW MORE</button>
+                                            <!-- <button class="tileButton slds-button slds-button_neutral">Join</button>  -->
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-small-size_6-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+                                        <div class="folderIcon" >
+                                            <img src={folderIcon}>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+
+           </div>
+        </div>
+    </div>
+    <!-- bottom banner -->
+    <div class="slds-col slds-small-size_12-of-12 slds-medium-size_12-of-12 slds-large-size_12-of-12">
+        <div class="bottomBannerBg bottomBannerBgMob"  style={getBottomBannerBg}>
+            <div style="padding-top:10%; padding">
+                <div class="resourcesDivCard resourcesDivCardMob slds-box" >
+                    
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+                            <div><h1 class="myResourcesCardTitles">ALUMNI <b>RESOURCES</b></h1></div>
+                        </div>
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+                            <div></div>
+                        </div>
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+                            <div><h1 class="myResourcesCardTitles">EVENTS</h1></div>
+                        </div>
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+                            <div class="myResourcesCardContent">
+                                <ul class="slds-list_dotted">
+                                    <li>Make a difference</li>
+                                    <li>Refer a prospective students</li>
+                                    <li>Career services</li>
+                                    <li>Student empowerment</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+                            <div class="myResourcesCardContent">
+                                <ul class="slds-list_dotted">
+                                    <li>Reunion weekend</li>
+                                    <li>Gatherings</li>
+                                    <li>Submit your story</li>
+                                    <li>Inspirational </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+                            <div class="resourceCardEventContent">
+                                <b>Alumni's Meetup 2023</b><br/>
+                                <b>22nd December, Saturday</b><br/><br/>
+
+                                <p>We are excited to welcome you back to <br/>
+                                    campus! Honor connections past and <br/>
+                                    present stories, lectures and other <br/>
+                                    special events.</p>
+
+
+
+                            </div>
+                        </div>
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+                            
+                        </div>
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+                            
+                        </div>
+                        <div class="slds-col slds-small-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_4-of-12">
+                            <div>
+                                <button class="ResourcesCard_knowMoreButton slds-button slds-button_inverse">KNOW MORE</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</template>

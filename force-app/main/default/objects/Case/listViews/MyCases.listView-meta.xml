@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyCases</fullName>
+    <columns>CASES.SUBJECT</columns>
+    <columns>NAME</columns>
+    <columns>SRN__c</columns>
+    <columns>Program_Batch__c</columns>
+    <columns>Your_Mentor__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.Mentee</value>
+    </filters>
+    <label>Mentee</label>
+    <sharedTo>
+        <group>Student_Portal_Group</group>
+    </sharedTo>
+</ListView>

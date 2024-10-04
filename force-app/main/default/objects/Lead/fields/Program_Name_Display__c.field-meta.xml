@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Name_Display__c</fullName>
+    <description>This is a display program name for better readability</description>
+    <inlineHelpText>Display program name for ease of readability</inlineHelpText>
+    <label>Program Name Display</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

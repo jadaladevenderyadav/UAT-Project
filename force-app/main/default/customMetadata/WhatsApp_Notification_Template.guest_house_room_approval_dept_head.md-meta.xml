@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>guest_house_room_approval_dept_head</label>
+    <protected>false</protected>
+    <values>
+        <field>Template_Field__c</field>
+        <value xsi:type="xsd:string">Dept_Head_name,name_of_the_guest,Purpose_of_Visit,date_and_time_of_visit,booking_id,link</value>
+    </values>
+    <values>
+        <field>Template_ID__c</field>
+        <value xsi:type="xsd:string">guest_house_room_approval_dept_head</value>
+    </values>
+    <values>
+        <field>WhatsApp_msg_count__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+</CustomMetadata>

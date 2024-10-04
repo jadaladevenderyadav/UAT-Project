@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closing_case_By_Manodhaara_Counsellor</fullName>
+    <active>true</active>
+    <description>Counsellor can only close case after selecting the reason.</description>
+    <errorConditionFormula>AND(
+(Record_Type_Name__c = &quot;Manodhaara&quot;),
+ISPICKVAL(Status, &quot;Closed&quot;),
+ISPICKVAL(Reason_for_C__c, &quot;&quot;)
+)</errorConditionFormula>
+    <errorMessage>Please select the Reason for Closing the case</errorMessage>
+</ValidationRule>

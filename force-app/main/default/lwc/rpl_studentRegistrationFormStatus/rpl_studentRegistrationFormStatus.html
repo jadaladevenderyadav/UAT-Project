@@ -1,0 +1,58 @@
+<template>
+    <template if:true={modifiedData}>
+        <lightning-card title="Document / Information Status">
+            <div class="slds-table_header-fixed_container">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-m-around_medium">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="text-align:center; font-weight:bold; font-size:larger;">S.No</th>
+
+                            <th scope="col" style="text-align:center; font-weight:bold; font-size:larger;">Document /
+                                Information</th>
+                            <th scope="col" style="text-align:center; font-weight:bold; font-size:larger;">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={modifiedData} for:item="row">
+                            <tr key={row.id} class="slds-hint-parent">
+                                <td style="text-align:center; font-weight:bold; font-size:larger; padding: 0.5rem;">
+                                    {row.id}
+                                </td>
+                                <td style="text-align:center; font-weight:bold; font-size:larger; padding: 0.5rem;">
+                                    {row.documentName}</td>
+                                <td style="text-align:center; padding: 0.5rem;">
+                                    <lightning-button label={row.statusLabel} title="Document Status"
+                                        variant={row.variant} onclick={handleStatusClick} data-row-id={row.id}
+                                        class="slds-m-horizontal_auto"></lightning-button>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+                <div class="slds-m-around_medium"
+                    style="display: flex; align-items: center; justify-content:center; flex-direction:column">
+                    <div style="margin: 5px; text-align:center">
+                        <label>
+                            <lightning-input type="checkbox" disabled={isCheckboxDisabled} name="acknowledgment"
+                                label="By submitting this application, you agree that you have provided accurate and complete information to the best of your knowledge."
+                                checked={acknowledgmentChecked} onchange={handleAcknowledgmentChange}></lightning-input>
+                        </label>
+                    </div>
+                    <div style="margin: 5px;">
+                        <lightning-button label="Submit For Verification" title="Submit For Verificaiton"
+                            variant="brand" onclick={handleSubmit} class="slds-m-horizontal_auto"
+                            disabled={isSubmitDisabled}></lightning-button>
+                    </div>
+                </div>
+            </div>
+        </lightning-card>
+    </template>
+    <template if:true={isSpinner}>
+        <div class="slds-is-relative">
+            <section class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="loading..." variant="brand"></lightning-spinner>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" style="width: 60%; height:50%; margin:auto"></div>
+        </div>
+    </template>
+</template>

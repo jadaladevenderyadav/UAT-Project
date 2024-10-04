@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Not Shortlisted students</label>
+    <protected>false</protected>
+    <values>
+        <field>Dlt_Content_Id__c</field>
+        <value xsi:type="xsd:string">1007678506952134968</value>
+    </values>
+    <values>
+        <field>SMS_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SMS_Template_Long__c</field>
+        <value xsi:type="xsd:string">&quot;Dear {#var#}
+
+Thank you for taking the time to interview for the position with {#var#}.
+
+We appreciate your interest in joining the company and the effort you put into the application process.
+
+After careful consideration, we regret to inform you that you have not been shortlisted.
+
+We sincerely appreciate your interest and wish you all the best in your upcoming placement drives.
+
+REVA University&quot;</value>
+    </values>
+    <values>
+        <field>SMS_Template__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Sender__c</field>
+        <value xsi:type="xsd:string">REVAUn</value>
+    </values>
+    <values>
+        <field>Templated_Id__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Unicode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

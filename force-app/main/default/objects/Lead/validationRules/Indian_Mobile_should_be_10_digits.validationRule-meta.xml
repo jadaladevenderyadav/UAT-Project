@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Indian_Mobile_should_be_10_digits</fullName>
+    <active>false</active>
+    <description>Mobile number cannot be greater or lesser than 10 digits</description>
+    <errorConditionFormula>IF(  TEXT(Country_Code__c)  = &quot;India (+91)&quot;, LEN( MobilePhone) &lt;&gt;10, NULL)</errorConditionFormula>
+    <errorDisplayField>MobilePhone</errorDisplayField>
+    <errorMessage>Mobile should be exactly 10 digits</errorMessage>
+</ValidationRule>

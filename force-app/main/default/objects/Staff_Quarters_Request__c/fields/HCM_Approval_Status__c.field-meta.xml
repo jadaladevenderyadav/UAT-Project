@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HCM_Approval_Status__c</fullName>
+    <label>HCM Approval Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Deduction Request Initiated</fullName>
+                <default>false</default>
+                <label>Deduction Request Initiated</label>
+            </value>
+            <value>
+                <fullName>Deduction Request to Report Manager</fullName>
+                <default>false</default>
+                <label>Deduction Request to Report Manager</label>
+            </value>
+            <value>
+                <fullName>Deduction Request to Admin Director</fullName>
+                <default>false</default>
+                <label>Deduction Request to Admin Director</label>
+            </value>
+            <value>
+                <fullName>Deduction Request to HR Lead</fullName>
+                <default>false</default>
+                <label>Deduction Request to HR Lead</label>
+            </value>
+            <value>
+                <fullName>Deduction Approved</fullName>
+                <default>false</default>
+                <label>Deduction Approved</label>
+            </value>
+            <value>
+                <fullName>Deduction Rejected</fullName>
+                <default>false</default>
+                <label>Deduction Rejected</label>
+            </value>
+            <value>
+                <fullName>Cancellation Request Initiated</fullName>
+                <default>false</default>
+                <label>Cancellation Request Initiated</label>
+            </value>
+            <value>
+                <fullName>Cancellation Request to Report Manager</fullName>
+                <default>false</default>
+                <label>Cancellation Request to Report Manager</label>
+            </value>
+            <value>
+                <fullName>Cancellation Request to Admin Director</fullName>
+                <default>false</default>
+                <label>Cancellation Request to Admin Director</label>
+            </value>
+            <value>
+                <fullName>Cancellation Request to HR Lead</fullName>
+                <default>false</default>
+                <label>Cancellation Request to HR Lead</label>
+            </value>
+            <value>
+                <fullName>Cancellation Approved</fullName>
+                <default>false</default>
+                <label>Cancellation Approved</label>
+            </value>
+            <value>
+                <fullName>Cancellation Rejected</fullName>
+                <default>false</default>
+                <label>Cancellation Rejected</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Request Initiated</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Request Initiated</label>
+            </value>
+            <value>
+                <fullName>Request to Admin Director</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Request to Admin Director</label>
+            </value>
+            <value>
+                <fullName>Request to HR Lead</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Request to HR Lead</label>
+            </value>
+            <value>
+                <fullName>Request to Report Manager</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Request to Report Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

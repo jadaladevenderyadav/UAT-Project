@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rpl_Is_Pre_Final_Year__c</fullName>
+    <formula>OR( VALUE(RIGHT(Active_Semester__r.Name, 1)) + 2 = Primary_Academic_Program__r.No_of_Years__c * 2 ,
+
+   VALUE(RIGHT(Active_Semester__r.Name, 1)) + 3 = Primary_Academic_Program__r.No_of_Years__c * 2)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Pre Final Year</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

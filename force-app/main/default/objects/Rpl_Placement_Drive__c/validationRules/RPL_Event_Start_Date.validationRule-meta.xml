@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RPL_Event_Start_Date</fullName>
+    <active>false</active>
+    <description>Event start date should not be in the past</description>
+    <errorConditionFormula>IF( Rpl_Event_Date__c &lt; TODAY(), TRUE, FALSE)</errorConditionFormula>
+    <errorDisplayField>Rpl_Event_Date__c</errorDisplayField>
+    <errorMessage>The event start date cannot be in the past.</errorMessage>
+</ValidationRule>

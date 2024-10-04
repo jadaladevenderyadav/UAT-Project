@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Edit_Non_User2</fullName>
+    <active>true</active>
+    <description>Can&apos;t edit record if current user and applicant contact owner is not same</description>
+    <errorConditionFormula>AND( 
+OR(
+ ISCHANGED(  Father_Name__c  ),
+ ISCHANGED(  Father_Email_ID__c  ) ,
+ ISCHANGED(  Occupation__c  ) ,
+ ISCHANGED(  Mother_Name1__c  ) ,
+ ISCHANGED(  Mother_Name__c  ) ,
+ ISCHANGED(  Mother_Mobile_Number__c  ),
+ ISCHANGED(  Father_Mobile_Number__c  ) ,
+ ISCHANGED(  Mother_Email_ID__c  ) ,
+ ISCHANGED(  Annual_Income__c  ) ,
+ ISCHANGED(  Father_Annual_Income__c  ) ,
+ ISCHANGED(  Mother_Annual_Income__c  ) ,
+ ISCHANGED( pi__first_search_type__c ) ,
+ ISCHANGED( pi__grade__c ) ,
+ ISCHANGED( pi__last_activity__c ) ,
+ ISCHANGED( pi__Pardot_Last_Scored_At__c ) ,
+ ISCHANGED( pi__notes__c ) ,
+ ISCHANGED( pi__url__c ) ,
+ ISCHANGED( AccountId ) ,
+ ISCHANGED( Active__c ) ,
+ ISCHANGED( Active_Batch__c ) ,
+ ISCHANGED( Active_Semester__c ) ,
+ ISCHANGED( Actual_Allocated_Caste_Category__c ) ,
+ ISCHANGED( Actual_Caste_Category__c ) ,
+ ISCHANGED( Actual_Claimed_Caste_Category__c ) ,
+ ISCHANGED( Admission_Session__c ) ,
+ ISCHANGED( Admission_Type__c ) ,
+ ISCHANGED( Alloted_Caste_Category__c ),
+ ISCHANGED( hed__AlternateEmail__c ) ,
+ ISCHANGED( Alternate_Mobile_Number_1__c ) ,
+ ISCHANGED( Alternate_Mobile_Number_2__c ) ,
+ ISCHANGED( Amount__c ) ,
+ ISCHANGED( Annual_Income__c ) ,
+ ISCHANGED( Anti_Ragging_undertaking_Reference_No__c ) ,
+ ISCHANGED( Applicant_Name__c ) ,
+ ISCHANGED( Applicant_Score__c ) ,
+ ISCHANGED( Application_Submission_Date__c ) ,
+ ISCHANGED( Approval_Status__c ) ,
+ ISCHANGED( Are_you_Foreigner__c ) ,
+ ISCHANGED( Assigned_Users__c ) ,
+ ISCHANGED( AssistantName ) ,
+ ISCHANGED( AssistantPhone ) ,
+ ISCHANGED( Bank_Account_Number__c ) ,
+ ISCHANGED( Bank_Beneficiary_Name__c ) ,
+ ISCHANGED( Bank_Branch_Name__c ) ,
+ ISCHANGED( Bank_Name__c ) ,
+ ISCHANGED( Board__c ) ,
+ ISCHANGED( CaseSafeID__c ) ,
+ ISCHANGED( Caste_Logisys__c ) ,
+ ISCHANGED( hed__Chosen_Full_Name__c ) ,
+ ISCHANGED( hed__Citizenship__c ) ,
+ ISCHANGED( hed__Citizenship_Status__c ) ,
+ ISCHANGED( City__c ) ,
+ ISCHANGED( City_Others__c ) ,
+ ISCHANGED( City_Remarks__c ) ,
+ ISCHANGED( City_Type__c ) ,
+ ISCHANGED( Claimed_Caste_Category__c ) 
+
+),Owner.Username &lt;&gt; $User.Username,$Profile.Name = &apos;Counselor&apos;
+)</errorConditionFormula>
+    <errorMessage>You don&apos;t have access to edit this record. Please contact Admissions Team.</errorMessage>
+</ValidationRule>

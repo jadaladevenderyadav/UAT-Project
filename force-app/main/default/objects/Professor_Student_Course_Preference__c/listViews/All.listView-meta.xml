@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Course_Offering__c</columns>
+    <columns>Preference__c</columns>
+    <columns>Semester__c</columns>
+    <columns>Contact__c</columns>
+    <columns>SRN__c</columns>
+    <columns>Student_Preference__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Course_Offering__c</field>
+        <operation>equals</operation>
+        <value>Advanced Management Accounting</value>
+    </filters>
+    <filters>
+        <field>Semester__c</field>
+        <operation>equals</operation>
+        <value>MCOM-2021-2023-Sem-3</value>
+    </filters>
+    <label>All</label>
+</ListView>

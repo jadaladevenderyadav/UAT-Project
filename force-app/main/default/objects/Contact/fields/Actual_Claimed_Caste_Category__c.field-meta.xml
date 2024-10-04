@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Claimed_Caste_Category__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Claimed_Caste_Category__c,&apos;OBC - 1A&apos;) &amp;&amp; TEXT(Admission_Mode__c) &lt;&gt; NULL, &apos;CAT - 1&apos;,
+IF(ISPICKVAL(Claimed_Caste_Category__c,&apos;OBC - 1B&apos;)&amp;&amp; TEXT(Admission_Mode__c) &lt;&gt; NULL, &apos;CAT - 1&apos;,
+IF(ISPICKVAL(Claimed_Caste_Category__c,&apos;OBC - 2A&apos;), &apos;2A&apos;,
+IF(ISPICKVAL(Claimed_Caste_Category__c,&apos;OBC - 2B&apos;), &apos;2B&apos;,
+IF(ISPICKVAL(Claimed_Caste_Category__c,&apos;OBC - 3A&apos;), &apos;3A&apos;,
+IF(ISPICKVAL(Claimed_Caste_Category__c,&apos;OBC - 3B&apos;), &apos;3B&apos;, TEXT(Claimed_Caste_Category__c)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Actual Claimed Caste Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

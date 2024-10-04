@@ -1,0 +1,116 @@
+<template>
+    <lightning-card title="Student Activity Based Attendance">        
+    </lightning-card>
+    <br>
+    <lightning-card>
+            <div class="slds-p-horizontal_medium">
+                <lightning-input 
+                    label="SRN Number" 
+                    value={srn} 
+                    onchange={handleSrnChange} 
+                    class="inputSRNnumber" 
+                    message-when-pattern-mismatch="Please enter a valid 10-digit SRN number." 
+                    placeholder="Enter SRN number">
+                </lightning-input>
+
+                <lightning-input 
+                    label="Select Date" 
+                    type="date" 
+                    value={searchDate} 
+                    onchange={handleDateChange} 
+                    >
+                </lightning-input>
+                <br>
+                <lightning-button label="Search" onclick={handleSearch} class="slds-m-top_small"></lightning-button>
+            </div>
+    </lightning-card>
+    <br>
+    <lightning-card>
+        <template if:true={isUpdateButtonVisible}>
+            <div class="slds-grid slds-grid_align-center slds-text-heading_small">Select Reason to Update Student Records</div><br>
+            <div class="slds-grid slds-grid_align-center slds-p-bottom_x-small">            
+                <div class="slds-col">
+                    <lightning-combobox 
+                        name="reason"            
+                        value={value}
+                        placeholder="Select Reason to Update Student Records"
+                        options={options}
+                        onchange={handleChange}>
+                    </lightning-combobox>
+                </div>
+                <div class="slds-col slds-p-top_medium slds-m-left_small">
+                    <lightning-button 
+                        label="Save Records" 
+                        onclick={handleUpdateSelected} 
+                        class="slds-m-top_small">
+                    </lightning-button>
+                </div>
+            </div>
+        </template>
+    </lightning-card>
+    <br>
+    <lightning-card title="Select Student Records">
+        <template if:true={records}>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate">
+                                <input type="checkbox" onchange={handleSelectAll} /> <!-- Select All Checkbox -->
+                            </div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate">SRN</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate">Name</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate">Course Offering</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate">Slot</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate">Attendance Type</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate">Reason</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate">Schedule Date</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate">Start Time</div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate">End Time</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={attendanceRecords} for:item="record">
+                        <tr key={record.Id}>
+                            <td>
+                                <input type="checkbox" data-id={record.Id} onchange={handleRowSelection} />
+                            </td>
+                            <td>{record.SRN__c}</td>
+                            <td>{record.hed__Contact__r.Name}</td>
+                            <td>{record.Course_Offering_From_Schedule__c}</td>
+                            <td>{record.Slot__c}</td>
+                            <td>{record.hed__Attendance_Type__c}</td>
+                            <td>{record.hed__Reason__c}</td>
+                            <td>{record.Course_Offering_Schedule_Date__c}</td>
+                            <td>{record.startTime}</td>
+                            <td>{record.endTime}</td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>            
+        </template>
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template>
+    </lightning-card>
+   
+</template>

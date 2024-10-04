@@ -1,0 +1,42 @@
+<!--
+  @description       : 
+  @author            : Kiruba Sankar M
+  @group             : 
+  @last modified on  : 11-21-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+<template>
+    <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+        <div style="width: 100%;">
+            <lightning-layout class="slds-size_full">
+                <lightning-layout-item padding="around-small" size="12">
+                    <div class="header-column">   
+                        <template if:true={isResult}>
+                            <template if:false={isInterviewAvailable}>
+                                <div class="slds-text-align_center slds-p-around_medium slds-border slds-border_top slds-border_bottom">
+                                    <p class="slds-text-heading_large slds-text-color_error">No Interview Rounds Available</p>
+                                    <p class="slds-text-body_regular">There are currently no interview have been scheduled please come back later.</p>
+                                </div>
+                            </template>             
+                            <template if:true={data}>
+                                <lightning-card title="Interview Results">
+                                    <lightning-datatable
+                                        data={data}
+                                        columns={columns}
+                                        key-field="id"
+                                        onrowaction={handleRowAction}
+                                        hide-checkbox-column="true"
+                                    ></lightning-datatable>
+                                </lightning-card>
+                            </template>
+                            <div style="display: flex; justify-content: center; padding-top: 1rem;">
+                                <lightning-button label="Back" onclick={handleClickBack}></lightning-button>
+                            </div>
+                        </template>    
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source__c</fullName>
+    <label>Source</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Medium__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>The Hindu</fullName>
+                <default>false</default>
+                <label>The Hindu</label>
+            </value>
+            <value>
+                <fullName>Times of India</fullName>
+                <default>false</default>
+                <label>Times of India</label>
+            </value>
+            <value>
+                <fullName>Deccan Herald</fullName>
+                <default>false</default>
+                <label>Deccan Herald</label>
+            </value>
+            <value>
+                <fullName>Education Times</fullName>
+                <default>false</default>
+                <label>Education Times</label>
+            </value>
+            <value>
+                <fullName>The New Indian Express</fullName>
+                <default>false</default>
+                <label>The New Indian Express</label>
+            </value>
+            <value>
+                <fullName>Vijayavani</fullName>
+                <default>false</default>
+                <label>Vijayavani</label>
+            </value>
+            <value>
+                <fullName>Kannada Prabha</fullName>
+                <default>false</default>
+                <label>Kannada Prabha</label>
+            </value>
+            <value>
+                <fullName>Samyuktha Karnataka</fullName>
+                <default>false</default>
+                <label>Samyuktha Karnataka</label>
+            </value>
+            <value>
+                <fullName>Udayavani</fullName>
+                <default>false</default>
+                <label>Udayavani</label>
+            </value>
+            <value>
+                <fullName>Prajavani</fullName>
+                <default>false</default>
+                <label>Prajavani</label>
+            </value>
+            <value>
+                <fullName>Vijaya Karnataka</fullName>
+                <default>false</default>
+                <label>Vijaya Karnataka</label>
+            </value>
+            <value>
+                <fullName>Inflight Magazines</fullName>
+                <default>false</default>
+                <label>Inflight Magazines</label>
+            </value>
+            <value>
+                <fullName>Rankings</fullName>
+                <default>false</default>
+                <label>Rankings</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>Instagram</fullName>
+                <default>false</default>
+                <label>Instagram</label>
+            </value>
+            <value>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+                <label>LinkedIn</label>
+            </value>
+            <value>
+                <fullName>Twitter</fullName>
+                <default>false</default>
+                <label>Twitter</label>
+            </value>
+            <value>
+                <fullName>Siksha</fullName>
+                <default>false</default>
+                <label>Siksha</label>
+            </value>
+            <value>
+                <fullName>Career 360</fullName>
+                <default>false</default>
+                <label>Career 360</label>
+            </value>
+            <value>
+                <fullName>School of Performing Arts and Indic Studies</fullName>
+                <default>false</default>
+                <label>School of Performing Arts and Indic Studies</label>
+            </value>
+            <value>
+                <fullName>School of Arts, Humanities and Social Sciences</fullName>
+                <default>false</default>
+                <label>School of Arts, Humanities and Social Sciences</label>
+            </value>
+            <value>
+                <fullName>School of Legal Studies</fullName>
+                <default>false</default>
+                <label>School of Legal Studies</label>
+            </value>
+            <value>
+                <fullName>School of Allied Health Sciences</fullName>
+                <default>false</default>
+                <label>School of Allied Health Sciences</label>
+            </value>
+            <value>
+                <fullName>School of Applied Sciences</fullName>
+                <default>false</default>
+                <label>School of Applied Sciences</label>
+            </value>
+            <value>
+                <fullName>School of Computer Science and Applications</fullName>
+                <default>false</default>
+                <label>School of Computer Science and Applications</label>
+            </value>
+            <value>
+                <fullName>REVA Business School</fullName>
+                <default>false</default>
+                <label>REVA Business School</label>
+            </value>
+            <value>
+                <fullName>School of Management Studies</fullName>
+                <default>false</default>
+                <label>School of Management Studies</label>
+            </value>
+            <value>
+                <fullName>School of Commerce</fullName>
+                <default>false</default>
+                <label>School of Commerce</label>
+            </value>
+            <value>
+                <fullName>School of Architecture</fullName>
+                <default>false</default>
+                <label>School of Architecture</label>
+            </value>
+            <value>
+                <fullName>School of Mechanical Engineering</fullName>
+                <default>false</default>
+                <label>School of Mechanical Engineering</label>
+            </value>
+            <value>
+                <fullName>School of Electronics and Communication Engineering</fullName>
+                <default>false</default>
+                <label>School of Electronics and Communication Engineering</label>
+            </value>
+            <value>
+                <fullName>School of Electrical and Electronics Engineering</fullName>
+                <default>false</default>
+                <label>School of Electrical and Electronics Engineering</label>
+            </value>
+            <value>
+                <fullName>School of Computer Science and Engineering</fullName>
+                <default>false</default>
+                <label>School of Computer Science and Engineering</label>
+            </value>
+            <value>
+                <fullName>School of Computing &amp; Information Technology</fullName>
+                <default>false</default>
+                <label>School of Computing &amp; Information Technology</label>
+            </value>
+            <value>
+                <fullName>School of Civil Engineering</fullName>
+                <default>false</default>
+                <label>School of Civil Engineering</label>
+            </value>
+            <value>
+                <fullName>Web Intro</fullName>
+                <default>false</default>
+                <label>Web Intro</label>
+            </value>
+            <value>
+                <fullName>Web Banner</fullName>
+                <default>false</default>
+                <label>Web Banner</label>
+            </value>
+            <value>
+                <fullName>8 Page Brochure</fullName>
+                <default>false</default>
+                <label>8 Page Brochure</label>
+            </value>
+            <value>
+                <fullName>HOTSTAR</fullName>
+                <default>false</default>
+                <label>HOTSTAR</label>
+            </value>
+            <value>
+                <fullName>Cricbuzz</fullName>
+                <default>false</default>
+                <label>Cricbuzz</label>
+            </value>
+            <value>
+                <fullName>DataBase</fullName>
+                <default>false</default>
+                <label>DataBase</label>
+            </value>
+            <value>
+                <fullName>Counsellor</fullName>
+                <default>false</default>
+                <label>Counsellor</label>
+            </value>
+            <value>
+                <fullName>Twigz Network</fullName>
+                <default>false</default>
+                <label>Twigz Network</label>
+            </value>
+            <value>
+                <fullName>Amar Ujala</fullName>
+                <default>false</default>
+                <label>Amar Ujala</label>
+            </value>
+            <value>
+                <fullName>JagranJosh</fullName>
+                <default>false</default>
+                <label>JagranJosh</label>
+            </value>
+            <value>
+                <fullName>Times Mobile</fullName>
+                <default>false</default>
+                <label>Times Mobile</label>
+            </value>
+            <value>
+                <fullName>Google Ads</fullName>
+                <default>false</default>
+                <label>Google Ads</label>
+            </value>
+            <value>
+                <fullName>Facebook Ads</fullName>
+                <default>false</default>
+                <label>Facebook Ads</label>
+            </value>
+            <value>
+                <fullName>Insta Ads</fullName>
+                <default>false</default>
+                <label>Insta Ads</label>
+            </value>
+            <value>
+                <fullName>Public TV</fullName>
+                <default>false</default>
+                <label>Public TV</label>
+            </value>
+            <value>
+                <fullName>Suvarna News</fullName>
+                <default>false</default>
+                <label>Suvarna News</label>
+            </value>
+            <value>
+                <fullName>TV9 Kannada</fullName>
+                <default>false</default>
+                <label>TV9 Kannada</label>
+            </value>
+            <value>
+                <fullName>News First</fullName>
+                <default>false</default>
+                <label>News First</label>
+            </value>
+            <value>
+                <fullName>News 18 Kannada</fullName>
+                <default>false</default>
+                <label>News 18 Kannada</label>
+            </value>
+            <value>
+                <fullName>Dighvijaya News</fullName>
+                <default>false</default>
+                <label>Dighvijaya News</label>
+            </value>
+            <value>
+                <fullName>TV9 Telugu</fullName>
+                <default>false</default>
+                <label>TV9 Telugu</label>
+            </value>
+            <value>
+                <fullName>TV5 Telugu</fullName>
+                <default>false</default>
+                <label>TV5 Telugu</label>
+            </value>
+            <value>
+                <fullName>ABN News</fullName>
+                <default>false</default>
+                <label>ABN News</label>
+            </value>
+            <value>
+                <fullName>Polimer News</fullName>
+                <default>false</default>
+                <label>Polimer News</label>
+            </value>
+            <value>
+                <fullName>Sun News</fullName>
+                <default>false</default>
+                <label>Sun News</label>
+            </value>
+            <value>
+                <fullName>Asianet News</fullName>
+                <default>false</default>
+                <label>Asianet News</label>
+            </value>
+            <value>
+                <fullName>Mathrubhumi News</fullName>
+                <default>false</default>
+                <label>Mathrubhumi News</label>
+            </value>
+            <value>
+                <fullName>Republic Bangla</fullName>
+                <default>false</default>
+                <label>Republic Bangla</label>
+            </value>
+            <value>
+                <fullName>News 18 Bangla</fullName>
+                <default>false</default>
+                <label>News 18 Bangla</label>
+            </value>
+            <value>
+                <fullName>Zee News - Bihar &amp; Jharkhand</fullName>
+                <default>false</default>
+                <label>Zee News - Bihar &amp; Jharkhand</label>
+            </value>
+            <value>
+                <fullName>News 18 Bihar &amp; Jharkhand</fullName>
+                <default>false</default>
+                <label>News 18 Bihar &amp; Jharkhand</label>
+            </value>
+            <value>
+                <fullName>News 18 Assam</fullName>
+                <default>false</default>
+                <label>News 18 Assam</label>
+            </value>
+            <value>
+                <fullName>Republic TV</fullName>
+                <default>false</default>
+                <label>Republic TV</label>
+            </value>
+            <value>
+                <fullName>Times Now</fullName>
+                <default>false</default>
+                <label>Times Now</label>
+            </value>
+            <value>
+                <fullName>Sakshi - Telugu</fullName>
+                <default>false</default>
+                <label>Sakshi - Telugu</label>
+            </value>
+            <value>
+                <fullName>NTV - Telugu</fullName>
+                <default>false</default>
+                <label>NTV - Telugu</label>
+            </value>
+            <value>
+                <fullName>Asianet - Malayalam</fullName>
+                <default>false</default>
+                <label>Asianet - Malayalam</label>
+            </value>
+            <value>
+                <fullName>Eenadu</fullName>
+                <default>false</default>
+                <label>Eenadu</label>
+            </value>
+            <value>
+                <fullName>Sakshi</fullName>
+                <default>false</default>
+                <label>Sakshi</label>
+            </value>
+            <value>
+                <fullName>Andhrajyothy</fullName>
+                <default>false</default>
+                <label>Andhrajyothy</label>
+            </value>
+            <value>
+                <fullName>India Today</fullName>
+                <default>false</default>
+                <label>India Today</label>
+            </value>
+            <value>
+                <fullName>Vidya Spoorthi</fullName>
+                <default>false</default>
+                <label>Vidya Spoorthi</label>
+            </value>
+            <value>
+                <fullName>Career Launcher</fullName>
+                <default>false</default>
+                <label>Career Launcher</label>
+            </value>
+            <value>
+                <fullName>Sonyliv</fullName>
+                <default>false</default>
+                <label>Sonyliv</label>
+            </value>
+            <value>
+                <fullName>Inshorts</fullName>
+                <default>false</default>
+                <label>Inshorts</label>
+            </value>
+            <value>
+                <fullName>Zee5</fullName>
+                <default>false</default>
+                <label>Zee5</label>
+            </value>
+            <value>
+                <fullName>Jio Entertainment</fullName>
+                <default>false</default>
+                <label>Jio Entertainment</label>
+            </value>
+            <value>
+                <fullName>Republic Bharat</fullName>
+                <default>false</default>
+                <label>Republic Bharat</label>
+            </value>
+            <value>
+                <fullName>CNN News18</fullName>
+                <default>false</default>
+                <label>CNN News18</label>
+            </value>
+            <value>
+                <fullName>Times Now Navbharat</fullName>
+                <default>false</default>
+                <label>Times Now Navbharat</label>
+            </value>
+            <value>
+                <fullName>Times Now Navbharat HD</fullName>
+                <default>false</default>
+                <label>Times Now Navbharat HD</label>
+            </value>
+            <value>
+                <fullName>V6 News</fullName>
+                <default>false</default>
+                <label>V6 News</label>
+            </value>
+            <value>
+                <fullName>School Names</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>School Names</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Articles Blogs</controllingFieldValue>
+            <valueName>Amar Ujala</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Articles Blogs</controllingFieldValue>
+            <valueName>JagranJosh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Articles Blogs</controllingFieldValue>
+            <valueName>Times Mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital</controllingFieldValue>
+            <valueName>Google Ads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital</controllingFieldValue>
+            <valueName>Facebook Ads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Digital</controllingFieldValue>
+            <valueName>Insta Ads</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Public TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Suvarna News</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>TV9 Kannada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>News First</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>News 18 Kannada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Dighvijaya News</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>TV9 Telugu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>TV5 Telugu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>ABN News</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Polimer News</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Sun News</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Asianet News</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Mathrubhumi News</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Republic Bangla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>News 18 Bangla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Zee News - Bihar &amp; Jharkhand</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>News 18 Bihar &amp; Jharkhand</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>News 18 Assam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Republic TV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Times Now</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Sakshi - Telugu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>NTV - Telugu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Asianet - Malayalam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>Republic Bharat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TV</controllingFieldValue>
+            <valueName>CNN News18</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTT</controllingFieldValue>
+            <valueName>HOTSTAR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTT</controllingFieldValue>
+            <valueName>Cricbuzz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTT</controllingFieldValue>
+            <valueName>Sonyliv</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTT</controllingFieldValue>
+            <valueName>Inshorts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTT</controllingFieldValue>
+            <valueName>Zee5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OTT</controllingFieldValue>
+            <valueName>Jio Entertainment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMS</controllingFieldValue>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <controllingFieldValue>Whatsapp</controllingFieldValue>
+            <valueName>DataBase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Walk-in</controllingFieldValue>
+            <controllingFieldValue>Calling</controllingFieldValue>
+            <valueName>Counsellor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - National</controllingFieldValue>
+            <controllingFieldValue>EDU EXPO</controllingFieldValue>
+            <valueName>The Hindu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - National</controllingFieldValue>
+            <controllingFieldValue>EDU EXPO</controllingFieldValue>
+            <valueName>Times of India</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - National</controllingFieldValue>
+            <controllingFieldValue>EDU EXPO</controllingFieldValue>
+            <valueName>Deccan Herald</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - National</controllingFieldValue>
+            <valueName>Education Times</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - National</controllingFieldValue>
+            <valueName>The New Indian Express</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - Regional</controllingFieldValue>
+            <valueName>Vijayavani</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - Regional</controllingFieldValue>
+            <valueName>Kannada Prabha</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - Regional</controllingFieldValue>
+            <valueName>Samyuktha Karnataka</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - Regional</controllingFieldValue>
+            <valueName>Udayavani</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - Regional</controllingFieldValue>
+            <valueName>Prajavani</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - Regional</controllingFieldValue>
+            <controllingFieldValue>EDU EXPO</controllingFieldValue>
+            <valueName>Vijaya Karnataka</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - Regional</controllingFieldValue>
+            <valueName>Eenadu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - Regional</controllingFieldValue>
+            <valueName>Sakshi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Newspaper - Regional</controllingFieldValue>
+            <valueName>Andhrajyothy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Magazines</controllingFieldValue>
+            <valueName>Inflight Magazines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Magazines</controllingFieldValue>
+            <valueName>Rankings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Magazines</controllingFieldValue>
+            <valueName>India Today</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Brochure</controllingFieldValue>
+            <valueName>8 Page Brochure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SM Post</controllingFieldValue>
+            <valueName>Facebook</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SM Post</controllingFieldValue>
+            <valueName>Instagram</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SM Post</controllingFieldValue>
+            <valueName>LinkedIn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SM Post</controllingFieldValue>
+            <valueName>Twitter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Publishers</controllingFieldValue>
+            <valueName>Siksha</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Publishers</controllingFieldValue>
+            <valueName>Career 360</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Publishers</controllingFieldValue>
+            <valueName>Twigz Network</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <valueName>Web Intro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Website</controllingFieldValue>
+            <valueName>Web Banner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EDU EXPO</controllingFieldValue>
+            <valueName>Vidya Spoorthi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EDU EXPO</controllingFieldValue>
+            <valueName>Career Launcher</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

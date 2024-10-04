@@ -1,0 +1,21 @@
+.maincontainer{
+    border: solid;
+    border-color: #FF8C00;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.h2headerclass{
+    color: #FF8C00;
+    font-weight: bolder;
+    font-size: large;
+}
+.slds-emailcustom{
+    text-align: center;
+}
+.otp-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5px;
+}

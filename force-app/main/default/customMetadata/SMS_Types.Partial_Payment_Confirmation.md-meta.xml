@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Partial Payment Confirmation</label>
+    <protected>false</protected>
+    <values>
+        <field>Dlt_Content_Id__c</field>
+        <value xsi:type="xsd:string">1007425163437153233</value>
+    </values>
+    <values>
+        <field>SMS_Name__c</field>
+        <value xsi:type="xsd:string">Partial Payment Confirmation</value>
+    </values>
+    <values>
+        <field>SMS_Template_Long__c</field>
+        <value xsi:type="xsd:string">Dear {#ApplicantName#}
+
+We have received your online payment of Rs. {#TotalProvisionalFeeReceived#} for the provisional Admission. For any further clarity connect with your admission counsellor. 
+
+Regards
+REVA University</value>
+    </values>
+    <values>
+        <field>SMS_Template__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Sender__c</field>
+        <value xsi:type="xsd:string">REVAUN</value>
+    </values>
+    <values>
+        <field>Templated_Id__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Unicode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

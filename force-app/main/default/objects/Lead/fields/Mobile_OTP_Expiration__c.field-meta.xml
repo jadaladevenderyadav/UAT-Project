@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mobile_OTP_Expiration__c</fullName>
+    <description>Expiration date/ time for Mobile Verification Code</description>
+    <inlineHelpText>Specifies the validity for Mobile Verification code</inlineHelpText>
+    <label>Mobile OTP Expiration</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

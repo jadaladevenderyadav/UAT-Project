@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hostel_Block__c</fullName>
+    <label>Hostel Block</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Hostel_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+            <value>
+                <fullName>D</fullName>
+                <default>false</default>
+                <label>D</label>
+            </value>
+            <value>
+                <fullName>G1</fullName>
+                <default>false</default>
+                <label>G1</label>
+            </value>
+            <value>
+                <fullName>G2</fullName>
+                <default>false</default>
+                <label>G2</label>
+            </value>
+            <value>
+                <fullName>G3</fullName>
+                <default>false</default>
+                <label>G3</label>
+            </value>
+            <value>
+                <fullName>RBS</fullName>
+                <default>false</default>
+                <label>RBS</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>Housekeeping</controllingFieldValue>
+            <controllingFieldValue>Food</controllingFieldValue>
+            <controllingFieldValue>Vending Machine</controllingFieldValue>
+            <controllingFieldValue>Washing Machine</controllingFieldValue>
+            <controllingFieldValue>Medical Centre</controllingFieldValue>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <controllingFieldValue>Food Booking</controllingFieldValue>
+            <valueName>A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>Housekeeping</controllingFieldValue>
+            <controllingFieldValue>Food</controllingFieldValue>
+            <controllingFieldValue>Vending Machine</controllingFieldValue>
+            <controllingFieldValue>Washing Machine</controllingFieldValue>
+            <controllingFieldValue>Medical Centre</controllingFieldValue>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <controllingFieldValue>Food Booking</controllingFieldValue>
+            <valueName>B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>Housekeeping</controllingFieldValue>
+            <controllingFieldValue>Food</controllingFieldValue>
+            <controllingFieldValue>Vending Machine</controllingFieldValue>
+            <controllingFieldValue>Washing Machine</controllingFieldValue>
+            <controllingFieldValue>Medical Centre</controllingFieldValue>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <controllingFieldValue>Food Booking</controllingFieldValue>
+            <valueName>C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>Housekeeping</controllingFieldValue>
+            <controllingFieldValue>Food</controllingFieldValue>
+            <controllingFieldValue>Vending Machine</controllingFieldValue>
+            <controllingFieldValue>Washing Machine</controllingFieldValue>
+            <controllingFieldValue>Medical Centre</controllingFieldValue>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <controllingFieldValue>Food Booking</controllingFieldValue>
+            <valueName>D</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>Housekeeping</controllingFieldValue>
+            <controllingFieldValue>Food</controllingFieldValue>
+            <controllingFieldValue>Vending Machine</controllingFieldValue>
+            <controllingFieldValue>Washing Machine</controllingFieldValue>
+            <controllingFieldValue>Medical Centre</controllingFieldValue>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <controllingFieldValue>Food Booking</controllingFieldValue>
+            <valueName>G1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>Housekeeping</controllingFieldValue>
+            <controllingFieldValue>Food</controllingFieldValue>
+            <controllingFieldValue>Vending Machine</controllingFieldValue>
+            <controllingFieldValue>Washing Machine</controllingFieldValue>
+            <controllingFieldValue>Medical Centre</controllingFieldValue>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <controllingFieldValue>Food Booking</controllingFieldValue>
+            <valueName>G2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>Housekeeping</controllingFieldValue>
+            <controllingFieldValue>Food</controllingFieldValue>
+            <controllingFieldValue>Vending Machine</controllingFieldValue>
+            <controllingFieldValue>Washing Machine</controllingFieldValue>
+            <controllingFieldValue>Medical Centre</controllingFieldValue>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <controllingFieldValue>Food Booking</controllingFieldValue>
+            <valueName>G3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintenance</controllingFieldValue>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <controllingFieldValue>Housekeeping</controllingFieldValue>
+            <controllingFieldValue>Food</controllingFieldValue>
+            <controllingFieldValue>Vending Machine</controllingFieldValue>
+            <controllingFieldValue>Washing Machine</controllingFieldValue>
+            <controllingFieldValue>Medical Centre</controllingFieldValue>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <controllingFieldValue>Food Booking</controllingFieldValue>
+            <valueName>RBS</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

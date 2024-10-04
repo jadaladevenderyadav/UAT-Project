@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This custom permission gives user the capability to edit and view the summit trackers.</description>
+    <isLicensed>false</isLicensed>
+    <label>Summit Tracker School Head Permission</label>
+</CustomPermission>

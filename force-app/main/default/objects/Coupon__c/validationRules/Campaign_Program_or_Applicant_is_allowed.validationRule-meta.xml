@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Program_or_Applicant_is_allowed</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(OR(AND(
+NOT(ISBLANK(Applicant__c)),
+NOT(ISBLANK(Campaign__c))
+), AND(
+NOT(ISBLANK(Applicant__c)),
+NOT(ISBLANK(Program__c))
+)), AND(
+NOT(ISBLANK(Campaign__c)),
+NOT(ISBLANK(Program__c))
+))</errorConditionFormula>
+    <errorMessage>Enter at-least Campaign or Program for Multi Use or Applicant for Single Use</errorMessage>
+</ValidationRule>

@@ -1,0 +1,178 @@
+<apex:page controller="FEE_BilldeskResponse_API" action="{!BilldeskRespon}" sidebar="false" showHeader="false">
+    <head>
+        <style type="text/css">
+            .box {
+                width: 600px;
+                height: 425px;            
+                padding: 60px 60px;
+                border: 3px solid rgb(240, 127, 7);
+                box-shadow: 0 0 10px #777777;
+                border-radius: 20px;
+                font-size: large;
+                text-align: center;
+            }
+            .img {
+                display: block; 
+                margin: 0 auto; 
+            }
+            .colon {
+                text-align: center; 
+                width: 20px;
+            }
+            #btn {
+                padding: 85px 110px;
+            } 
+            .success-message {
+                text-align: center;
+               
+                font-size: 25px;
+            }
+            .Payment-Done {
+                text-align: center;
+                font-size: 18px;
+            }
+            .Note{
+                text-align: center;
+                font-size: 14px;
+            }
+            .table-padding td {
+                padding: 10px; /* Adjust padding as needed */
+            }
+       .logo-container {
+        text-align: left; 
+        margin-left: 80px; 
+        text-align: down; 
+        margin-left: 150px; 
+            }
+            
+            
+            .container {
+            	display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 10vh;
+            }
+           
+            .btn-orange {
+                background-color: #eb7a26;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                display: inline-flex;
+                align-items: center;
+                text-decoration: none;
+                transition: none; /* Remove transition effect */
+            }
+            <!--.btn-orange:hover {
+                background-color: #eb7a26; /* Same color as default */
+            }-->
+            .home-icon {
+                font-size: 20px;
+                margin-right: 8px;
+            }
+            
+           .custom-button-wrapper .btn, .custom-button-wrapper .btn input[type="button"] {
+        background-color: orange ;
+        color: balck !important;
+        border: none;
+    }
+    }
+        </style>
+    </head>
+    <apex:form id="success" styleClass="slds-scope">
+        <apex:slds />
+        <div class = "logo-container" >
+            <apex:image value="{!$Resource.REVA_LOGO}" width="20%" style="text-align:left;"/>  
+        </div>
+        
+         <apex:outputPanel rendered="{!SuccessMsg == 'Transaction Success..!!'}">
+        <div class="success-message">
+            <img src="{!$Resource.Check_Mark}" width="50" style="text-align:center;"/>
+            <div style="color: green;">Payment Success!</div>
+        </div>
+        <div class="Payment-Done">Your payment has been successfully done</div>
+        </apex:outputPanel>
+         <apex:outputPanel rendered="{!SuccessMsg == 'Transaction Failed..!!'}">
+         <div class="success-message">
+            <img src="{!$Resource.Wrong_Mark}" width="50" style="text-align:center;"/>
+            <div style="color: Red;">Payment Failed!</div>
+        </div>
+        <div class="Payment-Done">Your payment has been Failed</div>
+         </apex:outputPanel>
+        <br/><br/>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col">
+                <span></span>
+            </div>
+            <div class="slds-col">
+                <div class="box">
+                    <div>
+                        <table class="table-padding">
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>Amount</td>
+                                <td><b>{!amount}</b></td>                                
+                            </tr>
+                            <tr>
+                                <td>Payment Status</td>
+                                <td><b>{!SuccessMsg}</b></td>
+                            </tr>
+                            <tr>
+                                <td>Payment Mode</td>
+                                <td><b>{!PaymentMode}</b></td>                                
+                            </tr>
+                            <tr>
+                                <td>Transaction ID</td>
+                                <td><b>{!transactionId}</b></td>                                
+                            </tr>
+                            <tr>
+                                <td>Purpose of Payment</td>
+                                <td><b>{!PurposeofPayment}</b></td>                                
+                            </tr>
+                            <tr>
+                                <td>Date &amp; Time of Transaction</td>
+                                <td><b>{!ISTTransactionDateTime}</b></td> 
+                            </tr>
+                            <apex:panelGroup rendered="{!IF(ISBLANK (StatusDescription) , false, true)}">
+                                <tr>
+                                    <td>Status Description</td>
+                                    <td><b>{!StatusDescription}</b></td>
+                                </tr>
+                            </apex:panelGroup>                
+                        </table>                        
+                    </div>                    
+                </div>        
+            </div>            
+        </div>
+        <br/>
+        <div class="Note">
+            You will be able to download the receipt through the Payment Details section under the Fee tab.               
+        </div>
+        
+          <br/> 
+        
+        <!--  <p style="text-align:center;font-weight;color:Black">
+           <apex:commandButton style="background-color: orange !important; " title="Back" value="Back to Home" oncomplete="redirect();"/>
+            </p>   
+      
+        </div>-->
+        
+        <div class="container" style="text-align: center;">
+    <a href="{!homeUrl}" class="btn-orange" oncomplete="redirect();" style="display: inline-block; background-color: #eb7a26; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; width: auto; height: auto; line-height: normal;">
+        <span class="home-icon" style="margin-right: 5px;">&#x1F3E0;</span>
+        Back to Home
+    </a>
+</div>
+
+    </apex:form> 
+    <script>
+        function redirect() {
+            window.location = "{!homeUrl}";
+        }
+    </script>
+</apex:page>

@@ -1,0 +1,142 @@
+<template>
+    <template lwc:if={isPlacementRegistrationStarted}>
+        <div class="header">
+            <div class="about">
+                <h1>
+                    <strong>REVA Placement Registration Process</strong>
+                </h1>
+                <br>
+                <h3>
+                    {headerText}
+                    <br>
+
+                </h3>
+            </div>
+            <div class="svg">
+                <img src={svgImage}>
+            </div>
+        </div>
+        <template if:false={isApprovalSuccess}>
+            <div class="container">
+
+                <div class="side path-flow">
+                    <div class="parent">
+                        <span class="progress-line"></span>
+                        <div class="div1 step-icon one"><img src={registerYourselfLogoOrange}></div>
+                        <div class="div2 step-name one" style="color: #f57f26;" onclick={handleStepClick}
+                            data-step-number="1">Register
+                            Yourself </div>
+                        <div class="slds-button div3 active blend" style="background-color: #f57f26;"
+                            data-step-number="1" onclick={handleStepClick}>1</div>
+                        <div class="div4 step-icon two"> <img src={verifyEmailOrSmsLogoBW}></div>
+                        <div class="div5 step-name two" onclick={handleStepClick} data-step-number="2">Verify Email/SMS
+                        </div>
+                        <div class="slds-button div6 two" data-step-number="2" onclick={handleStepClick}>2 </div>
+                        <div class="div7 step-icon three"> <img src={fillBasicDetailsLogoBW}></div>
+                        <div class="div8 step-name three" onclick={handleStepClick} data-step-number="3">Fill Basic
+                            Details </div>
+                        <div class="slds-button div9 three" data-step-number="3" onclick={handleStepClick}> 3</div>
+                        <div class="div10 step-icon four"> <img src={educationDetailsLogoBW} data-step-number="4"></div>
+                        <div class="div11 step-name four" onclick={handleStepClick} data-step-number="4">Document Upload
+                        </div>
+                        <div class="slds-button div12 four" data-step-number="4" onclick={handleStepClick}> 4</div>
+                        <div class="div13 step-icon five"> <img src={approvalStatusLogoBW} data-step-number="5"></div>
+                        <div class="div14 step-name five" onclick={handleStepClick} data-step-number="5">Approval Status
+                        </div>
+                        <div class="slds-button div15 five" data-step-number="5" onclick={handleStepClick}> 5</div>
+                    </div>
+                </div>
+                <div class="side path-content">
+                    <template lwc:if={isFirstStep}>
+                        <lightning-layout horizontal-align="center" pull-to-boundary="small" vertical-align="start"
+                            class="path-container">
+                            <lightning-layout-item padding="around-small" size="12">
+                                <div class="header-column">
+                                    <c-rpl_-reva-placement-register-yourself-page contact-id={contactId}
+                                        placement-registration-text={placementRegistrationText}
+                                        onrevastudentyourselfpage={handlestudentselfregister}></c-rpl_-reva-placement-register-yourself-page>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <template lwc:elseif={isSecondStep}>
+                        <lightning-layout horizontal-align="center" pull-to-boundary="small" vertical-align="start"
+                            class="path-container">
+                            <lightning-layout-item padding="around-small" size="12">
+                                <div class="header-column">
+                                    <c-rpl_-reva-verify-sms onotpverified={handleOtpVerified} contact-id={contactId}
+                                        placement-registration-text={placementRegistrationText}
+                                        student-regform={studentRegDetails}
+                                        onrevaverifysms={handlerevaverifysms}></c-rpl_-reva-verify-sms>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <template lwc:elseif={isThirdStep}>
+                        <lightning-layout horizontal-align="center" pull-to-boundary="small" vertical-align="start"
+                            class="path-container">
+                            <lightning-layout-item padding="around-small" size="12">
+                                <div class="header-column">
+                                    <c-rpl_-reva-fill-basic-details
+                                        placement-registration-text={placementRegistrationText}
+                                        fill-basic-details-right-col-text={fillBasicDetailsRightColText}
+                                        onfillbasicdetailcompleted={handleBasicDetailsCompleted}
+                                        is-save-button-disabled={isStudentBasicDetailsSaveBtnDisabled}
+                                        contact-id={contactId}></c-rpl_-reva-fill-basic-details>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <template lwc:elseif={isFourthStep}>
+                        <lightning-layout horizontal-align="center" pull-to-boundary="small" vertical-align="start"
+                            class="path-container">
+                            <lightning-layout-item padding="around-small" size="12">
+                                <div class="header-column">
+                                    <c-rpl_-reva-document-upload record-id={studentregrecordid}
+                                        placement-registration-text={placementRegistrationText}
+                                        onshownextstage={showStepFive}></c-rpl_-reva-document-upload>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                    <template lwc:elseif={isFifthStep}>
+                        <lightning-layout horizontal-align="center" pull-to-boundary="small" vertical-align="start"
+                            class="path-container">
+                            <lightning-layout-item padding="around-small" size="12">
+                                <div class="header-column">
+                                    <c-rpl_-reva-student-registration-status
+                                        is-under-approval={isRecordUnderApprovalProcess}
+                                        placement-registration-text={placementRegistrationText}
+                                        onsendapproval={handleApprovalSubmit}
+                                        record-id={studentregrecordid}></c-rpl_-reva-student-registration-status>
+                                </div>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </template>
+                </div>
+            </div>
+        </template>
+        <template if:true={isApprovalSuccess}>
+            <c-rpl_-reva-eligible-drives-and-results></c-rpl_-reva-eligible-drives-and-results>
+        </template>
+    </template>
+    <template lwc:else>
+        <div class="slds-text-align_center slds-p-around_medium slds-border slds-border_top slds-border_bottom">
+            <p class="slds-text-heading_large slds-text-color_error">Placement Not Started</p>
+            <p class="slds-text-body_regular">We appreciate your interest in the placement process: the placement
+                process has not yet started. Once we start the
+                placement process, we will notify you as soon as possible.</p>
+        </div>
+    </template>
+
+    <template lwc:if={isSpinner}>
+        <div class="slds-is-relative">
+            <section class="slds-modal slds-fade-in-open">
+                <lightning-spinner alternative-text="loading..." variant="brand"></lightning-spinner>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open" style="width: 60%; height:50%; margin:auto"></div>
+        </div>
+    </template>
+</template>
+
+<!-- slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_4-of-12 -->

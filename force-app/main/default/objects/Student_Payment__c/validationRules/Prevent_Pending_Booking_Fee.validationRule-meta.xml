@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Pending_Booking_Fee</fullName>
+    <active>false</active>
+    <description>Prevent blank Pending Booking Fee when Split Booking Fee is Checked</description>
+    <errorConditionFormula>AND(
+ISBLANK(Pending_Booking_Fee__c),
+Split_Booking_Fee__c = TRUE
+)</errorConditionFormula>
+    <errorDisplayField>Pending_Booking_Fee__c</errorDisplayField>
+    <errorMessage>Pending Booking Fee cannot be blank when Split Booking Fee is selected.</errorMessage>
+</ValidationRule>

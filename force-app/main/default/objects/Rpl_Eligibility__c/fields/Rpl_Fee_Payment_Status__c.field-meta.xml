@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rpl_Fee_Payment_Status__c</fullName>
+    <label>Fee Payment Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Include All Students</fullName>
+                <default>false</default>
+                <label>Include All Students</label>
+            </value>
+            <value>
+                <fullName>Exclude Students With Payment Pending</fullName>
+                <default>false</default>
+                <label>Exclude Students With Payment Pending</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

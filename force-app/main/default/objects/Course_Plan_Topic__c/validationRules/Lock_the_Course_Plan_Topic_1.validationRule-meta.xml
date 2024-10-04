@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lock_the_Course_Plan_Topic_1</fullName>
+    <active>true</active>
+    <errorConditionFormula>Course_Plan_Unit__r.Course_Offering__r.Course_Plan_Locked__c</errorConditionFormula>
+    <errorMessage>Record has been locked (Usually the record should get locked before one week of the semester start date)</errorMessage>
+</ValidationRule>

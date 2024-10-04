@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Category__c</fullName>
+    <label>Sub Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fee Payment</fullName>
+                <default>false</default>
+                <label>Fee Payment</label>
+            </value>
+            <value>
+                <fullName>Payment Gateway Clarifications</fullName>
+                <default>false</default>
+                <label>Payment Gateway Clarifications</label>
+            </value>
+            <value>
+                <fullName>Program Fee</fullName>
+                <default>false</default>
+                <label>Program Fee</label>
+            </value>
+            <value>
+                <fullName>Receipts</fullName>
+                <default>false</default>
+                <label>Receipts</label>
+            </value>
+            <value>
+                <fullName>Bus Fee</fullName>
+                <default>false</default>
+                <label>Bus Fee</label>
+            </value>
+            <value>
+                <fullName>Driver Behavior</fullName>
+                <default>false</default>
+                <label>Driver Behavior</label>
+            </value>
+            <value>
+                <fullName>Driver Contact Number</fullName>
+                <default>false</default>
+                <label>Driver Contact Number</label>
+            </value>
+            <value>
+                <fullName>Duplicate Bus Pass</fullName>
+                <default>false</default>
+                <label>Duplicate Bus Pass</label>
+            </value>
+            <value>
+                <fullName>If miss the REVA Bus, How to come by BMTC buses</fullName>
+                <default>false</default>
+                <label>If miss the REVA Bus, How to come by BMTC buses</label>
+            </value>
+            <value>
+                <fullName>Issue of Bus Pass</fullName>
+                <default>false</default>
+                <label>Issue of Bus Pass</label>
+            </value>
+            <value>
+                <fullName>Pick Up stop changes</fullName>
+                <default>false</default>
+                <label>Pick Up stop changes</label>
+            </value>
+            <value>
+                <fullName>Pick Up points and its timings</fullName>
+                <default>false</default>
+                <label>Pick Up points and its timings</label>
+            </value>
+            <value>
+                <fullName>Route Number</fullName>
+                <default>false</default>
+                <label>Route Number</label>
+            </value>
+            <value>
+                <fullName>Seat Availability</fullName>
+                <default>false</default>
+                <label>Seat Availability</label>
+            </value>
+            <value>
+                <fullName>Courses Related/Curricular</fullName>
+                <default>false</default>
+                <label>Courses Related/Curricular</label>
+            </value>
+            <value>
+                <fullName>Library Related</fullName>
+                <default>false</default>
+                <label>Library Related</label>
+            </value>
+            <value>
+                <fullName>Leaves/Medical Leaves</fullName>
+                <default>false</default>
+                <label>Leaves/Medical Leaves</label>
+            </value>
+            <value>
+                <fullName>Attendance</fullName>
+                <default>false</default>
+                <label>Attendance</label>
+            </value>
+            <value>
+                <fullName>Internal Assessment Marks</fullName>
+                <default>false</default>
+                <label>Internal Assessment Marks</label>
+            </value>
+            <value>
+                <fullName>Adress Proof Certicate</fullName>
+                <default>false</default>
+                <label>Adress Proof Certicate</label>
+            </value>
+            <value>
+                <fullName>Bonafide Certificate</fullName>
+                <default>false</default>
+                <label>Bonafide Certificate</label>
+            </value>
+            <value>
+                <fullName>Change of Branch Fee</fullName>
+                <default>false</default>
+                <label>Change of Branch Fee</label>
+            </value>
+            <value>
+                <fullName>Course Completion Certificate</fullName>
+                <default>false</default>
+                <label>Course Completion Certificate</label>
+            </value>
+            <value>
+                <fullName>Medium of Instruction Certicate</fullName>
+                <default>false</default>
+                <label>Medium of Instruction Certicate</label>
+            </value>
+            <value>
+                <fullName>Migration Certificate</fullName>
+                <default>false</default>
+                <label>Migration Certificate</label>
+            </value>
+            <value>
+                <fullName>Permanent Identity Card</fullName>
+                <default>false</default>
+                <label>Permanent Identity Card</label>
+            </value>
+            <value>
+                <fullName>Scholarship Requests</fullName>
+                <default>false</default>
+                <label>Scholarship Requests</label>
+            </value>
+            <value>
+                <fullName>Sponsorships</fullName>
+                <default>false</default>
+                <label>Sponsorships</label>
+            </value>
+            <value>
+                <fullName>Student Profile Changes</fullName>
+                <default>false</default>
+                <label>Student Profile Changes</label>
+            </value>
+            <value>
+                <fullName>Study Certificate</fullName>
+                <default>false</default>
+                <label>Study Certificate</label>
+            </value>
+            <value>
+                <fullName>Temporary Identity Card</fullName>
+                <default>false</default>
+                <label>Temporary Identity Card</label>
+            </value>
+            <value>
+                <fullName>Transfer Certificate</fullName>
+                <default>false</default>
+                <label>Transfer Certificate</label>
+            </value>
+            <value>
+                <fullName>WiFi access</fullName>
+                <default>false</default>
+                <label>WiFi access</label>
+            </value>
+            <value>
+                <fullName>REVA Email ID &amp; Password reset</fullName>
+                <default>false</default>
+                <label>REVA Email ID &amp; Password reset</label>
+            </value>
+            <value>
+                <fullName>Examination Fee Acknowledgement</fullName>
+                <default>false</default>
+                <label>Examination Fee Acknowledgement</label>
+            </value>
+            <value>
+                <fullName>Examination Fee (Supplementary)(per Subject)</fullName>
+                <default>false</default>
+                <label>Examination Fee (Supplementary)(per Subject)</label>
+            </value>
+            <value>
+                <fullName>Re- evaluation</fullName>
+                <default>false</default>
+                <label>Re- evaluation</label>
+            </value>
+            <value>
+                <fullName>Photocopy of Answer Scripts</fullName>
+                <default>false</default>
+                <label>Photocopy of Answer Scripts</label>
+            </value>
+            <value>
+                <fullName>Convocation Fee (Ph.D.)</fullName>
+                <default>false</default>
+                <label>Convocation Fee (Ph.D.)</label>
+            </value>
+            <value>
+                <fullName>Convocation Fee (Except Ph.D.)</fullName>
+                <default>false</default>
+                <label>Convocation Fee (Except Ph.D.)</label>
+            </value>
+            <value>
+                <fullName>Duplicate Degree Certificate</fullName>
+                <default>false</default>
+                <label>Duplicate Degree Certificate</label>
+            </value>
+            <value>
+                <fullName>Provisional Degree Certificate</fullName>
+                <default>false</default>
+                <label>Provisional Degree Certificate</label>
+            </value>
+            <value>
+                <fullName>Name Correction in Grade Card</fullName>
+                <default>false</default>
+                <label>Name Correction in Grade Card</label>
+            </value>
+            <value>
+                <fullName>Issue of Duplicate Grade Card</fullName>
+                <default>false</default>
+                <label>Issue of Duplicate Grade Card</label>
+            </value>
+            <value>
+                <fullName>Issue of Consolidated Grade Card</fullName>
+                <default>false</default>
+                <label>Issue of Consolidated Grade Card</label>
+            </value>
+            <value>
+                <fullName>Official Transcript</fullName>
+                <default>false</default>
+                <label>Official Transcript</label>
+            </value>
+            <value>
+                <fullName>Educational Verification (Hardcopy)</fullName>
+                <default>false</default>
+                <label>Educational Verification (Hardcopy)</label>
+            </value>
+            <value>
+                <fullName>Backlog Certificate</fullName>
+                <default>false</default>
+                <label>Backlog Certificate</label>
+            </value>
+            <value>
+                <fullName>Percentage Conversion Certificate</fullName>
+                <default>false</default>
+                <label>Percentage Conversion Certificate</label>
+            </value>
+            <value>
+                <fullName>Equivalency Certificate Fee (COU)</fullName>
+                <default>false</default>
+                <label>Equivalency Certificate Fee (COU)</label>
+            </value>
+            <value>
+                <fullName>Apply for Transcript</fullName>
+                <default>false</default>
+                <label>Apply for Transcript</label>
+            </value>
+            <value>
+                <fullName>Apply for Marks Card</fullName>
+                <default>false</default>
+                <label>Apply for Marks Card</label>
+            </value>
+            <value>
+                <fullName>Apply for Transfer Certificate</fullName>
+                <default>false</default>
+                <label>Apply for Transfer Certificate</label>
+            </value>
+            <value>
+                <fullName>Apply for Migration Certificate</fullName>
+                <default>false</default>
+                <label>Apply for Migration Certificate</label>
+            </value>
+            <value>
+                <fullName>Apply for Accommodation</fullName>
+                <default>false</default>
+                <label>Apply for Accommodation</label>
+            </value>
+            <value>
+                <fullName>Volunteer for Alumni Events or Alumni Talks</fullName>
+                <default>false</default>
+                <label>Volunteer for Alumni Events or Alumni Talks</label>
+            </value>
+            <value>
+                <fullName>Connect to Contribute to Alumni Cell</fullName>
+                <default>false</default>
+                <label>Connect to Contribute to Alumni Cell</label>
+            </value>
+            <value>
+                <fullName>Refer Candidates for Internships / Placement drives</fullName>
+                <default>false</default>
+                <label>Refer Candidates for Internships / Placement drives</label>
+            </value>
+            <value>
+                <fullName>Any Queries</fullName>
+                <default>false</default>
+                <label>Any Queries</label>
+            </value>
+            <value>
+                <fullName>Request Referral for Higher Studies</fullName>
+                <default>false</default>
+                <label>Request Referral for Higher Studies</label>
+            </value>
+            <value>
+                <fullName>Change the details filled in the application form</fullName>
+                <default>false</default>
+                <label>Change the details filled in the application form</label>
+            </value>
+            <value>
+                <fullName>Change of Mobile No/Email ID</fullName>
+                <default>false</default>
+                <label>Change of Mobile No/Email ID</label>
+            </value>
+            <value>
+                <fullName>Forgot the login credentials</fullName>
+                <default>false</default>
+                <label>Forgot the login credentials</label>
+            </value>
+            <value>
+                <fullName>Change of Program</fullName>
+                <default>false</default>
+                <label>Change of Program</label>
+            </value>
+            <value>
+                <fullName>Connect with Counselor</fullName>
+                <default>false</default>
+                <label>Connect with Counselor</label>
+            </value>
+            <value>
+                <fullName>Reset Mail Not Received</fullName>
+                <default>false</default>
+                <label>Reset Mail Not Received</label>
+            </value>
+            <value>
+                <fullName>OTP is not generated</fullName>
+                <default>false</default>
+                <label>OTP is not generated</label>
+            </value>
+            <value>
+                <fullName>Not able to upload the document</fullName>
+                <default>false</default>
+                <label>Not able to upload the document</label>
+            </value>
+            <value>
+                <fullName>Provisional Offer Letter not received</fullName>
+                <default>false</default>
+                <label>Provisional Offer Letter not received</label>
+            </value>
+            <value>
+                <fullName>Scholarship not updated</fullName>
+                <default>false</default>
+                <label>Scholarship not updated</label>
+            </value>
+            <value>
+                <fullName>How to make the second payment</fullName>
+                <default>false</default>
+                <label>How to make the second payment</label>
+            </value>
+            <value>
+                <fullName>Updated offer letter after Change of Program (Only for Admitted Students)</fullName>
+                <default>false</default>
+                <label>Updated offer letter after Change of Program (Only for Admitted Students)</label>
+            </value>
+            <value>
+                <fullName>Online Payment issue</fullName>
+                <default>false</default>
+                <label>Online Payment issue</label>
+            </value>
+            <value>
+                <fullName>Hostel Fee Query</fullName>
+                <default>false</default>
+                <label>Hostel Fee Query</label>
+            </value>
+            <value>
+                <fullName>Hostel Payment Issue</fullName>
+                <default>false</default>
+                <label>Hostel Payment Issue</label>
+            </value>
+            <value>
+                <fullName>Student Login Issue</fullName>
+                <default>false</default>
+                <label>Student Login Issue</label>
+            </value>
+            <value>
+                <fullName>Transportation Fee and Route details</fullName>
+                <default>false</default>
+                <label>Transportation Fee and Route details</label>
+            </value>
+            <value>
+                <fullName>Transport contact</fullName>
+                <default>false</default>
+                <label>Transport contact</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Placement</fullName>
+                <default>false</default>
+                <label>Placement</label>
+            </value>
+            <value>
+                <fullName>Pick points and its timings</fullName>
+                <default>false</default>
+                <label>Pick points and its timings</label>
+            </value>
+            <value>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+                <label>Electrical</label>
+            </value>
+            <value>
+                <fullName>Plumbing</fullName>
+                <default>false</default>
+                <label>Plumbing</label>
+            </value>
+            <value>
+                <fullName>Civil</fullName>
+                <default>false</default>
+                <label>Civil</label>
+            </value>
+            <value>
+                <fullName>Carpentry</fullName>
+                <default>false</default>
+                <label>Carpentry</label>
+            </value>
+            <value>
+                <fullName>Wifi</fullName>
+                <default>false</default>
+                <label>Wifi</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>Laundry</fullName>
+                <default>false</default>
+                <label>Laundry</label>
+            </value>
+            <value>
+                <fullName>Room Cleaning</fullName>
+                <default>false</default>
+                <label>Room Cleaning</label>
+            </value>
+            <value>
+                <fullName>Mess</fullName>
+                <default>false</default>
+                <label>Mess</label>
+            </value>
+            <value>
+                <fullName>Alumni Profile Changes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Alumni Profile Changes</label>
+            </value>
+            <value>
+                <fullName>Career Development Cell</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Career Development Cell</label>
+            </value>
+            <value>
+                <fullName>Challenge Valuation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Challenge Valuation</label>
+            </value>
+            <value>
+                <fullName>Fee Paid</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fee Paid</label>
+            </value>
+            <value>
+                <fullName>Fee Payable</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Fee Payable</label>
+            </value>
+            <value>
+                <fullName>If miss the REVA Bus, How to come by BMTC buses</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>If miss the REVA Bus, How to come by BMTC buses</label>
+            </value>
+            <value>
+                <fullName>Placements</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Placements</label>
+            </value>
+            <value>
+                <fullName>Test 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Test 1</label>
+            </value>
+            <value>
+                <fullName>Test 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Test 2</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Change the details filled in the application form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Change of Mobile No/Email ID</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Forgot the login credentials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Change of Program</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Connect with Counselor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Reset Mail Not Received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>OTP is not generated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Not able to upload the document</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admission</controllingFieldValue>
+            <valueName>Provisional Offer Letter not received</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admission</controllingFieldValue>
+            <valueName>Scholarship not updated</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admission</controllingFieldValue>
+            <valueName>How to make the second payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admission</controllingFieldValue>
+            <valueName>Updated offer letter after Change of Program (Only for Admitted Students)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admission</controllingFieldValue>
+            <valueName>Online Payment issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Admission</controllingFieldValue>
+            <valueName>Placement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hostel</controllingFieldValue>
+            <valueName>Hostel Fee Query</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hostel</controllingFieldValue>
+            <valueName>Hostel Payment Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hostel</controllingFieldValue>
+            <valueName>Student Login Issue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintainance</controllingFieldValue>
+            <valueName>Electrical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintainance</controllingFieldValue>
+            <valueName>Plumbing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintainance</controllingFieldValue>
+            <valueName>Civil</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maintainance</controllingFieldValue>
+            <valueName>Carpentry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <valueName>Wifi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT</controllingFieldValue>
+            <valueName>IT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HouseKeeping</controllingFieldValue>
+            <valueName>Laundry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HouseKeeping</controllingFieldValue>
+            <valueName>Room Cleaning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Fee Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Payment Gateway Clarifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Program Fee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Receipts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Bus Fee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Driver Behavior</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Driver Contact Number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Duplicate Bus Pass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>If miss the REVA Bus, How to come by BMTC buses</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Issue of Bus Pass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Pick Up stop changes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Pick Up points and its timings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Route Number</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Seat Availability</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Transportation Fee and Route details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation</controllingFieldValue>
+            <valueName>Transport contact</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Program related</controllingFieldValue>
+            <valueName>Courses Related/Curricular</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Program related</controllingFieldValue>
+            <valueName>Library Related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Program related</controllingFieldValue>
+            <valueName>Leaves/Medical Leaves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Program related</controllingFieldValue>
+            <valueName>Attendance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Program related</controllingFieldValue>
+            <valueName>Internal Assessment Marks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Adress Proof Certicate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Bonafide Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Change of Branch Fee</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Course Completion Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Medium of Instruction Certicate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Migration Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Permanent Identity Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Scholarship Requests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Sponsorships</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Student Profile Changes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Study Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Temporary Identity Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Academic Related</controllingFieldValue>
+            <valueName>Transfer Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT Related</controllingFieldValue>
+            <valueName>WiFi access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>IT Related</controllingFieldValue>
+            <valueName>REVA Email ID &amp; Password reset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Examination Fee (Supplementary)(per Subject)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Re- evaluation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Photocopy of Answer Scripts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Convocation Fee (Ph.D.)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Convocation Fee (Except Ph.D.)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Duplicate Degree Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Provisional Degree Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Name Correction in Grade Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Issue of Duplicate Grade Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Issue of Consolidated Grade Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Official Transcript</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Educational Verification (Hardcopy)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Backlog Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Percentage Conversion Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exam Related</controllingFieldValue>
+            <valueName>Equivalency Certificate Fee (COU)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connect with CoE Office</controllingFieldValue>
+            <valueName>Apply for Transcript</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connect with CoE Office</controllingFieldValue>
+            <valueName>Apply for Marks Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connect with Office of Registrar</controllingFieldValue>
+            <valueName>Apply for Transfer Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connect with Office of Registrar</controllingFieldValue>
+            <valueName>Apply for Migration Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connect with Alumni Office</controllingFieldValue>
+            <valueName>Apply for Accommodation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connect with Alumni Office</controllingFieldValue>
+            <valueName>Volunteer for Alumni Events or Alumni Talks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connect with Alumni Office</controllingFieldValue>
+            <valueName>Connect to Contribute to Alumni Cell</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connect with Alumni Office</controllingFieldValue>
+            <valueName>Refer Candidates for Internships / Placement drives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connect with Alumni Office</controllingFieldValue>
+            <valueName>Any Queries</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connect with Alumni Office</controllingFieldValue>
+            <valueName>Request Referral for Higher Studies</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

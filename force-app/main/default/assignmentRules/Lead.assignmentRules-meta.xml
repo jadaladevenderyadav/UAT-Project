@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Lead assign to kiran jena</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>kirankumar.jena@reva.edu.in</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Status</field>
+                <operation>equals</operation>
+                <value>Unverified</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.utm_medium__c</field>
+                <operation>equals</operation>
+                <value>Consultancy_2024</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.utm_campaign__c</field>
+                <operation>equals</operation>
+                <value>Third_Party_Admissions</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

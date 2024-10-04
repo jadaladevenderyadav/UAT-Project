@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+        <script type="text/javascript">
+            {errorHandlerScript}
+        </script>
+        
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">!function(){const e={documentCreateElement:Document.prototype.createElement,elementSetAttribute:Element.prototype.setAttribute,elementAttachShadow:Element.prototype.attachShadow,elementAppendChild:Element.prototype.appendChild,htmlelementAddEventListener:Element.prototype.addEventListener,iframeContentDocumentGet:Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype,"contentDocument").get,iframeContentWindowGet:Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype,"contentWindow").get};Object.freeze(e),Object.defineProperty(window,"originalDomApis",{writable:!1,value:e});const t=window.frames;Object.defineProperty(window,"frames",{get:function(){const e=[];for(let n=0;n<t.length;n++)try{t[n].frameElement.getRootNode().nodeType===Node.DOCUMENT_FRAGMENT_NODE||e.push(t[n])}catch(o){e.push(t[n])}return e.length===t.length?t:e}})}();</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">!function(){"use strict";window.isBrowserSupportedByWebruntime=function(){const n="performance"in window&&"mark"in window.performance,e="customElements"in window;return n&&e}()}();
+</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">globalThis.LWR = globalThis.LWR || {};
+globalThis.LWR.customInit = (lwr) => {
+
+        LWR.define('@app/apexApiBasePath', [], function() { return "webruntime/api"; });
+        LWR.define('@app/apiBasePath', [], function() { return "webruntime/api"; });
+        LWR.define('@app/basePath', [], function() { return ""; });
+        LWR.define('@app/deployTarget', [], function() { return null; });
+        LWR.define('@app/guestUuidCookieName', [], function() { return null; });
+        LWR.define('@app/isDesignMode', [], function() { return false; });
+        LWR.define('@app/isPreviewMode', [], function() { return false; });
+        LWR.define('@app/routes', [], function() { return [{"label":"Service Not Available","isPublic":true,"viewId":"e4ec593c-cdb6-4ff7-9cb7-ac72ec20b1c3","hasVanityURL":false,"patternMap":{},"id":"3eceaa57-594c-4781-a50a-0474f0873e7a","path":"/maintenance.html","view":"service_Not_Available","isRoot":true,"isDefault":true,"page":{"type":"comm__namedPage","attributes":{"name":"Service_Not_Available"}}}]; });
+        LWR.define('@app/uiBasePath', [], function() { return ""; });
+        LWR.define('@app/versionKey', [], function() { return "0DB5j000000bq9N:69"; });
+        LWR.define('@app/viewToThemeLayoutMap', [], function() { return {"service_Not_Available":"serviceNotAvailable"}; });
+        LWR.define('@salesforce/i18n/lang', [], function() { return "en_US"; });
+        LWR.define('@salesforce/site/Id', [], function() { return "0DM5j000000gSlbGAE"; });
+lwr.define("webruntime/dispatcher", [], function(){ return function o11yDipatcherInit(dispatcher) { typeof lwr !== 'undefined' && lwr.attachDispatcher(dispatcher); };});
+LWR.define('@salesforce/user/Id', ['@app/user'], function(m) { return (m && typeof m === 'object' && 'default' in m ? m.default : m)['id'] });
+LWR.define('@salesforce/user/isGuest', ['@app/user'], function(m) { return (m && typeof m === 'object' && 'default' in m ? m.default : m)['isGuest'] });
+lwr.initializeApp();
+globalThis.process = { env: { NODE_ENV: "dev" } };};</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">globalThis.LWR = globalThis.LWR || {};
+Object.assign(globalThis.LWR, {
+  "bootstrapModule": "@lwrjs/app-service/communities_app/module/amd/v/0_11_15",
+  "autoBoot": false,
+  "rootComponents": [
+    "webruntime/app/v/1"
+  ],
+  "requiredModules": [
+    "lwc/v/5_0_10",
+    "@lwrjs/app-service/communities_app/module/amd/v/0_11_15"
+  ],
+  "importMappings": {
+    "default": "webruntime/component/latest/prod/en_US/",
+    "imports": {
+      "/webruntime/component/latest/prod/en_US/lwc": "webruntime/framework/3d8282afab/prod/lwr_lwc",
+      "@app/csrfToken": "webruntime/module/@app/csrfToken",
+      "@app/loginPath": "webruntime/module/@app/loginPath",
+      "@app/user": "webruntime/module/@app/user",
+      "@perm/": "webruntime/perm/",
+      "@salesforce/client/formFactor": "webruntime/module/@salesforce/client/formFactor",
+      "@salesforce/customPermission/": "webruntime/perm/custom/",
+      "@salesforce/featureFlag/": "webruntime/module/@salesforce/featureFlag/",
+      "@salesforce/user/Id": "webruntime/module/@salesforce/user/Id",
+      "@salesforce/user/isGuest": "webruntime/module/@salesforce/user/isGuest",
+      "@salesforce/userPermission/": "webruntime/perm/",
+      "@udd/": "webruntime/module/@udd/",
+      "@view/serviceNotAvailable": "webruntime/view/aac6cc7591ef7223a3bf55a6469d599a/prod/en_US/serviceNotAvailable_view",
+      "@view/service_Not_Available": "webruntime/view/69f530616a9aa285f66b9fe9dbf0c61a/prod/en_US/service_Not_Available_view",
+      "mobileruntime/hybridAppManager": "webruntime/framework/a05a9dfaec/prod/lwr_mobile",
+      "o11y/collectors": "webruntime/component/ccd028bc4886422b46ea4137c960983d/prod/en_US/o11y/collectors_cmp",
+      "o11y/simple_collector": "webruntime/component/d4b210b75ecb11f2c53e69aaaaf9c61f/prod/en_US/o11y/simple_collector_cmp"
+    }
+  }
+});</script>
+        <script src="webruntime/framework/4437cc0a76/prod/lwr_loader"></script>
+        <script src="webruntime/framework/0a066abd38/prod/lwr_bootstrap"></script>
+        <script src="webruntime/framework/e86a44b5ac/prod/lwr_app_bootstrap_hook"></script>
+        <script src="webruntime/framework/3d8282afab/prod/lwr_lwc"></script>
+        <script src="webruntime/framework/08f714063b/prod/lwr_app"></script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('lwc', ['lwc/v/5_0_10'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">
+        LWR.define('@app/authenticationCookieName', [], function() { return "__Secure-has-sid"; });
+        LWR.define('@app/extraRouteParams', [], function() { return {}; });
+        LWR.define('@app/isMobileAppMode', [], function() { return true; });
+        LWR.define('@app/user', [], function() { return {"isGuest":true,"id":null,"csrfToken":null}; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/apexApiBasePath/v/1', ['@app/apexApiBasePath'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/apiBasePath/v/1', ['@app/apiBasePath'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/authenticationCookieName/v/1', ['@app/authenticationCookieName'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/basePath/v/1', ['@app/basePath'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/csrfToken/v/1', ['@app/csrfToken'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/deployTarget/v/1', ['@app/deployTarget'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/extraRouteParams/v/1', ['@app/extraRouteParams'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/guestUuidCookieName/v/1', ['@app/guestUuidCookieName'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/isDesignMode/v/1', ['@app/isDesignMode'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/isMobileAppMode/v/1', ['@app/isMobileAppMode'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/isPreviewMode/v/1', ['@app/isPreviewMode'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/o11yApiEndpoint/v/1', ['@app/o11yApiEndpoint'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/o11yConfiguration/v/1', ['@app/o11yConfiguration'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/o11yFalconEnabled/v/1', ['@app/o11yFalconEnabled'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/o11yGuestToken/v/1', ['@app/o11yGuestToken'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/o11ySamplingRate/v/1', ['@app/o11ySamplingRate'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/routes/v/1', ['@app/routes'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/uiBasePath/v/1', ['@app/uiBasePath'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/user/v/1', ['@app/user'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/versionKey/v/1', ['@app/versionKey'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@app/viewToThemeLayoutMap/v/1', ['@app/viewToThemeLayoutMap'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@salesforce/i18n/lang/v/1', ['@salesforce/i18n/lang'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('@salesforce/site/Id/v/1', ['@salesforce/site/Id'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script type="text/javascript" nonce="18021055-65c7-46a8-a9dc-4e241e1be027">LWR.define('webruntime/dispatcher/v/1', ['webruntime/dispatcher'], function(m) { return m && typeof m === 'object' && 'default' in m ? m.default : m; });</script>
+        <script src="webruntime/view/69f530616a9aa285f66b9fe9dbf0c61a/prod/en_US/service_Not_Available_view"></script>
+        <script src="webruntime/view/aac6cc7591ef7223a3bf55a6469d599a/prod/en_US/serviceNotAvailable_view"></script><style type="text/css" id="webruntime-branding">:root{--dxp-g-brand:rgb(0, 0, 0);--dxp-c-link-text-color:rgb(255, 120, 0);--dxp-c-link-text-color-hover:#d66500;--dxp-c-link-text-color-active:#d66500;--dxp-g-neutral-contrast-3:#fff;--dxp-s-body-font-family:Helvetica;--dxp-g-neutral-contrast-2:#000;--dxp-g-neutral:#ecebea;--dxp-g-neutral-contrast-1:#000;--dxp-g-root:rgb(255, 255, 255);--dxp-g-root-contrast-1:rgb(14, 14, 14);--dxp-g-root-contrast:#222222;--dxp-g-root-contrast-2:rgb(0, 0, 0);--dxp-g-root-contrast-3:rgb(0, 0, 0);--dxp-g-neutral-contrast:#000;--dxp-g-root-1:rgb(235, 235, 235);--dxp-g-root-2:rgb(194, 194, 194);--dxp-g-root-3:rgb(133, 133, 133);--dxp-g-brand-contrast-1:rgb(255, 255, 255);--dxp-g-brand-contrast:#FFFFFF;--dxp-g-neutral-3:rgb(118, 113, 107);--dxp-g-neutral-2:rgb(178, 174, 170);--dxp-g-brand-contrast-3:rgb(255, 255, 255);--dxp-g-sna-heading-font-family:Helvetica;--dxp-g-brand-contrast-2:rgb(255, 255, 255);--dxp-g-neutral-1:rgb(217, 215, 213);--dxp-g-brand-1:rgb(0, 0, 0);--dxp-g-brand-2:rgb(0, 0, 0);--dxp-g-brand-3:rgb(0, 0, 0);}</style>
+        <!---<script type="text/javascript">
+ window.ymConfig = { bot: 'x1645190851155', host: 'https://cloud.yellow.ai' };  (function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
+</script>--->
+
+<!--Contains Custom Css-->
+
+<style>
+:root {
+    --reva-brand-color: #F07F07;
+    --reva-background-page-color: #EDEDED;
+    --reva-component-background-color: #E9E9E9;
+    --reva-component-heading-background-color: #C7C7C7;
+   
+    --reva-component-heading-text-color: #000000;
+    --reva-table-heading-background-color: #707070;
+    --reva-table-heading-text-color: #FFFFFF;
+    --reva-table-row-background-color: #DADADA;
+    --reva-table-row-text-color: #000000;
+    --reva-content-text-blue-color: #3871C2;
+    --reva-footer-background-color: #3A3635;
+    
+
+}
+    
+    
+    
+    @font-face {
+    font-family: 'NunitoSans';
+    src: url('/sfsites/c/resource/SR_STUDENTPORTALASSETS/StudentPortalAssests/Fonts/NunitoSans/NunitoSans_10pt-Regular.ttf') format('TrueType');
+}
+    
+
+
+body,
+html {
+    font-family: 'NunitoSans', Helvetica !important;
+}
+    
+    .siteforceCptBody .cHeader .cHeaderTop {
+        display:none
+    }
+    
+    /* added by Venugopal */
+.siteforceContentArea .comm-layout-column:not(:empty) {
+    
+    /*background-color :  #3d3d3d;*/
+    
+}
+/*
+.forceChatterStyle--default .cuf-feedElement.cuf-feedElement {
+    background-color:  #3d3d3d;
+}
+
+.forceChatterFeedBodyText.cuf-feedBodyText {
+    color: white;
+    
+}
+
+.slds-post__footer-action {
+    
+    color: white !important;
+} */
+    
+    /* sory by label */
+.slds-form-element__label {
+    /*color: white !important; */
+} 
+     /*Access Type */
+ /*  .forceChatterFtcList .cuf-ftcFieldLabel {
+    color: white !important;
+   
+} */
+    /* input comment section */
+ /*   .forceChatterFeedback.threaded-discussion .commentInputArea {
+    background-color: #3d3d3d;
+    
+} */
+/* reload */
+/*.slds-button_icon-border-filled, .slds-button--icon-border-filled, .slds-button_icon-border, .slds-button--icon-border {
+    background-color: white !important;
+	}
+    
+    .forceChatterFtcList.cuf-ftcList {
+    
+        color: white !important;
+    } 
+    
+   .slds-select_container .slds-select {
+   
+    border: 1.5px solid black;
+        border-radius: 0px;
+    } */
+    
+ /* .feeds-sorter .feeds-sorter-trigger .slds-form-element .slds-form-element__label{
+ color: white !important; 
+} */
+    
+  /*  .slds-text-color_weak, .slds-text-color--weak {
+    color: white;
+} */
+    /*Attachment clip */
+/*forceIcon.slds-button__icon .slds-icon {
+    fill: whitetColor;
+} */
+  /*  .forceChatterFeedCommentInputDesktop .cuf-submit .cuf-commentSubmit, .forceChatterFeedCommentInputDesktop .cuf-submit .cuf-commentSubmit:active {
+  
+    background-color: #F07F07;
+} */
+  /*  .forceCommunitySection .cb-section_column:only-child {
+    
+    background-color: #3d3d3d;
+} */
+    
+    
+/* Standard Tabs CSS by Venugopal */
+
+ 2 js-tab tabs__item uiTabItem {
+    margin-left: 3px !important;
+    padding: 10px !important;
+}
+/* Active Tab */
+    .forceCommunityTabset>.uiTabBar .uiTabItem .tabHeader{
+        padding:10px !important;
+    }
+    
+    .uiTabset--default .tabs__item>a:focus{
+        box-shadow:none !important;
+    }
+    
+    .uiTabset--default .tabs__item>a,
+    .uiTabset--default,
+    .uiTabOverflowMenuItem a{
+        border-bottom:none !important;
+    }
+    
+.uiTabset--default .tabs__item.active>a {
+    background-color: #F07F07 !important;
+    color: white !important;
+    font-weight: var(--lwc-fontWeightBold, 700);
+    border:none !important;
+}
+    .uiTabset--default .tabs__item>a{
+        border-bottom:none !important;
+    }
+    .uiTabset--default .tabs__item+.tabs__item{
+        margin-left:0px !important;
+    }
+
+/* default */
+.truncate, .uiTabset .tabHeader {
+    background-color: #fef1e8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* gap between tabs */
+/* Tab text color */
+.uiTabset--default .tabs__item>a, .uiTabset--default .uiTabOverflowMenuItem a {
+    color: black;
+    font-weight: 650;
+}
+
+/* orange border header*/
+/*.uiTabset--default .tabs__nav { 
+    border: 1px solid #F07F07;
+}*/
+
+/* standard cmp digital card border */
+.slds-large-size_12-of-12, .slds-large-size--12-of-12 {
+    width: 100%;
+    /*border: 1px solid orange;*/
+}
+    
+      .salesforceIdentityLoginBody2 {
+                 background: url('/sfsites/c/resource/ALU_Login_BackgroundImage/BackgroundImages/Alumni-Login-Bg.png') 50% 100%/cover no-repeat fixed !important;
+     
+    }
+
+    .cCenterPanel .cb-section_column{
+        background: #EDEDED !important;
+    }
+    
+    .slds-rich-text-editor__toolbar slds-shrink-none{
+         border:none !important
+    }
+    
+  @media only screen and (max-width: 767px) {
+            .carousel .carousel-cell .slds-image__crop{
+           height: 200px !important;
+      }
+    }
+    
+    [kx-scope=button-brand]:hover{
+        transform:none !important;
+    }
+    .slds-button_brand{
+        background:var(--reva-brand-color) !important;
+    }
+
+</style>
+        
+        <!-- webruntime-branding-shared stylesheets -->
+        <link rel="stylesheet" href="assets/styles/salesforce-lightning-design-system.min.css?0DB5j000000bq9N:69"/>
+        <link rel="stylesheet" href="assets/styles/dxp-site-spacing-styling-hooks.min.css?0DB5j000000bq9N:69"/>
+        <link rel="stylesheet" href="assets/styles/dxp-styling-hooks.min.css?0DB5j000000bq9N:69"/>
+        <link rel="stylesheet" href="assets/styles/dxp-slds-extensions.min.css?0DB5j000000bq9N:69"/>
+        <!-- webruntime-branding-shared stylesheets -->
+        <link rel="stylesheet" href="assets/styles/styles.css?0DB5j000000bq9N:69"/>
+        <link rel="stylesheet" href="assets/css/fonts-and-custom.css?0DB5j000000bq9N:69"/>
+    </head>
+    <body>
+        <webruntime-app></webruntime-app>
+    </body>
+</html>

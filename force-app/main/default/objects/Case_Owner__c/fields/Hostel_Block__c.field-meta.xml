@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hostel_Block__c</fullName>
+    <label>Hostel Block</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+            <value>
+                <fullName>D</fullName>
+                <default>false</default>
+                <label>D</label>
+            </value>
+            <value>
+                <fullName>G1</fullName>
+                <default>false</default>
+                <label>G1</label>
+            </value>
+            <value>
+                <fullName>G2</fullName>
+                <default>false</default>
+                <label>G2</label>
+            </value>
+            <value>
+                <fullName>G3</fullName>
+                <default>false</default>
+                <label>G3</label>
+            </value>
+            <value>
+                <fullName>RBS</fullName>
+                <default>false</default>
+                <label>RBS</label>
+            </value>
+            <value>
+                <fullName>All Blocks</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>All Blocks</label>
+            </value>
+            <value>
+                <fullName>C &amp; RBS BOYS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>C &amp; RBS BOYS</label>
+            </value>
+            <value>
+                <fullName>G3 &amp; RBS GIRLS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>G3 &amp; RBS GIRLS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

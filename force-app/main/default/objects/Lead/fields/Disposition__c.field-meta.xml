@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Disposition__c</fullName>
+    <description>Specifies the disposition values selected by the Counselor</description>
+    <inlineHelpText>Disposition value selected by the Counsellor</inlineHelpText>
+    <label>Disposition</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Applicant_Disposition_Values</valueSetName>
+    </valueSet>
+</CustomField>

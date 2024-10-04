@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Room_Category__c</fullName>
+    <inlineHelpText>1st Engineering CS
+1st Engineering Non-CS
+1st Non-Engineering
+Engineering CS
+Engineering Non-CS
+Non-Engineering
+None - For Demo &amp; Staff rooms</inlineHelpText>
+    <label>Room Category</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 Eng CS</fullName>
+                <default>false</default>
+                <label>1 Eng CS</label>
+            </value>
+            <value>
+                <fullName>1 Eng Non-CS</fullName>
+                <default>false</default>
+                <label>1 Eng Non-CS</label>
+            </value>
+            <value>
+                <fullName>1 Non-Eng</fullName>
+                <default>false</default>
+                <label>1 Non-Eng</label>
+            </value>
+            <value>
+                <fullName>Eng CS</fullName>
+                <default>false</default>
+                <label>Eng CS</label>
+            </value>
+            <value>
+                <fullName>Eng Non-CS</fullName>
+                <default>false</default>
+                <label>Eng Non-CS</label>
+            </value>
+            <value>
+                <fullName>Non-Eng</fullName>
+                <default>false</default>
+                <label>Non-Eng</label>
+            </value>
+            <value>
+                <fullName>None - Demo/Staff</fullName>
+                <default>false</default>
+                <label>None - Demo/Staff</label>
+            </value>
+            <value>
+                <fullName>1 Eng</fullName>
+                <default>false</default>
+                <label>1 Eng</label>
+            </value>
+            <value>
+                <fullName>Demo/Staff</fullName>
+                <default>false</default>
+                <label>Demo/Staff</label>
+            </value>
+            <value>
+                <fullName>2 Non-Eng</fullName>
+                <default>false</default>
+                <label>2 Non-Eng</label>
+            </value>
+            <value>
+                <fullName>2 Eng</fullName>
+                <default>false</default>
+                <label>2 Eng</label>
+            </value>
+            <value>
+                <fullName>3 Non-Eng</fullName>
+                <default>false</default>
+                <label>3 Non-Eng</label>
+            </value>
+            <value>
+                <fullName>3 Eng</fullName>
+                <default>false</default>
+                <label>3 Eng</label>
+            </value>
+            <value>
+                <fullName>4 Non-Eng</fullName>
+                <default>false</default>
+                <label>4 Non-Eng</label>
+            </value>
+            <value>
+                <fullName>4 Eng/PG</fullName>
+                <default>false</default>
+                <label>4 Eng/PG</label>
+            </value>
+            <value>
+                <fullName>4 Non-Eng/PG</fullName>
+                <default>false</default>
+                <label>4 Non-Eng/PG</label>
+            </value>
+            <value>
+                <fullName>PUC</fullName>
+                <default>false</default>
+                <label>PUC</label>
+            </value>
+            <value>
+                <fullName>3-4 Non-Eng/PG</fullName>
+                <default>false</default>
+                <label>3-4 Non-Eng/PG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Converted_to_Student</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>SRN_No__c</columns>
+    <columns>SRN_Number__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>Record_Type_Name__c</columns>
+    <columns>Program_Name__c</columns>
+    <columns>Program_Type__c</columns>
+    <columns>Ready_to_be_Transitioned__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Record_Type_Name__c</field>
+        <operation>equals</operation>
+        <value>Student</value>
+    </filters>
+    <label>All Converted to Student</label>
+    <sharedTo>
+        <role>Admission_Executive</role>
+    </sharedTo>
+</ListView>

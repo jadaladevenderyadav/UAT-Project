@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Final_Year__c</fullName>
+    <formula>OR( 
+VALUE(RIGHT(Active_Semester__r.Name, 1)) + 1 = Primary_Academic_Program__r.No_of_Years__c * 2 ,
+
+VALUE(RIGHT(Active_Semester__r.Name, 1)) = Primary_Academic_Program__r.No_of_Years__c * 2)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This indicates whether a student is pre or final year student</inlineHelpText>
+    <label>Is Final Year</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>On activation all the eligible students will be notified.</description>
+    <flowDefinition>RPL_Activate_Placement_Drive_And_Send_Notification_To_Eligible_Students</flowDefinition>
+    <label>Activate Drive</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

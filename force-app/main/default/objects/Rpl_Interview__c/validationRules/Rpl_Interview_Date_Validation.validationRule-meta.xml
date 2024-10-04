@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rpl_Interview_Date_Validation</fullName>
+    <active>false</active>
+    <description>Interview date should not be in past.</description>
+    <errorConditionFormula>IF( Rpl_Interview_Time__c &lt; NOW(), TRUE, FALSE)</errorConditionFormula>
+    <errorDisplayField>Rpl_Interview_Time__c</errorDisplayField>
+    <errorMessage>Interview time should not be in past.</errorMessage>
+</ValidationRule>

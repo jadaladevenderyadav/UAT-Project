@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mailing_Address_Same_as_Default__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Checked if the Mailing Address is the same as the Permanent Address</description>
+    <inlineHelpText>Mailing Address is same as the Permanent Address</inlineHelpText>
+    <label>Mailing Address Same as Default</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

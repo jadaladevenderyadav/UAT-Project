@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Marital_Status__c</fullName>
+    <label>Marital Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Single</fullName>
+                <default>false</default>
+                <label>Single</label>
+            </value>
+            <value>
+                <fullName>Married</fullName>
+                <default>false</default>
+                <label>Married</label>
+            </value>
+            <value>
+                <fullName>Divorced</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Divorced</label>
+            </value>
+            <value>
+                <fullName>Divorced and not remarried</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Divorced and not remarried</label>
+            </value>
+            <value>
+                <fullName>Female</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Female</label>
+            </value>
+            <value>
+                <fullName>Male</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Male</label>
+            </value>
+            <value>
+                <fullName>Married but separated.</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Married but separated.</label>
+            </value>
+            <value>
+                <fullName>Spinster</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Spinster</label>
+            </value>
+            <value>
+                <fullName>Widowed</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Widowed</label>
+            </value>
+            <value>
+                <fullName>Widowed and not remarried</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Widowed and not remarried</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

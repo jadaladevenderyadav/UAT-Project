@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>knowlarity_cti__Second_Agent_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Second Agent Number</label>
+    <length>50</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

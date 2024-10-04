@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Create_Non_Use</fullName>
+    <active>true</active>
+    <description>Can&apos;t create record if current user and applicant contact owner is not same</description>
+    <errorConditionFormula>AND( 
+OR( 
+ISNEW()
+ ), Account.Owner.Username &lt;&gt; $User.Username,$Profile.Name = &apos;Counselor&apos;
+)</errorConditionFormula>
+    <errorMessage>You don&apos;t have access to create this record. Please contact Admissions Team.</errorMessage>
+</ValidationRule>

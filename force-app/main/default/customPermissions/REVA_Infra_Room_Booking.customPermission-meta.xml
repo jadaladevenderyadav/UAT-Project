@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPermission xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This custom permission helps to bypass the below validation. Facility Booking to be completed before one week of the Commencement of the semester (Only for same school),
+
+After this deadline, cross departments can book</description>
+    <isLicensed>false</isLicensed>
+    <label>REVA Infra Room Booking</label>
+</CustomPermission>

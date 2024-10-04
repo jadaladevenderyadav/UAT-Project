@@ -1,0 +1,7 @@
+.cALU_Registr_Component_CMP article{
+    background:#EFDFD0;
+}
+html,body{
+    background:rgba(237, 237, 237, 0.92) !important;
+}
+:root { --dxp-c-section-columns-max-width: 1170px; }

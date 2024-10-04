@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_in_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(Room_Details__c)</errorConditionFormula>
+    <errorDisplayField>Check_In__c</errorDisplayField>
+    <errorMessage>Check In should be After Room Allotment</errorMessage>
+</ValidationRule>

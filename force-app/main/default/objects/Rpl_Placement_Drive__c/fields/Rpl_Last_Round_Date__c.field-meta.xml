@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rpl_Last_Round_Date__c</fullName>
+    <description>This is the last recruitment stage&apos;s happening date.</description>
+    <label>Last Round Date</label>
+    <summarizedField>Rpl_Interview__c.Rpl_Interview_Time__c</summarizedField>
+    <summaryForeignKey>Rpl_Interview__c.Placement_Drive__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

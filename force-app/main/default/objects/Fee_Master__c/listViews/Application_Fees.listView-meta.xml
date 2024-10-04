@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Fees</fullName>
+    <columns>NAME</columns>
+    <columns>Enrolment_Year__c</columns>
+    <columns>Program_Batch__c</columns>
+    <columns>IsActive__c</columns>
+    <columns>School_Name__c</columns>
+    <columns>Applicant_Category__c</columns>
+    <columns>Program_Name__c</columns>
+    <columns>Program_Name_Display__c</columns>
+    <columns>Program_Type__c</columns>
+    <columns>Fee_Amount__c</columns>
+    <columns>Quota__c</columns>
+    <columns>Fee_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Fee_Type__c</field>
+        <operation>equals</operation>
+        <value>Program Fee,University Fee,Application Fee</value>
+    </filters>
+    <filters>
+        <field>Applicant_Category__c</field>
+        <operation>equals</operation>
+        <value>Indian (SAARC),Non-Resident Indian(NRI),Foreign Nationals</value>
+    </filters>
+    <label>UQ - Application Fees</label>
+</ListView>

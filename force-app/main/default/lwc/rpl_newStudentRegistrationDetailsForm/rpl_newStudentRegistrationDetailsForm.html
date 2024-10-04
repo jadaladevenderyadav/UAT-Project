@@ -1,0 +1,469 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 10-17-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+<template>
+    <div class="c-container">
+
+        <lightning-layout multiple-rows="true">
+            <!--HEADER START-->
+            <lightning-layout-item padding="around-small" size="12">
+                <div class="page-section1 page-header">
+                    <h2 class="formColor"><b>Student Registration Form</b></h2>
+                </div>
+            </lightning-layout-item>
+            <!--HEADER END-->
+            <!--MAIN BODY START-->
+            <lightning-layout-item class="slds-p-left_medium slds-p-right_medium" size="12">
+                <!--Student Details-->
+                <template if:true={showStudentDetails}>
+                    <div class={isStudentDetails}>
+                        <div class="page-section page-main">
+                            <h3 class="slds_section__title">
+                                <button aria-controls="QDFeildLists" class="slds-button slds-section__title-action">
+                                    <span onclick={toggleSection} data-id="studentDetails">
+                                        <lightning-icon icon-name="utility:switch" size="x-small"
+                                            class="slds-section__title-action-icon slds-button__icon_left">
+                                        </lightning-icon>
+                                    </span>
+                                    <span class="slds-truncate" title="Student Details"><b>Student Details</b></span>
+                                </button>
+                            </h3><br>
+
+                            <div class="slds-section__content" id="QDFeildList">
+                                <lightning-layout-item padding="around-small" size="12">
+                                    <lightning-layout multiple-rows="true">
+                                        <lightning-layout-item padding="around-small" size="6">
+                                            <div class="header-column">
+                                                <!--<legend class="slds-form-element__legend slds-form-element__label">SRN</legend>-->
+                                                <lightning-input type="text" label="SRN" onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_SRN__c} readonly></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <!--<legend class="slds-form-element__legend slds-form-element__label">Name
+                                                <span class="required-star"> *</span></legend>-->
+                                                <lightning-input type="text"
+                                                    style="--slds-c-input-color-background: white !important"
+                                                    label="Name" onchange={handleAllFieldChange}
+                                                    value={studentRegform.Name} readonly></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Gender"
+                                                    onchange={handleAllFieldChange} value={studentRegform.Rpl_Gender__c}
+                                                    readonly></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Date Of Birth"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_Date_of_Birth__c}
+                                                    readonly></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Permanent Address"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.RPL_Permanent_Address__c}
+                                                    readonly></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Pan Card No"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_Pan_Card_No__c} required
+                                                    pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
+                                                    title="Please enter a valid PAN Card number in the format ABCDE1234F"></lightning-input>
+                                            </div>
+
+
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Cleared Backlogs"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_Cleared_Backlogs__c} required
+                                                    pattern="[0-9]{1,2}"
+                                                    message-when-pattern-mismatch="Please enter a valid numeric value"></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <template if:true={interestedinplacement.data}>
+                                                    <lightning-combobox name="Interested In Placement"
+                                                        label="Interested In Placement"
+                                                        options={interestedinplacement.data.values} placeholder="None"
+                                                        value={studentRegform.Rpl_Interested_in_placement__c}
+                                                        onchange={handleAllFieldChange} required="true">
+                                                    </lightning-combobox><br>
+                                                </template>
+                                            </div>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Education Gap"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_Education_Gap__c} required
+                                                    pattern="[0-9]{1,2}"
+                                                    message-when-pattern-mismatch="Please enter a valid numeric value"></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <template if:true={courseName.data}>
+                                                    <lightning-combobox name="Course" label="Course Name"
+                                                        options={courseName.data.values} placeholder=' '
+                                                        value={studentRegform.Course_Name__c} disabled="true">
+                                                    </lightning-combobox><br>
+                                                </template>
+                                            </div>
+
+
+                                        </lightning-layout-item>
+                                        <lightning-layout-item padding="around-small" size="6">
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Contact No"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_Contact_No__c} readonly></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="School"
+                                                    onchange={handleAllFieldChange} value={studentRegform.Rpl_School__c}
+                                                    readonly></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Father Name"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_Father_Name__c}
+                                                    readonly></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Mother Name"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_Mother_Name__c}
+                                                    readonly></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Current Address"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_Current_Address__c}
+                                                    readonly></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Personal Mail ID"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_Personal_Mail_ID__c}
+                                                    required="true"></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="University Mail Id"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_University_Mail_ID__c} required="true"
+                                                    pattern="^.+@reva\.edu\.in$"
+                                                    message-when-pattern-mismatch="Please enter a valid University Mail Id in the format yourmail@reva.edu.in"></lightning-input>
+                                            </div>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Current Backlogs"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_Current_Backlogs__c} required
+                                                    pattern="[0-9]{1,2}"
+                                                    message-when-pattern-mismatch="Please enter a valid numeric value"></lightning-input>
+                                            </div>
+                                            <br>
+                                            <div class="header-column">
+                                                <lightning-input type="text" label="Total Backlogs"
+                                                    onchange={handleAllFieldChange}
+                                                    value={studentRegform.Rpl_Total_Backlogs__c} required
+                                                    readonly></lightning-input>
+                                            </div>
+
+
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </lightning-layout-item>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+                <!--Acidemic Details-->
+                <template if:true={showAcidemicDetails}>
+                    <div class={isAcidemicDetails}>
+                        <div class="page-section page-main">
+                            <h3 class="slds_section__title">
+                                <button aria-controls="AcidemicList" class="slds-button slds-section__title-action">
+                                    <span onclick={toggleSection} data-id="acidemicDetails">
+                                        <lightning-icon icon-name="utility:switch" size="x-small"
+                                            class="slds-section__title-action-icon slds-button__icon_left">
+                                        </lightning-icon>
+                                    </span>
+                                    <span class="slds-truncate" title="Student Details"><b>Academic Details</b></span>
+                                </button>
+                            </h3><br>
+
+                            <div id="AcidemicList">
+                                <lightning-layout multiple-rows="true">
+                                    <lightning-layout-item padding="around-small" class="page-section page-main"
+                                        size="6">
+                                        <template if:true={show10DetailsAccordion}>
+                                            <div class={is10DetailsAccordion}>
+                                                <div>
+                                                    <h3 class="slds_section__title">
+                                                        <button aria-controls="tenLists"
+                                                            class="slds-button slds-section__title-action">
+                                                            <span onclick={toggleSection} data-id="tenInputsDetails">
+                                                                <lightning-icon icon-name="utility:switch"
+                                                                    size="x-small"
+                                                                    class="slds-section__title-action-icon slds-button__icon_left">
+                                                                </lightning-icon>
+                                                            </span>
+                                                            <span class="slds-truncate"
+                                                                title="Tenth Academic Details"><b>Tenth Standard
+                                                                    Details</b></span>
+                                                        </button>
+                                                    </h3><br>
+
+                                                    <div class="slds-section__content page-section page-main"
+                                                        id="tenLists">
+
+                                                        <lightning-layout multiple-rows="true">
+                                                            <lightning-layout-item padding="around-small" size="12">
+                                                                <div class="header-column">
+                                                                    <!--<legend class="slds-form-element__legend slds-form-element__label">Name
+                                                            <span class="required-star"> *</span></legend>-->
+                                                                    <lightning-input type="text" label="10th Percentage"
+                                                                        onchange={handleAllFieldChange}
+                                                                        value={studentRegform.Rpl_10th_Percentage__c}
+                                                                        required="true"
+                                                                        pattern="^(?:\d{1,2}(?:\.\d{1,2})?|100)$"
+                                                                        message-when-pattern-mismatch="Please enter a valid numeric value"></lightning-input>
+                                                                </div>
+                                                                <div class="header-column">
+                                                                    <lightning-input type="text" label="10th Board Name"
+                                                                        onchange={handleAllFieldChange}
+                                                                        value={studentRegform.Rpl_10th_Board_Name__c}
+                                                                        required="true"></lightning-input>
+                                                                </div>
+                                                                <div class="header-column">
+                                                                    <!-- <lightning-input type="date" label="10th Year of passing" onchange={handleAllFieldChange} value={studentRegform.Rpl_10th_Year_of_passing__c} required="true"></lightning-input> -->
+                                                                    <lightning-input type="date"
+                                                                        label="10th Year of passing"
+                                                                        onchange={handleAllFieldChange}
+                                                                        value={studentRegform.Rpl_10th_Year_of_passing__c}
+                                                                        required="true" onblur={validateDate}
+                                                                        name="Rpl_10th_Year_of_passing__c"></lightning-input>
+
+                                                                </div>
+
+                                                            </lightning-layout-item>
+                                                        </lightning-layout>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </lightning-layout-item>
+                                    <lightning-layout-item padding="around-small" class="page-section page-main"
+                                        size="6">
+                                        <template if:true={show12DetailsAccordion}>
+                                            <div class={is12DetailsAccordion}>
+                                                <div>
+                                                    <h3 class="slds_section__title">
+                                                        <button aria-controls="twelveList"
+                                                            class="slds-button slds-section__title-action">
+                                                            <span onclick={toggleSection} data-id="twelveInputsDetails">
+                                                                <lightning-icon icon-name="utility:switch"
+                                                                    size="x-small"
+                                                                    class="slds-section__title-action-icon slds-button__icon_left">
+                                                                </lightning-icon>
+                                                            </span>
+                                                            <span class="slds-truncate"
+                                                                title="Tenth Academic Details"><b>Twelve Standard
+                                                                    Details</b></span>
+                                                        </button>
+                                                    </h3><br>
+
+                                                    <div class="slds-section__content page-section page-main"
+                                                        id="twelveList">
+                                                        <lightning-layout multiple-rows="true">
+                                                            <lightning-layout-item padding="around-small" size="12">
+                                                                <div class="header-column">
+                                                                    <!--<legend class="slds-form-element__legend slds-form-element__label">Name
+                                                            <span class="required-star"> *</span></legend>-->
+                                                                    <lightning-input type="text" label="12th Percentage"
+                                                                        onchange={handleAllFieldChange}
+                                                                        value={studentRegform.Rpl_12th_Percentage__c}
+                                                                        pattern="^(?:\d{1,2}(?:\.\d{1,2})?|100)$"
+                                                                        message-when-pattern-mismatch="Please enter a valid numeric value"></lightning-input>
+                                                                </div>
+                                                                <div class="header-column">
+                                                                    <lightning-input type="text" label="12th Board Name"
+                                                                        onchange={handleAllFieldChange}
+                                                                        value={studentRegform.Rpl_12th_Board_Name__c}></lightning-input>
+                                                                </div>
+                                                                <div class="header-column">
+                                                                    <!-- <lightning-input type="date" label="12th Year of passing" onchange={handleAllFieldChange} value={studentRegform.Rpl_12th_Year_of_passing__c}></lightning-input> -->
+                                                                    <lightning-input type="date"
+                                                                        label="12th Year of passing"
+                                                                        onchange={handleAllFieldChange}
+                                                                        value={studentRegform.Rpl_12th_Year_of_passing__c}
+                                                                        onblur={validateDate}
+                                                                        name="Rpl_12th_Year_of_passing__c"></lightning-input>
+
+                                                                </div>
+
+                                                            </lightning-layout-item>
+                                                        </lightning-layout>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </lightning-layout-item>
+                                    <!--Diploma Details Start-->
+                                    <lightning-layout-item padding="around-small" class="page-section page-main"
+                                        size="12">
+                                        <template if:true={showDipolmaDetailsAccordion}>
+                                            <div class={isDipolmaDetailsAccordion}>
+                                                <div>
+                                                    <h3 class="slds_section__title">
+                                                        <button aria-controls="dipolmaList"
+                                                            class="slds-button slds-section__title-action">
+                                                            <span onclick={toggleSection}
+                                                                data-id="dipolmaInputsDetails">
+                                                                <lightning-icon icon-name="utility:switch"
+                                                                    size="x-small"
+                                                                    class="slds-section__title-action-icon slds-button__icon_left">
+                                                                </lightning-icon>
+                                                            </span>
+                                                            <span class="slds-truncate"
+                                                                title="Diploma Details"><b>Diploma Details</b></span>
+                                                        </button>
+                                                    </h3><br>
+
+                                                    <div class="slds-section__content page-section page-main"
+                                                        id="dipolmaList">
+
+                                                        <lightning-layout multiple-rows="true">
+                                                            <lightning-layout-item padding="around-small" size="6">
+                                                                <div class="header-column">
+                                                                    <!--<legend class="slds-form-element__legend slds-form-element__label">Name
+                                                            <span class="required-star"> *</span></legend>-->
+                                                                    <lightning-input type="text"
+                                                                        label="Diploma College Name"
+                                                                        onchange={handleAllFieldChange}
+                                                                        value={studentRegform.Rpl_DiplomaName__c}
+                                                                        pattern="^[A-Za-z\s]*$"></lightning-input>
+                                                                </div>
+                                                                <div class="header-column">
+                                                                    <!--<legend class="slds-form-element__legend slds-form-element__label">Name
+                                                            <span class="required-star"> *</span></legend>-->
+                                                                    <lightning-input type="text"
+                                                                        label="Diploma Percentage"
+                                                                        onchange={handleAllFieldChange}
+                                                                        value={studentRegform.Rpl_Diploma_Number__c}
+                                                                        pattern="^(?:\d{1,2}(?:\.\d{1,2})?|100)$"
+                                                                        message-when-pattern-mismatch="Please enter a valid numeric value"></lightning-input>
+                                                                </div>
+                                                            </lightning-layout-item>
+                                                            <lightning-layout-item padding="around-small" size="6">
+                                                                <div class="header-column">
+                                                                    <!--<legend class="slds-form-element__legend slds-form-element__label">Name
+                                                            <span class="required-star"> *</span></legend>-->
+                                                                    <lightning-input type="text"
+                                                                        label="Diploma Graduation Year"
+                                                                        onchange={handleAllFieldChange}
+                                                                        value={studentRegform.Rpl_Diploma_Graduation_Year__c}
+                                                                        pattern="[0-9]{4}"
+                                                                        message-when-pattern-mismatch="Please enter a 4-digit number."></lightning-input>
+                                                                </div>
+                                                                <div class="header-column">
+                                                                    <!--<legend class="slds-form-element__legend slds-form-element__label">Name
+                                                            <span class="required-star"> *</span></legend>-->
+                                                                    <lightning-input type="text"
+                                                                        label="Diploma University"
+                                                                        onchange={handleAllFieldChange}
+                                                                        value={studentRegform.Rpl_Diploma_University__c}></lightning-input>
+                                                                </div>
+
+                                                            </lightning-layout-item>
+                                                        </lightning-layout>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </lightning-layout-item>
+                                    <!--Diploma Details End-->
+
+
+                                    <!-- Student Image Upload Start -->
+                                    <lightning-layout-item padding="around-small" class="page-section page-main"
+                                        size="12">
+                                        <template if:true={showImageUploadAccordion}>
+                                            <div class={isImageUploadAccordion}>
+                                                <div>
+                                                    <h3 class="slds_section__title">
+                                                        <button aria-controls="imageUploadSection"
+                                                            class="slds-button slds-section__title-action">
+                                                            <span onclick={toggleSection} data-id="imageUploadDetails">
+                                                                <lightning-icon icon-name="utility:switch"
+                                                                    size="x-small"
+                                                                    class="slds-section__title-action-icon slds-button__icon_left">
+                                                                </lightning-icon>
+                                                            </span>
+                                                            <span class="slds-truncate"
+                                                                title="Student Image Upload"><b>Student Image
+                                                                    Upload</b></span><br>
+
+                                                        </button>
+                                                    </h3><br>
+
+                                                    <div class="slds-section__content page-section page-main"
+                                                        id="imageUploadSection">
+
+                                                        <lightning-layout multiple-rows="true">
+                                                            <!-- <lightning-layout-item padding="around-small" size="6">
+                            <div class="header-column">
+                                <lightning-file-upload
+                                    label="Upload Student Image"
+                                    accept={acceptedFormats}
+                                    record-id={recordId}
+                                    onuploadfinished={handleUploadFinished}>
+                                </lightning-file-upload>
+                            </div>
+                        </lightning-layout-item> -->
+                                                            <lightning-layout-item padding="around-small" size="6">
+                                                                <!-- Display Uploaded Image -->
+                                                                <lightning-input-rich-text label="Student Image"
+                                                                    value={studentRegform.Rpl_Student_Image__c}
+                                                                    required=true formats={allowedFormats}
+                                                                    onchange={handleAllFieldChange}
+                                                                    message-when-bad-input="Please upload one Image"
+                                                                    valid={validity}
+                                                                    class="student-image"></lightning-input-rich-text>
+                                                            </lightning-layout-item>
+                                                        </lightning-layout>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </lightning-layout-item>
+                                    <!-- Student Image Upload End -->
+                                </lightning-layout>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+
+
+
+
+
+                <!--UG Details Stop-->
+            </lightning-layout-item>
+
+            <!--MAIN BODY END-->
+            <!--FOOTER START-->
+            <lightning-layout-item flexibility="auto" padding="around-small" size="12">
+                <div class="page-footer page-section1">
+                    <!--Cancel Button-->
+
+                    <!--Save Button-->
+                    <lightning-button variant="brand" label="NEXT" title="Go to Next Page" onclick={handleSaveButton}
+                        class="slds-m-left_x-small" disabled={isSubmitButtonDisabled}></lightning-button>
+                </div>
+            </lightning-layout-item>
+            <!--FOOTER END-->
+        </lightning-layout>
+    </div>
+
+</template>

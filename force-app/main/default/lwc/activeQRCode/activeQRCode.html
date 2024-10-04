@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Quick View" class="slds-truncate">
+        <!-- Flexbox container -->
+        <div style="display: flex; align-items: flex-start;">
+
+            <!-- QR Code Image -->
+            <img src={urlQRCode} alt="Meal Booking Data" width="300" height="300" onclick={handleQRCodeScanned}>
+
+            <!-- Booking Details Container -->
+            <lightning-card>
+            <div style="margin-left: 20px;">
+                <p><strong>Name :</strong> {bookingForName}</p>
+                <p><strong>SRN No :</strong> {bookingForSRN}</p>
+                <p><strong>Phone :</strong> {bookingForPhone}</p>
+                <img src={bookingForPhoto} alt="Passport Size Photo" width="200" height="200">
+            </div>
+        </lightning-card>
+
+        </div>
+    </lightning-card>
+</template>

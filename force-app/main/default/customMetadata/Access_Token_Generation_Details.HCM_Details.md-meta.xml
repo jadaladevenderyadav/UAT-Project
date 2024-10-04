@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>HCM Details</label>
+    <protected>false</protected>
+    <values>
+        <field>Client_Id__c</field>
+        <value xsi:type="xsd:string">3MVG9aWdXtdHRrI1xy3z1N7o1xQT0IYCn7GVcqZurm_s.sO1dZ7HzgCUV6a7L1AWBvJjzZHr  MdgVaxsdlPQp4</value>
+    </values>
+    <values>
+        <field>Client_Secret__c</field>
+        <value xsi:type="xsd:string">87C11D183FE901CF8D657F19314043F2627B5E5BF551BA567F2C601557E4C213</value>
+    </values>
+    <values>
+        <field>Password__c</field>
+        <value xsi:type="xsd:string">rEv@&amp;2000</value>
+    </values>
+    <values>
+        <field>URL__c</field>
+        <value xsi:type="xsd:string">https://rukminieducationalcharitabletrust--revdev.sandbox.my.salesforce.com</value>
+    </values>
+    <values>
+        <field>Username__c</field>
+        <value xsi:type="xsd:string">admin@reva.com.revdev</value>
+    </values>
+    <values>
+        <field>grant_type__c</field>
+        <value xsi:type="xsd:string">password</value>
+    </values>
+</CustomMetadata>

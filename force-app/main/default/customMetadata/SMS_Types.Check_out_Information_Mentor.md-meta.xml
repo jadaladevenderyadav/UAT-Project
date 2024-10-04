@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Check_out_Information_Mentor</label>
+    <protected>false</protected>
+    <values>
+        <field>Dlt_Content_Id__c</field>
+        <value xsi:type="xsd:string">1007655391598157095</value>
+    </values>
+    <values>
+        <field>SMS_Name__c</field>
+        <value xsi:type="xsd:string">Check_out_Information_Mentor</value>
+    </values>
+    <values>
+        <field>SMS_Template_Long__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>SMS_Template__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Sender__c</field>
+        <value xsi:type="xsd:string">REVAUN</value>
+    </values>
+    <values>
+        <field>Templated_Id__c</field>
+        <value xsi:type="xsd:string">1007655391598157095</value>
+    </values>
+    <values>
+        <field>Unicode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

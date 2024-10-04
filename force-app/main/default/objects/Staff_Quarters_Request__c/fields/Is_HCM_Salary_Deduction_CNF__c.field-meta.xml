@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_HCM_Salary_Deduction_CNF__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>Is HCM Salary Deduction CNF</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

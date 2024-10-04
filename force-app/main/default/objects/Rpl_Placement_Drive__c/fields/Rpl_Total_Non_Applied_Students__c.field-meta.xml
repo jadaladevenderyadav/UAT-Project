@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rpl_Total_Non_Applied_Students__c</fullName>
+    <label>Total Non Applied Students</label>
+    <summaryFilterItems>
+        <field>Rpl_Student_Registration_Drive__c.Rpl_IsApplied__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Rpl_Student_Registration_Drive__c.Rpl_Placement_Drive__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

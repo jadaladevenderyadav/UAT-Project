@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RTR_start_date_ValidationGeneralNotify</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+    RTR_Start_Date__c &lt; TODAY(),
+    RTR_Start_Date__c &gt;= RTR_End_Date__c
+)</errorConditionFormula>
+    <errorMessage>Start date must be before today&apos;s date and not greater than or equal to the end date.</errorMessage>
+</ValidationRule>

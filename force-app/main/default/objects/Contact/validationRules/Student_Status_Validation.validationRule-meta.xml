@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student_Status_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(ISPICKVAL( Student_Status__c,&apos;Admission Cancelled&apos;),ISBLANK( Student_Status_Remarks__c ),FALSE)</errorConditionFormula>
+    <errorDisplayField>Student_Status_Remarks__c</errorDisplayField>
+    <errorMessage>Student Status Remarks Mandatory When Student Status Equals to Admission Cancelled</errorMessage>
+</ValidationRule>

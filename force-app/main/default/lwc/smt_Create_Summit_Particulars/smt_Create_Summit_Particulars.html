@@ -1,0 +1,123 @@
+<template>
+   <template lwc:if={summitParticulars}>
+      <lightning-card>
+         <h4 class="smt-particular-heading">
+            SUMMIT PARTICULARS OF "{summitSectionLabel}" | SCHOOL : {schoolName}
+         </h4>
+         <section>
+            <table class="slds-text-body_small">
+               <thead>
+                  <tr>
+                     <th>S.No</th>
+                     <th>Particular</th>
+                     <th>Timeline</th>
+                     <th>Is Target Applicable</th>
+                     <th>Is Evidence Applicable</th>
+                     <th>Target</th>
+                     <th>Target Text</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <template
+                     for:each={summitParticulars}
+                     for:item="summitParticular"
+                  >
+                     <tr key={summitParticular.id}>
+                        <td data-cell="S.No">
+                           <strong>{summitParticular.id}</strong>
+                        </td>
+                        <td data-cell="Particular" class="particular-name">
+                           <lightning-input
+                              type="text"
+                              value={summitParticular.summitParticularName}
+                              data-id={summitParticular.id}
+                              data-label="summitParticularName"
+                              class="section-input"
+                              onchange={handleParticularChange}
+                           ></lightning-input>
+                        </td>
+                        <td data-cell="Timeline">
+                           <lightning-input
+                              type="date"
+                              value={summitParticular.timeline}
+                              data-id={summitParticular.id}
+                              data-label="timeline"
+                              class="section-input"
+                              onchange={handleParticularChange}
+                           ></lightning-input>
+                        </td>
+                        <td data-cell="Is Target Applicable">
+                           <lightning-input
+                              type="checkbox"
+                              checked={summitParticular.isTargetApplicable}
+                              data-id={summitParticular.id}
+                              data-label="isTargetApplicable"
+                              class="section-input"
+                              onchange={handleParticularChange}
+                           ></lightning-input>
+                        </td>
+                        <td data-cell="Is Evidence Applicable">
+                           <lightning-input
+                              type="checkbox"
+                              checked={summitParticular.isEvidenceApplicable}
+                              data-id={summitParticular.id}
+                              data-label="isEvidenceApplicable"
+                              class="section-input"
+                              onchange={handleParticularChange}
+                           ></lightning-input>
+                        </td>
+                        <td data-cell="Target">
+                           <lightning-input
+                              type="number"
+                              value={summitParticular.target}
+                              data-id={summitParticular.id}
+                              data-label="target"
+                              class="section-input"
+                              onchange={handleParticularChange}
+                           ></lightning-input>
+                        </td>
+                        <td data-cell="Target Text">
+                           <lightning-input
+                              type="text"
+                              value={summitParticular.targetText}
+                              data-id={summitParticular.id}
+                              data-label="targetText"
+                              class="section-input"
+                              onchange={handleParticularChange}
+                           ></lightning-input>
+                        </td>
+                     </tr>
+                  </template>
+               </tbody>
+            </table>
+            <div class="button-container">
+               <lightning-button
+                  label="Back"
+                  onclick={handleBackClick}
+                  variant="brand"
+               ></lightning-button>
+               <lightning-button
+                  label={buttonLabel}
+                  onclick={handleCreateOrUpdateParticulars}
+                  data-label={buttonLabel}
+                  variant="brand"
+               ></lightning-button>
+            </div>
+         </section>
+      </lightning-card>
+   </template>
+   <template if:true={isSpinner}>
+      <div class="slds-is-relative">
+         <section class="slds-modal slds-fade-in-open">
+            <lightning-spinner
+               alternative-text="loading..."
+               variant="brand"
+            ></lightning-spinner>
+         </section>
+         <div
+            class="slds-backdrop slds-backdrop_open"
+            style="width: 60%; height: 50%; margin: auto"
+         ></div>
+      </div>
+   </template>
+</template>

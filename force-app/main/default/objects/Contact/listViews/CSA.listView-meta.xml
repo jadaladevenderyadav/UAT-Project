@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSA</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>SRN_Number__c</columns>
+    <columns>Application_Number__c</columns>
+    <columns>Program_Batch__c</columns>
+    <columns>Active_Semester__c</columns>
+    <columns>Admission_Mode__c</columns>
+    <columns>Active_Batch__c</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <columns>Student_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.Student</value>
+    </filters>
+    <filters>
+        <field>School_Portal__c</field>
+        <operation>contains</operation>
+        <value>application</value>
+    </filters>
+    <filters>
+        <field>Program_Batch1__c</field>
+        <operation>contains</operation>
+        <value>Bachelor of Computer Applications-(2022-2025)</value>
+    </filters>
+    <label>CSA</label>
+    <sharedTo>
+        <role>School_Head_CSA</role>
+        <role>Vertical_Head_CSA</role>
+    </sharedTo>
+</ListView>

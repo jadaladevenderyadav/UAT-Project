@@ -1,0 +1,69 @@
+<template>
+    <div class="container">
+        <lightning-layout multiple-rows>
+            <lightning-layout-item size="4" small-device-size="4" medium-device-size="4" large-device-size="2"
+                padding="horizontal-small">
+                <div class="custom-box">
+                    <h2 class="font-style">{menuType}</h2>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item size="4" small-device-size="4" medium-device-size="4" large-device-size="2"
+                padding="horizontal-small">
+                <div class="custom-box">
+                    <lightning-input label="Start Time" type="time" value={startTime}
+                        onchange={handleStartTimeChange}></lightning-input>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item size="4" small-device-size="4" medium-device-size="4" large-device-size="2"
+                padding="horizontal-small">
+                <div class="custom-box">
+                    <lightning-input label="End Time" type="time" value={endTime}
+                        onchange={handleEndTimeChange}></lightning-input>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item size="12" small-device-size="12" medium-device-size="8" large-device-size="5"
+                padding="horizontal-small">
+                <!-- <div>
+                    <template lwc:if={selectedValues}>
+                        <div class="selected-item-container">
+                            <template for:each={selectedValues} for:item="value">
+                                <div key={value}>
+                                    <lightning-badge label={value} icon-name="utility:close" onclick={handleRemove}
+                                        class="badge" data-value={value} icon-position="end">
+                                    </lightning-badge>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                </div> -->
+                <lightning-input type="search" value={searchKey} label="Select Menu" style="color:#F07F07; font-weight: 600;
+                letter-spacing: 1.2px; font-size:14px; " onchange={handleSearch}></lightning-input>
+                <div class="slds-p-top_small">
+                    <template lwc:if={filteredPicklistValues}>
+                        <template for:each={filteredPicklistValues} for:item="value">
+                            <div key={value} class="slds-p-bottom_xxx-small">
+                                <lightning-button label={value} variant="base"
+                                    onclick={handleSelect}></lightning-button>
+                            </div>
+                        </template>
+                    </template>
+                </div>
+                <div>
+                    <template lwc:if={selectedValues}>
+                        <div class="selected-item-container">
+                            <template for:each={selectedValues} for:item="value">
+                                <div key={value}>
+                                    <lightning-badge label={value} icon-name="utility:close" onclick={handleRemove}
+                                        class="badge" data-value={value} icon-position="end">
+                                    </lightning-badge>
+                                </div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+             
+            </lightning-layout-item>
+        </lightning-layout>
+
+    </div>
+</template>

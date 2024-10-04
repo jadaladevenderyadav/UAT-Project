@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REVA_Hostel_Vacating_Date_Validation</fullName>
+    <active>true</active>
+    <description>Hostel Vacating Date should not be Earlier than the Joining date and Current Date</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(RevaHostelVacatingDate__c)),
+RevaHostelVacatingDate__c &lt; TODAY()
+)</errorConditionFormula>
+    <errorMessage>Hostel Vacating Date should not be Earlier than the Joining date and Current Date</errorMessage>
+</ValidationRule>

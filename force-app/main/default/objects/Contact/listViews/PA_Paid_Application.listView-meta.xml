@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PA_Paid_Application</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>Application_Number__c</columns>
+    <columns>CONTACT.PHONE3</columns>
+    <columns>Academic_Program__c</columns>
+    <columns>Primary_Academic_Program__c</columns>
+    <columns>CONTACT.CREATED_DATE</columns>
+    <columns>School__c</columns>
+    <columns>Applying_For_REVA_CET__c</columns>
+    <columns>Application_Fee_Paid__c</columns>
+    <columns>Applicant_Score__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Last_Assigned_Date__c</columns>
+    <columns>CONTACT.LAST_UPDATE</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Record_Type_Name__c</field>
+        <operation>equals</operation>
+        <value>Applicant</value>
+    </filters>
+    <filters>
+        <field>Application_Fee_Paid__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>School__c</field>
+        <operation>contains</operation>
+        <value>Performing Arts</value>
+    </filters>
+    <label>PA Paid Application</label>
+    <sharedTo>
+        <role>Professors_PA_IS</role>
+    </sharedTo>
+</ListView>

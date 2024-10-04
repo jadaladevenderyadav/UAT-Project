@@ -1,0 +1,162 @@
+<!--<apex:page id="thePage">
+    <apex:tabPanel switchType="client" selectedTab="name2" id="theTabPanel">
+    <apex:tab label="One" name="name1" id="tabOne">content for tab one</apex:tab>
+    <apex:tab label="Two" name="name2" id="tabTwo">content for tab two</apex:tab>
+    </apex:tabPanel>
+</apex:page> -->
+
+<!-- <apex:page sidebar="false" showHeader="false">
+    <apex:form enctype="multipart/form-data">
+    <div class="digital-card-container">
+        <div class="tab">
+            <input type="radio" id="tab1" name="tab-group" checked="true"/>
+            <label for="tab1">UPLOAD IMAGE</label>
+            <div class="content">
+                
+                
+            </div>
+        </div>
+        <div class="tab">
+            <input type="radio" id="tab2" name="tab-group"/>
+            <label for="tab2">DIGITAL CARD</label>
+            <div class="content">
+                
+            </div>
+        </div>
+    </div>
+  
+    <apex:actionStatus id="loadingStatus">
+        <apex:facet name="start">
+            <apex:image value="{!$Resource.loading}" width="20" height="20" /> Uploading image...
+        </apex:facet>
+    </apex:actionStatus>
+    </apex:form>    
+    <style>
+        .digital-card-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .tab {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .tab input[type=radio] {
+            display: none;
+        }
+
+        .tab label {
+            padding: 0.5rem 1rem;
+            background-color: lightgray;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .tab label:hover {
+            background-color: gray;
+        }
+
+        .tab .content {
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab .content img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+       
+</apex:page> -->
+
+<apex:page sidebar="false" showHeader="false" standardStylesheets="false">
+    <style>
+        .tab {
+            display: inline-block;
+            background-color: #fef1e8;
+            border: 1px solid #ddd;
+            border-right: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .tab:hover {
+            background-color:#f57f26;
+        }
+
+        .activeTab {
+            background-color: #f57f26;
+            color: white;
+        }
+
+        .tabContent {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+
+        .activeTabContent {
+            display: block;
+        }
+    </style>
+    <div style="display: flex;">
+        <apex:includeLightning />
+       <!-- <div id="tabs" class="tab" onclick="toggleTab('tab1')">Tab 1</div> -->
+        <div id="tab2" class="tab" onclick="toggleTab('tab2')">DIGITAL CARD</div>
+        <div id="tab3" class="tab" onclick="toggleTab('tab3')">UPLOAD IMAGE</div>
+    </div>
+    <!--<div id="tab1Content" class="tabContent activeTabContent">
+        Content for Tab 1
+    </div> -->
+    <div id="tab2Content" class="tabContent">
+       <!--<apex:include pagename="ALU_DigitalCard"></apex:include>
+<apex:iframe width="100%" src="/apex/ALU_Digitalcard?id={!currentQuote}"/> -->
+        <apex:iframe width="100%" src="/apex/ALU_Digitalcard"/>
+    </div>
+    <div id="tab3Content" class="tabContent">
+        
+        <div id="datatable"></div>
+    </div>
+    <script>
+    
+     $Lightning.use("c:DigitalCardApp", function() {
+            $Lightning.createComponent(
+                "c:DigitalCardApp",
+                {},
+                "datatable",
+                function(cmp) {
+                    console.log("Lightning Aura Component is Loaded...");
+                }
+            );
+        }); 
+    
+        function toggleTab(tabId) {
+            var tabs = document.getElementsByClassName('tab');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('activeTab');
+            }
+            var tabContent = document.getElementsByClassName('tabContent');
+            for (var i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove('activeTabContent');
+            }
+            var tab = document.getElementById(tabId);
+            tab.classList.add('activeTab');
+            var tabContent = document.getElementById(tabId + 'Content');
+            tabContent.classList.add('activeTabContent');
+        }
+    </script>
+</apex:page>

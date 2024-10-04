@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_Notifications</fullName>
+    <columns>NAME</columns>
+    <columns>RTR_Title__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>RTR_Reva_Transport_Request__c.RTR_General_Notifications</value>
+    </filters>
+    <filters>
+        <field>RTR_Title__c</field>
+        <operation>notEqual</operation>
+        <value>Null</value>
+    </filters>
+    <label>General Notifications</label>
+</ListView>

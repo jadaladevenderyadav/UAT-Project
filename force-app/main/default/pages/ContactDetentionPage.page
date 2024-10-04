@@ -1,0 +1,29 @@
+<apex:page standardController="Contact" showHeader="true" >
+
+    <apex:form >
+
+        <apex:outputPanel id="t1">
+
+            <apex:pageBlock >
+
+                <apex:pageBlockSection >
+
+                    <apex:inputField value="{!Contact.Student_Status__c}"> 
+
+                        <apex:actionSupport event="onchange" rerender="t1" />
+
+                    </apex:inputField>
+
+                    <apex:inputField value="{!Contact.Detained_Semester__c}" rendered="{!OR(Contact.Student_Status__c == 'Detained', Contact.Student_Status__c == 'Not Reported')}" />
+
+                    <apex:inputField value="{!Contact.Detained_Year__c}" rendered="{!OR(Contact.Student_Status__c == 'Detained', Contact.Student_Status__c == 'Not Reported')}" />
+
+                </apex:pageBlockSection>
+
+            </apex:pageBlock> 
+
+        </apex:outputPanel>
+
+    </apex:form>
+
+</apex:page>

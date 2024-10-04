@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>infrastructure_support_l3</label>
+    <protected>false</protected>
+    <values>
+        <field>Template_Field__c</field>
+        <value xsi:type="xsd:string">L3_Support_Person,Case_link,Raised_by,case_number,Case_raised_date,infra_category,infra_sub_category,facility,Description</value>
+    </values>
+    <values>
+        <field>Template_ID__c</field>
+        <value xsi:type="xsd:string">infrastructure_support_l3_copy</value>
+    </values>
+    <values>
+        <field>WhatsApp_msg_count__c</field>
+        <value xsi:type="xsd:double">0.0</value>
+    </values>
+</CustomMetadata>

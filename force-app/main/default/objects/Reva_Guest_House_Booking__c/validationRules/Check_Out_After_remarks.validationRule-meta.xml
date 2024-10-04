@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Out_After_remarks</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(Remarks__c)</errorConditionFormula>
+    <errorDisplayField>Remarks__c</errorDisplayField>
+    <errorMessage>Please do verify and enter the remarks first and then do check out</errorMessage>
+</ValidationRule>

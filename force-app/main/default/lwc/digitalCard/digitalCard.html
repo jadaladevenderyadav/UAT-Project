@@ -1,0 +1,14 @@
+<template>
+    <template if:true={aluData}>
+        <div>
+            <div>Digital Card Number: {aluData.Digital_Card_Number__c}</div>
+            <div>SRN Number: {aluData.SRN_No__c}</div>
+            <div>School Department: {aluData.School_Department__c}</div>
+            <div><lightning-formatted-text value={aluData.File_Passport_Size_Photo__c}></lightning-formatted-text></div>
+            <div><img src={studentImageUrl} alt="Student Image"></div>
+        </div>
+    </template>
+    <template if:false={aluData}>
+        No data found.
+    </template>
+</template>

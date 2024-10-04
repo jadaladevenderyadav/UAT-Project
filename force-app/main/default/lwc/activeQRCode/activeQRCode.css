@@ -1,0 +1,8 @@
+.slds-truncate {
+    padding-left: 250px;
+
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }

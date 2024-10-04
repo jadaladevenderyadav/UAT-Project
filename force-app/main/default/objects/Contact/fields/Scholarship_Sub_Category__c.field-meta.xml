@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Scholarship_Sub_Category__c</fullName>
+    <label>Scholarship Sub Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Scholarship_Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PG - Others</fullName>
+                <default>false</default>
+                <label>PG - Others</label>
+            </value>
+            <value>
+                <fullName>A+ Level</fullName>
+                <default>false</default>
+                <label>A+ Level</label>
+            </value>
+            <value>
+                <fullName>A Level</fullName>
+                <default>false</default>
+                <label>A Level</label>
+            </value>
+            <value>
+                <fullName>B Level</fullName>
+                <default>false</default>
+                <label>B Level</label>
+            </value>
+            <value>
+                <fullName>UG - Technical</fullName>
+                <default>false</default>
+                <label>UG - Technical</label>
+            </value>
+            <value>
+                <fullName>UG - Non Technical</fullName>
+                <default>false</default>
+                <label>UG - Non Technical</label>
+            </value>
+            <value>
+                <fullName>PG - Technical</fullName>
+                <default>false</default>
+                <label>PG - Technical</label>
+            </value>
+            <value>
+                <fullName>C Level</fullName>
+                <default>false</default>
+                <label>C Level</label>
+            </value>
+            <value>
+                <fullName>NCC - A &amp; B Certificate</fullName>
+                <default>false</default>
+                <label>NCC - A &amp; B Certificate</label>
+            </value>
+            <value>
+                <fullName>NCC - C Certificate</fullName>
+                <default>false</default>
+                <label>NCC - C Certificate</label>
+            </value>
+            <value>
+                <fullName>Killed/Disabled in Action</fullName>
+                <default>false</default>
+                <label>Killed/Disabled in Action</label>
+            </value>
+            <value>
+                <fullName>TSC/RDC/YEP</fullName>
+                <default>false</default>
+                <label>TSC/RDC/YEP</label>
+            </value>
+            <value>
+                <fullName>Awarded for Gallantry</fullName>
+                <default>false</default>
+                <label>Awarded for Gallantry</label>
+            </value>
+            <value>
+                <fullName>Widows</fullName>
+                <default>false</default>
+                <label>Widows</label>
+            </value>
+            <value>
+                <fullName>Working/Retired</fullName>
+                <default>false</default>
+                <label>Working/Retired</label>
+            </value>
+            <value>
+                <fullName>Specially Abled</fullName>
+                <default>false</default>
+                <label>Specially Abled</label>
+            </value>
+            <value>
+                <fullName>Siblings</fullName>
+                <default>false</default>
+                <label>Siblings</label>
+            </value>
+            <value>
+                <fullName>Twin</fullName>
+                <default>false</default>
+                <label>Twin</label>
+            </value>
+            <value>
+                <fullName>Single Girl Child</fullName>
+                <default>false</default>
+                <label>Single Girl Child</label>
+            </value>
+            <value>
+                <fullName>JEE - Percentile - B.Tech</fullName>
+                <default>false</default>
+                <label>JEE - Percentile - B.Tech</label>
+            </value>
+            <value>
+                <fullName>NATA - Score - B.Arch</fullName>
+                <default>false</default>
+                <label>NATA - Score - B.Arch</label>
+            </value>
+            <value>
+                <fullName>NEET - Score - B.Sc</fullName>
+                <default>false</default>
+                <label>NEET - Score - B.Sc</label>
+            </value>
+            <value>
+                <fullName>REVA Alumni Referral</fullName>
+                <default>false</default>
+                <label>REVA Alumni Referral</label>
+            </value>
+            <value>
+                <fullName>REVA Staff Referral</fullName>
+                <default>false</default>
+                <label>REVA Staff Referral</label>
+            </value>
+            <value>
+                <fullName>REVA Vendor/ Supplier/Contractor/ Other Referrals</fullName>
+                <default>false</default>
+                <label>REVA Vendor/ Supplier/Contractor/ Other Referrals</label>
+            </value>
+            <value>
+                <fullName>B.Tech/B.Arch/MBA</fullName>
+                <default>false</default>
+                <label>B.Tech/B.Arch/MBA</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Manual</fullName>
+                <default>false</default>
+                <label>Manual</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Special Scholarship</controllingFieldValue>
+            <valueName>Specially Abled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Special Scholarship</controllingFieldValue>
+            <valueName>Siblings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Special Scholarship</controllingFieldValue>
+            <valueName>Twin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Special Scholarship</controllingFieldValue>
+            <valueName>Single Girl Child</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Early Decision Benefit</controllingFieldValue>
+            <controllingFieldValue>REVA CET Scholarship</controllingFieldValue>
+            <valueName>B.Tech/B.Arch/MBA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Early Decision Benefit</controllingFieldValue>
+            <controllingFieldValue>REVA CET Scholarship</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrance Exam Based Scholarship</controllingFieldValue>
+            <valueName>JEE - Percentile - B.Tech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrance Exam Based Scholarship</controllingFieldValue>
+            <valueName>NATA - Score - B.Arch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entrance Exam Based Scholarship</controllingFieldValue>
+            <valueName>NEET - Score - B.Sc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>REVA Alumni Referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>REVA Staff Referral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Referral</controllingFieldValue>
+            <valueName>REVA Vendor/ Supplier/Contractor/ Other Referrals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REVA CET Scholarship</controllingFieldValue>
+            <controllingFieldValue>Others</controllingFieldValue>
+            <valueName>Manual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ICSE/CBSE Merit</controllingFieldValue>
+            <controllingFieldValue>REVA to REVA</controllingFieldValue>
+            <controllingFieldValue>State Board Merit</controllingFieldValue>
+            <controllingFieldValue>REVA Merit</controllingFieldValue>
+            <valueName>PG - Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ICSE/CBSE Merit</controllingFieldValue>
+            <controllingFieldValue>REVA to REVA</controllingFieldValue>
+            <controllingFieldValue>State Board Merit</controllingFieldValue>
+            <controllingFieldValue>REVA Merit</controllingFieldValue>
+            <valueName>UG - Technical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ICSE/CBSE Merit</controllingFieldValue>
+            <controllingFieldValue>REVA to REVA</controllingFieldValue>
+            <controllingFieldValue>State Board Merit</controllingFieldValue>
+            <controllingFieldValue>REVA Merit</controllingFieldValue>
+            <valueName>UG - Non Technical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ICSE/CBSE Merit</controllingFieldValue>
+            <controllingFieldValue>REVA to REVA</controllingFieldValue>
+            <controllingFieldValue>State Board Merit</controllingFieldValue>
+            <controllingFieldValue>REVA Merit</controllingFieldValue>
+            <valueName>PG - Technical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sports</controllingFieldValue>
+            <valueName>A+ Level</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sports</controllingFieldValue>
+            <valueName>A Level</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sports</controllingFieldValue>
+            <valueName>B Level</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sports</controllingFieldValue>
+            <valueName>C Level</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCC</controllingFieldValue>
+            <valueName>NCC - A &amp; B Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCC</controllingFieldValue>
+            <valueName>NCC - C Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NCC</controllingFieldValue>
+            <valueName>TSC/RDC/YEP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defence/Paramilitary</controllingFieldValue>
+            <controllingFieldValue>Police Service</controllingFieldValue>
+            <valueName>Killed/Disabled in Action</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defence/Paramilitary</controllingFieldValue>
+            <controllingFieldValue>Police Service</controllingFieldValue>
+            <valueName>Awarded for Gallantry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defence/Paramilitary</controllingFieldValue>
+            <controllingFieldValue>Police Service</controllingFieldValue>
+            <valueName>Widows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Defence/Paramilitary</controllingFieldValue>
+            <controllingFieldValue>Police Service</controllingFieldValue>
+            <valueName>Working/Retired</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

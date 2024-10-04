@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Edit_Access_to_Admission_Executive</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Edit Access to Admission Executive</label>
+        <sharedTo>
+            <role>Admission_Executive</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Session__c</field>
+            <operation>equals</operation>
+            <value>1st Year</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Fee_Edit_Access_to_Admissions</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Fee Edit Access to Admissions</label>
+        <sharedTo>
+            <role>Admissions</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Session__c</field>
+            <operation>equals</operation>
+            <value>1st Year</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Stduent_Fee_Edit_Access_for_Finance_Managers</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Student Fee Edit Access for Finance Managers</label>
+        <sharedTo>
+            <role>Finance_Manager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RTR_Date_validation_VehicleExpences</fullName>
+    <active>false</active>
+    <errorConditionFormula>RTR_Date__c  &lt; TODAY()</errorConditionFormula>
+    <errorDisplayField>RTR_Date__c</errorDisplayField>
+    <errorMessage>Date must be today or in the future. Please select a valid date.</errorMessage>
+</ValidationRule>

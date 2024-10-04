@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caste_Logisys__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(Caste_Category__c),&apos;2A&apos;,&apos;2A&apos;,
+&apos;General Merit&apos;,&apos;GM&apos;,
+	&apos;SC&apos;,&apos;SC&apos;,
+	&apos;ST&apos;,&apos;ST&apos;,
+	&apos;2B&apos;,&apos;2B&apos;,
+	&apos;3A&apos;,&apos;3A&apos;,
+	&apos;3B&apos;,&apos;3B&apos;,
+	&apos;Cat-1&apos;,&apos;CAT-1&apos;,
+	&apos;Others&apos;,&apos;Others&apos;,
+	&apos;BC&apos;,&apos;Others&apos;,
+	&apos;OBC&apos;,&apos;Others&apos;,
+	&apos;OC&apos;,&apos;Others&apos;,
+		&apos;&apos;
+	)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Caste Logisys</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

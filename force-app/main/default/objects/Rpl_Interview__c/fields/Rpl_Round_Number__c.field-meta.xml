@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rpl_Round_Number__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter only numeric values to indicate the order of the interview rounds (e.g., 1, 2, 3, 4).</inlineHelpText>
+    <label>Round Number</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

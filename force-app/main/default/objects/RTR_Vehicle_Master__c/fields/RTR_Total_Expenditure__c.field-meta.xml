@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RTR_Total_Expenditure__c</fullName>
+    <inlineHelpText>Total amount spent on the vehicle for all the expences.</inlineHelpText>
+    <label>Total Expenditure</label>
+    <summarizedField>RTR_Vehicle_Expenses__c.RTR_Amount__c</summarizedField>
+    <summaryForeignKey>RTR_Vehicle_Expenses__c.RTR_Vehicle_Name__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Programs_Academic_Program</fullName>
+    <columns>Display_Name_Program__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>Program_Alias__c</columns>
+    <columns>Program_Code__c</columns>
+    <columns>Record_ID__c</columns>
+    <columns>Program_Type__c</columns>
+    <columns>No_of_Years__c</columns>
+    <columns>Number_of_Semesters__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Academic_Program</value>
+    </filters>
+    <label>Programs - Academic Program</label>
+</ListView>

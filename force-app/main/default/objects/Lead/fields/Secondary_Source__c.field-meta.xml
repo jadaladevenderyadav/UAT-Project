@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_Source__c</fullName>
+    <description>Specifies the source through which the Applicant landed for the second time</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Second-time Source of the Applicant</inlineHelpText>
+    <label>Secondary Source</label>
+    <length>80</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

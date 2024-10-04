@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_alert_to_student_on_case_creation</fullName>
+        <description>Email alert to student on case creation</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Student_Contact_For_Updates__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>alerts@reva.edu.in</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>All/Case_Creation_Alert_to_Student</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_Agent_when_the_Student_has_paid_the_Requisition_Amount</fullName>
+        <description>Email to Agent when the Student has paid the Requisition Amount</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Management_Templates/Requisition_Fee_Payment_Paid</template>
+    </alerts>
+    <alerts>
+        <fullName>Email_to_Student_regarding_the_Requisition_Fee_Payment</fullName>
+        <description>Email to Student regarding the Requisition Fee Payment</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Case_Management_Templates/Student_Requisition_Fee_created</template>
+    </alerts>
+    <alerts>
+        <fullName>Reva_Case_Assignment</fullName>
+        <description>Reva Case Assignment</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>alerts@reva.edu.in</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>All/Case_Assignment</template>
+    </alerts>
+    <alerts>
+        <fullName>Reva_Case_Autoresponse</fullName>
+        <description>Reva Case Autoresponse</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All/Case_Autoresponse</template>
+    </alerts>
+    <alerts>
+        <fullName>Reva_Case_Working</fullName>
+        <description>Reva Case Working</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All/Case_Working</template>
+    </alerts>
+    <alerts>
+        <fullName>Reva_Case_closed</fullName>
+        <description>Reva Case closed</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>All/Case_Closed</template>
+    </alerts>
+    <alerts>
+        <fullName>Support_Request_Case_Creation</fullName>
+        <description>Support Request Case Creation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>alerts@reva.edu.in</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>All/Support_Request_Case_Creation</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>ChangePriorityToHigh</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Changes the case priority to high.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

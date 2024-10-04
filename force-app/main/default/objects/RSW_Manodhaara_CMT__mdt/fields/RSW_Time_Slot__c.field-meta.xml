@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RSW_Time_Slot__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Time Slot</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10:00 AM-11:00 AM</fullName>
+                <default>true</default>
+                <label>10:00 AM-11:00 AM</label>
+            </value>
+            <value>
+                <fullName>10:30 AM-11:30 AM</fullName>
+                <default>false</default>
+                <label>10:30 AM-11:30 AM</label>
+            </value>
+            <value>
+                <fullName>11:00 AM-12:00 PM</fullName>
+                <default>false</default>
+                <label>11:00 AM-12:00 PM</label>
+            </value>
+            <value>
+                <fullName>11:30 AM-12:30 PM</fullName>
+                <default>false</default>
+                <label>11:30 AM-12:30 PM</label>
+            </value>
+            <value>
+                <fullName>12:00 PM-01:00 PM</fullName>
+                <default>false</default>
+                <label>12:00 PM-01:00 PM</label>
+            </value>
+            <value>
+                <fullName>12:30 PM-01:30 PM</fullName>
+                <default>false</default>
+                <label>12:30 PM-01:30 PM</label>
+            </value>
+            <value>
+                <fullName>01:00 PM-02:00 PM</fullName>
+                <default>false</default>
+                <label>01:00 PM-02:00 PM</label>
+            </value>
+            <value>
+                <fullName>01:30 PM-02:30 PM</fullName>
+                <default>false</default>
+                <label>01:30 PM-02:30 PM</label>
+            </value>
+            <value>
+                <fullName>02:00 PM-03:00 PM</fullName>
+                <default>false</default>
+                <label>02:00 PM-03:00 PM</label>
+            </value>
+            <value>
+                <fullName>02:30 PM-03:30 PM</fullName>
+                <default>false</default>
+                <label>02:30 PM-03:30 PM</label>
+            </value>
+            <value>
+                <fullName>03:00 PM-04:00 PM</fullName>
+                <default>false</default>
+                <label>03:00 PM-04:00 PM</label>
+            </value>
+            <value>
+                <fullName>03:30 PM-04:30 PM</fullName>
+                <default>false</default>
+                <label>03:30 PM-04:30 PM</label>
+            </value>
+            <value>
+                <fullName>04:00 PM-05:00 PM</fullName>
+                <default>false</default>
+                <label>04:00 PM-05:00 PM</label>
+            </value>
+            <value>
+                <fullName>04:30 PM-05:30 PM</fullName>
+                <default>false</default>
+                <label>04:30 PM-05:30 PM</label>
+            </value>
+            <value>
+                <fullName>05:00 PM-06:00 PM</fullName>
+                <default>false</default>
+                <label>05:00 PM-06:00 PM</label>
+            </value>
+            <value>
+                <fullName>05:30 PM-06:30 PM</fullName>
+                <default>false</default>
+                <label>05:30 PM-06:30 PM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

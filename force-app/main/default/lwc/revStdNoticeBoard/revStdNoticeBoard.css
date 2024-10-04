@@ -1,0 +1,276 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.icon-list {
+    display: flex;
+    flex-direction: column;
+    margin: 9px;
+}
+
+.bigBox {
+    /* background-color: whitesmoke; */
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #F07F07;
+    box-shadow: 2px 4px 9px -4px;
+
+}
+
+.smallBox {
+    /* background-color: whitesmoke; */
+    margin: 1%;
+    padding: 1%;
+    height: 100%;
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.description {
+    line-height: 20px;
+}
+
+.EventVenue {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.eventbox {
+    border-bottom: 1px dotted red;
+    margin-top: 5px;
+}
+
+.noticeBox {
+    margin: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+.preNext {
+    text-align: right;
+    color: grey;
+    cursor: pointer;
+    margin: 1px 0px 0px 0px;
+}
+
+.dottedBorder {
+    border-right: 1px dotted #2D79BA;
+    border-left: 1px dotted #2D79BA;
+}
+
+.main-menu {
+    width: 12px;
+    margin-left: 5px;
+    margin-right: 10px;
+    min-width: 33px;
+}
+.main-menu img{
+    width: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    min-width: 25px;
+}
+
+/*===================================================Owais*/
+
+.main-menu-container {
+    display: flex;
+    background-color: #EBD7CA;
+    padding: 0.625rem;
+    height: 100%;
+    color: white;
+    font-size: small;
+    align-items: center;
+    margin: 0.625rem !important;
+}
+
+.padding {
+    padding: 10px;
+}
+
+.main-menu .material-icons:before {
+    content: "\e853";
+    margin: 10px;
+}
+
+.main-menu-icon {
+    font-size: 20px;
+}
+
+.main-menu-info {
+    color: #3871C2;
+    font-weight: 700;
+}
+
+.menu-btn {
+    cursor: pointer;
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    min-width: 25px;
+}
+
+.menu-btn img {
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
+}
+
+.main-menu-btn-icon,
+.profile-menu-section-btn-icon {
+    cursor: pointer;
+}
+
+.profile-menu-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #EBD7CA;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: #000;
+}
+
+.profile-menu-section-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.profile-menu-section-btn .material-icons:before {
+    content: "\f230";
+}
+
+.profile-menu-section-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+
+}
+
+.profile-menu-section {
+    border-right: 0.125rem dotted grey;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 16%;
+}
+
+.profile-menu-section:first-child,
+.profile-menu-section:last-child {
+    border: none;
+}
+
+.profile-menu-section-heading {
+    font-weight: 700;
+}
+
+.profile-menu-section-content {
+    color: #F28437;
+}
+
+.my-name-section {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
+
+.my-name-section .material-icons:before {
+    content: "\e853";
+}
+
+.my-name-section-icon {
+    color: #0181CA;
+    font-size: 3.125rem;
+}
+
+.ring {
+
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+
+.percentage-text {
+    fill: grey;
+    font-size: xx-small;
+}
+
+.performance-section-icon {
+    width: 30%;
+}
+
+.performance-section-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+@media (max-width: 50rem) {
+
+    /* Adjust 768px as per your design's breakpoint */
+    .profile-menu-section-container {
+        flex-direction: column;
+    }
+
+    .profile-menu-section {
+        border: none;
+        width: 100%;
+        gap: 0;
+        border-bottom: 2px dotted darkgrey;
+    }
+
+    .performance-section {
+        gap: 5px;
+    }
+
+    .performance-section-item {
+
+        justify-content: flex-start;
+        gap: 10px
+    }
+
+    .performance-section-icon {
+        width: 10%;
+    }
+    .menu-btn {
+        cursor: pointer;
+        width: 12px;
+        margin-left: 5px;
+        margin-right: 5px;
+        min-width: 25px;
+    }
+    
+    .menu-btn img {
+        height: 15px;
+        width: 15px;
+        object-fit: contain;
+    }
+    .main-menu {
+        width: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+        min-width: 15px;
+    }
+    .main-menu img{
+        width: 12px;
+        margin-left: 5px;
+        margin-right: 8px;
+        min-width: 22px;
+    }
+}

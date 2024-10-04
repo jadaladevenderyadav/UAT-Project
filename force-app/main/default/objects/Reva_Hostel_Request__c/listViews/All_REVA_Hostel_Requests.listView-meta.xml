@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_REVA_Hostel_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>Hostel_Room_Request_For__c</columns>
+    <columns>Reva_Hostel_Room__c</columns>
+    <columns>Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>Vacating_Request__c</columns>
+    <columns>Room_Request_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All REVA Hostel Requests</label>
+</ListView>

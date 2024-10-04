@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Rule for Case Assignment</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>alumni.vicepresident@reva.edu.in</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Category__c</field>
+                <operation>equals</operation>
+                <value>Connect with CoE Office,Connect with Office of Registrar,Connect with Alumni Office</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>shwetha.c@reva.edu.in</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Category__c</field>
+                <operation>equals</operation>
+                <value>Finance</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Category__c</field>
+                <operation>equals</operation>
+                <value>Fee Payment,Payment Gateway Clarifications,Program Fee,Receipts</value>
+            </criteriaItems>
+            <template>Case_Management_Templates/Case_Assignment_Email_Template</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>shivanna.m@reva.edu.in</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Category__c</field>
+                <operation>equals</operation>
+                <value>Transportation</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Category__c</field>
+                <operation>equals</operation>
+                <value>Bus Fee,Driver Behavior,Driver Contact Number,Duplicate Bus Pass,&quot;If miss the REVA Bus, How to come by BMTC buses &quot;,Issue of Bus Pass,Pick Up stop changes,Pick Up points and its timings,Route Number,Seat Availability</value>
+            </criteriaItems>
+            <template>Case_Management_Templates/Case_Assignment_Email_Template</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sharathkumar.y@reva.edu.in</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Category__c</field>
+                <operation>equals</operation>
+                <value>Exam Related</value>
+            </criteriaItems>
+            <template>Case_Management_Templates/Case_Assignment_Email_Template</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>kavithajn@reva.edu.in</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Category__c</field>
+                <operation>equals</operation>
+                <value>Academic Related</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Category__c</field>
+                <operation>equals</operation>
+                <value>Adress Proof Certicate,Bonafide Certificate,Course Completion Certificate,Medium of Instruction Certicate,Study Certificate</value>
+            </criteriaItems>
+            <template>Case_Management_Templates/Case_Assignment_Email_Template</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sudhiriythal@reva.edu.in</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Category__c</field>
+                <operation>equals</operation>
+                <value>Academic Related</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Category__c</field>
+                <operation>equals</operation>
+                <value>Change of Branch Fee,Sponsorships</value>
+            </criteriaItems>
+            <template>Case_Management_Templates/Case_Assignment_Email_Template</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>srikanthbn@reva.edu.in</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Category__c</field>
+                <operation>equals</operation>
+                <value>Academic Related</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Category__c</field>
+                <operation>equals</operation>
+                <value>Migration Certificate,Transfer Certificate</value>
+            </criteriaItems>
+            <template>Case_Management_Templates/Case_Assignment_Email_Template</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>mahanteshnm@reva.edu.in</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Category__c</field>
+                <operation>equals</operation>
+                <value>Academic Related</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Category__c</field>
+                <operation>equals</operation>
+                <value>Permanent Identity Card,Temporary Identity Card</value>
+            </criteriaItems>
+            <template>Case_Management_Templates/Case_Assignment_Email_Template</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sathyanarayana.hr@reva.edu.in</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Category__c</field>
+                <operation>equals</operation>
+                <value>Academic Related</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Category__c</field>
+                <operation>equals</operation>
+                <value>Sponsorships</value>
+            </criteriaItems>
+            <template>Case_Management_Templates/Case_Assignment_Email_Template</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>pradeep.n@reva.edu.in</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Case.Category__c</field>
+                <operation>equals</operation>
+                <value>Academic Related</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Sub_Category__c</field>
+                <operation>equals</operation>
+                <value>Student Profile Changes</value>
+            </criteriaItems>
+            <template>Case_Management_Templates/Case_Assignment_Email_Template</template>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Exam_Type__c</fullName>
+    <label>Exam Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Centre Based</fullName>
+                <default>false</default>
+                <label>Centre Based</label>
+            </value>
+            <value>
+                <fullName>Internet/Home Based</fullName>
+                <default>false</default>
+                <label>Internet/Home Based</label>
+            </value>
+            <value>
+                <fullName>Internet</fullName>
+                <default>false</default>
+                <label>Internet</label>
+            </value>
+            <value>
+                <fullName>Home Based</fullName>
+                <default>false</default>
+                <label>Home Based</label>
+            </value>
+            <value>
+                <fullName>Mobile Based</fullName>
+                <default>false</default>
+                <label>Mobile Based</label>
+            </value>
+            <value>
+                <fullName>Laptop/Desktop with webcam</fullName>
+                <default>false</default>
+                <label>Laptop/Desktop with webcam</label>
+            </value>
+            <value>
+                <fullName>Offline-CET</fullName>
+                <default>false</default>
+                <label>Offline-CET</label>
+            </value>
+            <value>
+                <fullName>Offline - Ph.D</fullName>
+                <default>false</default>
+                <label>Offline - Ph.D</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

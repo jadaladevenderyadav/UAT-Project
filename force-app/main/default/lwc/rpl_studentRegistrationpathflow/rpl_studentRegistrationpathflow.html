@@ -1,0 +1,98 @@
+<!--
+  @description       : Check the Current Stage by using Progressing Bar
+  @author            : Vikranth Puvvadi
+  @group             : 
+  @last modified on  : 11-27-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <template if:false={isApprovalSuccess}>
+        <lightning-layout horizontal-align="center" pull-to-boundary="large" vertical-align="start">
+            <lightning-layout-item padding="around-small" size="12">
+                <div class="header-column">
+                    <!-- <lightning-progress-indicator current-step={currentStep} type="base" has-error="true" variant="base">
+                    <lightning-progress-step label="Student Details" value="Student Details"></lightning-progress-step>
+                    <lightning-progress-step label="File Upload Stage" value="File Upload Stage" ></lightning-progress-step>
+                    <lightning-progress-step label="Student Registration Status" value="Student Registration Status" ></lightning-progress-step>
+                </lightning-progress-indicator> -->
+                    <lightning-progress-indicator type="path" current-step={currentStep}>
+                        <lightning-progress-step label="Student Details" value="Student Details"
+                            onclick={handleStepClick}>
+                        </lightning-progress-step>
+                        <lightning-progress-step label="Graduation Details" value="Graduation Details"
+                            onclick={handleStepClick}>
+                        </lightning-progress-step>
+                        <lightning-progress-step label="Documents Upload Stage" value="Documents Upload Stage"
+                            onclick={handleStepClick}>
+                        </lightning-progress-step>
+                        <lightning-progress-step label="Document / Information Status"
+                            value="Document / Information Status" onclick={handleStepClick}>
+                        </lightning-progress-step>
+                        <lightning-progress-step label="Approval Status" value="Approval Status"
+                            onclick={handleStepClick}>
+                        </lightning-progress-step>
+                    </lightning-progress-indicator>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+        <template lwc:if={isStudentDetailsPage}>
+            <lightning-layout horizontal-align="center" pull-to-boundary="small" vertical-align="start">
+                <lightning-layout-item padding="around-small" size="8">
+                    <div class="header-column">
+                        <c-rpl_new-student-registration-details-form
+                            onstudentprocesscomplete={handleStudentComplete}></c-rpl_new-student-registration-details-form>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+        <template lwc:elseif={isGraduationPage}>
+            <lightning-layout horizontal-align="center" pull-to-boundary="small" vertical-align="start">
+                <lightning-layout-item padding="around-small" size="8">
+                    <div class="header-column">
+
+                        <c-rpl_new-student-graduation-details ongraduationprocesscomplete={handleGraduationComplete}
+                            ongraduationpreviouspage={handlePreviousGraduatioPage}></c-rpl_new-student-graduation-details>
+
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+        <template lwc:elseif={is10thUploadDetailsPage}>
+            <lightning-layout horizontal-align="center" pull-to-boundary="small" vertical-align="start">
+                <lightning-layout-item padding="around-small" size="8">
+                    <div class="header-column">
+
+                        <c-rpl_document-upload-table record-id={studentregrecordid}
+                            ondocumentuploadcompleted={handleDocumentUploadCompleted}></c-rpl_document-upload-table>
+                        <!--<c-rpl_clone-upload-file check-is-record={checkisRecord} onuploadfiledetailcomplete={handlefileUploadDetail} record-id={studentregrecordid}></c-rpl_clone-upload-file> -->
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+        <template lwc:elseif={isResumeUploadComplete}>
+            <lightning-layout horizontal-align="center" pull-to-boundary="small" vertical-align="start">
+                <lightning-layout-item padding="around-small" size="8">
+                    <div class="header-column">
+
+                        <c-rpl_student-registration-form-status record-id={studentregrecordid}
+                            onsendapproval={handleApprovalSubmit}></c-rpl_student-registration-form-status>
+                        <!-- <c-rpl_-upload-doc check-is-record={checkisRecord}   onuploadresumefile={handlefileresumefileupload}  record-id={studentRegRecordId}></c-rpl_-upload-doc> -->
+                        <!-- <c-rpl_clone-upload-file  onuploadfiledetailcomplete={handlefileUploadDetail} record-id={studentregrecordid}></c-rpl_clone-upload-file> -->
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+        <template lwc:elseif={isRegistrationComplete}>
+            <lightning-layout horizontal-align="center" pull-to-boundary="small" vertical-align="start">
+                <lightning-layout-item padding="around-small" size="12">
+                    <div class="header-column">
+                        <c-rpl_approval-process-status record-id={studentregrecordid}></c-rpl_approval-process-status>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </template>
+    </template>
+    <template if:true={isApprovalSuccess}>
+        <c-rpl_eligible-placement-drives></c-rpl_eligible-placement-drives>
+    </template>
+</template>

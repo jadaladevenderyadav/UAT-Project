@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rpl_QR_Code__c</fullName>
+    <externalId>false</externalId>
+    <formula>IMAGE(&apos;https://quickchart.io/qr?text=&apos; +
+&apos;{ &quot;studentRegCollegeId&quot; : &quot;&apos; + Rpl_Student_Registration__r.Contact__r.SRN_Number__c + &apos;&quot;, &quot;driveNumber&quot; : &quot;&apos; +  Drive_Name__c  + &apos;&quot; }&apos;
+, &apos;Test&apos;)</formula>
+    <inlineHelpText>When scanning this qr we can get student&apos;s college registration id and drive name</inlineHelpText>
+    <label>QR Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

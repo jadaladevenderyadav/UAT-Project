@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unassigned_Coupons</fullName>
+    <columns>NAME</columns>
+    <columns>Coupon_Code__c</columns>
+    <columns>Applicant__c</columns>
+    <columns>Usable__c</columns>
+    <columns>MultiUse__c</columns>
+    <columns>Effective_To__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Applicant__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Usable__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>MultiUse__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Unassigned Coupons</label>
+    <sharedTo>
+        <role>Counselor</role>
+    </sharedTo>
+</ListView>

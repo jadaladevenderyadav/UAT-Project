@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IA_Marks_Update_Satus__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Course_Type__c=&quot;Theory&quot; &amp;&amp; TEXT(Theory_Secured_Marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Quiz_Secured_marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Seminar_Secured_Marks__c) &lt;&gt; &quot;&quot;, &quot;Completed&quot;,
+IF(Course_Type__c=&quot;Theory&quot; &amp;&amp; (TEXT(Theory_Secured_Marks__c) == &quot;&quot; || TEXT(Quiz_Secured_marks__c) == &quot;&quot; || TEXT(Seminar_Secured_Marks__c) == &quot;&quot;), &quot;In Progress&quot;,
+IF(Course_Type__c=&quot;Practical&quot; &amp;&amp; TEXT(Knowledge_of_Exercise_Secured_Marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Execution_of_Exercise_Secured_Marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Description_of_Experiment_Secured_Mark__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Viva_Voce_Practical_Secured_Marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Punctuality_Secured_Marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Results_Secured_Marks__c) &lt;&gt; &quot;&quot;,  &quot;Completed&quot;,
+IF(Course_Type__c=&quot;Practical&quot; &amp;&amp; (TEXT(Knowledge_of_Exercise_Secured_Marks__c) == &quot;&quot; || TEXT(Execution_of_Exercise_Secured_Marks__c) == &quot;&quot; || TEXT(Description_of_Experiment_Secured_Mark__c) == &quot;&quot; || TEXT(Viva_Voce_Practical_Secured_Marks__c) == &quot;&quot; || TEXT(Punctuality_Secured_Marks__c) == &quot;&quot; || TEXT(Results_Secured_Marks__c) &lt;&gt; &quot;&quot;),  &quot;In Progress&quot;,
+IF(Course_Type__c=&quot;Project&quot; &amp;&amp; TEXT(Selection_of_Topic_Secured_Marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Analysis_and_Synthesis_Secured_Marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Literature_Survey_Secured_Marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Ethical_Attitude_Secured_Marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Independent_Learning_Secured_Marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Oral_Presentation_Secured_Marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Report_Writing_Secured_Marks__c) &lt;&gt; &quot;&quot; &amp;&amp; TEXT(Continuous_Learning_Secured_Marks__c) &lt;&gt; &quot;&quot;,  &quot;Completed&quot;,
+IF(Course_Type__c=&quot;Project&quot; &amp;&amp; (TEXT(Selection_of_Topic_Secured_Marks__c) == &quot;&quot; || TEXT(Analysis_and_Synthesis_Secured_Marks__c) == &quot;&quot; || TEXT(Literature_Survey_Secured_Marks__c) == &quot;&quot; || TEXT(Ethical_Attitude_Secured_Marks__c) == &quot;&quot; || TEXT(Independent_Learning_Secured_Marks__c) == &quot;&quot; || TEXT(Oral_Presentation_Secured_Marks__c) == &quot;&quot; || TEXT(Report_Writing_Secured_Marks__c) == &quot;&quot; || TEXT(Continuous_Learning_Secured_Marks__c) == &quot;&quot;),  &quot;In Progress&quot;,
+&quot;&quot;))))))</formula>
+    <label>IA Marks Update Satus</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

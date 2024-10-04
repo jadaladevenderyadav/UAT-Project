@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integration_User</fullName>
+    <columns>NAME</columns>
+    <columns>Student_Payment__c</columns>
+    <columns>Student_Fee__c</columns>
+    <columns>Mode_of_Payment__c</columns>
+    <columns>Line_Item_Payment_Gateway__c</columns>
+    <columns>Line_Item_Payment_Status__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Transaction_Status__c</columns>
+    <columns>Transaction_Date_Time__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER</field>
+        <operation>equals</operation>
+        <value>Integration User</value>
+    </filters>
+    <label>Integration User</label>
+</ListView>

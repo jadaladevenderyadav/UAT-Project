@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rpl_Verification_Status_Of_Student__c</fullName>
+    <label>Verification Status Of Student</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Include All Students</fullName>
+                <default>true</default>
+                <label>Include All Students</label>
+            </value>
+            <value>
+                <fullName>Include Verified Students Only</fullName>
+                <default>false</default>
+                <label>Include Verified Students Only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

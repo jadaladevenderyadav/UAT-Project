@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Placement registration to parent</label>
+    <protected>false</protected>
+    <values>
+        <field>Dlt_Content_Id__c</field>
+        <value xsi:type="xsd:string">1007157469187469823</value>
+    </values>
+    <values>
+        <field>SMS_Name__c</field>
+        <value xsi:type="xsd:string">Placement registration to parent</value>
+    </values>
+    <values>
+        <field>SMS_Template_Long__c</field>
+        <value xsi:type="xsd:string">&quot;Dear {#var#}
+
+Please inform your ward to register for Placements@REVA in thier Student Portal for getting notified about the upcoming recruitment drives. The last date to register is {#var#}.
+
+REVA University&quot;</value>
+    </values>
+    <values>
+        <field>SMS_Template__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Sender__c</field>
+        <value xsi:type="xsd:string">REVAUn</value>
+    </values>
+    <values>
+        <field>Templated_Id__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Unicode__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+</CustomMetadata>

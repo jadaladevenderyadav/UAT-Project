@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Caste_Category_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL(Caste_Category__c,&quot;Others&quot;) &amp;&amp;
+ISBLANK(Other_Caste_Category__c)
+
+||
+
+NOT(ISBLANK( Other_Caste_Category__c)) &amp;&amp;
+NOT(ISPICKVAL(Caste_Category__c,&quot;Others&quot;))</errorConditionFormula>
+    <errorDisplayField>Other_Caste_Category__c</errorDisplayField>
+    <errorMessage>If Caste Category is &apos;Others&apos; then Please enter the value in Other Caste Category</errorMessage>
+</ValidationRule>

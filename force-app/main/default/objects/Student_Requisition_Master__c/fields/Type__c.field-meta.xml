@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Duplicate Bus Pass</fullName>
+                <default>false</default>
+                <label>Duplicate Bus Pass</label>
+            </value>
+            <value>
+                <fullName>Examination Fee (Supplementary)(per Subject)</fullName>
+                <default>false</default>
+                <label>Examination Fee (Supplementary)(per Subject)</label>
+            </value>
+            <value>
+                <fullName>Re- evaluation</fullName>
+                <default>false</default>
+                <label>Re- evaluation</label>
+            </value>
+            <value>
+                <fullName>Photocopy of Answer Scripts</fullName>
+                <default>false</default>
+                <label>Photocopy of Answer Scripts</label>
+            </value>
+            <value>
+                <fullName>Convocation Fee (Ph.D.)</fullName>
+                <default>false</default>
+                <label>Convocation Fee (Ph.D.)</label>
+            </value>
+            <value>
+                <fullName>Convocation Fee (Except Ph.D.)</fullName>
+                <default>false</default>
+                <label>Convocation Fee (Except Ph.D.)</label>
+            </value>
+            <value>
+                <fullName>Duplicate Degree Certificate</fullName>
+                <default>false</default>
+                <label>Duplicate Degree Certificate</label>
+            </value>
+            <value>
+                <fullName>Provisional Degree Certificate</fullName>
+                <default>false</default>
+                <label>Provisional Degree Certificate</label>
+            </value>
+            <value>
+                <fullName>Name Correction in Grade Card</fullName>
+                <default>false</default>
+                <label>Name Correction in Grade Card</label>
+            </value>
+            <value>
+                <fullName>Issue of Duplicate Grade Card</fullName>
+                <default>false</default>
+                <label>Issue of Duplicate Grade Card</label>
+            </value>
+            <value>
+                <fullName>Issue of Consolidated Grade Card</fullName>
+                <default>false</default>
+                <label>Issue of Consolidated Grade Card</label>
+            </value>
+            <value>
+                <fullName>Official Transcript</fullName>
+                <default>false</default>
+                <label>Official Transcript</label>
+            </value>
+            <value>
+                <fullName>Educational Verification (Hardcopy)</fullName>
+                <default>false</default>
+                <label>Educational Verification (Hardcopy)</label>
+            </value>
+            <value>
+                <fullName>Backlog Certificate</fullName>
+                <default>false</default>
+                <label>Backlog Certificate</label>
+            </value>
+            <value>
+                <fullName>Percentage Conversion Certificate</fullName>
+                <default>false</default>
+                <label>Percentage Conversion Certificate</label>
+            </value>
+            <value>
+                <fullName>Change of Branch Fee</fullName>
+                <default>false</default>
+                <label>Change of Branch Fee</label>
+            </value>
+            <value>
+                <fullName>Equivalency Certificate Fee (COU)</fullName>
+                <default>false</default>
+                <label>Equivalency Certificate Fee (COU)</label>
+            </value>
+            <value>
+                <fullName>Migration Certificate</fullName>
+                <default>false</default>
+                <label>Migration Certificate</label>
+            </value>
+            <value>
+                <fullName>Transfer Certificate</fullName>
+                <default>false</default>
+                <label>Transfer Certificate</label>
+            </value>
+            <value>
+                <fullName>Permanent Identity Card</fullName>
+                <default>false</default>
+                <label>Permanent Identity Card</label>
+            </value>
+            <value>
+                <fullName>Temporary Identity Card</fullName>
+                <default>false</default>
+                <label>Temporary Identity Card</label>
+            </value>
+            <value>
+                <fullName>Challenge Valuation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Challenge Valuation</label>
+            </value>
+            <value>
+                <fullName>Test 1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Test 1</label>
+            </value>
+            <value>
+                <fullName>Test 2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Test 2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

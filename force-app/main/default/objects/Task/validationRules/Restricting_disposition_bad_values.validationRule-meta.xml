@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restricting_disposition_bad_values</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Not(CONTAINS(knowlarity_cti__Call_Disposition__c , &apos;Not Eligible&apos;)),Not(CONTAINS( knowlarity_cti__Call_Disposition__c , &apos;Cold&apos;)),Not(CONTAINS( knowlarity_cti__Call_Disposition__c , &apos;Warm&apos;)),Not(CONTAINS( knowlarity_cti__Call_Disposition__c , &apos;Hot&apos;)),
+Not(CONTAINS( knowlarity_cti__Call_Disposition__c , &apos;No Response&apos;)),Not(CONTAINS( knowlarity_cti__Call_Disposition__c , &apos;Invalid&apos;)),Not(CONTAINS( knowlarity_cti__Call_Disposition__c , &apos;Enrolled&apos;)),Not(CONTAINS( knowlarity_cti__Call_Disposition__c , &apos;Course Closed&apos;)),
+Not(CONTAINS( knowlarity_cti__Call_Disposition__c , &apos;Not Interested&apos;)),Not(CONTAINS( knowlarity_cti__Call_Disposition__c , &apos;Filled Application with Other Credentials&apos;)))</errorConditionFormula>
+    <errorDisplayField>knowlarity_cti__Call_Disposition__c</errorDisplayField>
+    <errorMessage>Please enter one of the exact values from the following list: Not Eligible, Cold, Warm, Hot, No Response, Invalid, Enrolled, Course Closed, Not Interested, Filled Application with Other Credentials.</errorMessage>
+</ValidationRule>

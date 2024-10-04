@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assigned_Users__c</fullName>
+    <description>Who are the previous owners assigned to this record  Data - (store IDs separated by commas)</description>
+    <inlineHelpText>A list of previously assigned Owners.</inlineHelpText>
+    <label>Assigned Users</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

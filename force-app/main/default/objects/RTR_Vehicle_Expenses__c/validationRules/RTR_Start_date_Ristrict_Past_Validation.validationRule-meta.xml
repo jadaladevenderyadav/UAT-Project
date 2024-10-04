@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RTR_Start_date_Ristrict_Past_Validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>RTR_Start_Date__c   &lt; TODAY()</errorConditionFormula>
+    <errorDisplayField>RTR_Start_Date__c</errorDisplayField>
+    <errorMessage>Date must be today or in the future. Please select a valid date.</errorMessage>
+</ValidationRule>

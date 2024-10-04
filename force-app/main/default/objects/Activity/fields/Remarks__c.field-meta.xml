@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remarks__c</fullName>
+    <label>Remarks</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Academic Performance is very Encouraging</fullName>
+                <default>false</default>
+                <label>Academic Performance is very Encouraging</label>
+            </value>
+            <value>
+                <fullName>Capable of higher academic achievements</fullName>
+                <default>false</default>
+                <label>Capable of higher academic achievements</label>
+            </value>
+            <value>
+                <fullName>Considerable improvement in attendance</fullName>
+                <default>false</default>
+                <label>Considerable improvement in attendance</label>
+            </value>
+            <value>
+                <fullName>Improvement in attendance very encouraging</fullName>
+                <default>false</default>
+                <label>Improvement in attendance very encouraging</label>
+            </value>
+            <value>
+                <fullName>Is a committed student</fullName>
+                <default>false</default>
+                <label>Is a committed student</label>
+            </value>
+            <value>
+                <fullName>Is hardworking and actively participates in all activities</fullName>
+                <default>false</default>
+                <label>Is hardworking and actively participates in all activities</label>
+            </value>
+            <value>
+                <fullName>Overall improvement is seen in performance</fullName>
+                <default>false</default>
+                <label>Overall improvement is seen in performance</label>
+            </value>
+            <value>
+                <fullName>Shows potential to take up higher academic challenges</fullName>
+                <default>false</default>
+                <label>Shows potential to take up higher academic challenges</label>
+            </value>
+            <value>
+                <fullName>A little more hard work needed</fullName>
+                <default>false</default>
+                <label>A little more hard work needed</label>
+            </value>
+            <value>
+                <fullName>Attendance is a concern and student needs to attend classes regularly(for border cases)</fullName>
+                <default>false</default>
+                <label>Attendance is a concern and student needs to attend classes regularly(for border cases)</label>
+            </value>
+            <value>
+                <fullName>Attendance is a concern and student needs to improve attendance(for border cases)</fullName>
+                <default>false</default>
+                <label>Attendance is a concern and student needs to improve attendance(for border cases)</label>
+            </value>
+            <value>
+                <fullName>Attendance is a serious concern</fullName>
+                <default>false</default>
+                <label>Attendance is a serious concern</label>
+            </value>
+            <value>
+                <fullName>Attendance is a serious concern and student has been cautioned(for chronic cases)</fullName>
+                <default>false</default>
+                <label>Attendance is a serious concern and student has been cautioned(for chronic cases)</label>
+            </value>
+            <value>
+                <fullName>Can do much better</fullName>
+                <default>false</default>
+                <label>Can do much better</label>
+            </value>
+            <value>
+                <fullName>Company of friends needs to be taken care of</fullName>
+                <default>false</default>
+                <label>Company of friends needs to be taken care of</label>
+            </value>
+            <value>
+                <fullName>Is very distracted in class and needs to stay focused</fullName>
+                <default>false</default>
+                <label>Is very distracted in class and needs to stay focused</label>
+            </value>
+            <value>
+                <fullName>Lacks attention in class - must be work on study skills</fullName>
+                <default>false</default>
+                <label>Lacks attention in class - must be work on study skills</label>
+            </value>
+            <value>
+                <fullName>Late coming to class is a concern</fullName>
+                <default>false</default>
+                <label>Late coming to class is a concern</label>
+            </value>
+            <value>
+                <fullName>Must attend all Internal Assessments</fullName>
+                <default>false</default>
+                <label>Must attend all Internal Assessments</label>
+            </value>
+            <value>
+                <fullName>Must attend all placement drives</fullName>
+                <default>false</default>
+                <label>Must attend all placement drives</label>
+            </value>
+            <value>
+                <fullName>Must attend remedial classes</fullName>
+                <default>false</default>
+                <label>Must attend remedial classes</label>
+            </value>
+            <value>
+                <fullName>Must complete and submit projects in time</fullName>
+                <default>false</default>
+                <label>Must complete and submit projects in time</label>
+            </value>
+            <value>
+                <fullName>Must submit assignments in time</fullName>
+                <default>false</default>
+                <label>Must submit assignments in time</label>
+            </value>
+            <value>
+                <fullName>Needs to concentrate in class</fullName>
+                <default>false</default>
+                <label>Needs to concentrate in class</label>
+            </value>
+            <value>
+                <fullName>Needs to follow required dress code</fullName>
+                <default>false</default>
+                <label>Needs to follow required dress code</label>
+            </value>
+            <value>
+                <fullName>Needs to participate in Clubs / Forums / Sports activities</fullName>
+                <default>false</default>
+                <label>Needs to participate in Clubs / Forums / Sports activities</label>
+            </value>
+            <value>
+                <fullName>Needs to put in extra work</fullName>
+                <default>false</default>
+                <label>Needs to put in extra work</label>
+            </value>
+            <value>
+                <fullName>Overall academic performance in all subjects is a concern</fullName>
+                <default>false</default>
+                <label>Overall academic performance in all subjects is a concern</label>
+            </value>
+            <value>
+                <fullName>Parents need to attend PTM</fullName>
+                <default>false</default>
+                <label>Parents need to attend PTM</label>
+            </value>
+            <value>
+                <fullName>Parents need to be involved and follow up with student</fullName>
+                <default>false</default>
+                <label>Parents need to be involved and follow up with student</label>
+            </value>
+            <value>
+                <fullName>Performance in subjects discussed is a concern</fullName>
+                <default>false</default>
+                <label>Performance in subjects discussed is a concern</label>
+            </value>
+            <value>
+                <fullName>Seems to have behavioral issues - a concern</fullName>
+                <default>false</default>
+                <label>Seems to have behavioral issues - a concern</label>
+            </value>
+            <value>
+                <fullName>should balance academics and co-curricular activities</fullName>
+                <default>false</default>
+                <label>should balance academics and co-curricular activities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

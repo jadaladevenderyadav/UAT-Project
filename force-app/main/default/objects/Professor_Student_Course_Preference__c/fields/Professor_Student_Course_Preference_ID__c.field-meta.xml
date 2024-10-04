@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Professor_Student_Course_Preference_ID__c</fullName>
+    <displayFormat>PSC ID-{0000}</displayFormat>
+    <externalId>false</externalId>
+    <label>Professor / Student Course Preference ID</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

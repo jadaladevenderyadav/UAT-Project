@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reg_Start_dt_greater_than_today</fullName>
+    <active>false</active>
+    <description>Created Validation rule for Registration Start Date</description>
+    <errorConditionFormula>Rpl_Registration_Start_Date__c   &lt;  TODAY()</errorConditionFormula>
+    <errorDisplayField>Rpl_Registration_Start_Date__c</errorDisplayField>
+    <errorMessage>Registration Start Date cannot be Past Date</errorMessage>
+</ValidationRule>

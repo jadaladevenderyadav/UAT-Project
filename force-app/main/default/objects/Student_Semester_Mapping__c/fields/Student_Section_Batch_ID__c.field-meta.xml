@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student_Section_Batch_ID__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Record_Type_Name__c = &quot;Student Section&quot;,  CASESAFEID(Section__r.Id),
+IF(Record_Type_Name__c = &quot;Student Batch&quot;,  CASESAFEID( Student_Batch__r.hed__Parent_Term__r.Id), NULL ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Student Section/Batch ID</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

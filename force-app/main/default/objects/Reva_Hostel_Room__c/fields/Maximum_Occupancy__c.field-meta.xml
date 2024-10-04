@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maximum_Occupancy__c</fullName>
+    <description>Maximum Occupancy contains all the sharing for Reva Boys Hostel and Reva Girls Hostel</description>
+    <label>Maximum Occupancy</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Block__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>Single Sharing</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2 - Sharing</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3 - Sharing</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4 - Sharing</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>6 - Sharing</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>8 - Sharing</label>
+            </value>
+            <value>
+                <fullName>4ExtraSpace</fullName>
+                <default>false</default>
+                <label>4 - Sharing Extra Space</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>A</controllingFieldValue>
+            <controllingFieldValue>B</controllingFieldValue>
+            <controllingFieldValue>D</controllingFieldValue>
+            <controllingFieldValue>G2</controllingFieldValue>
+            <controllingFieldValue>G3</controllingFieldValue>
+            <valueName>4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>B</controllingFieldValue>
+            <controllingFieldValue>G1</controllingFieldValue>
+            <controllingFieldValue>RBS</controllingFieldValue>
+            <valueName>1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>B</controllingFieldValue>
+            <controllingFieldValue>C</controllingFieldValue>
+            <controllingFieldValue>G1</controllingFieldValue>
+            <controllingFieldValue>G2</controllingFieldValue>
+            <valueName>3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>B</controllingFieldValue>
+            <valueName>6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>B</controllingFieldValue>
+            <valueName>8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>B</controllingFieldValue>
+            <controllingFieldValue>D</controllingFieldValue>
+            <valueName>4ExtraSpace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C</controllingFieldValue>
+            <controllingFieldValue>RBS</controllingFieldValue>
+            <valueName>2</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

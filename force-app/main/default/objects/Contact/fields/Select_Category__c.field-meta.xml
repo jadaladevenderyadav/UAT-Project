@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Select_Category__c</fullName>
+    <label>Select Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Karnataka</fullName>
+                <default>false</default>
+                <label>Karnataka</label>
+            </value>
+            <value>
+                <fullName>Non-Karnataka</fullName>
+                <default>false</default>
+                <label>Non-Karnataka</label>
+            </value>
+            <value>
+                <fullName>Indian (SAARC)</fullName>
+                <default>false</default>
+                <label>Indian (SAARC)</label>
+            </value>
+            <value>
+                <fullName>Non-Resident Indian(NRI)</fullName>
+                <default>false</default>
+                <label>Non-Resident Indian(NRI)</label>
+            </value>
+            <value>
+                <fullName>Foreign Nationals</fullName>
+                <default>false</default>
+                <label>Foreign Nationals</label>
+            </value>
+            <value>
+                <fullName>1A</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1A</label>
+            </value>
+            <value>
+                <fullName>1G</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>1G</label>
+            </value>
+            <value>
+                <fullName>2A</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2A</label>
+            </value>
+            <value>
+                <fullName>2B</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>2B</label>
+            </value>
+            <value>
+                <fullName>3A</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3A</label>
+            </value>
+            <value>
+                <fullName>3B</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>3B</label>
+            </value>
+            <value>
+                <fullName>BC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BC</label>
+            </value>
+            <value>
+                <fullName>BC-1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BC-1</label>
+            </value>
+            <value>
+                <fullName>C-1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>C-1</label>
+            </value>
+            <value>
+                <fullName>C1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>C1</label>
+            </value>
+            <value>
+                <fullName>Cat-1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cat-1</label>
+            </value>
+            <value>
+                <fullName>ComedK</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ComedK</label>
+            </value>
+            <value>
+                <fullName>Diploma CET</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Diploma CET</label>
+            </value>
+            <value>
+                <fullName>EARLY BIRD SCHEME PROPOSAL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>EARLY BIRD SCHEME PROPOSAL</label>
+            </value>
+            <value>
+                <fullName>FOREIGN NATIONAL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>FOREIGN NATIONAL</label>
+            </value>
+            <value>
+                <fullName>GM</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GM</label>
+            </value>
+            <value>
+                <fullName>General</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General</label>
+            </value>
+            <value>
+                <fullName>Indian National</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Indian National</label>
+            </value>
+            <value>
+                <fullName>KEA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>KEA</label>
+            </value>
+            <value>
+                <fullName>NRI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NRI</label>
+            </value>
+            <value>
+                <fullName>NT (B)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>NT (B)</label>
+            </value>
+            <value>
+                <fullName>OBC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OBC</label>
+            </value>
+            <value>
+                <fullName>OC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OC</label>
+            </value>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>PGCET</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PGCET</label>
+            </value>
+            <value>
+                <fullName>REVA ALUMNI REFERAL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>REVA ALUMNI REFERAL</label>
+            </value>
+            <value>
+                <fullName>SC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SC</label>
+            </value>
+            <value>
+                <fullName>ST</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ST</label>
+            </value>
+            <value>
+                <fullName>UNIVERSITY QUOTA</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UNIVERSITY QUOTA</label>
+            </value>
+            <value>
+                <fullName>UQ DEFENCE WORKING AND RETIRED</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ DEFENCE WORKING AND RETIRED</label>
+            </value>
+            <value>
+                <fullName>UQ JEE MAINS SCHOLARSHIP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ JEE MAINS SCHOLARSHIP</label>
+            </value>
+            <value>
+                <fullName>UQ Lateral Entry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ Lateral Entry</label>
+            </value>
+            <value>
+                <fullName>UQ NATIONAL SPORTS CHAMPIONSHIP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ NATIONAL SPORTS CHAMPIONSHIP</label>
+            </value>
+            <value>
+                <fullName>UQ NCC A CERTIFICATE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ NCC A CERTIFICATE</label>
+            </value>
+            <value>
+                <fullName>UQ NON TECH ABOVE 85 PERCENT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ NON TECH ABOVE 85 PERCENT</label>
+            </value>
+            <value>
+                <fullName>UQ PHYSICAL DISABILITY</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ PHYSICAL DISABILITY</label>
+            </value>
+            <value>
+                <fullName>UQ REVA EET RANK 1 TO 20</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ REVA EET RANK 1 TO 20</label>
+            </value>
+            <value>
+                <fullName>UQ REVA EET RANK 21 TO 40</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ REVA EET RANK 21 TO 40</label>
+            </value>
+            <value>
+                <fullName>UQ REVA EET RANK 41 TO 60</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ REVA EET RANK 41 TO 60</label>
+            </value>
+            <value>
+                <fullName>UQ REVA EET SCHOLARSHIP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ REVA EET SCHOLARSHIP</label>
+            </value>
+            <value>
+                <fullName>UQ REVA TO REVA STUDENTS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ REVA TO REVA STUDENTS</label>
+            </value>
+            <value>
+                <fullName>UQ SIBLINGS</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ SIBLINGS</label>
+            </value>
+            <value>
+                <fullName>UQ STATE SPORTS CHAMPIONSHIP</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ STATE SPORTS CHAMPIONSHIP</label>
+            </value>
+            <value>
+                <fullName>UQ TECH ABOVE 90 PERCENT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ TECH ABOVE 90 PERCENT</label>
+            </value>
+            <value>
+                <fullName>UQ TECHNICAL (60 TO 90 PERCENT)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>UQ TECHNICAL (60 TO 90 PERCENT)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

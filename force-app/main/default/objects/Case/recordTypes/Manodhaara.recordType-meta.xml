@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manodhaara</fullName>
+    <active>true</active>
+    <businessProcess>Manodhaara</businessProcess>
+    <label>Manodhaara</label>
+    <picklistValues>
+        <picklist>Case_Status__c</picklist>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reopened</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Academic Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Application</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connect with Alumni Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connect with CoE Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connect with Office of Registrar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exam Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hostel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hostel_Block__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RBS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hostel_Category__c</picklist>
+        <values>
+            <fullName>Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housekeeping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Hostel_Sub_Category__c</picklist>
+        <values>
+            <fullName>Carpentry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laundry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mess</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plumbing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Room Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wifi</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>INFRA_Category__c</picklist>
+        <values>
+            <fullName>Carpentry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Civil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guest House</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housekeeping and Shifting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mess and Food</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plumbing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printing%2C Boards and Stationary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Address Equipments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Security%2C faculty and Student ID card%2C Lanyard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stores</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student and Staff Dicipline maintenance</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>INFRA_Sub_Category__c</picklist>
+        <values>
+            <fullName>AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken tiles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commode Urinals%2C washbasin problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot water problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mike%2C Speaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New construction facility related works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No water %26 low water pressure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other washroom %26 rest room related works</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Painting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wall Cracks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wall Seepage problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leakage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window%2C Door%2C Storage Cupboard%2C Desk%2C Stool%2C Chair%2C false ceiling%2C locks%2C Mirror %26 Staff %26 student workstation %26 other furniture repair</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ModeOfCounselling__c</picklist>
+        <values>
+            <fullName>Face to Face</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Call</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Applicant Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PreferredLanguage__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hindi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kannada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tamil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telugu</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_C__c</picklist>
+        <values>
+            <fullName>Feeling better%2F Able to cope without counselling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Graduated from School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No show after 3 follow up reminders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred to outside services</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Severity__c</picklist>
+        <values>
+            <fullName>As Soon As Possible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urgent</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Category__c</picklist>
+        <values>
+            <fullName>Adress Proof Certicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Any Queries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apply for Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apply for Marks Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apply for Migration Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apply for Transcript</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apply for Transfer Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attendance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backlog Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bonafide Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bus Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change of Branch Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change of Mobile No%2FEmail ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change of Program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change the details filled in the application form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connect to Contribute to Alumni Cell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Connect with Counselor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Convocation Fee %28Except Ph%2ED%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Convocation Fee %28Ph%2ED%2E%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Course Completion Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Courses Related%2FCurricular</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driver Behavior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Driver Contact Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Bus Pass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Degree Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Educational Verification %28Hardcopy%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equivalency Certificate Fee %28COU%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Examination Fee %28Supplementary%29%28per Subject%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Examination Fee Acknowledgement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fee Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Forgot the login credentials</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hostel Fee Query</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hostel Payment Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to make the second payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Assessment Marks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue of Bus Pass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue of Consolidated Grade Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Issue of Duplicate Grade Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaves%2FMedical Leaves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Library Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium of Instruction Certicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Migration Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Name Correction in Grade Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not able to upload the document</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTP is not generated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Official Transcript</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online Payment issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Gateway Clarifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Percentage Conversion Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Identity Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Photocopy of Answer Scripts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pick Up points and its timings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pick Up stop changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pick points and its timings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Placement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Program Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provisional Degree Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provisional Offer Letter not received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REVA Email ID %26 Password reset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re- evaluation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receipts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refer Candidates for Internships %2F Placement drives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Request Referral for Higher Studies</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reset Mail Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Route Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarship Requests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scholarship not updated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Availability</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sponsorships</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Login Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Student Profile Changes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Study Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temporary Identity Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transport contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation Fee and Route details</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Updated offer letter after Change of Program %28Only for Admitted Students%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volunteer for Alumni Events or Alumni Talks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WiFi access</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Support_Case_Complaints__c</picklist>
+        <values>
+            <fullName>AC Not Working Properly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>App Is Not Working For Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bathroom Cloth Hanger Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bathroom Lock Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blockage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bulb Is Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chair Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colour Fade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cot Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cup Board Hinges Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cupboard Handle Is Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Door Stopper Is Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drinking Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EWC Leakage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fan Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fan Regulator Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flush Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Getting Stuck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item Stuck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Items Not Available</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Door Frame Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Door Handle Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Door Hinges Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Door Lock Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mirror Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Get Washed In Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plug Point Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plumbing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Issue While Paying</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power Not Available In Plug Point</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Study Table Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switch Is Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tap Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Washing Machine Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window Curtain Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window Glass Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window Handle Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Window Hinges Damaged</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Feature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Question</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Urgency__c</picklist>
+        <values>
+            <fullName>Basic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Critical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>hed__Category__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School Code of Conduct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School Violation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State Offense</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>hed__Location__c</picklist>
+        <values>
+            <fullName>Off Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Campus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>knowlarity_cti__Complaint_Category__c</picklist>
+        <values>
+            <fullName>Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Query</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

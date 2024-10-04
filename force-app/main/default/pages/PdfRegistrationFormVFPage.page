@@ -1,0 +1,215 @@
+<apex:page renderAs="pdf" standardStylesheets="false" applyBodyTag="false" showHeader="false" sidebar="false">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Registration Form - AY 2024-25</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            .input-cell {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <h4>REGISTRATION TO UG/ PG PROGRAMS ACADEMIC YEAR 2024-2025 (ODD SEMESTER)</h4>
+        <apex:form >
+            <table>
+                <tr>
+                    <td>SCHOOL OF</td>
+                    <td colspan="3"><apex:inputText styleClass="input-cell" id="school_of"/></td>
+                </tr>
+                <tr>
+                    <td>Name of the Program</td>
+                    <td><apex:inputText styleClass="input-cell" id="program_name"/></td>                   
+                </tr>
+                <tr>                    
+                    <td>Semester / Section</td>
+                    <td><apex:inputText styleClass="input-cell" id="semester_section"/></td>
+                </tr>
+            </table>
+            <h5>Previous Results</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>I</th>
+                        <th>II</th>
+                        <th>III</th>
+                        <th>IV</th>
+                        <th>V</th>
+                        <th>VI</th>
+                        <th>VII</th>
+                        <th>VIII</th>
+                        <th>IX</th>
+                        <th>Eligible: Y/N</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SGPA</td>
+                        <td><apex:inputText styleClass="input-cell" id="sgpa1"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="sgpa2"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="sgpa3"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="sgpa4"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="sgpa5"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="sgpa6"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="sgpa7"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="sgpa8"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="sgpa9"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="eligible"/></td>
+                    </tr>
+                    <tr>
+                        <td>Backlogs if any</td>
+                        <td><apex:inputText styleClass="input-cell" id="backlog1"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="backlog2"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="backlog3"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="backlog4"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="backlog5"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="backlog6"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="backlog7"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="backlog8"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="backlog9"/></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5>Student Details</h5>
+            <table>
+                <tr>
+                    <td>Name of student</td>
+                    <td><apex:inputText styleClass="input-cell" id="student_name"/></td>
+                    <td>SRN</td>
+                    <td><apex:inputText styleClass="input-cell" id="srn"/></td>
+                </tr>
+                <tr>
+                    <td>DoB</td>
+                     <td><apex:inputText styleClass="input-cell" id="dob"/></td>
+                    <td>Email</td>
+                    <td><apex:inputText styleClass="input-cell" id="email"/></td>
+                </tr>
+                <tr>
+                    <td>Contact Number</td>
+                    <td><apex:inputText styleClass="input-cell" id="student_contact"/></td>
+                    <td>Aadhar Number</td>
+                    <td><apex:inputText styleClass="input-cell" id="aadhar_number"/></td>
+                </tr>
+                <tr>
+                    <td>ABC Id</td>
+                    <td><apex:inputText styleClass="input-cell" id="abc_id"/></td>
+                    <td>Name of Mentor</td>
+                    <td><apex:inputText styleClass="input-cell" id="mentor_name"/></td>
+                </tr>
+            </table>
+            <h3>Parent Details</h3>
+            <table>
+                <tr>
+                    <td>Name of Father</td>
+                    <td><apex:inputText styleClass="input-cell" id="father_name"/></td>
+                    <td>Contact Number</td>
+                    <td><apex:inputText styleClass="input-cell" id="father_contact"/></td>
+                </tr>
+                <tr>
+                    <td>Name of Mother</td>
+                    <td><apex:inputText styleClass="input-cell" id="mother_name"/></td>
+                    <td>Contact Number</td>
+                    <td><apex:inputText styleClass="input-cell" id="mother_contact"/></td>
+                </tr>
+                <tr>
+                    <td>Parent Correspondence Address</td>
+                    <td colspan="3"><apex:inputText styleClass="input-cell" id="parent_address"/></td>
+                </tr>
+            </table>
+            <h5>Fee Paid Details for AY 2023-24</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fee Type</th>
+                        <th>Amount Payable in INR</th>
+                        <th>Amount Paid</th>
+                        <!-- <th>Receipt Number</th>
+                        <th>Date of payment</th>  -->
+                        <th>Amount Due</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tuition and University Fee</td>
+                        <td><apex:inputText styleClass="input-cell" id="tuition_fee_payable"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="tuition_fee_paid"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="tuition_receipt_number"/></td>
+                        <!-- <td><apex:input type="date" styleClass="input-cell" id="tuition_payment_date"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="tuition_fee_due"/></td> -->
+                    </tr>
+                    <tr>
+                        <td>Transportation Fee</td>
+                        <td><apex:inputText styleClass="input-cell" id="transportation_fee_payable"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="transportation_fee_paid"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="transportation_receipt_number"/></td>
+                        <!-- <td><apex:input type="date" styleClass="input-cell" id="transportation_payment_date"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="transportation_fee_due"/></td> -->
+                    </tr>
+                    <tr>
+                        <td>Hostel Fee</td>
+                        <td><apex:inputText styleClass="input-cell" id="hostel_fee_payable"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="hostel_fee_paid"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="hostel_receipt_number"/></td>
+                        <!-- <td><apex:input type="date" styleClass="input-cell" id="hostel_payment_date"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="hostel_fee_due"/></td> -->
+                    </tr>
+                    <tr>
+                        <td>Other Fees</td>
+                        <td><apex:inputText styleClass="input-cell" id="other_fee_payable"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="other_fee_paid"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="other_receipt_number"/></td>
+                        <!-- <td><apex:input type="date" styleClass="input-cell" id="other_payment_date"/></td>
+                        <td><apex:inputText styleClass="input-cell" id="other_fee_due"/></td> -->
+                    </tr>
+                </tbody>
+            </table>
+   
+        <h5>UNDERTAKING / DECLARATION BY THE STUDENT</h5>
+        <p>Hereby I will abide by the rules and regulations of REVA University and I will be informing the change in local address to university if any immediately. I am fully aware that ragging in any form is a criminal offence and that police action will be taken against me for getting involved into any form of ragging as per university policy. In case I am involved in ragging I may be expelled from the university. I will clear my all fees as per schedule given by university.</p>
+        <p>I will be regular and punctual to all the classes (theory/practical) and secure attendance of not less than 75% in each subject as stipulated by REVA University. I am fully aware that attendance less than 75% in any of the courses will make me lose one year. I will conduct myself in a highly disciplined and decent manner while in the classroom, labs, exams, and in the campus failing which suitable action may be taken against me as per the rules and regulations of the University.</p>
+        <p>I declare that the information given above is true to the best of my knowledge.</p>
+
+            <table>
+                <tr>
+                    <td>Parent/Guardian Signature</td>
+                    <td><apex:inputText styleClass="input-cell" id="parent_signature"/></td>
+                    <td>Mentor with Signature</td>
+                    <td><apex:inputText styleClass="input-cell" id="mentor_signature"/></td>
+                    <td>Student Signature</td>
+                    <td><apex:inputText styleClass="input-cell" id="student_signature"/></td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td><apex:inputText styleClass="input-cell" id="parent_date"/></td>
+                    <td>Date</td>
+                    <td><apex:inputText styleClass="input-cell" id="mentor_date"/></td>
+                    <td>Date</td>
+                    <td><apex:inputText styleClass="input-cell" id="student_date"/></td>
+                </tr>
+                <tr>
+                    <td colspan="6">School Director</td>
+                </tr>
+            </table>
+            <p>Note: Last date of registration is on or before the commencement of odd semester classes</p>
+            <p><button type="button">Save</button> <button type="button">Download</button></p>
+        </apex:form>
+    </body>
+    </html>
+</apex:page>

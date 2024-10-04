@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Notification_Type__c</fullName>
+    <label>Notification Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Early pickup</fullName>
+                <default>false</default>
+                <label>Early pickup</label>
+            </value>
+            <value>
+                <fullName>Late Drop Off</fullName>
+                <default>false</default>
+                <label>Late Drop Off</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>early drop off</fullName>
+                <default>false</default>
+                <label>early drop off</label>
+            </value>
+            <value>
+                <fullName>late pickup</fullName>
+                <default>false</default>
+                <label>late pickup</label>
+            </value>
+            <value>
+                <fullName>Late Drop Multiple</fullName>
+                <default>false</default>
+                <label>Late Drop Multiple</label>
+            </value>
+            <value>
+                <fullName>Early Pickup Multiple</fullName>
+                <default>false</default>
+                <label>Early Pickup Multiple</label>
+            </value>
+            <value>
+                <fullName>Late Pickup Multiple</fullName>
+                <default>false</default>
+                <label>Late Pickup Multiple</label>
+            </value>
+            <value>
+                <fullName>Early Drop Off Multiple</fullName>
+                <default>false</default>
+                <label>Early Drop Off Multiple</label>
+            </value>
+            <value>
+                <fullName>Cancel Multiple</fullName>
+                <default>false</default>
+                <label>Cancel Multiple</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Batch__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Program Batch</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>$Source.Primary_Academic_Program__c</field>
+            <operation>equals</operation>
+            <valueField>hed__Program_Plan__c.hed__Account__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>hed__Program_Plan__c.Active__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>hed__Program_Plan__c</referenceTo>
+    <relationshipLabel>Contacts (Program)</relationshipLabel>
+    <relationshipName>Contacts1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

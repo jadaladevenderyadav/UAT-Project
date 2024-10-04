@@ -1,0 +1,1018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Occupation__c</fullName>
+    <label>Occupation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Software developer</fullName>
+                <default>false</default>
+                <label>Software developer</label>
+            </value>
+            <value>
+                <fullName>Accountant</fullName>
+                <default>false</default>
+                <label>Accountant</label>
+            </value>
+            <value>
+                <fullName>Actor</fullName>
+                <default>false</default>
+                <label>Actor</label>
+            </value>
+            <value>
+                <fullName>Admin Executive</fullName>
+                <default>false</default>
+                <label>Admin Executive</label>
+            </value>
+            <value>
+                <fullName>Administrative Worker</fullName>
+                <default>false</default>
+                <label>Administrative Worker</label>
+            </value>
+            <value>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+                <label>Advertising</label>
+            </value>
+            <value>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+                <label>Agriculture</label>
+            </value>
+            <value>
+                <fullName>Air Traffic Controller</fullName>
+                <default>false</default>
+                <label>Air Traffic Controller</label>
+            </value>
+            <value>
+                <fullName>Aircraft Mechanic</fullName>
+                <default>false</default>
+                <label>Aircraft Mechanic</label>
+            </value>
+            <value>
+                <fullName>Anaesthetist</fullName>
+                <default>false</default>
+                <label>Anaesthetist</label>
+            </value>
+            <value>
+                <fullName>Animator</fullName>
+                <default>false</default>
+                <label>Animator</label>
+            </value>
+            <value>
+                <fullName>Anthropologist</fullName>
+                <default>false</default>
+                <label>Anthropologist</label>
+            </value>
+            <value>
+                <fullName>Archeologist</fullName>
+                <default>false</default>
+                <label>Archeologist</label>
+            </value>
+            <value>
+                <fullName>Architect</fullName>
+                <default>false</default>
+                <label>Architect</label>
+            </value>
+            <value>
+                <fullName>Armed Forces</fullName>
+                <default>false</default>
+                <label>Armed Forces</label>
+            </value>
+            <value>
+                <fullName>Art Photographer</fullName>
+                <default>false</default>
+                <label>Art Photographer</label>
+            </value>
+            <value>
+                <fullName>Assistant</fullName>
+                <default>false</default>
+                <label>Assistant</label>
+            </value>
+            <value>
+                <fullName>Astrologer</fullName>
+                <default>false</default>
+                <label>Astrologer</label>
+            </value>
+            <value>
+                <fullName>Astronomer</fullName>
+                <default>false</default>
+                <label>Astronomer</label>
+            </value>
+            <value>
+                <fullName>Athlete (sportsman/woman)</fullName>
+                <default>false</default>
+                <label>Athlete (sportsman/woman)</label>
+            </value>
+            <value>
+                <fullName>Auditor</fullName>
+                <default>false</default>
+                <label>Auditor</label>
+            </value>
+            <value>
+                <fullName>Auto-Electrician</fullName>
+                <default>false</default>
+                <label>Auto-Electrician</label>
+            </value>
+            <value>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+                <label>Automotive</label>
+            </value>
+            <value>
+                <fullName>Baker</fullName>
+                <default>false</default>
+                <label>Baker</label>
+            </value>
+            <value>
+                <fullName>Bank Employee</fullName>
+                <default>false</default>
+                <label>Bank Employee</label>
+            </value>
+            <value>
+                <fullName>Barber and Hairdresser</fullName>
+                <default>false</default>
+                <label>Barber and Hairdresser</label>
+            </value>
+            <value>
+                <fullName>Barman/Barmaid</fullName>
+                <default>false</default>
+                <label>Barman/Barmaid</label>
+            </value>
+            <value>
+                <fullName>Beautician</fullName>
+                <default>false</default>
+                <label>Beautician</label>
+            </value>
+            <value>
+                <fullName>Bibliographer</fullName>
+                <default>false</default>
+                <label>Bibliographer</label>
+            </value>
+            <value>
+                <fullName>Biochemist</fullName>
+                <default>false</default>
+                <label>Biochemist</label>
+            </value>
+            <value>
+                <fullName>Biologist</fullName>
+                <default>false</default>
+                <label>Biologist</label>
+            </value>
+            <value>
+                <fullName>Biotechnologist</fullName>
+                <default>false</default>
+                <label>Biotechnologist</label>
+            </value>
+            <value>
+                <fullName>Blacksmith</fullName>
+                <default>false</default>
+                <label>Blacksmith</label>
+            </value>
+            <value>
+                <fullName>Broadcaster/Announcer</fullName>
+                <default>false</default>
+                <label>Broadcaster/Announcer</label>
+            </value>
+            <value>
+                <fullName>Business</fullName>
+                <default>false</default>
+                <label>Business</label>
+            </value>
+            <value>
+                <fullName>Business Executive</fullName>
+                <default>false</default>
+                <label>Business Executive</label>
+            </value>
+            <value>
+                <fullName>Camera Operator</fullName>
+                <default>false</default>
+                <label>Camera Operator</label>
+            </value>
+            <value>
+                <fullName>Cameraman</fullName>
+                <default>false</default>
+                <label>Cameraman</label>
+            </value>
+            <value>
+                <fullName>Captain of an Aircraft</fullName>
+                <default>false</default>
+                <label>Captain of an Aircraft</label>
+            </value>
+            <value>
+                <fullName>Caretaker</fullName>
+                <default>false</default>
+                <label>Caretaker</label>
+            </value>
+            <value>
+                <fullName>Carpenter</fullName>
+                <default>false</default>
+                <label>Carpenter</label>
+            </value>
+            <value>
+                <fullName>Chief Business Devlp. Officer</fullName>
+                <default>false</default>
+                <label>Chief Business Devlp. Officer</label>
+            </value>
+            <value>
+                <fullName>Chief Executive Officer</fullName>
+                <default>false</default>
+                <label>Chief Executive Officer</label>
+            </value>
+            <value>
+                <fullName>Chief of police</fullName>
+                <default>false</default>
+                <label>Chief of police</label>
+            </value>
+            <value>
+                <fullName>Chief Technology Officer</fullName>
+                <default>false</default>
+                <label>Chief Technology Officer</label>
+            </value>
+            <value>
+                <fullName>Choreographer</fullName>
+                <default>false</default>
+                <label>Choreographer</label>
+            </value>
+            <value>
+                <fullName>Civil engineer</fullName>
+                <default>false</default>
+                <label>Civil engineer</label>
+            </value>
+            <value>
+                <fullName>Cleaner</fullName>
+                <default>false</default>
+                <label>Cleaner</label>
+            </value>
+            <value>
+                <fullName>Clerk</fullName>
+                <default>false</default>
+                <label>Clerk</label>
+            </value>
+            <value>
+                <fullName>Commentator</fullName>
+                <default>false</default>
+                <label>Commentator</label>
+            </value>
+            <value>
+                <fullName>Composer</fullName>
+                <default>false</default>
+                <label>Composer</label>
+            </value>
+            <value>
+                <fullName>Conductor</fullName>
+                <default>false</default>
+                <label>Conductor</label>
+            </value>
+            <value>
+                <fullName>Constable</fullName>
+                <default>false</default>
+                <label>Constable</label>
+            </value>
+            <value>
+                <fullName>Construction engineer</fullName>
+                <default>false</default>
+                <label>Construction engineer</label>
+            </value>
+            <value>
+                <fullName>Construction worker</fullName>
+                <default>false</default>
+                <label>Construction worker</label>
+            </value>
+            <value>
+                <fullName>Consultancy</fullName>
+                <default>false</default>
+                <label>Consultancy</label>
+            </value>
+            <value>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+                <label>Consultant</label>
+            </value>
+            <value>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+                <label>Contractor</label>
+            </value>
+            <value>
+                <fullName>Cook</fullName>
+                <default>false</default>
+                <label>Cook</label>
+            </value>
+            <value>
+                <fullName>Costume Designer</fullName>
+                <default>false</default>
+                <label>Costume Designer</label>
+            </value>
+            <value>
+                <fullName>Creative engineering</fullName>
+                <default>false</default>
+                <label>Creative engineering</label>
+            </value>
+            <value>
+                <fullName>Creative Manager</fullName>
+                <default>false</default>
+                <label>Creative Manager</label>
+            </value>
+            <value>
+                <fullName>Custodian</fullName>
+                <default>false</default>
+                <label>Custodian</label>
+            </value>
+            <value>
+                <fullName>Customs officer</fullName>
+                <default>false</default>
+                <label>Customs officer</label>
+            </value>
+            <value>
+                <fullName>Dancer</fullName>
+                <default>false</default>
+                <label>Dancer</label>
+            </value>
+            <value>
+                <fullName>Database administrator</fullName>
+                <default>false</default>
+                <label>Database administrator</label>
+            </value>
+            <value>
+                <fullName>Dentist</fullName>
+                <default>false</default>
+                <label>Dentist</label>
+            </value>
+            <value>
+                <fullName>Dentist / Dental Surgeon</fullName>
+                <default>false</default>
+                <label>Dentist / Dental Surgeon</label>
+            </value>
+            <value>
+                <fullName>Dermatologist</fullName>
+                <default>false</default>
+                <label>Dermatologist</label>
+            </value>
+            <value>
+                <fullName>Designer</fullName>
+                <default>false</default>
+                <label>Designer</label>
+            </value>
+            <value>
+                <fullName>Doctor</fullName>
+                <default>false</default>
+                <label>Doctor</label>
+            </value>
+            <value>
+                <fullName>Domestic</fullName>
+                <default>false</default>
+                <label>Domestic</label>
+            </value>
+            <value>
+                <fullName>Drill instructor</fullName>
+                <default>false</default>
+                <label>Drill instructor</label>
+            </value>
+            <value>
+                <fullName>Driver</fullName>
+                <default>false</default>
+                <label>Driver</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Electrical engineer</fullName>
+                <default>false</default>
+                <label>Electrical engineer</label>
+            </value>
+            <value>
+                <fullName>Electrician</fullName>
+                <default>false</default>
+                <label>Electrician</label>
+            </value>
+            <value>
+                <fullName>Engineer</fullName>
+                <default>false</default>
+                <label>Engineer</label>
+            </value>
+            <value>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+                <label>Engineering</label>
+            </value>
+            <value>
+                <fullName>Entrepreneur</fullName>
+                <default>false</default>
+                <label>Entrepreneur</label>
+            </value>
+            <value>
+                <fullName>Farmer</fullName>
+                <default>false</default>
+                <label>Farmer</label>
+            </value>
+            <value>
+                <fullName>Fashion designer</fullName>
+                <default>false</default>
+                <label>Fashion designer</label>
+            </value>
+            <value>
+                <fullName>Film Critic</fullName>
+                <default>false</default>
+                <label>Film Critic</label>
+            </value>
+            <value>
+                <fullName>Film Director</fullName>
+                <default>false</default>
+                <label>Film Director</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Financial adviser</fullName>
+                <default>false</default>
+                <label>Financial adviser</label>
+            </value>
+            <value>
+                <fullName>Financial manager</fullName>
+                <default>false</default>
+                <label>Financial manager</label>
+            </value>
+            <value>
+                <fullName>Fisherman</fullName>
+                <default>false</default>
+                <label>Fisherman</label>
+            </value>
+            <value>
+                <fullName>Flavorist</fullName>
+                <default>false</default>
+                <label>Flavorist</label>
+            </value>
+            <value>
+                <fullName>Flight instructor</fullName>
+                <default>false</default>
+                <label>Flight instructor</label>
+            </value>
+            <value>
+                <fullName>Gastroenterologist</fullName>
+                <default>false</default>
+                <label>Gastroenterologist</label>
+            </value>
+            <value>
+                <fullName>Genealogist</fullName>
+                <default>false</default>
+                <label>Genealogist</label>
+            </value>
+            <value>
+                <fullName>General Manager</fullName>
+                <default>false</default>
+                <label>General Manager</label>
+            </value>
+            <value>
+                <fullName>Government agent</fullName>
+                <default>false</default>
+                <label>Government agent</label>
+            </value>
+            <value>
+                <fullName>Governor</fullName>
+                <default>false</default>
+                <label>Governor</label>
+            </value>
+            <value>
+                <fullName>Govt Service</fullName>
+                <default>false</default>
+                <label>Govt Service</label>
+            </value>
+            <value>
+                <fullName>Graphic Designer</fullName>
+                <default>false</default>
+                <label>Graphic Designer</label>
+            </value>
+            <value>
+                <fullName>Guide</fullName>
+                <default>false</default>
+                <label>Guide</label>
+            </value>
+            <value>
+                <fullName>Headmaster</fullName>
+                <default>false</default>
+                <label>Headmaster</label>
+            </value>
+            <value>
+                <fullName>Home Maker</fullName>
+                <default>false</default>
+                <label>Home Maker</label>
+            </value>
+            <value>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+                <label>Hospitality</label>
+            </value>
+            <value>
+                <fullName>Hotel manager</fullName>
+                <default>false</default>
+                <label>Hotel manager</label>
+            </value>
+            <value>
+                <fullName>HR Executive</fullName>
+                <default>false</default>
+                <label>HR Executive</label>
+            </value>
+            <value>
+                <fullName>Human Resource Manager</fullName>
+                <default>false</default>
+                <label>Human Resource Manager</label>
+            </value>
+            <value>
+                <fullName>Industrialist</fullName>
+                <default>false</default>
+                <label>Industrialist</label>
+            </value>
+            <value>
+                <fullName>Information Designer</fullName>
+                <default>false</default>
+                <label>Information Designer</label>
+            </value>
+            <value>
+                <fullName>Information Technologist</fullName>
+                <default>false</default>
+                <label>Information Technologist</label>
+            </value>
+            <value>
+                <fullName>Instructor</fullName>
+                <default>false</default>
+                <label>Instructor</label>
+            </value>
+            <value>
+                <fullName>Interior designer</fullName>
+                <default>false</default>
+                <label>Interior designer</label>
+            </value>
+            <value>
+                <fullName>Interpreter</fullName>
+                <default>false</default>
+                <label>Interpreter</label>
+            </value>
+            <value>
+                <fullName>Jailer</fullName>
+                <default>false</default>
+                <label>Jailer</label>
+            </value>
+            <value>
+                <fullName>Journalist</fullName>
+                <default>false</default>
+                <label>Journalist</label>
+            </value>
+            <value>
+                <fullName>Judge</fullName>
+                <default>false</default>
+                <label>Judge</label>
+            </value>
+            <value>
+                <fullName>Laborer</fullName>
+                <default>false</default>
+                <label>Laborer</label>
+            </value>
+            <value>
+                <fullName>Lawyer</fullName>
+                <default>false</default>
+                <label>Lawyer</label>
+            </value>
+            <value>
+                <fullName>Lecturer</fullName>
+                <default>false</default>
+                <label>Lecturer</label>
+            </value>
+            <value>
+                <fullName>Librarian</fullName>
+                <default>false</default>
+                <label>Librarian</label>
+            </value>
+            <value>
+                <fullName>Magistrate</fullName>
+                <default>false</default>
+                <label>Magistrate</label>
+            </value>
+            <value>
+                <fullName>Maid</fullName>
+                <default>false</default>
+                <label>Maid</label>
+            </value>
+            <value>
+                <fullName>Management consultant</fullName>
+                <default>false</default>
+                <label>Management consultant</label>
+            </value>
+            <value>
+                <fullName>Manager</fullName>
+                <default>false</default>
+                <label>Manager</label>
+            </value>
+            <value>
+                <fullName>Managing Director</fullName>
+                <default>false</default>
+                <label>Managing Director</label>
+            </value>
+            <value>
+                <fullName>Manufacturer</fullName>
+                <default>false</default>
+                <label>Manufacturer</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Marketing Executive</fullName>
+                <default>false</default>
+                <label>Marketing Executive</label>
+            </value>
+            <value>
+                <fullName>Marketing Manager</fullName>
+                <default>false</default>
+                <label>Marketing Manager</label>
+            </value>
+            <value>
+                <fullName>Medical</fullName>
+                <default>false</default>
+                <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Merchandiser</fullName>
+                <default>false</default>
+                <label>Merchandiser</label>
+            </value>
+            <value>
+                <fullName>Milkman</fullName>
+                <default>false</default>
+                <label>Milkman</label>
+            </value>
+            <value>
+                <fullName>Model</fullName>
+                <default>false</default>
+                <label>Model</label>
+            </value>
+            <value>
+                <fullName>Musician</fullName>
+                <default>false</default>
+                <label>Musician</label>
+            </value>
+            <value>
+                <fullName>Numerologist</fullName>
+                <default>false</default>
+                <label>Numerologist</label>
+            </value>
+            <value>
+                <fullName>Nurse</fullName>
+                <default>false</default>
+                <label>Nurse</label>
+            </value>
+            <value>
+                <fullName>Operator</fullName>
+                <default>false</default>
+                <label>Operator</label>
+            </value>
+            <value>
+                <fullName>Painter</fullName>
+                <default>false</default>
+                <label>Painter</label>
+            </value>
+            <value>
+                <fullName>Personal Assistant</fullName>
+                <default>false</default>
+                <label>Personal Assistant</label>
+            </value>
+            <value>
+                <fullName>Photographer</fullName>
+                <default>false</default>
+                <label>Photographer</label>
+            </value>
+            <value>
+                <fullName>Physician</fullName>
+                <default>false</default>
+                <label>Physician</label>
+            </value>
+            <value>
+                <fullName>Pilot</fullName>
+                <default>false</default>
+                <label>Pilot</label>
+            </value>
+            <value>
+                <fullName>Plumber</fullName>
+                <default>false</default>
+                <label>Plumber</label>
+            </value>
+            <value>
+                <fullName>Police inspector</fullName>
+                <default>false</default>
+                <label>Police inspector</label>
+            </value>
+            <value>
+                <fullName>Politician</fullName>
+                <default>false</default>
+                <label>Politician</label>
+            </value>
+            <value>
+                <fullName>Principal</fullName>
+                <default>false</default>
+                <label>Principal</label>
+            </value>
+            <value>
+                <fullName>Professor</fullName>
+                <default>false</default>
+                <label>Professor</label>
+            </value>
+            <value>
+                <fullName>Programmer</fullName>
+                <default>false</default>
+                <label>Programmer</label>
+            </value>
+            <value>
+                <fullName>Project Manager</fullName>
+                <default>false</default>
+                <label>Project Manager</label>
+            </value>
+            <value>
+                <fullName>Public Relations Officer</fullName>
+                <default>false</default>
+                <label>Public Relations Officer</label>
+            </value>
+            <value>
+                <fullName>Public speaker</fullName>
+                <default>false</default>
+                <label>Public speaker</label>
+            </value>
+            <value>
+                <fullName>Publisher</fullName>
+                <default>false</default>
+                <label>Publisher</label>
+            </value>
+            <value>
+                <fullName>Radiologist</fullName>
+                <default>false</default>
+                <label>Radiologist</label>
+            </value>
+            <value>
+                <fullName>Real estate developer</fullName>
+                <default>false</default>
+                <label>Real estate developer</label>
+            </value>
+            <value>
+                <fullName>Registrar</fullName>
+                <default>false</default>
+                <label>Registrar</label>
+            </value>
+            <value>
+                <fullName>Relationship Manager</fullName>
+                <default>false</default>
+                <label>Relationship Manager</label>
+            </value>
+            <value>
+                <fullName>Reporter</fullName>
+                <default>false</default>
+                <label>Reporter</label>
+            </value>
+            <value>
+                <fullName>Researcher</fullName>
+                <default>false</default>
+                <label>Researcher</label>
+            </value>
+            <value>
+                <fullName>Retail</fullName>
+                <default>false</default>
+                <label>Retail</label>
+            </value>
+            <value>
+                <fullName>Retailer</fullName>
+                <default>false</default>
+                <label>Retailer</label>
+            </value>
+            <value>
+                <fullName>Retired</fullName>
+                <default>false</default>
+                <label>Retired</label>
+            </value>
+            <value>
+                <fullName>School superintendent</fullName>
+                <default>false</default>
+                <label>School superintendent</label>
+            </value>
+            <value>
+                <fullName>Scientist</fullName>
+                <default>false</default>
+                <label>Scientist</label>
+            </value>
+            <value>
+                <fullName>Secretary general</fullName>
+                <default>false</default>
+                <label>Secretary general</label>
+            </value>
+            <value>
+                <fullName>Security guard</fullName>
+                <default>false</default>
+                <label>Security guard</label>
+            </value>
+            <value>
+                <fullName>Self Employed</fullName>
+                <default>false</default>
+                <label>Self Employed</label>
+            </value>
+            <value>
+                <fullName>Singer</fullName>
+                <default>false</default>
+                <label>Singer</label>
+            </value>
+            <value>
+                <fullName>Social worker</fullName>
+                <default>false</default>
+                <label>Social worker</label>
+            </value>
+            <value>
+                <fullName>Software engineer</fullName>
+                <default>false</default>
+                <label>Software Engineer</label>
+            </value>
+            <value>
+                <fullName>Soldier</fullName>
+                <default>false</default>
+                <label>Soldier</label>
+            </value>
+            <value>
+                <fullName>Sound Engineer</fullName>
+                <default>false</default>
+                <label>Sound Engineer</label>
+            </value>
+            <value>
+                <fullName>Sportsman</fullName>
+                <default>false</default>
+                <label>Sportsman</label>
+            </value>
+            <value>
+                <fullName>Structural engineers</fullName>
+                <default>false</default>
+                <label>Structural engineers</label>
+            </value>
+            <value>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+                <label>Supervisor</label>
+            </value>
+            <value>
+                <fullName>System administrator</fullName>
+                <default>false</default>
+                <label>System administrator</label>
+            </value>
+            <value>
+                <fullName>System Engineer</fullName>
+                <default>false</default>
+                <label>System Engineer</label>
+            </value>
+            <value>
+                <fullName>Systems analyst</fullName>
+                <default>false</default>
+                <label>Systems analyst</label>
+            </value>
+            <value>
+                <fullName>Tailor</fullName>
+                <default>false</default>
+                <label>Tailor</label>
+            </value>
+            <value>
+                <fullName>Tax Collector</fullName>
+                <default>false</default>
+                <label>Tax Collector</label>
+            </value>
+            <value>
+                <fullName>Teacher</fullName>
+                <default>false</default>
+                <label>Teacher</label>
+            </value>
+            <value>
+                <fullName>Technician</fullName>
+                <default>false</default>
+                <label>Technician</label>
+            </value>
+            <value>
+                <fullName>Telephone operator</fullName>
+                <default>false</default>
+                <label>Telephone operator</label>
+            </value>
+            <value>
+                <fullName>Tennis player</fullName>
+                <default>false</default>
+                <label>Tennis player</label>
+            </value>
+            <value>
+                <fullName>Trader</fullName>
+                <default>false</default>
+                <label>Trader</label>
+            </value>
+            <value>
+                <fullName>Traffic Police</fullName>
+                <default>false</default>
+                <label>Traffic Police</label>
+            </value>
+            <value>
+                <fullName>Trainee</fullName>
+                <default>false</default>
+                <label>Trainee</label>
+            </value>
+            <value>
+                <fullName>Treasurer</fullName>
+                <default>false</default>
+                <label>Treasurer</label>
+            </value>
+            <value>
+                <fullName>Tutor</fullName>
+                <default>false</default>
+                <label>Tutor</label>
+            </value>
+            <value>
+                <fullName>Typist</fullName>
+                <default>false</default>
+                <label>Typist</label>
+            </value>
+            <value>
+                <fullName>Vice President</fullName>
+                <default>false</default>
+                <label>Vice President</label>
+            </value>
+            <value>
+                <fullName>Video editor</fullName>
+                <default>false</default>
+                <label>Video editor</label>
+            </value>
+            <value>
+                <fullName>Vigilance Officer</fullName>
+                <default>false</default>
+                <label>Vigilance Officer</label>
+            </value>
+            <value>
+                <fullName>Waiter</fullName>
+                <default>false</default>
+                <label>Waiter</label>
+            </value>
+            <value>
+                <fullName>Web designer</fullName>
+                <default>false</default>
+                <label>Web designer</label>
+            </value>
+            <value>
+                <fullName>Web developer</fullName>
+                <default>false</default>
+                <label>Web developer</label>
+            </value>
+            <value>
+                <fullName>Wedding Planner</fullName>
+                <default>false</default>
+                <label>Wedding Planner</label>
+            </value>
+            <value>
+                <fullName>Wholesale</fullName>
+                <default>false</default>
+                <label>Wholesale</label>
+            </value>
+            <value>
+                <fullName>Zookeeper</fullName>
+                <default>false</default>
+                <label>Zookeeper</label>
+            </value>
+            <value>
+                <fullName>Zoologist</fullName>
+                <default>false</default>
+                <label>Zoologist</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other|Housewife</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other|Housewife</label>
+            </value>
+            <value>
+                <fullName>Other|Private company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other|Private company</label>
+            </value>
+            <value>
+                <fullName>Other|event manager</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Other|event manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

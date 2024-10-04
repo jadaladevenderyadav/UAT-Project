@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Year__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    OR(
+        Active_Semester__r.Term_Number__c = 1,
+        Active_Semester__r.Term_Number__c = 2
+    ),
+    &quot;1st Year&quot;,
+    IF(
+        OR(
+            Active_Semester__r.Term_Number__c = 3,
+            Active_Semester__r.Term_Number__c = 4
+        ),
+        &quot;2nd Year&quot;,
+        IF(
+            OR(
+                Active_Semester__r.Term_Number__c = 5,
+                Active_Semester__r.Term_Number__c = 6
+            ),
+            &quot;3rd Year&quot;,
+            IF(
+                OR(
+                    Active_Semester__r.Term_Number__c = 7,
+                    Active_Semester__r.Term_Number__c = 8
+                ),
+                &quot;4th Year&quot;,
+                IF(
+                    OR(
+                        Active_Semester__r.Term_Number__c = 9,
+                        Active_Semester__r.Term_Number__c = 10
+                    ),
+                    &quot;5th Year&quot;,
+                    &quot;&quot;
+                )
+            )
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>for populating the current semesster year into the Student fee</inlineHelpText>
+    <label>Current Year</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

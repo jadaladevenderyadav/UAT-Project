@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Carpentry General Complaints</label>
+    <protected>false</protected>
+    <values>
+        <field>General_Complaints__c</field>
+        <value xsi:type="xsd:string">Door Stopper Is Not Working,Bathroom Cloth Hanger Damaged,Bathroom Lock Not Working,Chair Damaged,Cupboard Handle Is Damaged,Cup Board Hinges Damaged,Cot Damaged,Window Curtain Damaged,Window Glass Broken,Window Handle Damaged,Window Hinges Damaged,Study Table Damaged,Main Door Frame Damaged,Main Door Handle Damaged,Main Door Hinges Damaged,Main Door Lock Damaged,Mirror Broken,Others</value>
+    </values>
+    <values>
+        <field>Hostel_Sub_Category__c</field>
+        <value xsi:type="xsd:string">Carpentry</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fee_Paid__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Calculated_Amount_Pending__c  = 0, &apos;Paid&apos;, IF(Calculated_Amount_Pending__c &lt;&gt; 0 &amp;&amp;  Amount_Paid__c &lt;&gt; 0, &apos;Partly Paid&apos;, &apos;Pending&apos;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Fee Paid</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

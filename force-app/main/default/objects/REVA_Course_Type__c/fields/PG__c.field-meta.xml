@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PG__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Post Graduation Course</description>
+    <inlineHelpText>Utilize this to determine whether the course falls under the Post Graduate classification.</inlineHelpText>
+    <label>PG</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

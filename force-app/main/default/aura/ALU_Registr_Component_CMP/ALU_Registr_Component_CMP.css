@@ -1,0 +1,62 @@
+.THIS td {
+    width: 50%;
+}
+
+.THIS .slds-grid {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.THIS.full-width {
+    width: 100%;
+}
+
+.THIS .custom-button {
+    background-color: black;
+}
+
+
+.THIS ::placeholder {
+    color: grey
+}
+
+
+
+.THIS .slds-card__body {
+
+    background-color: #EFDFD0;
+
+}
+
+
+
+
+.THIS input {
+    --slds-c-input-radius-border: 0 rem;
+    --slds-c-input-color-background: white;
+    --slds-c-input-text-color: grey;
+    --slds-c-input-color-border: white;
+    opacity: 0.8;
+}
+
+.THIS select {
+    --slds-c-select-color-background: white;
+    --slds-c-select-color-background-focus: white !important;
+    --slds-c-select-color-border: white;
+    --slds-c-select-color-border-focus: white;
+    --slds-c-select-text-color: grey !important;
+    --slds-c-select-text-color-focus: grey;
+    opacity: 0.8;
+
+}
+
+.THIS button {
+    --slds-c-button-brand-color-background: #3f2c31;
+
+    --slds-c-button-color-background: #3f2c31;
+}
+
+.THIS .slds-form-element__label {
+    color: black;
+    font-weight: 500;
+}

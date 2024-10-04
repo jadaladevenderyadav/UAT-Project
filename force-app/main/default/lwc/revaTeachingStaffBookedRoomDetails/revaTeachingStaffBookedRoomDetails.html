@@ -1,0 +1,48 @@
+<template>
+    <lightning-card title="Quarter Details" icon-name="custom:custom24">
+        <template lwc:if={dataAvl}>
+            <template lwc:if={revaQuarterRequests}>
+                <lightning-layout class="slds-p-horizontal_small" multiple-rows>
+                    <lightning-layout-item size="6">
+                        <lightning-layout multiple-rows>
+                            <lightning-layout-item size="6">
+                                <lightning-input
+                                    class="roomInput"
+                                    type="text"
+                                    variant="standard"
+                                    name="Staff Quarters Request Name"
+                                    label="Staff Quarters Request Name"
+                                    value={revaQuarterRequests.Name}
+                                    read-only="true"
+                                >
+                                </lightning-input>
+                            </lightning-layout-item>
+                            <!-- <lightning-layout-item size="6">
+                                <lightning-input class="roomInput" type="text" variant="standard" name="Name" label="Name" value={revaQuarterRequests.Room_Request_For__r.Name} read-only="true"></lightning-input>
+                            </lightning-layout-item> -->
+                            <lightning-layout-item size="6">
+                                <lightning-input class="roomInput" type="text" variant="standard" name="Status" label="Status" value={revaQuarterRequests.Status__c} read-only="true"></lightning-input>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6">
+                                <lightning-input class="roomInput" type="text" variant="standard" name="Type" label="Type" value={revaQuarterRequests.Type__c} read-only="true"></lightning-input>
+                            </lightning-layout-item>
+                            <lightning-layout-item size="6">
+                                <lightning-input class="roomInput" type="text" variant="standard" name="Staff Quaters Room" label="Staff Quaters Room" value={revaQuarterRequests.Staff_Quarters_Room__c} read-only="true"></lightning-input>
+                            </lightning-layout-item>
+                            <!-- <lightning-layout-item size="6">
+                                <lightning-input class="roomInput" type="text" variant="standard" name="Quarters Request Type" label="Quarters Request Type" value={revaQuarterRequests.Quarters_Request_Type__c} read-only="true"></lightning-input>
+                            </lightning-layout-item> -->
+                        </lightning-layout>
+                    </lightning-layout-item>
+                </lightning-layout>
+                <template if:true={revaQuarterRequestStatus}>
+                    <c-non-teaching-staff-vacate-request request-id={revaQuarterRequestId}></c-non-teaching-staff-vacate-request>
+                </template>
+            </template>
+            <template lwc:else>
+                <c-banner-messages warning="No Booked Quarters Found"></c-banner-messages>
+            </template>
+        </template>
+       <!-- <c-reva-teaching-staff-quatres-vacation></c-reva-teaching-staff-quatres-vacation> -->
+    </lightning-card>
+</template>

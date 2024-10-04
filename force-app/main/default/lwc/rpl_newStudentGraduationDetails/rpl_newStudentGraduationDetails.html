@@ -1,0 +1,462 @@
+<!--
+  @description       : HTMl for  Student Registration form
+  @author            : Vikranth Puvvadi
+  @group             : 
+  @last modified on  : 11-16-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <template if:true={isSaveTrue}>
+        <div class="c-container">
+
+            <lightning-layout multiple-rows="true">
+                <!--HEADER START-->
+                <lightning-layout-item padding="around-small" size="12">
+                    <div class="page-section1 page-header">
+                        <h2 class="formColor"><b>Student Registration Form</b></h2>
+                    </div>
+                </lightning-layout-item>
+                <!--HEADER END-->
+                <!--MAIN BODY START-->
+                <lightning-layout-item class="slds-p-left_medium slds-p-right_medium" size="12">
+                    <!--B Tech Semester Details Start-->
+                    <template lwc:if={showBtechDetails}>
+                        <div class={isBtechDetails}>
+                            <div class="page-section page-main">
+                                <h3 class="slds_section__title">
+                                    <button aria-controls="BtechFieldList"
+                                        class="slds-button slds-section__title-action">
+                                        <span onclick={toggleSection} data-id="BtechDetails">
+                                            <lightning-icon icon-name="utility:switch" size="x-small"
+                                                class="slds-section__title-action-icon slds-button__icon_left">
+                                            </lightning-icon>
+                                        </span>
+                                        <span class="slds-truncate" title="BTech Details"><b>BTech Details</b></span>
+                                    </button>
+                                </h3><br>
+
+                                <div class="slds-section__content" id="BtechFieldList">
+                                    <lightning-layout-item padding="around-small" size="12">
+                                        <lightning-layout multiple-rows="true">
+                                            <lightning-layout-item padding="around-small" size="6">
+                                                <div class="header-column">
+                                                    <!--<legend class="slds-form-element__legend slds-form-element__label">Name
+                                                <span class="required-star"> *</span></legend>-->
+                                                    <lightning-input type="text" label="Sem 1st CGPA"
+                                                        onchange={handleAllFieldChange}
+                                                        value={studentRegform.Rpl_Sem_1_CGPA__c}
+                                                        pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                        message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"
+                                                        required></lightning-input>
+                                                </div>
+                                                <div class="header-column">
+                                                    <lightning-input type="text" label="Sem 2nd CGPA"
+                                                        onchange={handleAllFieldChange}
+                                                        value={studentRegform.Rpl_Sem_2_CGPA__c}
+                                                        pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                        message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"
+                                                        required></lightning-input>
+                                                </div>
+                                                <div class="header-column">
+                                                    <lightning-input type="text" label="Sem 3rd CGPA"
+                                                        onchange={handleAllFieldChange}
+                                                        value={studentRegform.Rpl_Sem_3_CGPA__c}
+                                                        pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                        message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"
+                                                        required></lightning-input>
+                                                </div>
+                                                <div class="header-column">
+                                                    <lightning-input type="text" label="Sem 4th CGPA"
+                                                        onchange={handleAllFieldChange}
+                                                        value={studentRegform.Rpl_Sem_4_CGPA__c}
+                                                        pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                        message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"
+                                                        required></lightning-input>
+                                                </div>
+
+                                            </lightning-layout-item>
+                                            <lightning-layout-item padding="around-small" size="6">
+                                                <div class="header-column">
+                                                    <lightning-input type="text" label="Sem 5th CGPA"
+                                                        onchange={handleAllFieldChange}
+                                                        value={studentRegform.Rpl_Sem_5_CGPA__c}
+                                                        pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                        message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                </div>
+                                                <div class="header-column">
+                                                    <lightning-input type="text" label="Sem 6th CGPA"
+                                                        onchange={handleAllFieldChange}
+                                                        value={studentRegform.Rpl_Sem_6_CGPA__c}
+                                                        pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                        message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                </div>
+                                                <div class="header-column">
+                                                    <lightning-input type="text" label="Sem 7th CGPA"
+                                                        onchange={handleAllFieldChange}
+                                                        value={studentRegform.Rpl_Sem_7_CGPA__c}
+                                                        pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                        message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                </div>
+                                                <div class="header-column">
+                                                    <lightning-input type="text" label="Sem 8th CGPA"
+                                                        onchange={handleAllFieldChange}
+                                                        value={studentRegform.Rpl_Sem_8_CGPA__c}
+                                                        pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                        message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                </div>
+                                            </lightning-layout-item>
+                                        </lightning-layout>
+                                    </lightning-layout-item>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <!--B Tech Semester Details End-->
+                    <!--M Tech Semester Details Start-->
+                    <template lwc:elseif={showMtechDetails}>
+                        <div class={isMtechDetails}>
+                            <div class="page-section page-main">
+                                <h3 class="slds_section__title">
+                                    <button aria-controls="MtechFieldList"
+                                        class="slds-button slds-section__title-action">
+                                        <span onclick={toggleSection} data-id="MtechDetails">
+                                            <lightning-icon icon-name="utility:switch" size="x-small"
+                                                class="slds-section__title-action-icon slds-button__icon_left">
+                                            </lightning-icon>
+                                        </span>
+                                        <span class="slds-truncate" title="MTech Details"><b>MTech/MSC/MCA
+                                                Details</b></span>
+                                    </button>
+                                </h3><br>
+
+                                <div class="slds-section__content" id="MtechFieldList">
+                                    <lightning-layout-item padding="around-small" size="12">
+                                        <div class="page-section2">
+                                            <span class="page-section2"><b>UG Details</b></span>
+                                            <lightning-layout multiple-rows="true">
+                                                <lightning-layout-item padding="around-small" size="6">
+                                                    <div class="header-column">
+                                                        <lightning-input type="text"
+                                                            label="UG Board Name/University Name"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_UG_Board_Name_University_Name__c}
+                                                            required></lightning-input>
+                                                    </div>
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="UG College Name"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_UG_College_Name__c}
+                                                            required></lightning-input>
+                                                    </div>
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="UG Degree"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_UG_Degree__c}
+                                                            required></lightning-input>
+                                                    </div>
+                                                </lightning-layout-item>
+                                                <lightning-layout-item padding="around-small" size="6">
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="UG Year of Graduation"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_UG_Year_of_Graduation__c}
+                                                            pattern="[0-9]{3}"
+                                                            message-when-pattern-mismatch="Please enter a valid Year (e.g..2023) "
+                                                            required></lightning-input>
+                                                    </div>
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="UG CGPA"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_UG_CGPA__c}
+                                                            pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                            message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"
+                                                            required></lightning-input>
+                                                    </div>
+                                                    <div class="header-column">
+                                                        <template if:true={ugStreamValues.data}>
+                                                            <lightning-combobox name="UG Stream" label="UG Stream"
+                                                                value={studentRegform.Rpl_UG_Stream__c}
+                                                                options={ugStreamValues.data.values} placeholder="None"
+                                                                onchange={handleAllFieldChange} required="true">
+                                                            </lightning-combobox>
+                                                        </template>
+                                                    </div>
+                                                </lightning-layout-item>
+                                            </lightning-layout>
+                                        </div>
+                                        <lightning-layout-item padding="around-small" size="12">
+                                            <div class="page-section2">
+                                                <span class="page-section2"><b>PG Details</b></span>
+                                                <lightning-layout multiple-rows="true">
+                                                    <lightning-layout-item padding="around-small" size="6">
+                                                        <div class="header-column">
+                                                            <lightning-input type="text" label="PG 1st Sem CGPA"
+                                                                onchange={handleAllFieldChange}
+                                                                value={studentRegform.Rpl_PG1_Sem_CGPA__c}
+                                                                pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                                message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"
+                                                                required></lightning-input>
+                                                        </div>
+                                                        <div class="header-column">
+                                                            <lightning-input type="text" label="PG 2nd Sem CGPA"
+                                                                onchange={handleAllFieldChange}
+                                                                value={studentRegform.Rpl_PG2_Sem_CGPA__c}
+                                                                pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                                message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                        </div>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item padding="around-small" size="6">
+                                                        <div class="header-column">
+                                                            <lightning-input type="text" label="PG 3rd Sem CGPA"
+                                                                onchange={handleAllFieldChange}
+                                                                value={studentRegform.Rpl_PG3_Sem_CGPA__c}
+                                                                pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                                message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                        </div>
+                                                        <div class="header-column">
+                                                            <lightning-input type="text" label="PG 4th Sem CGPA"
+                                                                onchange={handleAllFieldChange}
+                                                                value={studentRegform.Rpl_PG4_Sem_CGPA__c}
+                                                                pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                                message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                        </div>
+                                                    </lightning-layout-item>
+
+                                                </lightning-layout>
+                                            </div>
+                                        </lightning-layout-item>
+                                    </lightning-layout-item>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <!--M Tech Semester Details Start-->
+                    <!--MBA Semester Details START-->
+                    <template lwc:elseif={showmbaDetails}>
+                        <div class={isMBADetails}>
+                            <div class="page-section page-main">
+                                <h3 class="slds_section__title">
+                                    <button aria-controls="MBAFieldList" class="slds-button slds-section__title-action">
+                                        <span onclick={toggleSection} data-id="MBADetails">
+                                            <lightning-icon icon-name="utility:switch" size="x-small"
+                                                class="slds-section__title-action-icon slds-button__icon_left">
+                                            </lightning-icon>
+                                        </span>
+                                        <span class="slds-truncate" title="MBA Details"><b>MBA Details</b></span>
+                                    </button>
+                                </h3><br>
+
+                                <div class="slds-section__content" id="MBAFieldList">
+                                    <lightning-layout-item padding="around-small" size="12">
+                                        <div class="page-section2">
+                                            <span class="page-section2"><b>UG Details</b></span>
+                                            <lightning-layout multiple-rows="true">
+                                                <lightning-layout-item padding="around-small" size="6">
+                                                    <div class="header-column">
+                                                        <lightning-input type="text"
+                                                            label="UG Board Name/University Name"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_UG_Board_Name_University_Name__c}
+                                                            required></lightning-input>
+                                                    </div>
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="UG College Name"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_UG_College_Name__c}
+                                                            required></lightning-input>
+                                                    </div>
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="UG Degree"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_UG_Degree__c}
+                                                            required></lightning-input>
+                                                    </div>
+                                                </lightning-layout-item>
+                                                <lightning-layout-item padding="around-small" size="6">
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="UG Year of Graduation"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_UG_Year_of_Graduation__c}
+                                                            required></lightning-input>
+                                                    </div>
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="UG CGPA"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_UG_CGPA__c}
+                                                            pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                            message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"
+                                                            required></lightning-input>
+                                                    </div>
+                                                    <div class="header-column">
+                                                        <template if:true={ugStreamValues.data}>
+                                                            <lightning-combobox name="UG Stream" label="UG Stream"
+                                                                options={ugStreamValues.data.values} placeholder=''
+                                                                onchange={handleAllFieldChange}
+                                                                value={studentRegform.Rpl_UG_Stream__c} required="true">
+                                                            </lightning-combobox>
+                                                        </template>
+                                                    </div>
+                                                </lightning-layout-item>
+                                            </lightning-layout>
+                                        </div>
+                                        <lightning-layout-item padding="around-small" size="12">
+                                            <div class="page-section2">
+                                                <span class="page-section2"><b>PG Details</b></span>
+                                                <lightning-layout multiple-rows="true">
+                                                    <lightning-layout-item padding="around-small" size="6">
+                                                        <div class="header-column">
+                                                            <lightning-input type="text" label="PG 1st Sem CGPA"
+                                                                onchange={handleAllFieldChange}
+                                                                value={studentRegform.Rpl_PG1_Sem_CGPA__c}
+                                                                pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                                message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"
+                                                                required="true"></lightning-input>
+                                                        </div>
+                                                        <div class="header-column">
+                                                            <lightning-input type="text" label="PG 2nd Sem CGPA"
+                                                                onchange={handleAllFieldChange}
+                                                                value={studentRegform.Rpl_PG2_Sem_CGPA__c}
+                                                                pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                                message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                        </div>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item padding="around-small" size="6">
+                                                        <div class="header-column">
+                                                            <lightning-input type="text" label="PG 3rd Sem CGPA"
+                                                                onchange={handleAllFieldChange}
+                                                                value={studentRegform.Rpl_PG3_Sem_CGPA__c}
+                                                                pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                                message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                        </div>
+                                                        <div class="header-column">
+                                                            <lightning-input type="text" label="PG 4th Sem CGPA"
+                                                                onchange={handleAllFieldChange}
+                                                                value={studentRegform.Rpl_PG4_Sem_CGPA__c}
+                                                                pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                                message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                        </div>
+                                                    </lightning-layout-item>
+
+                                                </lightning-layout>
+                                            </div>
+                                        </lightning-layout-item>
+                                        <lightning-layout-item padding="around-small" size="12">
+                                            <div class="page-section2">
+                                                <span class="page-section2"><b>PG Specialization 1</b></span>
+                                                <lightning-layout multiple-rows="true">
+                                                    <lightning-layout-item padding="around-small" size="6">
+                                                        <div class="header-column">
+                                                            <lightning-input type="text" label="PG Specialization 1"
+                                                                onchange={handleAllFieldChange}
+                                                                value={studentRegform.Rpl_PG1_Specialization__c}></lightning-input>
+                                                        </div>
+                                                    </lightning-layout-item>
+                                                    <lightning-layout-item padding="around-small" size="6">
+                                                        <div class="header-column">
+                                                            <lightning-input type="text" label="PG Specialization 2"
+                                                                onchange={handleAllFieldChange}
+                                                                value={studentRegform.Rpl_PG2_Specialization__c}></lightning-input>
+                                                        </div>
+                                                    </lightning-layout-item>
+                                                </lightning-layout>
+                                            </div>
+                                        </lightning-layout-item>
+                                    </lightning-layout-item>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <!--MBA Semester Details End-->
+                    <!--UG Details Start-->
+                    <template lwc:elseif={showUGDetails}>
+                        <div class={isUGDetails}>
+                            <div class="page-section page-main">
+                                <h3 class="slds_section__title">
+                                    <button aria-controls="UGFieldList" class="slds-button slds-section__title-action">
+                                        <span onclick={toggleSection} data-id="UGDetails">
+                                            <lightning-icon icon-name="utility:switch" size="x-small"
+                                                class="slds-section__title-action-icon slds-button__icon_left">
+                                            </lightning-icon>
+                                        </span>
+                                        <span class="slds-truncate" title="UG Details"><b>UG Details</b></span>
+                                    </button>
+                                </h3><br>
+
+                                <div class="slds-section__content" id="UGFieldList">
+                                    <lightning-layout-item padding="around-small" size="12">
+                                        <div class="page-section2">
+                                            <span class="page-section2"><b>UG Details</b></span>
+                                            <lightning-layout multiple-rows="true">
+                                                <lightning-layout-item padding="around-small" size="6">
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="Sem 1st CGPA"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_Sem_1_CGPA__c} required
+                                                            pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                            message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                    </div>
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="Sem 2nd CGPA"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_Sem_2_CGPA__c}
+                                                            pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                            message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"
+                                                            required></lightning-input>
+                                                    </div>
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="Sem 3rd CGPA"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_Sem_3_CGPA__c}
+                                                            pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                            message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"
+                                                            required></lightning-input>
+                                                    </div>
+                                                </lightning-layout-item>
+                                                <lightning-layout-item padding="around-small" size="6">
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="Sem 4th CGPA"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_Sem_4_CGPA__c}
+                                                            pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                            message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                    </div>
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="Sem 5th CGPA"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_Sem_5_CGPA__c}
+                                                            pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                            message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                    </div>
+                                                    <div class="header-column">
+                                                        <lightning-input type="text" label="Sem 6th CGPA"
+                                                            onchange={handleAllFieldChange}
+                                                            value={studentRegform.Rpl_Sem_6_CGPA__c}
+                                                            pattern="^(?:[0-9](?:\.[0-9])?|10)$"
+                                                            message-when-pattern-mismatch="Please enter a valid number below 10 (e.g., 6.7, 9, 8.8)"></lightning-input>
+                                                    </div>
+                                                </lightning-layout-item>
+                                            </lightning-layout>
+                                        </div>
+                                    </lightning-layout-item>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <!--UG Details Stop-->
+                </lightning-layout-item>
+
+                <!--MAIN BODY END-->
+                <!--FOOTER START-->
+                <lightning-layout-item flexibility="auto" padding="around-small" size="12">
+                    <div class="page-footer page-section1">
+                        <!--Cancel Button-->
+                        <!--Save Button-->
+                        <lightning-button variant="brand" label="NEXT" title="Next" onclick={handleSaveButton}
+                            class="slds-m-left_x-small" disabled={isSubmitButtonDisabled}></lightning-button>
+                    </div>
+                </lightning-layout-item>
+                <!--FOOTER END-->
+            </lightning-layout>
+        </div>
+    </template>
+</template>

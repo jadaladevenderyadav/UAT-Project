@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accept_Reject_Bulk_Payments</fullName>
+    <availability>online</availability>
+    <description>To accept bulk offline payments</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Accept/Reject Bulk Payments</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/flow/Accept_Bulk_Offline_Payments?retUrl=/a1P/o</url>
+</WebLink>

@@ -1,0 +1,101 @@
+.slds-form-element__label {
+	font-size: 14px !important;
+	font-weight: 600 !important;
+}
+
+.slds-input {
+background-color: #fef1e8;
+border-radius: 5px;
+}
+
+.slds-rich-text-editor__textarea p,
+.slds-rich-text-editor__textarea ol,
+.slds-rich-text-editor__textarea ul,
+.slds-rich-text-editor__textarea pre,
+.slds-rich-text-editor__textarea blockquote,
+.slds-rich-text-editor__textarea h1,
+.slds-rich-text-editor__textarea h2,
+.slds-rich-text-editor__textarea h3,
+.slds-rich-text-editor__textarea h4,
+.slds-rich-text-editor__textarea h5,
+.slds-rich-text-editor__textarea h6 {
+
+	height: 145px !important;
+}
+
+.slds-rich-text-editor__textarea .ql-editor {
+    background-color: #fef1e8;
+    border-radius: 5px;
+ }
+
+ .slds-rich-text-editor__toolbar {
+    background-color: #fef1e8;
+    border-radius: 5px;
+ }
+
+.slds-button_brand,
+.slds-button--brand {
+      background-color: #f07f07 !important;
+      border:none !important
+}
+.slds-button_brand:hover,
+.slds-button--brand:hover {
+      background-color: #f07f07 !important;
+      border:none !important
+}
+
+.slds-file-selector_files .slds-file-selector__body, .slds-file-selector--files .slds-file-selector__body {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+}
+
+.slds-file-selector__button {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 1%;
+    padding-right: 13%;
+    padding-bottom: 1%;
+    padding-left: 9%;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: dashed;
+    border-radius: 0;
+    color: #f07f07;
+}
+
+.slds-file-selector_files .slds-file-selector__text,.slds-file-selector--files .slds-file-selector__text {
+    color: black;
+}
+
+.slds-file-selector__dropzone {
+    padding: var(--lwc-spacingXxxSmall,0.125rem);
+    border: var(--lwc-borderWidthThin,1px) dashed var(--slds-g-color-border-base-4, var(--lwc-colorBorder,#D4D4D4));
+    border-radius: 20px;
+    border-color: #f07f07;
+    border: dashed;
+    font-size: 20px;
+    font-weight: 600;
+    color:#f07f07;
+    
+}
+
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+    .slds-button_brand, .slds-button--brand {
+    border-radius: 4px;
+    font-size: 13px;
+    /* font-weight: 550; */
+    /* width: 40%; */
+    height: 30px;
+    color: white;
+    background-color: #f07f07;
+}
+       .slds-file-selector_files .slds-file-selector__body, .slds-file-selector--files .slds-file-selector__body {
+        display: flex;
+        align-items: center;
+        width: 225px;
+        height: 50px;
+    }
+  }

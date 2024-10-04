@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Booking_For__c</columns>
+    <columns>Type_of_meal__c</columns>
+    <columns>Reva_Meal_Booking_Status__c</columns>
+    <columns>Reva_Mess_Menu__c</columns>
+    <columns>Reva_Meal_Timing__c</columns>
+    <columns>Meal_Feedback__c</columns>
+    <columns>Rating__c</columns>
+    <columns>Reva_Meal_Booking_Date__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Booking_For__c</field>
+        <operation>contains</operation>
+        <value>Nandu</value>
+    </filters>
+    <label>All</label>
+</ListView>

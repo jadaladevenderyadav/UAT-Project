@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PET_Exam_Type__c</fullName>
+    <description>Applicant&apos;s Choice of Exam mode for REVA PET</description>
+    <label>PET Exam Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Offline-CET</fullName>
+                <default>false</default>
+                <label>Offline-CET</label>
+            </value>
+            <value>
+                <fullName>Offline - Ph.D</fullName>
+                <default>false</default>
+                <label>Offline - Ph.D</label>
+            </value>
+            <value>
+                <fullName>Laptop/Desktop with webcam</fullName>
+                <default>false</default>
+                <label>Laptop/Desktop with webcam</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Not Eligible</fullName>
+        <default>false</default>
+        <label>Not Eligible</label>
+    </customValue>
+    <customValue>
+        <fullName>Cold</fullName>
+        <default>false</default>
+        <label>Cold</label>
+    </customValue>
+    <customValue>
+        <fullName>Warm</fullName>
+        <default>false</default>
+        <label>Warm</label>
+    </customValue>
+    <customValue>
+        <fullName>Hot</fullName>
+        <default>false</default>
+        <label>Hot</label>
+    </customValue>
+    <customValue>
+        <fullName>No Response</fullName>
+        <default>false</default>
+        <label>No Response</label>
+    </customValue>
+    <customValue>
+        <fullName>Invalid</fullName>
+        <default>false</default>
+        <label>Invalid</label>
+    </customValue>
+    <customValue>
+        <fullName>Enrolled</fullName>
+        <default>false</default>
+        <label>Enrolled</label>
+    </customValue>
+    <customValue>
+        <fullName>Course Closed</fullName>
+        <default>false</default>
+        <label>Course Closed</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Interested</fullName>
+        <default>false</default>
+        <label>Not Interested</label>
+    </customValue>
+    <customValue>
+        <fullName>Filled Application with Other Credentials</fullName>
+        <default>false</default>
+        <label>Filled Application with Other Credentials</label>
+    </customValue>
+    <description>The values that are available on Lead and Contact to select Call Disposition</description>
+    <masterLabel>Applicant Disposition Values</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

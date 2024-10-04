@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RACE</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>SRN_Number__c</columns>
+    <columns>Application_Number__c</columns>
+    <columns>Program_Batch__c</columns>
+    <columns>Active_Semester__c</columns>
+    <columns>Admission_Mode__c</columns>
+    <columns>Active_Batch__c</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <columns>Student_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.Student</value>
+    </filters>
+    <filters>
+        <field>School__c</field>
+        <operation>contains</operation>
+        <value>Excellence</value>
+    </filters>
+    <label>RACE</label>
+    <sharedTo>
+        <group>RACE</group>
+        <role>School_Head_ACE</role>
+        <role>Vertical_Head_ACE</role>
+    </sharedTo>
+</ListView>

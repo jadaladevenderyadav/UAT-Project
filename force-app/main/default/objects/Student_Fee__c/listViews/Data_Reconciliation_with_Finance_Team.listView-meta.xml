@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Reconciliation_with_Finance_Team</fullName>
+    <columns>Application_Number__c</columns>
+    <columns>Fee_Type__c</columns>
+    <columns>NAME</columns>
+    <columns>Display_No__c</columns>
+    <columns>Due_Date__c</columns>
+    <columns>Actual_Program_Fee__c</columns>
+    <columns>Premium__c</columns>
+    <columns>Concession__c</columns>
+    <columns>Scholarship__c</columns>
+    <columns>Calculated_Total_Amount__c</columns>
+    <columns>Amount__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Program_Batch__c</field>
+        <operation>equals</operation>
+        <value>BBA (Honors)-(2022-2025)</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>equals</operation>
+        <value>University Fee 1st Year</value>
+    </filters>
+    <label>Data Reconciliation with Finance Team</label>
+    <sharedTo>
+        <role>Admin_Role</role>
+    </sharedTo>
+</ListView>
